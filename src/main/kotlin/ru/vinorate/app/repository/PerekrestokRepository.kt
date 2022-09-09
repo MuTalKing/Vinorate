@@ -6,4 +6,5 @@ import ru.vinorate.app.model.Perekrestok
 
 @Repository
 interface PerekrestokRepository: JpaRepository<Perekrestok, Long> {
+    fun findTopByOrderByIdDesc(): Perekrestok?
 }

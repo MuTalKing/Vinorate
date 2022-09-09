@@ -1,32 +1,35 @@
 package ru.vinorate.app.pages
 
+import com.codeborne.selenide.CollectionCondition
 import com.codeborne.selenide.Selectors
-import com.codeborne.selenide.Selenide
+import com.codeborne.selenide.Selenide.`$`
 import com.codeborne.selenide.Selenide.`$$`
 import org.openqa.selenium.By
-import org.openqa.selenium.support.ui.ExpectedConditions
+import org.springframework.stereotype.Component
+import java.time.Duration
 
+@Component
 class PerekrestokPage {
     val confirmAgeButton =
-        Selenide.`$`(Selectors.byXpath("//span[@class='button-children' and text()='Мне исполнилось 18 лет']"))
+        `$`(Selectors.byXpath("//span[@class='button-children' and text()='Мне исполнилось 18 лет']"))
 
     val acceptCookieButton =
-        Selenide.`$`(Selectors.byXpath("//span[@class='button-children' and text()='Принять']"))
+        `$`(Selectors.byXpath("//span[@class='button-children' and text()='Принять']"))
 
     val filterByDryWineButton =
-        Selenide.`$`(Selectors.byXpath("//div[@class='catalog-feature-enum__title' and text()='Сухое']"))
+        `$`(Selectors.byXpath("//div[@class='catalog-feature-enum__title' and text()='Сухое']"))
 
     val filterBySemiDryWineButton =
-        Selenide.`$`(Selectors.byXpath("//div[@class='catalog-feature-enum__title' and text()='Полусухое']"))
+        `$`(Selectors.byXpath("//div[@class='catalog-feature-enum__title' and text()='Полусухое']"))
 
     val filterByRedWineButton =
-        Selenide.`$`(Selectors.byXpath("//div[@class='catalog-feature-enum__title' and text()='Красное']"))
+        `$`(Selectors.byXpath("//div[@class='catalog-feature-enum__title' and text()='Красное']"))
 
     fun getWine(): List<String> {
         val listOfWines = mutableListOf<String>()
-        `$$`(By.xpath("//span[@class = 'product-card__link-text']")).forEach{
+        `$$`(By.ByClassName("product-card__title")).shouldBe(CollectionCondition.sizeGreaterThanOrEqual(1), Duration.ofSeconds(10)).forEach{
                 webElement ->
-            listOfWines.add(webElement.text)
+            listOfWines.add(webElement.text.split("красное")[0].replace("Вино ", ""))
         }
         print(listOfWines)
         return listOfWines

@@ -1,0 +1,42 @@
+{
+  "firefox": {
+    "default": "latest",
+    "versions": {
+      "latest": {
+        "image": "selenoid/firefox",
+        "port": "4444",
+        "path": "/wd/hub",
+        "tmpfs": {"/tmp":"size=512m"}
+      }
+    }
+  },
+  "chrome": {
+    "default": "latest",
+    "versions": {
+      "latest": {
+        "image": "selenoid/chrome:latest",
+        "port": "4444",
+        "enableVNC": true,
+        "enableVideo": true,
+        "screenResolution": "1920x1080x24",
+        "tmpfs": {"/tmp":"size=512m"}
+      },
+      "104.0": {
+        "image": "selenoid/chrome:104.0",
+        "port": "4444",
+        "enableVNC": true,
+        "enableVideo": true,
+        "screenResolution": "1920x1080x24",
+        "tmpfs": {"/tmp":"size=512m"}
+      },
+      "94.0": {
+        "image": "selenoid/chrome:94.0",
+        "port": "4444",
+        "enableVNC": true,
+        "enableVideo": true,
+        "screenResolution": "1920x1080x24",
+        "tmpfs": {"/tmp":"size=512m"}
+      }
+    }
+  }
+}

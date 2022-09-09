@@ -1,6 +1,6 @@
 package ru.vinorate.app.model
 
-interface Shop {
+interface Shop<T> {
     var id: Long?
     var name: String?
     var rate: String?

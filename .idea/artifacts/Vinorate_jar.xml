@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Vinorate:jar">
+    <output-path>$USER_HOME$/app</output-path>
+    <root id="archive" name="Vinorate.jar" />
+  </artifact>
+</component>
