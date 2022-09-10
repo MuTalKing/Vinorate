@@ -74,7 +74,7 @@ class VivinoService(
         return false
     }
 
-    fun ifNameHasMoreThanOneWordTakeSecond(wineName: String) =
+    private fun ifNameHasMoreThanOneWordTakeSecond(wineName: String) =
         if(wineName.split(" ")[1] != "") wineName.split(" ")[1]
         else wineName.split(" ")[0]
 
