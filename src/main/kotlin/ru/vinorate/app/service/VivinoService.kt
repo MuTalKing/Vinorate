@@ -15,8 +15,14 @@ class VivinoService(
     val vivinoPage: VivinoPage
 ) {
 
-    fun <T> getVivinoRate(wineNamesList: List<String>, shop: Shop<T>, dbService: DbService) {
-        BrowserConfiguration().setUp()
+    fun <T> getVivinoRateAndInsertIntoDb(
+        wineNamesList: List<String>,
+        winePricesList: List<String>,
+        winePicturesList: List<String>,
+        shop: Shop<T>,
+        dbService: DbService
+    ) {
+        BrowserConfiguration().setUp("94.0")
         open("https://www.vivino.com")
 
         val lastIndexWineNames = getLastIndexOfWineNamesListByName(
@@ -34,6 +40,8 @@ class VivinoService(
                         insertIntoDB(
                             wineName = wineNamesList[wine - 1],
                             rate = `$`(Selectors.byXpath("//div[@class = 'search-results-list']/div[1]//div[@class= 'text-inline-block light average__number']")).text,
+                            winePrice = winePricesList[wine - 1],
+                            winePicture = winePicturesList[wine - 1],
                             shop = shop,
                             dbService = dbService
                         )
@@ -41,6 +49,8 @@ class VivinoService(
                         insertIntoDB(
                             wineName = wineNamesList[wine - 1],
                             rate = "-",
+                            winePrice = winePricesList[wine - 1],
+                            winePicture = winePicturesList[wine - 1],
                             shop = shop,
                             dbService = dbService
                         )
@@ -80,13 +90,22 @@ class VivinoService(
 
     private fun rateIsVisible() = `$$`(Selectors.byXpath("//div[@class = 'search-results-list']/div[1]//div[@class= 'text-inline-block light average__number']")).size > 0
 
-    private fun <T> insertIntoDB(wineName: String, rate: String, shop: Shop<T>,  dbService: DbService) =
+    private fun <T> insertIntoDB(
+        wineName: String,
+        rate: String,
+        winePrice: String,
+        winePicture: String,
+        shop: Shop<T>,
+        dbService: DbService
+    ) =
         dbService.saveWine(
             ModelMapper().map(
                 Wine(
                     id = dbService.lastId() + 1,
                     name = wineName,
-                    rate = rate
+                    rate = rate,
+                    price = winePrice,
+                    picture = winePicture
                 ), shop::class.java
             )
         )

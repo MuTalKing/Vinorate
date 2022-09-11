@@ -13,10 +13,16 @@ class PerekrestokDbProcessorImpl(
     private val vivinoService: VivinoService,
     private val perekrestokDbService: PerekrestokDbService
 ): PerekrestokDbProcessor {
-    override fun processPerekrestokWine(){
+    override fun processPerekrestokWine(deleteAll: Boolean){
+        if (deleteAll) perekrestokDbService.deleteAll()
+        perekrestokService.prepare()
         val perekrestokWineNames = perekrestokService.getWineNames()
-        vivinoService.getVivinoRate(
+        val perekrestokWinePrices = perekrestokService.getWinePrices()
+        val perekrestokWinePictures = perekrestokService.getWinePictures()
+        vivinoService.getVivinoRateAndInsertIntoDb(
             wineNamesList = perekrestokWineNames,
+            winePricesList = perekrestokWinePrices,
+            winePicturesList = perekrestokWinePictures,
             shop = Perekrestok(),
             dbService = perekrestokDbService
         )

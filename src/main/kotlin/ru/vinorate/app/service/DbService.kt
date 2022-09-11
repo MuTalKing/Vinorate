@@ -8,4 +8,6 @@ interface DbService {
     fun lastId(): Long
 
     fun lastName(): String?
+
+    fun deleteAll()
 }

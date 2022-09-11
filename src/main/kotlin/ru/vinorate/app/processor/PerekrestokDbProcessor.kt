@@ -1,5 +1,5 @@
 package ru.vinorate.app.processor
 
 interface PerekrestokDbProcessor {
-    fun processPerekrestokWine()
+    fun processPerekrestokWine(deleteAll: Boolean = false)
 }

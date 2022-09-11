@@ -13,5 +13,10 @@ class VinorateController(
         perekrestokDbProcessorImpl.processPerekrestokWine()
     }
 
+    @GetMapping("/truncateAndCreatePerekrestokWines")
+    fun truncateAndCreatePerekrestokWines() {
+        perekrestokDbProcessorImpl.processPerekrestokWine(true)
+    }
+
 
 }

@@ -16,4 +16,6 @@ class PerekrestokDbService(
     override fun lastId() = perekrestokRepository.findTopByOrderByIdDesc()?.id ?: 0
 
     override fun lastName() = perekrestokRepository.findTopByOrderByIdDesc()?.name
+
+    override fun deleteAll() = perekrestokRepository.deleteAll()
 }

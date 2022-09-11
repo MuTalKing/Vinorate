@@ -1,28 +1,29 @@
 package ru.vinorate.app.service
 
-import com.codeborne.selenide.Configuration
 import com.codeborne.selenide.Selenide.open
-import com.codeborne.selenide.Selenide.sessionId
 import org.springframework.stereotype.Service
 import ru.vinorate.app.pages.PerekrestokPage
+import ru.vinorate.app.utils.browser.BrowserConfiguration
 
 @Service
 class PerekrestokService(val perekrestokPage: PerekrestokPage): ShopService {
 
-    override fun getWineNames(): List<String> {
-        Configuration.remote = "http://selenoid:4444/wd/hub"
-        Configuration.browserVersion = "94.0"
-        Configuration.headless = false
-        Configuration.browserSize = "1920x1080"
-        Configuration.browserCapabilities.setCapability("enableVNC", true)
-        Configuration.browserCapabilities.setCapability("screenResolution", "1920x1080x24")
-        open("https://www.perekrestok.ru/cat/c/2/vino")
+    override fun prepare(){
+        BrowserConfiguration().setUp("94.0")
+        open("https://www.perekrestok.ru/cat/c/2/vino?filter.tsvet-vina=krasnoe&filter.vid-vina-sahar=suhoe,polusuhoe")
         perekrestokPage.confirmAgeButton.click()
-        println(sessionId())
-        perekrestokPage.filterByDryWineButton.click()
-        perekrestokPage.filterBySemiDryWineButton.click()
-        perekrestokPage.filterByRedWineButton.click()
-        return perekrestokPage.getWine()
+    }
+
+    override fun getWineNames(): List<String> {
+        return perekrestokPage.getWineNames()
+    }
+
+    override fun getWinePrices(): List<String> {
+        return perekrestokPage.getWinePrices()
+    }
+
+    override fun getWinePictures(): List<String> {
+        return perekrestokPage.getWinePictures()
     }
 
 }
