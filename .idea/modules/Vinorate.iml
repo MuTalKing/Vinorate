@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="designer2.settings">
+    <option name="lastJavaLocation" value="C:\Users\Sergey\IdeaProjects\Vinorate\src\main\kotlin" />
+    <option name="lastJavaPackage" value="ru.vinorate.app.web.views" />
+    <option name="lastTemplateLocation" value="C:\Users\Sergey\IdeaProjects\Vinorate\frontend\themes" />
+    <option name="serverIp" value="172.16.2.80" />
+    <option name="serverPort" value="57267" />
+  </component>
+</module>

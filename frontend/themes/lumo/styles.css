@@ -1,0 +1,28 @@
+.image-wrapper {
+      width:300px;
+      text-align:center;
+      border:solid;
+      margin:2em auto;
+      overflow:hidden
+    }
+    img {
+      margin:0 -100%;
+      vertical-align:middle;
+    }
+
+.card-layout {
+      text-align:center;
+    }
+
+.vertical-layout {
+      text-align:center;
+      vertical-align:middle;
+      flex-direction: row;
+      overflow: hidden;
+    }
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}

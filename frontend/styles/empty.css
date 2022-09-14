@@ -1,0 +1,15 @@
+.image-wrapper {
+  width:300px;
+  text-align:center;
+  line-height:300px;
+  height:300px;
+  border:solid;
+  margin:2em auto;
+  overflow:visible; /* let's see what we slice off */
+}
+img {margin:-100%;vertical-align:middle;
+
+  /* to show whats been cut off */
+  position:relative;
+  z-index:-1;
+}
