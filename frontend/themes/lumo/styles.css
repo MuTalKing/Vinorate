@@ -10,19 +10,6 @@
       vertical-align:middle;
     }
 
-.card-layout {
-      text-align:center;
-    }
-
-.vertical-layout {
-      text-align:center;
-      vertical-align:middle;
-      flex-direction: row;
-      overflow: hidden;
-    }
-
-
-
 ::-webkit-scrollbar {
     display: none;
 }
