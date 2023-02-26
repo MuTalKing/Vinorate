@@ -28,7 +28,13 @@ dependencies {
     implementation("com.vaadin:flow-client:23.1.7")
     testCompile("junit", "junit", "4.12")
 }
-
+tasks.named<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
+    destinationDirectory.set(file("${project.projectDir}/src/main/kotlin/ru/vinorate/docker"))
+}
 vaadin{
     productionMode=true
+}
+
+task<Exec>("dumpDb") {
+    commandLine("docker", "exec", "-t", "db", "pg_dump", "-U", "postgres", "vinorate", "-f", "/var/lib/postgresql/data/dump.sql")
 }

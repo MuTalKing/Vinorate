@@ -7,6 +7,7 @@ class BrowserConfiguration {
         Configuration.remote = "http://selenoid:4444/wd/hub"
         Configuration.browserVersion = browserVersion
         Configuration.browserSize = "1920x1080"
+        Configuration.pageLoadTimeout = 60000
         Configuration.browserCapabilities.setCapability("enableVNC", true)
         Configuration.browserCapabilities.setCapability("screenResolution", "1920x1080x24")
     }

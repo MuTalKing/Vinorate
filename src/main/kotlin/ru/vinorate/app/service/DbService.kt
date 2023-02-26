@@ -9,5 +9,17 @@ interface DbService {
 
     fun lastName(): String?
 
+    fun firstNameByRate(rate: String): String?
+
+    fun findByName(wineName: String): String?
+
+    fun findNames(): List<String>
+
+    fun findPrices(): List<String>
+
+    fun findPictures(): List<String>
+
     fun deleteAll()
+
+    fun updateRate(rate: String, name: String)
 }

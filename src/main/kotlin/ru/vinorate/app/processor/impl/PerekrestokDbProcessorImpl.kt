@@ -14,11 +14,26 @@ class PerekrestokDbProcessorImpl(
     private val perekrestokDbService: PerekrestokDbService
 ): PerekrestokDbProcessor {
     override fun processPerekrestokWine(deleteAll: Boolean){
-        if (deleteAll) perekrestokDbService.deleteAll()
-        perekrestokService.prepare()
-        val perekrestokWineNames = perekrestokService.getWineNames()
-        val perekrestokWinePrices = perekrestokService.getWinePrices()
-        val perekrestokWinePictures = perekrestokService.getWinePictures()
+        var perekrestokWineNames = perekrestokDbService.findNames()
+        var perekrestokWinePrices = perekrestokDbService.findPrices()
+        var perekrestokWinePictures = perekrestokDbService.findPictures()
+        if (deleteAll) {
+            perekrestokDbService.deleteAll()
+            perekrestokService.prepare()
+            perekrestokWineNames = perekrestokService.getWineNames()
+            perekrestokWinePrices = perekrestokService.getWinePrices()
+            perekrestokWinePictures = perekrestokService.getWinePictures()
+            for (wine in 1 until perekrestokWineNames.size) {
+                vivinoService.insertIntoDB(
+                    wineName = perekrestokWineNames[wine - 1],
+                    rate = "",
+                    winePrice = perekrestokWinePrices[wine - 1],
+                    winePicture = perekrestokWinePictures[wine - 1],
+                    shop = Perekrestok(),
+                    dbService = perekrestokDbService
+                )
+            }
+        }
         vivinoService.getVivinoRateAndInsertIntoDb(
             wineNamesList = perekrestokWineNames,
             winePricesList = perekrestokWinePrices,

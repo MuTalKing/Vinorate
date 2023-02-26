@@ -33,7 +33,7 @@ class PerekrestokVirtualWineList(
     init {
         height = "100%"
         width = "100%"
-        setItems(perekrestokRepository.findAll())
+        setItems(perekrestokRepository.findByOrderByRateDesc())
         setRenderer(perekrestokCardRenderer)
     }
 

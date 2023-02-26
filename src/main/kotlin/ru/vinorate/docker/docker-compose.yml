@@ -38,7 +38,7 @@ services:
     networks:
       web: null
     container_name: pgadmin4_container
-    image: dpage/pgadmin4:5.7
+    image: dpage/pgadmin4:6.18
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
