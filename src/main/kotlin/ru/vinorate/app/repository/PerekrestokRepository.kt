@@ -31,4 +31,7 @@ interface PerekrestokRepository: JpaRepository<Perekrestok, Long> {
     @Modifying(clearAutomatically = true)
     @Query("update Perekrestok p set p.rate =:rate where p.name =:name")
     fun updateRate(@Param("rate") rate: String, @Param("name") name: String)
+
+//    @Query("select p from Perekrestok p where lower(p.name) like lower('%', :name, '%') union select g from Globus g where lower(g.name) like lower('%', :name, '%')")
+//    fun search(@Param("name") name: String): Set<Shop?>
 }

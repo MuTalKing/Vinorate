@@ -18,11 +18,11 @@ class VivinoService(
     private val vivinoDbService: VivinoDbService
 ) {
 
-    fun <T> getVivinoRateAndInsertIntoDb(
+    fun getVivinoRateAndInsertIntoDb(
         wineNamesList: List<String>,
         winePricesList: List<String>,
         winePicturesList: List<String>,
-        shop: Shop<T>,
+        shop: Shop,
         dbService: DbService
     ) {
         BrowserConfiguration().setUp("94.0")
@@ -134,12 +134,12 @@ class VivinoService(
     private fun rateIsVisible() =
         `$$`(Selectors.byXpath("//div[@class = 'search-results-list']/div[1]//div[@class= 'text-inline-block light average__number']")).size > 0
 
-    fun <T> insertIntoDB(
+    fun insertIntoDB(
         wineName: String,
         rate: String,
         winePrice: String,
         winePicture: String,
-        shop: Shop<T>,
+        shop: Shop,
         dbService: DbService
     ) {
         if (dbService.findByName(wineName) == null) {

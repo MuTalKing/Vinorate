@@ -9,7 +9,7 @@ import ru.vinorate.app.repository.PerekrestokRepository
 class PerekrestokDbService(
     private val perekrestokRepository: PerekrestokRepository
 ): DbService {
-    override fun <T> saveWine(shop: Shop<T>) {
+    override fun saveWine(shop: Shop) {
         (shop as Perekrestok?)?.let { perekrestokRepository.save(it) }
     }
 

@@ -10,6 +10,10 @@
       vertical-align:middle;
     }
 
+.filters {
+    display: flex;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }

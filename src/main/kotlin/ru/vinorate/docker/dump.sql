@@ -1250,7 +1250,6 @@ COPY public.vivino (id, name, rate) FROM stdin;
 296	Cuatro Ojos Cabernet Sauvignon 	3,8
 297	Il Poggio dei Vigneti Nero d'Avola Sicilia 	2,7
 298	Ramon Bilbao Crianza Rioha 	3,9
-299	Matsu El Viego 	3,9
 300	Marchesi di Barolo Ruvei 	3,8
 301	Barone Montalto Неро 	4,0
 302	Cimmeria Бастардо Белой Скалы 	3,3
@@ -1394,7 +1393,6 @@ COPY public.vivino (id, name, rate) FROM stdin;
 435	M.Chapoutier Luberon La Ciboise 	3,6
 436	Gerardo Cesari Justo 	3,6
 438	Marques de Riscal Gran Reserva 	4,2
-439	Faustino VII Tempranillo 	4,2
 440	ликёрное Oloroso Aurora Jerez-Xeres-Sherry сухое 17,5 % алк., Испания,...	4,2
 441	Askaneli Brothers Ахашени Красное полусладкое 12 % алк., Грузия, 0,75 л	4,0
 442	Gabriel Meffre Châteauneuf-du-Pape Laurus 	3,7
@@ -1421,6 +1419,7 @@ COPY public.vivino (id, name, rate) FROM stdin;
 464	Талавари Саперави 	3,7
 465	Muenzenrieder Pinot Noir 	3,6
 437	Lolita 	3,9
+439	Faustino VII Tempranillo 	3,5
 466	Garnachas de Espana La Garnatxa Fosca del Priorat 	3,8
 467	Sol De Chile Syrah Merlot 	3,4
 468	Vylyan Hegy 	3,7
@@ -1514,7 +1513,6 @@ COPY public.vivino (id, name, rate) FROM stdin;
 557	Имение Сикоры Каберне Совиньон 	3,9
 559	Loggia del Sole Chianti Riserva DOCG 	3,2
 560	Conti Sani Chianti Classico DOCG Primum 	3,7
-561	Атаман Гранд Резерв Цимлянский черный 	4,1
 562	Альтос Иберикос Крианса 	-
 563	Gran Passione Appassimento Rosso 	4,0
 564	Cacciata Chianti Classico DOCG Riserva 	3,6
@@ -1532,6 +1530,7 @@ COPY public.vivino (id, name, rate) FROM stdin;
 558	Инкерман Каберне Резерв 	4,0
 549	Mayrik 	3,6
 542	Vivanco Reserva Rioja DOC 	3,9
+561	Атаман Гранд Резерв Цимлянский черный 	3,3
 577	Кубань Таманский полуостров Шато Сенной 	-
 578	Цард Ломиаури-Саперави 	-
 581	Quintessence Шторм Шираз 	-
@@ -1542,7 +1541,6 @@ COPY public.vivino (id, name, rate) FROM stdin;
 587	Lunatico Primitivo 	3,9
 588	Lunatico Negroamaro 	3,9
 589	Negrar Corvina 	3,6
-590	Rabo de Gala 	4,1
 591	Monte Real Tempranillo Rioja DOC 	3,4
 592	Claroscuro Tintas de Uco 	4,0
 593	Finca Constanсia Parcela 23 	3,6
@@ -1642,6 +1640,7 @@ COPY public.vivino (id, name, rate) FROM stdin;
 586	Poggio Passo Primitivo 	3,6
 580	Medija 	3,5
 579	Цард Саперави-Аладастури 	3,9
+590	Rabo de Gala 	3,8
 690	Fontanafredda Briccotondo Barbera Piemonte DOC 	3,6
 691	Turtle Dreaming Cabernet Sauvignon-Shiraz 	3,8
 692	Ionos Red 	3,3
@@ -1731,6 +1730,7 @@ COPY public.vivino (id, name, rate) FROM stdin;
 681	B.IO Nero d'Avola Cabernet 	3,8
 640	Инкерман Каберне Гранд Резерв 	4,0
 575	Тавквери-Мерло Цард марочное 	4,0
+299	Matsu El Viego 	4,3
 \.
 
 

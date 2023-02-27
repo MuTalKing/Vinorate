@@ -9,7 +9,7 @@ import ru.vinorate.app.repository.GlobusRepository
 class GlobusDbService(
 private val globusRepository: GlobusRepository
 ): DbService {
-    override fun <T> saveWine(shop: Shop<T>) {
+    override fun saveWine(shop: Shop) {
         (shop as Globus?)?.let { globusRepository.save(it) }
     }
 

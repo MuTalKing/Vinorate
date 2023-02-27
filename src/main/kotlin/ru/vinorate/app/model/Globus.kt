@@ -6,7 +6,7 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "globus")
-class Globus: Shop<Globus> {
+class Globus: Shop {
     @Id
     override var id: Long? = null
     override var name: String? = null

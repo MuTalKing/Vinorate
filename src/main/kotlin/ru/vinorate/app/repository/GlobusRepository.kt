@@ -32,4 +32,13 @@ interface GlobusRepository: JpaRepository<Globus, Long> {
     @Query("update Globus g set g.rate =:rate where g.name =:name")
     fun updateRate(@Param("rate") rate: String, @Param("name") name: String)
 
+    @Query("select * from Perekrestok p where lower(p.name) like lower(CONCAT('%', :name, '%')) union select * from Globus g where lower(g.name) like lower(CONCAT('%', :name, '%')) order by rate desc", nativeQuery = true)
+    fun searchAllWinesByName(@Param("name") name: String): Set<Globus?>
+
+    @Query("select * from Perekrestok p where lower(p.name) like price >= :minPrice union select * from Globus g where price <= :maxPrice order by rate desc", nativeQuery = true)
+    fun searchAllWinesByPice(@Param("minPrice") minPrice: Long, @Param("maxPrice") maxPrice: Long): Set<Globus?>
+
+    @Query(value = "select * from Perekrestok p union select * from Globus g ORDER By rate DESC", nativeQuery = true)
+    fun selectAllWinesFromAllShopsOrderedByRateDesc(): Set<Globus?>
+
 }
