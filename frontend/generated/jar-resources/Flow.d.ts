@@ -60,7 +60,8 @@ export declare class Flow {
     private get action();
     private flowLeave;
     private flowNavigate;
-    private getFlowRoute;
+    private getFlowRoutePath;
+    private getFlowRouteQuery;
     private flowInit;
     private loadScript;
     private injectAppIdScript;

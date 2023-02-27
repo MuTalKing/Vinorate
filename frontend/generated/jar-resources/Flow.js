@@ -110,7 +110,7 @@ export class Flow {
                 this.loadingFinished();
             };
             // Call server side to check whether we can leave the view
-            flowRoot.$server.leaveNavigation(this.getFlowRoute(ctx));
+            flowRoot.$server.leaveNavigation(this.getFlowRoutePath(ctx), this.getFlowRouteQuery(ctx));
         });
     }
     // Send the remote call to `JavaScriptBootstrapUI` to render the flow
@@ -134,7 +134,7 @@ export class Flow {
                     this.loadingFinished();
                 };
                 // Call server side to navigate to the given route
-                flowRoot.$server.connectClient(this.container.localName, this.container.id, this.getFlowRoute(ctx), this.appShellTitle, history.state);
+                flowRoot.$server.connectClient(this.container.localName, this.container.id, this.getFlowRoutePath(ctx), this.getFlowRouteQuery(ctx), this.appShellTitle, history.state);
             });
         }
         else {
@@ -142,8 +142,11 @@ export class Flow {
             return Promise.resolve(this.container);
         }
     }
-    getFlowRoute(context) {
-        return (context.pathname + (context.search || '')).replace(this.baseRegex, '');
+    getFlowRoutePath(context) {
+        return decodeURIComponent(context.pathname).replace(this.baseRegex, '');
+    }
+    getFlowRouteQuery(context) {
+        return (context.search && context.search.substring(1)) || '';
     }
     // import flow client modules and initialize UI in server side.
     async flowInit(serverSideRouting = false) {
@@ -237,7 +240,7 @@ export class Flow {
             const xhr = new XMLHttpRequest();
             const httpRequest = xhr;
             const serverRoutingParam = serverSideRouting ? '&serverSideRouting' : '';
-            const requestPath = `?v-r=init&location=${encodeURIComponent(this.getFlowRoute(location))}${serverRoutingParam}`;
+            const requestPath = `?v-r=init&location=${encodeURIComponent(this.getFlowRoutePath(location))}&query=${encodeURIComponent(this.getFlowRouteQuery(location))}${serverRoutingParam}`;
             httpRequest.open('GET', requestPath);
             httpRequest.onerror = () => reject(new FlowUiInitializationError(`Invalid server response when initializing Flow UI.
         ${httpRequest.status}
@@ -276,7 +279,9 @@ export class Flow {
                 http.onerror = () => {
                     $wnd.Vaadin.connectionState.state = ConnectionState.CONNECTION_LOST;
                 };
-                http.send();
+                // Postpone request to reduce potential net::ERR_INTERNET_DISCONNECTED
+                // errors that sometimes occurs even if browser says it is online
+                setTimeout(() => http.send(), 50);
             }
         });
         $wnd.addEventListener('offline', () => {

@@ -10,7 +10,7 @@ import { classMap } from 'lit/directives/class-map.js';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { copy } from './copy-to-clipboard.js';
-import { licenseCheckFailed, licenseCheckNoKey, licenseCheckOk } from './License';
+import { licenseCheckFailed, licenseCheckNoKey, licenseCheckOk, licenseInit } from './License';
 var ConnectionStatus;
 (function (ConnectionStatus) {
     ConnectionStatus["ACTIVE"] = "active";
@@ -153,7 +153,7 @@ export class VaadinDevTools extends LitElement {
         this.tabs = [
             { id: 'log', title: 'Log', render: this.renderLog, activate: this.activateLog },
             { id: 'info', title: 'Info', render: this.renderInfo },
-            { id: 'features', title: 'Experimental Features', render: this.renderFeatures }
+            { id: 'features', title: 'Feature Flags', render: this.renderFeatures }
         ];
         this.activeTab = 'log';
         this.serverInfo = {
@@ -999,9 +999,10 @@ export class VaadinDevTools extends LitElement {
             window.sessionStorage.removeItem(VaadinDevTools.TRIGGERED_KEY_IN_SESSION_STORAGE);
         }
         this.transitionDuration = parseInt(window.getComputedStyle(this).getPropertyValue('--dev-tools-transition-duration'), 10);
-        if (window.Vaadin) {
-            window.Vaadin.devTools = this;
-        }
+        const windowAny = window;
+        windowAny.Vaadin = windowAny.Vaadin || {};
+        windowAny.Vaadin.devTools = Object.assign(this, windowAny.Vaadin.devTools);
+        licenseInit();
     }
     format(o) {
         return o.toString();
@@ -1367,10 +1368,6 @@ export class VaadinDevTools extends LitElement {
     }
     renderFeatures() {
         return html `<div class="features-tray">
-      <p>
-        These features are work in progress. The behavior, API, look and feel can still change significantly before (and
-        if) they become part of a stable release.
-      </p>
       ${this.features.map((feature) => html `<div class="feature">
           <label class="switch">
             <input
