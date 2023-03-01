@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdd5065e-1f13-4d17-a43e-f838e96f7026" name="Default Changelist" comment="add filters">
+    <list default="true" id="cdd5065e-1f13-4d17-a43e-f838e96f7026" name="Default Changelist" comment="change port to 80">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/base/1/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/base/1/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/base/16384/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/base/16384/pg_internal.init" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/base/5/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/base/5/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/base/1/pg_internal.init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/base/16384/pg_internal.init" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/base/5/pg_internal.init" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/global/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/global/pg_internal.init" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/postmaster.pid" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/postmaster.pid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
@@ -329,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677525700539</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="change port to 80">
+      <created>1677536777101</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677536777101</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,7 +358,8 @@
     <MESSAGE value="refactor front" />
     <MESSAGE value="add globus wines" />
     <MESSAGE value="add filters" />
-    <option name="LAST_COMMIT_MESSAGE" value="add filters" />
+    <MESSAGE value="change port to 80" />
+    <option name="LAST_COMMIT_MESSAGE" value="change port to 80" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
