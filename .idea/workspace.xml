@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdd5065e-1f13-4d17-a43e-f838e96f7026" name="Default Changelist" comment="add ssl and update port">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/pg_wal/000000010000000000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/pgdata/postmaster.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +343,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677692123154</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add ssl and update port">
+      <created>1677692684973</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677692684973</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add ssl and update port">
+      <created>1677692720725</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677692720725</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

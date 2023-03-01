@@ -1,5 +1,6 @@
 server:
   ssl:
+    enabled: true
     key-store: /root/ssl/keystore.kdb
     key-store-password: vinorate-ssl
     key-store-type: pkcs12
