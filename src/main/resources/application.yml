@@ -6,7 +6,7 @@ server:
     key-store-type: JKS
     key-alias: vinorate.ru
     key-password: vinorate-ssl
-  port: 443
+  port: 8443
 
 spring:
   application:
