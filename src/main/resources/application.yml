@@ -3,7 +3,7 @@ server:
     enabled: true
     key-store: /root/ssl/keystore.kdb
     key-store-password: vinorate-ssl
-    key-store-type: pkcs12
+    key-store-type: JKS
     key-alias: vinorate.ru
     key-password: vinorate-ssl
   port: 443
