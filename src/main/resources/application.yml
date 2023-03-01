@@ -1,7 +1,7 @@
 server:
   ssl:
     enabled: true
-    key-store: classpath:keystore.jks
+    key-store: /root/ssl/keystore.jks
     key-store-password: vinorate-ssl
     key-store-type: JKS
     key-alias: vinorate.ru
