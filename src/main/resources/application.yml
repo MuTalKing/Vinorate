@@ -1,12 +1,12 @@
 server:
   ssl:
     enabled: true
-    key-store: /root/ssl/keystore.jks
+    key-store: file:/root/ssl/keystore.jks
     key-store-password: vinorate-ssl
     key-store-type: JKS
     key-alias: vinorate.ru
     key-password: vinorate-ssl
-  port: 8443
+  port: 443
 
 spring:
   application:
