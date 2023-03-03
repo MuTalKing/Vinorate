@@ -13,7 +13,7 @@ services:
     environment:
       JAVA_OPTS: -XX:+UseContainerSupport -Xmx512m
     ports:
-      - 443:8080
+      - 443:443
     restart: always
     depends_on:
       - db
