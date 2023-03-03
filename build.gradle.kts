@@ -3,6 +3,7 @@ plugins {
     kotlin("jvm") version "1.6.10"
     id("org.springframework.boot") version "2.7.3"
     id("com.vaadin") version "23.3.6"
+    id("io.spring.dependency-management") version "1.0.6.RELEASE"
 }
 
 group = "ru.vinorate"
@@ -20,13 +21,14 @@ dependencies {
     implementation("org.springframework.data:spring-data-jpa:2.7.2")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.7.2")
     implementation("com.codeborne:selenide:6.7.2")
+//    implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.modelmapper:modelmapper:3.1.0")
     implementation("org.springframework:spring-webmvc:5.3.22")
     implementation("org.springframework.boot:spring-boot-starter-web:2.7.3")
     implementation("javax.xml.bind:jaxb-api:2.3.1")
     implementation("com.vaadin:vaadin-spring-boot-starter:23.3.6")
     implementation("com.vaadin:vaadin-bom:23.3.6")
-    testCompile("junit", "junit", "4.12")
+    testImplementation("junit", "junit", "4.12")
 }
 tasks.named<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
     destinationDirectory.set(file("${project.projectDir}/src/main/kotlin/ru/vinorate/docker"))
