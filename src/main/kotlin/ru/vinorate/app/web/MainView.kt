@@ -27,6 +27,7 @@ class MainView(
         width = "auto"
         isMargin = false
         isPadding = false
+        style.set("margin-top", "0px")
         val filters = Filters()
 
         filters.select.addValueChangeListener {
@@ -47,7 +48,8 @@ class MainView(
 
         add(
             filters.apply {
-                isMargin = true
+                isMargin = false
+                isPadding = false
                 alignItems = FlexComponent.Alignment.CENTER
                 justifyContentMode = FlexComponent.JustifyContentMode.AROUND
                 setHorizontalComponentAlignment(FlexComponent.Alignment.CENTER, this)
