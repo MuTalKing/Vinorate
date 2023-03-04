@@ -23,6 +23,10 @@ class MainView(
     var maxPrice: String = ""
     var shop: String = ""
     init {
+        height = "100%"
+        width = "auto"
+        isMargin = false
+        isPadding = false
         val filters = Filters()
 
         filters.select.addValueChangeListener {
@@ -40,11 +44,13 @@ class MainView(
             maxPrice = it.value
             updateVirtualList(shop, minPrice, maxPrice)
         }
-        height = "100%"
+
         add(
             filters.apply {
                 isMargin = true
-                setVerticalComponentAlignment(FlexComponent.Alignment.CENTER, this)
+                alignItems = FlexComponent.Alignment.CENTER
+                justifyContentMode = FlexComponent.JustifyContentMode.AROUND
+                setHorizontalComponentAlignment(FlexComponent.Alignment.CENTER, this)
             }
         )
         add(
