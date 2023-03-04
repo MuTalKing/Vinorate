@@ -44,7 +44,7 @@ class Filters: FormLayout() {
         add(maxPrice)
         setResponsiveSteps(
             ResponsiveStep("0", 1),
-            ResponsiveStep("420px", 2),
+            ResponsiveStep("320px", 2),
             ResponsiveStep("700px", 4)
         )
     }
