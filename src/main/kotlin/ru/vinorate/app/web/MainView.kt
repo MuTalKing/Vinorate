@@ -58,6 +58,7 @@ class MainView(
         add(
             allShopsVirtualWineList.apply {
                 isMargin = true
+                style.set("padding-left", "20px")
                 setHorizontalComponentAlignment(FlexComponent.Alignment.CENTER, this)
             }
         )
