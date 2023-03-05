@@ -43,7 +43,8 @@ class GlobusDbProcessorImpl(
                     winePrice = globusWinePrices[wine - 1],
                     winePicture = globusWinePictures[wine - 1],
                     shop = Globus(),
-                    dbService = globusDbService
+                    dbService = globusDbService,
+                    shopLogo = "https://toplogos.ru/images/thumbs/preview-logo-globus.jpg"
                 )
             }
         }
@@ -52,7 +53,8 @@ class GlobusDbProcessorImpl(
             winePricesList = globusWinePrices,
             winePicturesList = globusWinePictures,
             shop = Globus(),
-            dbService = globusDbService
+            dbService = globusDbService,
+            shopLogo = "https://toplogos.ru/images/thumbs/preview-logo-globus.jpg"
         )
     }
 }

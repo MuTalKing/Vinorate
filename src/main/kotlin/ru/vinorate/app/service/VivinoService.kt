@@ -23,7 +23,8 @@ class VivinoService(
         winePricesList: List<String>,
         winePicturesList: List<String>,
         shop: Shop,
-        dbService: DbService
+        dbService: DbService,
+        shopLogo: String
     ) {
         BrowserConfiguration().setUp("94.0")
         open("https://www.vivino.com")
@@ -41,7 +42,8 @@ class VivinoService(
                     winePrice = winePricesList[wine - 1],
                     winePicture = winePicturesList[wine - 1],
                     shop = shop,
-                    dbService = dbService
+                    dbService = dbService,
+                    shopLogo = shopLogo
                 )
             } else {
                 vivinoPage.apply {
@@ -63,7 +65,8 @@ class VivinoService(
                                 winePrice = winePricesList[wine - 1],
                                 winePicture = winePicturesList[wine - 1],
                                 shop = shop,
-                                dbService = dbService
+                                dbService = dbService,
+                                shopLogo = shopLogo
                             )
                         } else {
                             insertIntoVivinoDB(
@@ -77,7 +80,8 @@ class VivinoService(
                                 winePrice = winePricesList[wine - 1],
                                 winePicture = winePicturesList[wine - 1],
                                 shop = shop,
-                                dbService = dbService
+                                dbService = dbService,
+                                shopLogo = shopLogo
                             )
                         }
                     } else {
@@ -92,7 +96,8 @@ class VivinoService(
                             winePrice = winePricesList[wine - 1],
                             winePicture = winePicturesList[wine - 1],
                             shop = shop,
-                            dbService = dbService
+                            dbService = dbService,
+                            shopLogo = shopLogo
                         )
                     }
                 }
@@ -140,7 +145,8 @@ class VivinoService(
         winePrice: String,
         winePicture: String,
         shop: Shop,
-        dbService: DbService
+        dbService: DbService,
+        shopLogo: String
     ) {
         if (dbService.findByName(wineName) == null) {
             dbService.saveWine(
@@ -150,7 +156,8 @@ class VivinoService(
                         name = wineName,
                         rate = rate,
                         price = winePrice,
-                        picture = winePicture
+                        picture = winePicture,
+                        shopsLogo = shopLogo
                     ), shop::class.java
                 )
             )

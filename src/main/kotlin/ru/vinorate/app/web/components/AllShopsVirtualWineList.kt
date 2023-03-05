@@ -17,7 +17,8 @@ class AllShopsVirtualWineList(
         val infoLayout = InfoLayout(
             wineName = shop.name,
             wineRate = shop.rate,
-            winePrice = shop.price
+            winePrice = shop.price,
+            shopLogo = shop.shopLogo
         )
         val imageAndInfoLayout = ImageAndInfoLayout()
         imageAndInfoLayout.add(imageWrapper, infoLayout)

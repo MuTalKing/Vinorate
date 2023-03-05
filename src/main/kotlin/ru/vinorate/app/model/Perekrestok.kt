@@ -13,4 +13,5 @@ class Perekrestok: Shop {
     override var rate: String? = null
     override var price: String? = null
     override var picture: String? = null
+    override var shopLogo: String? = null
 }

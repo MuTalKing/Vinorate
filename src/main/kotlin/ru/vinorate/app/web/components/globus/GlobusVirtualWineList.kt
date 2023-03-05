@@ -20,7 +20,8 @@ class GlobusVirtualWineList(
         val infoLayout = InfoLayout(
             wineName = globus.name,
             wineRate = globus.rate,
-            winePrice = globus.price
+            winePrice = globus.price,
+            shopLogo = globus.shopLogo
         )
         val imageAndInfoLayout = ImageAndInfoLayout()
         imageAndInfoLayout.add(imageWrapper, infoLayout)

@@ -3,7 +3,8 @@ CREATE TABLE IF NOT EXISTS public.perekrestok (
     name character varying(150) NOT NULL,
     rate character varying(150),
     price character varying(150),
-    picture character varying(150)
+    picture character varying(150),
+    shop_logo character varying(150)
 );
 
 CREATE TABLE IF NOT EXISTS public.globus (
@@ -11,7 +12,8 @@ CREATE TABLE IF NOT EXISTS public.globus (
     name character varying(150) NOT NULL,
     rate character varying(150),
     price character varying(150),
-    picture character varying(150)
+    picture character varying(150),
+    shop_logo character varying(150)
 );
 
 CREATE TABLE IF NOT EXISTS public.vivino (

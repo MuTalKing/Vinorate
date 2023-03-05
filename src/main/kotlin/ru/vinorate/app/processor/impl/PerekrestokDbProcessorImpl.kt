@@ -30,7 +30,8 @@ class PerekrestokDbProcessorImpl(
                     winePrice = perekrestokWinePrices[wine - 1],
                     winePicture = perekrestokWinePictures[wine - 1],
                     shop = Perekrestok(),
-                    dbService = perekrestokDbService
+                    dbService = perekrestokDbService,
+                    shopLogo = "https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png"
                 )
             }
         }
@@ -39,7 +40,8 @@ class PerekrestokDbProcessorImpl(
             winePricesList = perekrestokWinePrices,
             winePicturesList = perekrestokWinePictures,
             shop = Perekrestok(),
-            dbService = perekrestokDbService
+            dbService = perekrestokDbService,
+            shopLogo = "https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png"
         )
     }
 }

@@ -20,7 +20,8 @@ class PerekrestokVirtualWineList(
         val infoLayout = InfoLayout(
             wineName = perekrestok.name,
             wineRate = perekrestok.rate,
-            winePrice = perekrestok.price
+            winePrice = perekrestok.price,
+            shopLogo = perekrestok.shopLogo
         )
         val imageAndInfoLayout = ImageAndInfoLayout()
         imageAndInfoLayout.add(imageWrapper, infoLayout)
