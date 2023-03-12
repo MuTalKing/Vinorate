@@ -4,8 +4,696 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdd5065e-1f13-4d17-a43e-f838e96f7026" name="Default Changelist" comment="add shop logo images">
+    <list default="true" id="cdd5065e-1f13-4d17-a43e-f838e96f7026" name="Default Changelist" comment="fix borders on mobile version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@polymer/iron-icon/hero.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@polymer/iron-icon/hero.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@polymer/iron-meta/hero.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@polymer/iron-meta/hero.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/buffer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/buffer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/buffer.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts4.8/buffer.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/abacus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/abacus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/absolute-position.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/absolute-position.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/academy-cap.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/academy-cap.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/accessibility.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/accessibility.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/accordion-menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/accordion-menu.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/add-dock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/add-dock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/adjust.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/adjust.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/adobe-flash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/adobe-flash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/airplane.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/airplane.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/alarm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/alarm.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/align-center.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/align-center.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/align-justify.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/align-justify.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/align-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/align-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/align-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/align-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/alt-a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/alt-a.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/alt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/alt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ambulance.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ambulance.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/anchor.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/anchor.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-double-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-double-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-double-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-double-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-double-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-double-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-double-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-double-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/angle-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/archive.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/archive.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/archives.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/archives.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/area-select.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/area-select.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-backward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-backward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-down-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-down-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-left-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-left-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-right-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-right-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-up-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-up-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-circle-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-forward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-forward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-long-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-long-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-long-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-long-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrow-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows-cross.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows-cross.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows-long-h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows-long-h.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows-long-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows-long-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows-long-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows-long-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows-long-v.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows-long-v.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/arrows.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/asterisk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/asterisk.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/at.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/at.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/automation.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/automation.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/backspace-a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/backspace-a.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/backspace.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/backspace.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/backwards.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/backwards.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ban.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ban.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bar-chart-h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bar-chart-h.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bar-chart-v.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bar-chart-v.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bar-chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bar-chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/barcode.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/barcode.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bed.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bed.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bell-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bell-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bell-slash-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bell-slash-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bell-slash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bell-slash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bell.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bell.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/boat.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/boat.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bold.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bold.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bolt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bolt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bomb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bomb.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/book-dollar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/book-dollar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/book-percent.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/book-percent.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/book.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/book.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bookmark-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bookmark-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bookmark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bookmark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/briefcase.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/briefcase.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/browser.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/browser.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bug-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bug-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bug.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bug.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/building-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/building-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/building.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/building.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bullets.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bullets.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bullseye.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bullseye.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/bus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/buss.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/buss.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/button.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/button.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calc-book.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calc-book.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calc.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar-briefcase.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar-briefcase.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar-clock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar-clock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar-envelope.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar-envelope.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar-user.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar-user.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/calendar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/camera.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/camera.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/car.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/car.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-square-down-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-square-down-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-square-right-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-square-right-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-square-up-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-square-up-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/caret-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cart-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cart-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chart-3d.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chart-3d.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chart-grid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chart-grid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chart-line.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chart-line.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chart-timeline.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chart-timeline.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chat.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chat.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/check-circle-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/check-circle-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/check-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/check-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/check-square-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/check-square-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/check-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/check-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/check.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/check.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-down-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-down-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-left-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-left-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-right-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-right-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-up-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-up-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-circle-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-down-small.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-down-small.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-left-small.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-left-small.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-right-small.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-right-small.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-up-small.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-up-small.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/chevron-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/child.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/child.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/circle-thin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/circle-thin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-check.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-check.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-cross.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-cross.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-heart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-heart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-pulse.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-pulse.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-text.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-text.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-user.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard-user.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clipboard.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/clock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/close-big.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/close-big.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/close-circle-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/close-circle-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/close-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/close-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/close-small.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/close-small.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/close.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud-download-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud-download-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud-download.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud-download.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud-upload-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud-upload-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud-upload.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud-upload.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cloud.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cluster.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cluster.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/code.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/code.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/coffee.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/coffee.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cog-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cog-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cog.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cog.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cogs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cogs.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/coin-piles.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/coin-piles.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/coins.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/coins.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/combobox.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/combobox.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comment-ellipsis-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comment-ellipsis-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comment-ellipsis.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comment-ellipsis.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comment-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comment-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comment.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comment.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comments-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comments-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comments.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/comments.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/compile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/compile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/compress-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/compress-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/compress.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/compress.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/connect-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/connect-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/connect.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/connect.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/controller.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/controller.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/copy-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/copy-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/copy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/copy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/copyright.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/copyright.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/corner-lower-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/corner-lower-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/corner-lower-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/corner-lower-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/corner-upper-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/corner-upper-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/corner-upper-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/corner-upper-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/credit-card.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/credit-card.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/crop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/crop.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cross-cutlery.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cross-cutlery.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/crosshairs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/crosshairs.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/css.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/css.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ctrl-a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ctrl-a.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ctrl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ctrl.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cube.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cube.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cubes.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cubes.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/curly-brackets.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/curly-brackets.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cursor-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cursor-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cursor.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cursor.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cutlery.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/cutlery.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/dashboard.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/dashboard.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/database.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/database.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/date-input.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/date-input.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/deindent.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/deindent.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/del.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/del.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/desktop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/desktop.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/diamond-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/diamond-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/diamond.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/diamond.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/diploma-scroll.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/diploma-scroll.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/diploma.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/diploma.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/disc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/disc.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/doctor-briefcase.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/doctor-briefcase.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/doctor.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/doctor.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/dollar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/dollar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/dot-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/dot-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/download-alt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/download-alt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/download.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/download.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/drop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/drop.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/edit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/edit.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/eject.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/eject.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/elastic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/elastic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-circle-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-circle-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-dots-h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-dots-h.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-dots-v.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-dots-v.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-h.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-v.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ellipsis-v.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/enter-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/enter-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/enter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/enter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelope-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelope-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelope-open-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelope-open-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelope-open.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelope-open.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelope.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelope.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelopes-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelopes-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelopes.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/envelopes.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/eraser.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/eraser.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/esc-a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/esc-a.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/esc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/esc.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/euro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/euro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exchange.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exchange.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exclamation-circle-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exclamation-circle-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exclamation-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exclamation-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exclamation.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exclamation.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exit-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exit-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/exit.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/expand-full.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/expand-full.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/expand-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/expand-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/expand.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/expand.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/external-browser.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/external-browser.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/external-link.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/external-link.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/eye-slash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/eye-slash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/eye.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/eye.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/eyedropper.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/eyedropper.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/facebook-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/facebook-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/factory.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/factory.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/family.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/family.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/fast-backward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/fast-backward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/fast-forward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/fast-forward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/female.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/female.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-add.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-add.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-code.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-code.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-font.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-movie.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-movie.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-picture.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-picture.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-presentation.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-presentation.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-process.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-process.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-refresh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-refresh.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-remove.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-remove.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-sound.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-sound.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-start.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-start.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-table.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-table.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-text-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-text-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-text.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-text.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-tree-small.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-tree-small.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-tree-sub.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-tree-sub.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-tree.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-tree.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-zip.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file-zip.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/file.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/fill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/fill.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/film.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/film.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/filter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/filter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/fire.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/fire.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flag-checkered.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flag-checkered.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flag-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flag-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flask.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flask.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flight-landing.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flight-landing.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flight-takeoff.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flight-takeoff.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flip-h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flip-h.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flip-v.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/flip-v.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-add.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-add.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-open-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-open-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-open.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-open.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-remove.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-remove.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder-search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/folder.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/font.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/form.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/form.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/forward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/forward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/frown-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/frown-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/funcion.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/funcion.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/function.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/function.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/funnel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/funnel.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/gamepad.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/gamepad.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/gavel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/gavel.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/gift.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/gift.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/glass.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/glass.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/glasses.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/glasses.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/globe-wire.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/globe-wire.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/globe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/globe.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/golf.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/golf.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/google-plus-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/google-plus-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/google-plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/google-plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grab.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grab.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-bevel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-bevel.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-big-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-big-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-big.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-big.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-h.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-small-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-small-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-small.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-small.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-v.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid-v.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/grid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/group.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/group.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hammer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hammer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hand.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hand.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/handle-corner.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/handle-corner.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hands-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hands-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/handshake.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/handshake.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/harddrive-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/harddrive-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/harddrive.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/harddrive.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/header.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/header.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/headphones.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/headphones.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/headset.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/headset.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/health-card.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/health-card.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/heart-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/heart-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/heart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/heart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/home-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/home-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/home.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/home.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hospital.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hospital.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hourglass-empty.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hourglass-empty.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hourglass-end.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hourglass-end.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hourglass-start.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hourglass-start.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hourglass.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/hourglass.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/inbox.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/inbox.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/indent.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/indent.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/info-circle-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/info-circle-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/info-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/info-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/info.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/info.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/input.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/input.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/insert.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/insert.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/institution.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/institution.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/invoice.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/invoice.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/key-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/key-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/key.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/key.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/keyboard-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/keyboard-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/keyboard.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/keyboard.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/laptop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/laptop.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/layout.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/layout.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-down-bold.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-down-bold.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-left-bold.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-left-bold.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-right-bold.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-right-bold.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-up-bold.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-up-bold.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/level-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/lifebuoy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/lifebuoy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/lightbulb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/lightbulb.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/line-bar-chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/line-bar-chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/line-chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/line-chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/line-h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/line-h.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/line-v.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/line-v.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/lines-list.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/lines-list.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/lines.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/lines.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/link.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/link.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/list-ol.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/list-ol.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/list-select.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/list-select.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/list-ul.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/list-ul.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/list.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/list.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/location-arrow-circle-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/location-arrow-circle-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/location-arrow-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/location-arrow-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/location-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/location-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/lock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/lock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/magic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/magic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/magnet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/magnet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/mailbox.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/mailbox.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/male.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/male.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/map-marker.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/map-marker.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/margin-bottom.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/margin-bottom.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/margin-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/margin-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/margin-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/margin-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/margin-top.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/margin-top.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/margin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/margin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/medal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/medal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/megafone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/megafone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/megaphone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/megaphone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/meh-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/meh-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/menu.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/microphone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/microphone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/minus-circle-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/minus-circle-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/minus-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/minus-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/minus-square-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/minus-square-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/minus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/minus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/mobile-browser.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/mobile-browser.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/mobile-retro.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/mobile-retro.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/mobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/mobile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/modal-list.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/modal-list.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/modal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/modal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/money-deposit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/money-deposit.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/money-exchange.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/money-exchange.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/money-withdraw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/money-withdraw.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/money.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/money.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/moon-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/moon-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/moon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/moon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/morning.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/morning.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/movie.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/movie.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/music.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/music.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/mute.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/mute.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/native-button.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/native-button.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/newspaper.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/newspaper.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/notebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/notebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/nurse.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/nurse.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/office.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/office.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/open-book.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/open-book.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/option-a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/option-a.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/option.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/option.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/options.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/options.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/orientation.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/orientation.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/out.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/out.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/outbox.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/outbox.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/package.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/package.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/padding-bottom.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/padding-bottom.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/padding-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/padding-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/padding-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/padding-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/padding-top.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/padding-top.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/padding.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/padding.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paint-roll.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paint-roll.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paintbrush.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paintbrush.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/palete.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/palete.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/palette.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/palette.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/panel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/panel.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paperclip.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paperclip.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paperplane-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paperplane-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paperplane.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paperplane.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paragraph.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paragraph.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/password.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/password.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paste.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/paste.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pause.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pause.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pencil.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pencil.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/phone-landline.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/phone-landline.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/phone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/picture.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/picture.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pie-bar-chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pie-bar-chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pie-chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pie-chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/piggy-bank-coin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/piggy-bank-coin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/piggy-bank.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/piggy-bank.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pill.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pill.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pills.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pills.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pin-post.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pin-post.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/play-circle-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/play-circle-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/play-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/play-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/play.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/play.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plug.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plug.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plus-circle-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plus-circle-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plus-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plus-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plus-minus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plus-minus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plus-square-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plus-square-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pointer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pointer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/power-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/power-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/presentation.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/presentation.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/print.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/print.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/progressbar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/progressbar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/puzzle-piece.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/puzzle-piece.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pyramid-chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/pyramid-chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/qrcode.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/qrcode.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/question-circle-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/question-circle-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/question-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/question-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/question.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/question.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/quote-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/quote-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/quote-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/quote-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/random.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/random.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/raster-lower-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/raster-lower-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/raster.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/raster.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/records.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/records.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/recycle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/recycle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/refresh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/refresh.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/reply-all.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/reply-all.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/reply.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/reply.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/resize-h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/resize-h.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/resize-v.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/resize-v.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/retweet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/retweet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rhombus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rhombus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/road-split.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/road-split.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rocket.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rocket.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rotate-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rotate-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rotate-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rotate-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rss-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rss-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rss.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/rss.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/safe-lock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/safe-lock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/safe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/safe.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/scale-unbalance.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/scale-unbalance.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/scale.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/scale.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/scatter-chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/scatter-chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/scissors.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/scissors.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/screwdriver.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/screwdriver.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/search-minus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/search-minus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/search-plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/search-plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/select.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/select.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/server.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/server.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/share-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/share-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/share.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/shield.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/shield.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/shift-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/shift-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/shift.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/shift.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/shop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/shop.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sign-in-alt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sign-in-alt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sign-in.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sign-in.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sign-out-alt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sign-out-alt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sign-out.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sign-out.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/signal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/signal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sitemap.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sitemap.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/slider.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/slider.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sliders.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sliders.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/smiley-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/smiley-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sort.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sort.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sound-disable.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sound-disable.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spark-line.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spark-line.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/specialist.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/specialist.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spinner-arc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spinner-arc.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spinner-third.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spinner-third.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spinner.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spinner.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spline-area-chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spline-area-chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spline-chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spline-chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/split-h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/split-h.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/split-v.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/split-v.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/split.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/split.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/spoon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/square-shadow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/square-shadow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star-half-left-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star-half-left-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star-half-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star-half-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star-half-right-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star-half-right-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star-half-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star-half-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/star.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/start-cog.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/start-cog.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/step-backward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/step-backward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/step-forward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/step-forward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/stethoscope.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/stethoscope.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/stock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/stock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/stop-cog.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/stop-cog.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/stop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/stop.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/stopwatch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/stopwatch.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/storage.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/storage.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/strikethrough.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/strikethrough.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/subscript.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/subscript.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/suitcase.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/suitcase.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sun-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sun-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sun-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sun-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sun-rise.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sun-rise.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/superscript.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/superscript.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sword.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/sword.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tab-a.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tab-a.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tab.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tab.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/table.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/table.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tablet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tablet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tabs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tabs.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tags.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tags.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tasks.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tasks.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/taxi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/taxi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/teeth.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/teeth.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/terminal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/terminal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/text-height.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/text-height.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/text-input.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/text-input.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/text-label.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/text-label.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/text-width.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/text-width.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/thin-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/thin-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/thumbs-down-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/thumbs-down-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/thumbs-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/thumbs-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/thumbs-up-o.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/thumbs-up-o.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/thumbs-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/thumbs-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ticket.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/ticket.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/time-backward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/time-backward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/time-forward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/time-forward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/timer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/timer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/toolbox.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/toolbox.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tools.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tools.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tooth.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/tooth.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/touch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/touch.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/train.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/train.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/trash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/trash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/trendind-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/trendind-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/trending-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/trending-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/trending-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/trending-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/trophy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/trophy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/truck.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/truck.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/twin-col-select.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/twin-col-select.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/twitter-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/twitter-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/umbrella.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/umbrella.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/underline.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/underline.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/unlink.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/unlink.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/unlock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/unlock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/upload-alt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/upload-alt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/upload.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/upload.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user-card.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user-card.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user-check.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user-check.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user-clock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user-clock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user-heart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user-heart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user-star.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user-star.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/user.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/users.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/users.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/viewport.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/viewport.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/vimeo-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/vimeo-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/vimeo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/vimeo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/volume-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/volume-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/volume-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/volume-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/volume-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/volume-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/volume.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/volume.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/wallet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/wallet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/warning.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/warning.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/workplace.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/workplace.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/wrench.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/wrench.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/youtube-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/youtube-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/youtube.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@vaadin/icons/assets/svg/youtube.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/declarative-shadow-dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/declarative-shadow-dom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/native-filesystem-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/native-filesystem-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/date-fns/docs/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/date-fns/docs/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-chromium-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-chromium-versions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-chromium-versions.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-chromium-versions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-versions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-versions.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-versions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/regexpu-core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexpu-core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/regexpu-core/rewrite-pattern.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexpu-core/rewrite-pattern.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/bin/terser.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/dist/bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/dist/bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/lib/ast.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/lib/ast.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/lib/compress/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/lib/compress/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/lib/compress/inference.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/lib/compress/inference.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/lib/compress/reduce-vars.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/lib/compress/reduce-vars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/lib/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/controller/VinorateController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/controller/VinorateController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/dto/Wine.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/dto/Wine.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/model/Globus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/model/Globus.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/model/Perekrestok.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/model/Perekrestok.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/model/Shop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/model/Shop.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/GlobusPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/GlobusPage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/PerekrestokPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/PerekrestokPage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/processor/GlobusDbProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/processor/GlobusDbProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/processor/PerekrestokDbProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/processor/PerekrestokDbProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/processor/impl/GlobusDbProcessorImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/processor/impl/GlobusDbProcessorImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/processor/impl/PerekrestokDbProcessorImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/processor/impl/PerekrestokDbProcessorImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/GlobusService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/GlobusService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/PerekrestokService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/PerekrestokService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/ShopService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/ShopService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/VivinoService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/VivinoService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/utils/browser/BrowserConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/utils/browser/BrowserConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/MainView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/AllShopsVirtualWineList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/AllShopsVirtualWineList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/Filters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/Filters.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/InfoLayout.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/InfoLayout.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/globus/GlobusVirtualWineList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/globus/GlobusVirtualWineList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/perekrestok/PerekrestokVirtualWineList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/perekrestok/PerekrestokVirtualWineList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/Vinorate-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/Vinorate-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/dump.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,18 +808,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Sergey/IdeaProjects/Vinorate/src/main/resources",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sergey/IdeaProjects/Vinorate/src/main/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Sergey\IdeaProjects\Vinorate\src\main\resources" />
@@ -148,7 +836,7 @@
       <recent name="ru.vinorate.app.web.components" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker: Compose Deployment">
+  <component name="RunManager" selected="Gradle.Vinorate [bootJar]">
     <configuration name="Vinorate [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -191,7 +879,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Vinorate [vaadinPrepareFrontend]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Vinorate [vaadinBuildFrontend]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -202,7 +890,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="vaadinPrepareFrontend" />
+            <option value="vaadinBuildFrontend" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -237,18 +925,18 @@
     </configuration>
     <list>
       <item itemvalue="Docker.docker: Compose Deployment" />
+      <item itemvalue="Gradle.Vinorate [vaadinBuildFrontend]" />
       <item itemvalue="Gradle.Vinorate [dumpDb]" />
-      <item itemvalue="Gradle.Vinorate [vaadinPrepareFrontend]" />
       <item itemvalue="Gradle.Vinorate [bootJar]" />
       <item itemvalue="Kotlin.ApplicationKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker: Compose Deployment" />
         <item itemvalue="Gradle.Vinorate [bootJar]" />
         <item itemvalue="Gradle.Vinorate [dumpDb]" />
         <item itemvalue="Kotlin.ApplicationKt" />
-        <item itemvalue="Gradle.Vinorate [vaadinPrepareFrontend]" />
+        <item itemvalue="Docker.docker: Compose Deployment" />
+        <item itemvalue="Gradle.Vinorate [vaadinBuildFrontend]" />
       </list>
     </recent_temporary>
   </component>
@@ -471,7 +1159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678017463116</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix borders on mobile version">
+      <created>1678020716458</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1678020716458</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +1192,8 @@
     <MESSAGE value="add ssl and update port" />
     <MESSAGE value="fix filters size by mobile view" />
     <MESSAGE value="add shop logo images" />
-    <option name="LAST_COMMIT_MESSAGE" value="add shop logo images" />
+    <MESSAGE value="fix borders on mobile version" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix borders on mobile version" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -513,10 +1209,15 @@
           <line>512</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../../../Program Files/BellSoft/LibericaJDK-11/lib/src.zip!/java.base/sun/security/provider/JavaKeyStore.java</url>
-          <line>667</line>
-          <option name="timeStamp" value="9" />
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/MainView.kt</url>
+          <line>110</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/MainView.kt</url>
+          <line>158</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

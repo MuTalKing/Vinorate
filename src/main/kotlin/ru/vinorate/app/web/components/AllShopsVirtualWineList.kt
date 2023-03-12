@@ -18,6 +18,8 @@ class AllShopsVirtualWineList(
             wineName = shop.name,
             wineRate = shop.rate,
             winePrice = shop.price,
+            wineColor = shop.color,
+            wineSugar = shop.sugar,
             shopLogo = shop.shopLogo
         )
         val imageAndInfoLayout = ImageAndInfoLayout()
@@ -31,7 +33,11 @@ class AllShopsVirtualWineList(
     init {
         height = "100%"
         width = "100%"
-        setItems(globusRepository.selectAllWinesFromAllShopsOrderedByRateDesc())
+        val wineList = mutableListOf<Shop>()
+        globusRepository.selectAllWinesFromAllShopsOrderedByRateDesc().forEach {
+            if (it?.sugar == "сухое" || it?.sugar == "полусухое" || it?.sugar == "брют") wineList.add(it)
+        }
+        setItems(wineList)
         setRenderer(shopCardRenderer)
     }
 

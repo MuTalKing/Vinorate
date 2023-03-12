@@ -6,5 +6,7 @@ data class Wine(
     val rate: String,
     val price: String,
     val picture: String,
-    val shopsLogo: String
+    val shopLogo: String,
+    val color: String,
+    val sugar: String
 )

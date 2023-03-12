@@ -20,11 +20,7 @@ class VivinoService(
 
     fun getVivinoRateAndInsertIntoDb(
         wineNamesList: List<String>,
-        winePricesList: List<String>,
-        winePicturesList: List<String>,
-        shop: Shop,
         dbService: DbService,
-        shopLogo: String
     ) {
         BrowserConfiguration().setUp("94.0")
         open("https://www.vivino.com")
@@ -36,15 +32,7 @@ class VivinoService(
         for (wine in lastIndexWineNames until wineNamesList.size) {
             val rateFromDb = vivinoDbService.findRateByName(wineNamesList[wine - 1])
             if (rateFromDb != null) {
-                insertIntoDB(
-                    wineName = wineNamesList[wine - 1],
-                    rate = rateFromDb,
-                    winePrice = winePricesList[wine - 1],
-                    winePicture = winePicturesList[wine - 1],
-                    shop = shop,
-                    dbService = dbService,
-                    shopLogo = shopLogo
-                )
+                dbService.updateRate(rateFromDb, wineNamesList[wine - 1])
             } else {
                 vivinoPage.apply {
                     searchField.clear()
@@ -59,14 +47,9 @@ class VivinoService(
                                 rate = `$`(Selectors.byXpath("//div[@class = 'search-results-list']/div[1]//div[@class= 'text-inline-block light average__number']")).text,
                                 vivinoDbService = vivinoDbService
                             )
-                            insertIntoDB(
-                                wineName = wineNamesList[wine - 1],
-                                rate = `$`(Selectors.byXpath("//div[@class = 'search-results-list']/div[1]//div[@class= 'text-inline-block light average__number']")).text,
-                                winePrice = winePricesList[wine - 1],
-                                winePicture = winePicturesList[wine - 1],
-                                shop = shop,
-                                dbService = dbService,
-                                shopLogo = shopLogo
+                            dbService.updateRate(
+                                `$`(Selectors.byXpath("//div[@class = 'search-results-list']/div[1]//div[@class= 'text-inline-block light average__number']")).text,
+                                wineNamesList[wine - 1]
                             )
                         } else {
                             insertIntoVivinoDB(
@@ -74,14 +57,9 @@ class VivinoService(
                                 rate = "-",
                                 vivinoDbService = vivinoDbService
                             )
-                            insertIntoDB(
-                                wineName = wineNamesList[wine - 1],
-                                rate = "-",
-                                winePrice = winePricesList[wine - 1],
-                                winePicture = winePicturesList[wine - 1],
-                                shop = shop,
-                                dbService = dbService,
-                                shopLogo = shopLogo
+                            dbService.updateRate(
+                                "-",
+                                wineNamesList[wine - 1]
                             )
                         }
                     } else {
@@ -90,14 +68,9 @@ class VivinoService(
                             rate = "-",
                             vivinoDbService = vivinoDbService
                         )
-                        insertIntoDB(
-                            wineName = wineNamesList[wine - 1],
-                            rate = "-",
-                            winePrice = winePricesList[wine - 1],
-                            winePicture = winePicturesList[wine - 1],
-                            shop = shop,
-                            dbService = dbService,
-                            shopLogo = shopLogo
+                        dbService.updateRate(
+                            "-",
+                            wineNamesList[wine - 1]
                         )
                     }
                 }
@@ -146,7 +119,9 @@ class VivinoService(
         winePicture: String,
         shop: Shop,
         dbService: DbService,
-        shopLogo: String
+        shopLogo: String,
+        color: String,
+        sugar: String
     ) {
         if (dbService.findByName(wineName) == null) {
             dbService.saveWine(
@@ -157,7 +132,9 @@ class VivinoService(
                         rate = rate,
                         price = winePrice,
                         picture = winePicture,
-                        shopsLogo = shopLogo
+                        shopLogo = shopLogo,
+                        color = color,
+                        sugar = sugar
                     ), shop::class.java
                 )
             )
@@ -172,15 +149,16 @@ class VivinoService(
         rate: String,
         vivinoDbService: VivinoDbService
     ) {
-        vivinoDbService.saveWine(
-            ModelMapper().map(
-                VivinoDbDto(
-                    id = vivinoDbService.lastId() + 1,
-                    name = wineName,
-                    rate = rate
-                ), Vivino::class.java
+        if(vivinoDbService.findRateByName(wineName) == null) {
+            vivinoDbService.saveWine(
+                ModelMapper().map(
+                    VivinoDbDto(
+                        id = vivinoDbService.lastId() + 1,
+                        name = wineName,
+                        rate = rate
+                    ), Vivino::class.java
+                )
             )
-        )
-
+        }
     }
 }

@@ -14,4 +14,6 @@ class Globus: Shop {
     override var price: String? = null
     override var picture: String? = null
     override var shopLogo: String? = null
+    override var color: String? = null
+    override var sugar: String? = null
 }

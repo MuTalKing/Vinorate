@@ -19,22 +19,31 @@ class GlobusService(val globusPage: GlobusPage) : ShopService {
 
     fun scroll() {
         for (i in 0..8) {
-            actions().keyDown(Keys.PAGE_DOWN).build().perform()
+            actions().sendKeys(Keys.PAGE_DOWN).build().perform()
             Thread.sleep(500)
         }
     }
 
-    override fun prepare() {
+    override fun prepare(page: String) {
         BrowserConfiguration().setUp("94.0")
-        open("https://online.globus.ru/catalog/alkogol/vino/krasnoe-vino/filter/atr_ru_sugar_contetnt-is-190795-or-190794/apply/")
+        open(page)
         globusPage.cookiesAccept.click()
         globusPage.confirmAgeButton.click()
         globusPage.itemsCountSelector.click()
         globusPage.items64CountOnPage.click()
     }
 
-    override fun getWineNames(): List<String> {
-        return globusPage.getWineNames()
+    override fun preparePageWithRedWines() {
+        BrowserConfiguration().setUp("94.0")
+        open("https://online.globus.ru/catalog/alkogol/vino/krasnoe-vino/")
+        globusPage.cookiesAccept.click()
+        globusPage.confirmAgeButton.click()
+        globusPage.itemsCountSelector.click()
+        globusPage.items64CountOnPage.click()
+    }
+
+    override fun getWineNames(color: String): List<String> {
+        return globusPage.getWineNames(color)
     }
 
     override fun getWinePrices(): List<String> {
@@ -43,5 +52,9 @@ class GlobusService(val globusPage: GlobusPage) : ShopService {
 
     override fun getWinePictures(): List<String> {
         return globusPage.getWinePictures()
+    }
+
+    override fun getWineSugar(): List<String> {
+        return globusPage.getWineSugar()
     }
 }

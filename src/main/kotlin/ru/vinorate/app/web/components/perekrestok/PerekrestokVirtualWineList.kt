@@ -21,6 +21,8 @@ class PerekrestokVirtualWineList(
             wineName = perekrestok.name,
             wineRate = perekrestok.rate,
             winePrice = perekrestok.price,
+            wineColor = perekrestok.color,
+            wineSugar = perekrestok.sugar,
             shopLogo = perekrestok.shopLogo
         )
         val imageAndInfoLayout = ImageAndInfoLayout()

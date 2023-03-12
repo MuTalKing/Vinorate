@@ -21,6 +21,8 @@ class GlobusVirtualWineList(
             wineName = globus.name,
             wineRate = globus.rate,
             winePrice = globus.price,
+            wineColor = globus.color,
+            wineSugar = globus.sugar,
             shopLogo = globus.shopLogo
         )
         val imageAndInfoLayout = ImageAndInfoLayout()

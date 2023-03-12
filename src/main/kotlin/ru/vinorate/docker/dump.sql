@@ -30,7 +30,9 @@ CREATE TABLE public.globus (
     rate character varying(150),
     price character varying(150),
     picture character varying(150),
-    shop_logo character varying(150)
+    shop_logo character varying(150),
+    color character varying(150),
+    sugar character varying(150)
 );
 
 
@@ -68,7 +70,9 @@ CREATE TABLE public.perekrestok (
     rate character varying(150),
     price character varying(150),
     picture character varying(150),
-    shop_logo character varying(150)
+    shop_logo character varying(150),
+    color character varying(150),
+    sugar character varying(150)
 );
 
 
@@ -156,495 +160,601 @@ ALTER TABLE ONLY public.vivino ALTER COLUMN id SET DEFAULT nextval('public.vivin
 -- Data for Name: globus; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.globus (id, name, rate, price, picture, shop_logo) FROM stdin;
-2	Zinfandel 	4,1	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/981/1559914.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-3	Mucho Mas 	4,2	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0eb/593619.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-5	Espiritu de Chile Gran Reserva Merlot 	3,9	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/710/241921.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-6	Astrale 	4,1	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/975/191883.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-7	Bravo Trade Mucho Mas 	4,2	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f3/363182.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-8	Chateau Tour Verite Bordeaux 	3,3	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/45d/232008.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-9	Don Batisto Rioja 	3,6	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/240/260354.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-10	Tbilisi Peak Саперави 	3,6	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fbf/144256.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-11	Don Batisto Rioja Cosecha 	3,6	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/581/164316.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-12	Chateau Le Rimensac 	3,6	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fce/232009.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-13	Chateau de Cach Haut-Medoc 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/256/344699.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-14	Chateau Les Nauds Bordeaux Merlot 	3,6	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/659/515844.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-15	El Jamon Tinto 	4,0	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/43d/1873469.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-16	Chateau Haut Fontenelle Bordeaux 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/692/233718.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-17	Butcher's Cut Malbec 	3,6	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a44/1288883.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-18	Care Tinto Roble 	3,6	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7aa/781048.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-19	Ignacio Marin Castillo Peracense Crianza 	3,5	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/628/959595.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-20	Conde Otinano Tinto Rioja 	3,4	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f50/758909.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-21	Silverboom Black Label Cabernet Sauvignon 	3,8	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ffb/1559912.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-22	Golubitskoe Estate Cabernet Sauvignon 	3,8	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/179/410992.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-23	Flor De La Mar Reserva 	3,8	854,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/838/496151.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-24	Fanagoria Cru Lermont Cabernet Sauvignon 	3,8	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/854/1092833.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-26	Pagos Hispanos Tempranillo 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eb2/970715.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-27	Bouchard Aine & Fils Cotes-du-Rhone 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4de/578459.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-28	Crystal Bay Shiraz 	3,3	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d49/prd_668329000.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-29	Solarita Chianti 	3,3	869,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c87/176673.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-30	Lenz Moser Zweigelt 	3,9	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0f7/365987.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-31	El Pescaito Bobal Cabernet Sauvignon 	3,4	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/718/403724.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-32	Quinta das Amoras 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5f1/496084.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-33	Tbilisi Peak Пиросмани 	4,0	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3a7/223569.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-34	Medoc Chateau Bois du Fil 	3,5	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/afa/378908.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-35	Beiral Vineyards Escolha Beira Atlantico 	4,0	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/005/338782.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-36	Barista Pinotage 	4,1	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0d3/379126.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-37	Ca'Delle Rose Bardolino Classico 	3,6	689,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5e4/225933.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-38	Дербент Кара-Койсу 	3,2	219,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fa8/379013.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-39	Глобус Вита Para Celsus Tempranillo 	3,1	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/76b/404061.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-40	Глобус Corte Vinaia Merlot 	-	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6e3/455377.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-41	Глобус Corte Vinaia Sangiovese 	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea1/455381.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-42	Delampa Monastrell 	4,0	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2ca/650544.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-43	Глобус Пиросмани 	3,8	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/39d/2404934.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-44	Глобус Саперави 	3,5	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2d4/2404932.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-45	Matsu El Picaro 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b9d/206632.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-46	Fassini Chianti Rizerva 	3,9	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/983/164351.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-47	Castillo Santa Barbara Crianza 	3,5	359,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/177/201467.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-48	Piccini Chianti 	3,3	959,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/58b/353246.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-49	Majano Крианца 	-	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b04/1900192.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-50	Agora Бастардо 	3,5	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/63d/2018356.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-52	Don Simon Tinto 	3,0	419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/54a/139513.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-53	Novecento23 Rosso Veneto 	3,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ecf/225936.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-54	Masi CampoFiorin 	3,7	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/df4/357568.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-55	Don Batisto Rioja Crianza 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d61/164317.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-56	Fetzer Valley Oaks Zinfandel 	4,0	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/274/1145310.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-112	Chianti Riserva 	3,8	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/972/236314.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-58	Sun Gate Red Zinfandel 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/016/577958.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-59	Villa Fassini Sangiovese-Cabernet S. Toscana 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a73/322412.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-60	Chateau Pericou Bordeaux 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/39e/176641.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-61	Le Grand Noir Pinot Noir 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f01/358823.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-62	Gaetano Montepulciano D'abruzzo 	3,3	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8ac/627444.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-63	Tbilisi Peak Мукузани 	4,0	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/534/223578.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-64	Мысхако Кюве 	3,7	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7b4/623804.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-65	Palazzo Nobile Chianti Riserva 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6a5/293172.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-66	San Valentin Garnacha Torres 	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/276/176681.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-67	KG Gries Lagrein 	3,9	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d05/455355.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-68	Castelvecchio Barolo 	3,9	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8f2/228789.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-69	Clos Gebrat Priorat DOCa Crianza 	3,9	2 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b5c/2535474.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-70	Escal Roja Crianza 	3,9	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/182/496072.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-71	Castillo de Clavijo Reserva 	4,0	969,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1c7/236318.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-72	Крымвинторг Мерло 	2,5	329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/642/277370.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-73	Don Ramon 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/13e/291170.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-74	Terras do Po Reserva 	3,8	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8fa/201510.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-76	Mas Momentos Tempranillo 	3,7	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a49/1562161.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-77	El Circo Acrobata Garnacha 	3,4	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5d5/773984.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-78	Brunello di Montalcino Territori Vocati 	-	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cad/496222.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-79	Nuviana Tempranillo Cabernet Sauvignon 	3,6	464,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b64/369792.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-80	Astrale Special Edition 	4,2	1 279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3b1/1181127.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-81	The Collection The Bean Coffee Pinotage 	3,8	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/623/433290.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-82	Silverboom Shiraz-Merlot 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8fc/1559916.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-83	Garnachas de Espana La Garnacha Olvidada de Aragon 	3,7	1 669,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/055/176666.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-84	Observer Malbek 	3,5	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6a4/387032.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-85	Castillo Santa Barbara Gran Reserva 	3,7	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/383/260350.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-86	Palazzo Nobile Chianti Classico Riserva 	3,9	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/65a/369808.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-87	Antico Portico Primitivo Salento 	4,1	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a15/225945.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-88	Броjаница Вранац 	3,7	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/645/312975.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-89	Majano Темпранильо Робле 	4,0	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/302/1900187.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-90	Ignacio Marin Castillo de Embid Crianza 	4,0	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d4e/959598.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-91	Tussock Jumper Malbec 	3,8	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/de7/310812.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-92	Louis Eschenauer Medoc 	3,8	1 429,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4f8/198372.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-93	Canada Tempranillo 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0f1/156976.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-95	Reserva da Familia 	4,1	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/123/2337386.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-96	Pirineos Roble Somontano 14 % алк., Испания, 0,75 л	3,8	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/024/461551.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-97	Inkerman Каберне Гранд Резерв 	4,0	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/74f/607370.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-98	Solarita Nero D'Avola Sicilia 	3,9	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea8/1092848.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-99	Кубань-Вина Тамани Мерло 	2,8	284,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f5/766879.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-100	Haussmann Merlot 	3,5	384,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4f0/3118619.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-101	Chateau Brehat 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/129/518627.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-102	Castelvecchio Barbera D'asti 	3,5	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/98f/228793.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-103	Prototype Pinot Noir 	3,7	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/35d/3355228.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-104	Каберне 	3,5	199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f10/535238.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-105	Zarafa Pinotage 	3,5	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/85a/562894.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-106	Tavridia Бастардо Каберне 	3,5	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8bf/729946.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-107	Fanagoria Авторское Каберне-Мерло 	3,5	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b9f/1092836.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-108	Palavani Саперави Кверви 	4,0	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9a9/363296.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-109	Arena de Oro Tempranillo 	3,1	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d46/173976.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-110	Flor De La Mar 	4,0	654,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/373/496149.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-111	Askaneli Brothers Saperavi Premium 	4,0	1 339,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/549/246831.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-115	Beronia Reserva 	4,0	2 229,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/083/1241617.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-116	Cape Zebra Pinotage 	3,5	619,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c2/1092843.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-117	Vylyan Macska 	3,5	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/df0/496019.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-118	Morgado da Vila Vinhao 	3,2	844,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a4c/198433.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-119	Torres Altos Ibericos 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b92/176642.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-120	Ciconia Touriga Nacional 	3,6	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0c7/252127.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-121	Eventorosso 	3,8	524,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/72c/435158.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-122	Observer Syrah 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c1/338714.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-123	Domaine bel Avenir Beaujolais-Villages 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/542/837766.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-124	Vicente Gandia Finca del mar Tempranillo Crianza 	3,5	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e55/259428.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-125	Orion Salento Primitivo 	3,5	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5ab/576363.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-126	Sonovino Россо 	3,3	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/161/1900315.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-127	Pierre Dumont Bourgogne Pinot Noir 	4,0	2 659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e4b/2270279.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-128	Peccatore Douro 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/02d/325231.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-129	Finca Del Sol Vino de Mesa 	3,9	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/41e/176643.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-130	Inkerman 	3,8	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/84d/607369.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-131	Balaklava Loco Cimbal I Reserve Repin 	3,8	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b3c/946986.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-132	Chevalier Alexis Lichine Chateau Charrier 	3,6	1 489,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e42/356702.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-133	Цард Саперави 	3,9	439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b5b/775550.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-135	Majano Темпранильо 	4,0	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/346/1900177.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-136	Millaman Estate Reserve 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dec/539578.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-137	Golubitskoe Estate Мерло 	3,6	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc1/607372.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-138	Ballaro Primitivo Salento 	4,2	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/603/545206.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-139	Ignacio Marin Castillo Peracense Reserva 	3,5	584,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/855/959599.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-140	Premium 1904 Graciano 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/044/496067.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-141	Nero D`Avola Merlot 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/146/1509346.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-142	Ca'Delle Rose Valpolicella 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2cf/225932.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-143	Calderona Joven 	3,3	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/66d/970712.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-144	by Haussmann Cabernet Sauvignon 	3,4	384,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b04/3118615.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-145	Grona Барбера Д'асти 	3,5	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cfb/1900162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-146	Gaetano Sangiovese Puglia 	3,6	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/61b/627621.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-147	La Piuma Монтепульч 	3,4	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff4/1925588.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-148	San Valentin Tempranillo 14,5 % алк., Испания, 0,75 л	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/692/3402884.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-149	Ramon Bilbao Rioja Reserva 	3,9	2 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/29f/410984.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-150	Stellenbosch Hills 1707 Reserve 	4,1	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff1/576017.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-151	Solarita Montepulciano d'Abruzzo 	3,5	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/587/206083.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-152	Villa Krim Cabernet 	3,2	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c49/3431412.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-153	Castillo Santa Barbara Reserva 	3,6	419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9e5/204488.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-154	Territorio 	4,1	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5b5/598026.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-155	Clemente VII Chianti Classico Riserva 	3,8	2 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af0/267681.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-156	Inkerman Рубин Античный 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cb7/700735.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-157	Excelsis 	3,7	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e38/3176706.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-158	Stobi Makedonsko Crveno 	4,1	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c3/174002.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-160	Beiral Vineyards 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/911/766690.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-161	Cuvee de la Guinchule Saint-Amour 	3,9	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/403/837767.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-162	Viu Manent Reserva Malbec 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dce/539654.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-163	Villa Antinori Toscana Rosso 	3,8	2 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5df/435141.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-164	Barone Ricasoli Chianti 	3,7	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/90b/576365.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-165	Kindzmarauli Marani Saperavi 	3,8	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4ea/650532.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-166	Castillo de Clavijo Crianza 	3,6	719,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff3/236317.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-167	Campero Карменер 	3,7	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6db/2561491.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-168	Palazzo Nobile Valpolicella 	3,3	669,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e8/176683.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-169	Valserrano Crianza Rioja 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2bf/1024504.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-171	Ханджлури Сувенирная серия Саперави 	-	974,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e90/289894.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-172	Mas Momentos Syrah 	-	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/94e/1026178.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-173	Le Grand Noir Cabernet Sauvignon 	4,1	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eaf/641638.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-174	Ведерниковъ Губернаторское 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c22/229174.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-175	Sazyk Dere Мерло марочное 	3,1	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fa5/262092.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-176	Trapiche Malbec 	3,4	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f57/496127.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-177	Pradorey Origen Roble 	3,5	1 559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b35/1509350.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-178	Chacabuco Malbec 	-	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c8f/461556.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-179	Doudet-Naudin Pinot Noir 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/013/2270315.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-181	Astrale Rosso 	4,1	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/76d/206628.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-182	Fanagoria 100 оттенков красного Каберне 	4,0	1 449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce2/1092837.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-183	Los Condes Gran Reserva 	3,5	1 139,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/020/863865.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-184	La Piuma Санджовезе 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af6/1900303.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-185	Tavernello 	3,2	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8b7/577967.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-186	Vinha Do Fava 	4,0	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2db/198440.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-187	Clos Gebrat Priorat 	4,0	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/20d/244640.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-188	Il Sarone Россо 	3,6	744,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/02e/1900311.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-189	Michel Дорнфельдер 	3,6	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/553/3400287.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-190	Tavridia Каберне 	2,9	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea9/201382.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-191	Barkan Classic Каберне Совиньон 	3,2	1 389,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/094/397553.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-192	G7 Carmenere 	3,4	589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d24/759033.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-193	Inkerman Saperavi 	3,6	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/84d/564163.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-194	Salida Tannat 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/336/317550.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-195	Monfort Village 	3,4	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d70/589987.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-196	Mora Vista Malbec 	3,1	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a35/2434271.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-197	Ballaro Nero di Troia 	4,2	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc3/512706.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-198	Les Jamelles Syrah 	3,8	1 139,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ae4/538734.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-200	Matsu El Recio 	4,1	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f7b/206633.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-202	Observer Carmenere 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/10f/338713.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-203	Chateau Tamagne Fleurs du Sud Rouge de Tamagne 	3,4	331,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/00e/436153.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-204		3,4	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc2/3176653.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-205	Protos Roble Ribera Duero 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eee/520975.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-206	Batasiolo Barolo 	4,0	4 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1b2/289756.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-207	Bastardo 	3,8	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2f6/1925608.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-208	Don Simon Cabernet Sauvignon 	3,4	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/79a/1171433.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-209	Conti Zecca Zinfandel 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e95/607397.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-210	Крымский погребок Бастардо 	3,1	329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/08f/736777.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-211	Capellana Tempranilo 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/07e/562420.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-212	Inkerman Каберне 	3,6	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/191/3427829.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-213	Cellier des Dauphins Prestige 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/98c/226971.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-214	Stobi Vranec Vilarov 	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d3f/173999.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-215	Mas Momentos Malbec 	3,6	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3d4/970713.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-216	Valserrano Reserva Rioja 	4,0	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/620/1024508.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-217	Joy Тинто 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/914/3431459.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-218	Villa Krim Merlot 	3,2	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/661/3431701.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-219	Altissimo Chianti Classico 	4,0	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b31/696697.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-221	Loving Vincent Des Gracieuses Vignes Rouge 13,5 % алк., Франция, 0,75 л	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ed1/1900251.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-222	Tour de Mandelotte Medoc 	3,6	1 339,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/765/235850.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-223	Podere Montepulciano D'Abruzzo 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0aa/289734.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-224	Valserrano Mazuelo Rioja 	4,1	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e09/1024510.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-225	Traversa Tannat Uruguay 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ac1/1900156.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-226	Alma River Пино Нуар 	3,8	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/35c/1925673.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-201	Tarapaca Carmenere 	3,7	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6c4/539656.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-229	Vipra Rossa Bigi 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/440/895985.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-230	Quinta da Mimosa Palmela DOC 	4,0	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/83d/3400288.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-231	J.P. Chenet Cabernet-Syrah 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/19a/383884.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-232	KG Gries Pinot Nero Riserva 	3,6	2 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d7b/455365.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-233	Palabra de Caballero Tempranillo La Mancha 	3,1	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e1/206658.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-234	S!gnature Lesquerde 	-	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c0/518870.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-235	Antano Tempranillo 	3,3	249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a8a/3431023.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-236	Chateau des Grands Moines 	3,6	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ca9/232007.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-237	Famille Sadel Côtes Du Rhône 	4,0	1 369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1bc/317685.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-239	Vol I Dol Negre сухое 	3,3	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/62b/717959.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-240	Ханджлури Пиросмани 	-	674,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a77/174025.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-241	Sella & Mosca I Piani Rosso 	3,3	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/895/401664.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-242	Santa Hortensia Merlot 	3,6	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a08/241918.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-243	Vylyan Ordog 	3,6	484,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/83a/496020.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-244	Marani Saperavi 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4ca/1900215.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-245	Muenzenrieder Neusiedlersee 	3,5	759,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/74e/1925385.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-246	Redwood Vineyards California Pinot Noir 	3,9	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/422/520961.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-247	Monasterio de las Viñas Reserva Carinena 	3,7	1 149,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/814/246749.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-248	Fleur de la Reine 	3,4	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8c2/1900265.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-249	Ciconia 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f6f/191999.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-250	Nobilomo Raboso Veneto 	3,6	519,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/914/636575.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-251	Az Abrau Madrasa 	3,6	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b7e/3399462.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-252	Make It Big Pinot Noir 	3,4	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/28a/prd_668363004.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-253	Conti Antico 	4,2	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/10b/2270303.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-254	Fado Reserva 	3,9	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f17/2270319.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-255	Bad Brothers 	3,8	589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/083/3269636.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-256	Colle dei Cipressi Montepulciano D'Abruzzo 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/64f/317539.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-257	Flor De La Mar Castelao 	4,0	654,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e39/3400289.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-258	Frescobaldi Remole Toscana 	3,6	839,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/657/318490.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-259	Gandin Filare Nero 	-	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/433/2577660.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-260	Chateau les Eyquem Hautes Graves Margaux 	3,9	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1dd/515840.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-261	Territori Vocati Sangiovese 	-	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c21/1559781.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-262	Brolio Chianti Classico 	3,7	2 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/399/576360.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-263	Мысхако Pinot Noir Reserve 	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/89d/953061.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-264	Venta Real Резерва 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/290/1900173.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-266	Радеда 	-	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cff/236182.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-267	Fattolia del Cerro Nobile di Montepulciano 	3,7	2 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/16c/289713.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-268	Le Bel Tout Costieres de Nimes 	3,7	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e63/1900083.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-269	Acharuli Саперави 	3,5	134,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f97/1900275.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-270	Броjаница Каберне Совиньон 	-	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/491/973688.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-271	Sazyk Dere Каберне марочное 	3,5	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1b7/262090.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-272	Good Steak Мерло 	3,2	124,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fd4/1766369.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-274	Casa Castellano Garnacha 	4,1	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/634/496066.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-273	Грузвинпром Саперави 	-	734,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/79d/1900232.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-275	el Gordo Garnacha 	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea3/1562165.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-276	Beefsteak Club Malbec 	3,7	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e63/3431024.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-277	Sol De Chile Cabernet Sauvignon Reserva 	3,3	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/354/3431586.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-278	La Croix du Pin Merlot 	3,3	759,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/518/3405428.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-279	Chateau Vieux Duc Montagne Saint-Emilion 	-	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/34d/317684.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-280	Marques de Abadia Rioja Crianza 	3,6	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/286/246751.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-281	Виноград Don Simon Tempranillo 	3,0	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e24/1171662.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-282	Gran Reserva 	4,0	674,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fd9/3176708.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-228	Prototype Zinfandel 	3,8	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e21/3422433.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-285	Observer Cabernet Sauvignon - Merlot 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7ca/323260.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-286	Rocca Alata Valpolicella Superiore 	3,3	1 339,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/209/763103.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-287	La Maridelle Pays D'OC Cabernet Sauvignon 	3,0	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a68/435201.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-288	Finca el Rejoneo Crianza 	3,3	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4e6/387021.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-289	Высокий берег Каберне Совиньон 	3,4	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a76/824978.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-290	Di Caspico Special Edition 	3,9	429,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/091/1171133.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-291	Muelle Tempranillo Syrah сухое 	3,7	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/54b/590005.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-293	Castelvecchio Barbera D'alba 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/897/228791.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-294	Codici Россо 	4,1	524,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/516/1900309.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-295	Cuatro Ojos Cabernet Sauvignon 	3,8	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/490/338711.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-296	Il Poggio dei Vigneti Nero d'Avola Sicilia 	2,7	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1ed/650530.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-297	Ramon Bilbao Crianza Rioha 	3,9	1 269,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b5f/287190.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-298	Matsu El Viego 	3,9	4 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/829/260353.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-299	Marchesi di Barolo Ruvei 	3,8	2 639,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/01e/236423.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-300	Barone Montalto Неро 	4,0	684,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/893/1900300.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-301	Cimmeria Бастардо Белой Скалы 	3,3	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ded/508787.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-302	Inkerman Шато Руж 	3,2	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d21/3427830.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-303	Chateau Tamagne Cabernet 	3,3	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b24/436163.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-304	Trivento Malbec Reserve 	3,6	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/edd/360591.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-305	Bricco Rosso Suagna Langhe Rosso 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6ca/438692.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-306	Chateau D'Arvigny Haut-Médoc 	3,9	2 149,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5d3/291195.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-307	Moulin de Gassac Classic 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2ed/3269626.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-308	Faustino Crianza Rioja 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/948/353261.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-309	Taboadella Villae 	4,0	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/80c/3399460.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-310	Murviedro Reserva 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/86b/495939.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-311	Big Mouth 	3,0	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/99f/1814089.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-312	Antico Portico Montepulciano d'Abruzzo 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/637/225941.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-314	Tres Amigos 	3,5	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/757/780384.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-315	Gran Cita Del Sol Tempranillo 	3,4	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce0/282565.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-316	Fanagoria Style Merlot 	3,6	509,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/577/1092821.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-317	Чегем 	-	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5c3/236181.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-319	Грузвинпром Мукузани 	4,0	944,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/749/1900230.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-320	Domini Veneti Valpolicella Ripasso la Casetta 	4,2	2 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f7c/366452.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-321	Авторское Саперави 	3,5	249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c7e/1766372.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-322	Trenel Beaujolais Villages 	3,5	1 479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6aa/593636.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-323	Castello Banfi Brunello di Montalcino 	4,2	5 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e26/665044.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-324	The Ned Pinot Noir 	3,7	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/543/3430259.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-325	Inkerman Каберне Резерв 	4,0	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d15/700796.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-326	Tussock Jumper Tempranillo 	3,5	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fb3/310813.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-327	Chateau Tamagne Krasnostop 	3,5	454,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b8f/436164.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-328	Donna Marzia Salento 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/651/614586.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-329	Yerevan Areni Karmrahyut 	3,8	589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cdc/379245.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-330	Muenzenrieder Heideoden classic 	-	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ccf/1925383.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-331	Авторское Каберне Совиньон 	3,8	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5fe/1766373.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-332	Marques de Villanueva Tempranillo Carinena 	3,4	439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d18/139572.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-333	Calderona Crianza 	3,6	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cf9/1562169.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-334	Tarapaca Cabernet Sauvignon 	3,9	789,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e0c/539658.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-335	Art.Terra Alentejo 	-	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0cd/1785087.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-336	Simonsig Stellenbosch 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bbe/575758.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-337	Col di Sasso Toscana 	3,6	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/362/369809.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-284	Campo Viejo Tempranillo Rioja 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c1c/217819.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-340	Амра 	-	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/56c/236255.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-341	Quinta Nova Reserva 	4,1	2 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/680/3399464.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-342	Jean-Pierre Moueix Pomerol 	3,9	4 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af7/649207.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-383	Beaujolais-Villages 	3,7	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/116/3269680.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-343	Rioja Aldea Real Tempranillo 	2,9	689,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/86f/1559932.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-344	KG Gries Lagrein Riserva 	4,1	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6e8/455359.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-345	Cambridge Crossing Shiraz 2018 	3,7	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a02/584717.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-346	Chateau Labarrade Malbec 	3,5	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d3d/575761.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-347	Cavino Ionos 	3,8	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a93/246722.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-348	Сихарули Мукузани 	3,8	669,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7ef/206197.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-349	Palazzo Nobile Chianti Classico 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9a7/244636.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-350	Sancho Garces Rioja 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2c9/363054.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-351	Domaine des Chanssaud Chateauneuf du Pape 	4,2	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5e2/763407.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-352	Balance Pinotage Shiraz 	3,5	589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5b5/1109845.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-353	Butterfly Ridge Shiraz Cabernet 	3,7	839,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/898/758908.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-354	Casa de la Ermita Seleccion Rey Limitada 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/873/3420299.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-355	The Wedge Shiraz Mourvedre Viognier 	3,8	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d62/3269638.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-357	Vol d'Anima de Raimat 	3,7	1 489,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e99/363295.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-358	Cuatro Ojos Merlot 	3,7	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce5/323259.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-359	Криница Rivage 	4,1	3 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9d8/3430258.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-360	Vina Albali Темпранильо Шираз 	3,3	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a53/1900198.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-361	Clemente VII Chianti Classico 	3,8	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/01b/1900157.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-362	Chateau Pessan Saint-Hilaire Graves 	3,7	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5ec/733723.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-363	JP. Chenet Cabernet-Syrah 	3,4	279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a7a/1509355.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-364	Frog's Return Cite de Carcassonne 	3,9	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/09d/410988.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-365	Высокий берег Мерло 	3,5	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/05d/775601.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-366	Fairview Пинотаж 	3,4	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/79d/2777330.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-367	Sol De Chile Carmenere 	3,2	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b1c/3431583.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-368	Escal Roja Tempranillo 	3,2	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/472/496069.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-369	Domaine d'Andezon Signargues Cotes-du-Rhone Villages 	3,7	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4cc/246614.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-370	Ca'Delle Rose Pinot Nero Trevenezie IGP 	3,8	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c51/438686.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-371	1000 Stories Zinfandel 	4,1	3 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0c1/593763.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-372	Marques de Caceres Reserva Rioja 	3,9	2 879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e42/225795.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-373	Proximo Риоха 	3,7	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7f5/1145301.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-374	Cellier des Dauphins Cotes du Rhone Prestige 	3,4	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af3/403725.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-375	Chateau de Landure Minervois 	3,6	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a68/1900225.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-376	Belagaio Primario 	-	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8ce/3431380.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-377	Каспийская коллекция 	3,4	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ba3/1900195.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-378	Gustave Lorentz Pinot Noir 	3,6	2 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b01/3355225.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-379	Villa de Corgos Reserva Bairrada 	4,1	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/620/338781.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-380	Torres Coronas Tempranillo 	3,5	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/85c/260348.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-381	Machiavellico Toscana 	3,9	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d65/2270322.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-382	Momentum Solare Grenache Syrah Mourvedre 	3,7	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f11/3436952.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-384	El Sotillo 	2,3	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c5d/3092594.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-385	Faina 	3,1	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/664/317648.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-386	Solarita Chianti Riserva 	3,6	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/480/176674.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-388	Crudo Nero d'Avola Cabernet Sauvignon 	3,9	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/56b/613612.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-389	Bravo Trade Саперави 	-	919,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6c4/1509294.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-390	Premium 1904 Tempranillo Syrah 	3,7	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/43d/496068.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-391	Freschello Rosso 	3,6	419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3f4/1647368.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-392	Castillo de Fuendejalon Crianza 	3,8	1 129,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ad7/520962.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-339	Mildiani Пиросмани 	4,0	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0f6/512811.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-394	Marques de Aldeanueva Crianza Rioja 	3,7	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c85/1509347.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-395	Hoya De Cadenas Reserva Tempranillo 	3,4	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cdd/135065.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-396	Castelvecchio Barbaresco 	3,4	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bc7/228790.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-398	Valserrano Finca Monteviejo 	4,3	2 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/776/1024503.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-399	Chateau Le Faure Bordeaux 	3,4	1 349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c22/1170999.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-400	La Piuma Монтепульчано 	3,4	624,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ccf/1900307.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-401	Tussock Jumper Pinot Noir 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b46/416166.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-402	Venta Real Крианца 	3,4	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0b9/1900174.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-403	Sol De Chile Syrah Reserva 	3,5	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/49d/3431585.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-404	Sankt Anna Dornfelder Halbtrocken 	3,9	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af0/676593.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-405	Vinedos del Villar Tempranillo 	3,8	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/805/3420303.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-406	Prototype Cabernet Sauvignon 	3,7	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c75/3422434.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-407	Fassini Montepulciano D'abruzzo 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/770/164350.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-408	Gurpegui Garnacha 	3,7	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d06/3418756.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-409	Jardin Fleury Syrah 	3,7	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/175/780383.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-410	Vinum Nobile Каберне 	3,3	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4fb/512707.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-411	Vivo Greto 	3,2	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/954/1900274.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-413	Vicente Gandia Finca del mar Tempranillo 	3,5	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3ed/763107.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-414	Maison du Soleil Cabernet Sauvignon 	3,4	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c46/685533.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-415	Flor Morena Tempranillo 	3,4	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/375/1783769.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-416	Estaciones Tempranillo 	3,4	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/34f/1900254.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-417	Castelvecchio Nebbiolo D'alba 	3,4	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e2/228792.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-418	Antico Portico Aglianico Beneventano 	3,7	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a8d/225929.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-419	Fanagoria 100 оттенков красного Саперави 	4,1	1 449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/281/1092838.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-420	Territori Vocati Chianti 	3,5	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b16/225931.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-421	Gran Cita Del Sol Crianza 	3,7	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/14d/144223.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-422	Tresors de Loire Saumur Champigny 	3,6	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/837/496081.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-423	Arnaldo-Caprai Montefalco Rosso 	3,7	2 229,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/db6/606036.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-424	Bravo Trade Castillo De Ayud 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/740/1509297.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-425	Bertinga Сасси Кьюзи 	4,1	2 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fde/2777331.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-426	Maison Givas №3 Bordeaux 	3,6	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/265/317686.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-427	Ballaro Nerello Mascalese 	4,0	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/885/512704.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-428	el Gordo Tempranillo 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/556/1562167.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-429	Buttafuoco 	4,0	1 269,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/27e/435200.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-430	Chateau Tour Verite 	3,3	1 449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/85f/806163.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-431	ординарное Mamiko Саперави 	3,7	519,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a2f/1460384.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-432	E Arte Puglia Rosso 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/609/2270321.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-433	Les Halles Cotes de Gascogne 	3,9	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a37/3420306.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-434	M.Chapoutier Luberon La Ciboise 	3,6	1 419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f0b/576381.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-435	Gerardo Cesari Justo 	3,6	1 319,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e29/905499.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-437	Marques de Riscal Gran Reserva 	4,2	6 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/411/562461.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-438	Faustino VII Tempranillo 	4,2	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af6/357455.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-440	Askaneli Brothers Ахашени Красное полусладкое 12 % алк., Грузия, 0,75 л	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9cb/1766378.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-441	Gabriel Meffre Châteauneuf-du-Pape Laurus 	3,7	5 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea9/289689.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-442	Dance Del Mar 	3,7	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/928/2270323.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-443	Domaine de Tara Hautes Pierres Ventoux 	3,8	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4e3/461555.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-444	Bierzo Luna Beberide 	3,4	939,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a35/2270316.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-445	Care Tinto Sobre Lias 	3,8	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e79/2810845.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-446	Bodegas Emilio Moro Finca Resalso 	3,8	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a0d/291191.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-447	Murviedro Bobal Roble 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/49f/325236.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-436	Lolita 	3,9	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cfa/789084.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-449	Vigne-Lourac Duras Cabernet 	4,0	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a0a/924799.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-450	Carson's Cabernet-Sauvignon Shiraz 	3,6	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a82/780358.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-452	Muelle Tempranillo Gran Seleccion сухое 	3,9	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/18d/590007.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-453	Arrivederci полусухое 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc5/606027.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-454	Chateau Haut Rocher 	4,1	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e3/515842.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-455	Джейран Матраса 	3,4	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/182/401217.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-456	Криница Arena 	4,0	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/099/3430257.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-457	Саперави 	3,4	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/55b/201371.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-458	Marques de Caceres Crianza Rioja 	3,6	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fa5/763401.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-459	Domus Vini Refosco 	3,5	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/82e/229660.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-460	Lirico Bobal Cabernet Sauvignon 	3,1	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fc1/139574.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-461	Sobremonte Tempranillo 	3,3	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/887/201496.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-462	Chateau Barre Gentillot Graves de Vayres 	3,9	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a3d/515846.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-463	Талавари Саперави 	3,7	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/58b/1836553.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-464	Muenzenrieder Pinot Noir 	3,6	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/929/1925387.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-465	Garnachas de Espana La Garnatxa Fosca del Priorat 	3,8	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5a7/324816.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-466	Sol De Chile Syrah Merlot 	3,4	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f4/1092845.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-467	Vylyan Hegy 	3,7	484,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/72f/939093.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-468	Сихарули Саперави 	3,7	274,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/60e/1814090.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-469	Stobi Vranec 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e40/308260.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-470	G7 Cabernet Sauvignon 	3,2	344,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c56/1766375.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-471	Vylyan Villany Cabernet Franc 	3,6	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/22d/496018.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-472	Art.Terra Amphora 	-	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/787/1785091.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-474	Композиция №1 	-	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/84e/1925583.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-475	el Gordo Syrah 	3,6	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c34/1562171.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-476	Gurpegui Tempranillo 	3,0	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f55/3418753.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-477	Belagaio 5Cento 	-	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/afc/3431379.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-478	Sankt Anna Spatburgunder Pfalz 	3,5	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/260/381536.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-479	S!gnature Caramany 	-	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6fe/520882.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-480	Bouchard Aine & Fils Les Vendangeurs Bourgogne Pinot Noir 	3,4	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1e0/314401.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-481	Domaine d'Andezon Cotes-Du-Rhone 	3,7	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5e5/379132.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-482	Conde Otinano Reserva Rioja 	3,7	1 389,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9c6/322439.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-483	Frescobaldi di Castiglioni 	4,0	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce2/3418757.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-484	Castelvecchio Grignolino D'asti 	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/85e/228794.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-485	Villa de Corgos Bairrada 	3,8	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0dd/342162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-486	Rioja Mil Hojas Tempranillo 	3,1	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/897/1784318.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-487	Tussock Jumper Touriga Nacional 	3,6	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/26a/575760.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-488	Chateau Grand Moulinet 	3,9	2 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/324/3400276.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-4	Chateau Barre Gentillot Graves De Vayres 	3,9	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a35/970560.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-25	Antico Portico Syrah Terre Siciliane 	4,1	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a26/225930.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-51	Tour de Mandelotte Bordeaux 	3,7	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/072/139533.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-57	Солнечная Долина Пти Вердо 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/458/868150.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-75	Ciconia The Reserva Blend 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/970/252128.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-94	Santa Hortensia Carmenere-Cabernet Sauvignon 	3,1	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff0/241917.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-113	Chateau Tamagne Saperavi 	4,0	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f50/436162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-114	Aretino Tipici Chianti Riserva 	3,7	769,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e45/164248.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-134	Venta Real Гран Резерва 	3,4	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3fd/1925670.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-159	Santa Hortensia Cabernet Sauvignon 	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a90/173974.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-180	Fassini Chianti 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0ac/225862.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-439	ликёрное Oloroso Aurora Jerez-Xeres-Sherry сухое 17,5 % алк., Испания,...	4,2	2 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e6e/299067.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-448	Ionos Cabernet S.-Merlot 	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1ea/3430253.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-199	Монастырская трапеза 	3,3	249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff2/378906.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-220	Redwood Cabernet Sauvignon 	3,3	619,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6fb/696701.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-227	Baluarte Roble 	3,6	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/71a/641636.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-238	Sikory Премиум Каберне Совиньон Семигорье 	3,9	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dbc/225892.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-265	Gato Negro Cabernet Sauvignon 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d51/1647361.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-451	Con un Par Monastrell Petit Verdot 	3,5	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fb0/650534.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-473	Bierzo Finca Luna Beberide 	3,5	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/946/2270317.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-170	Albert Bichot Chateau de Dracy Pinot Noir Bourgogne 	3,6	2 639,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e0a/267348.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-283	Belisario Колламато 	4,0	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c06/1900164.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-292	Novacorte Amarone Della Valpolicella Classico 	4,3	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fac/484539.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-313	PMC Neubruch Pinot Noir 14 % алк., Австрия, 0,75 л	4,1	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a3e/2337394.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-318	выдержанное Escal Roja Special Selection Grenache Tempranillo 	3,9	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1cc/496070.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-338	Fetzer Cabernet Sauvignon 	3,5	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/199/1145309.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-356	Флейта-Позвоночник Каберне Мерло 	-	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7de/3393366.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-387	Antico Portico Nero d'Avola Terre Siciliane 	4,0	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f46/225943.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-393	Palabra de Caballero Crianza La Mancha 	3,7	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/72f/201477.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-397	Passo Sardo Cannonau di Sardegna 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d66/401226.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-412	Garnachas de Espana La Garnacha Salvaje Del Moncayo 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e1a/176667.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
-1	Marques de Abadia Rioja Reserva 	4,0	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f15/244639.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg
+COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FROM stdin;
+23	Chateau de Cach Haut-Medoc 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/256/344699.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+1	Глобус Пиросмани 	3,8	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/39d/2404934.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+2	Bravo Trade Mucho Mas 	4,2	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f3/363182.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+3	Matsu El Picaro 	3,9	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b9d/206632.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+4	Mucho Mas 	4,2	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0eb/593619.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+5	Marques de Abadia Rioja Crianza 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/286/246751.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+6	Astrale 	4,1	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/975/191883.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+8	Marques de Abadia Rioja Reserva 	4,0	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f15/244639.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+9	Espiritu de Chile Gran Reserva Merlot 	3,9	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/710/241921.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+10	Лыхны 	3,8	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cfe/236253.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+11	Chateau Tour Verite Bordeaux 	3,3	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/45d/232008.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+13	Don Batisto Rioja 	3,6	1 169,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/240/260354.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+14	Кахетинские подвалы Киндзмараули 	4,2	1 169,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bac/515828.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+15	Chateau Les Nauds Bordeaux Merlot 	3,6	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/659/515844.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+16	Nobilomo Marzemino 	4,3	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/653/139599.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+17	Сихарули Киндзмараули 	3,5	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/66b/155393.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+18	Care Tinto Roble 	3,6	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7aa/781048.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+20	Palazzo Nobile Valpolicella 	3,3	1 049,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e8/176683.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+21	Conde Otinano Tinto Rioja 	3,4	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f50/758909.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+22	Castillo Santa Barbara Crianza 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/177/201467.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+19	Tbilisi Peak Киндзмараули 	4,0	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/33c/135185.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+24	Bouchard Aine & Fils Cotes-du-Rhone 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4de/578459.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+25	Barista Pinotage 	4,1	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0d3/379126.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+26	Golubitskoe Estate Cabernet Sauvignon 	3,8	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/179/410992.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+27	Butcher's Cut Malbec 	3,6	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a44/1288883.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+28	Nuviana Tempranillo Cabernet Sauvignon 	3,6	669,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b64/369792.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+29	Palabra de Caballero Crianza La Mancha 	3,7	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/72f/201477.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+30	Pagos Hispanos Tempranillo 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eb2/970715.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+31	El Jamon Tinto 	4,0	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/43d/1873469.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+32	Antico Portico Syrah Terre Siciliane 	4,1	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a26/225930.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+33	Solarita Chianti 	3,3	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c87/176673.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+34	Ignacio Marin Castillo Peracense Crianza 	3,5	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/628/959595.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+35	El Pescaito Bobal Cabernet Sauvignon 	3,4	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/718/403724.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+37	ликёрное Массандра 	-	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/40b/344293.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+36	Chateau Haut Fontenelle Bordeaux 	3,6	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/692/233718.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+39	Lenz Moser Zweigelt 	3,9	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0f7/365987.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+40	Ханджлури Сувенирная серия Киндзмараули 	4,5	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/92c/289893.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+41	by Haussmann Cabernet Sauvignon 	3,4	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b04/3118615.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+42	Tavridia Саперави Мерло 	3,3	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/032/729945.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+43	Солнечная Долина Пти Вердо 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/458/868150.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+44	Terras do Po Reserva 	3,8	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8fa/201510.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+45	Domaines Arnaud Cuvee Finesse 	3,9	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/13c/287156.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+46	Дербент Кара-Койсу 	3,2	219,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fa8/379013.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+47	Fanagoria Авторское Каберне-Мерло 	3,5	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b9f/1092836.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+48	от Валерия Захарьина Бастардо Кефесия 	3,9	1 169,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/76c/759119.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+49	Delampa Monastrell 	4,0	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2ca/650544.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+51	Глобус Rouge Moelleux 	3,7	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dc3/279384.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+52	Глобус Вита Para Celsus Tempranillo 	3,1	374,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/76b/404061.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+53	Глобус Corte Vinaia Rosso 	-	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/51d/453030.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+54	Глобус Corte Vinaia Merlot 	-	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6e3/455377.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+55	Глобус Corte Vinaia Sangiovese 	3,9	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea1/455381.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+56	Глобус Хванчкара 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f71/2404935.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+57	Глобус Киндзмараули 	3,5	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/80b/2404938.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+58	Глобус Алазанская долина 	3,8	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/807/2404939.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+59	Глобус Саперави 	3,5	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2d4/2404932.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+60	Ca'Delle Rose Bardolino Classico 	3,6	689,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5e4/225933.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+61	Haussmann Merlot 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4f0/3118619.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+62	Masi CampoFiorin 	3,7	1 739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/df4/357568.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+63	Kindzmarauli Marani Kindzmarauli 	4,3	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f22/619139.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+64	Agora Мускат чёрный 	4,0	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c3/2018360.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+65	Make It Big Pinot Noir 	3,4	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/28a/prd_668363004.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+66	Beiral Vineyards Escolha Beira Atlantico 	4,0	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/005/338782.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+67	Sun Gate Red Zinfandel 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/016/577958.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+68	Don Simon Tinto 	3,0	419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/54a/139513.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+50	Territori Vocati Chianti 	3,5	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ee9/1559891.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+97	Antico Portico Primitivo Salento 	4,1	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a15/225945.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+69	домашнее Driada Изабелла Молдавская 	3,9	689,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/780/338578.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+70	Astrale Rosso 	4,1	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/76d/206628.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+71	Don Batisto Rioja Crianza 	3,6	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d61/164317.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+73	Chateau Pericou Bordeaux 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/39e/176641.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+74	Majano Темпранильо Робле 	4,0	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/302/1900187.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+75	KG Gries Lagrein 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d05/455355.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+76	Le Grand Noir Pinot Noir 	3,7	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f01/358823.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+77	Palazzo Nobile Chianti Classico Riserva 	3,9	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/65a/369808.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+78	Грузвинпром Киндзмараули 	3,8	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6b7/1900235.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+79	Усадьба Дивноморское Вторая лиия Вечерница 	3,9	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6a5/3430255.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+80	Bad Brothers 	3,8	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/083/3269636.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+81	Novecento23 Rosso Veneto 	3,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ecf/225936.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+82	Апсны 	-	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/89f/236254.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+83	Tour de Mandelotte Bordeaux 	3,7	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/072/139533.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+84	Ханджлури Киндзмараули 	4,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/076/135187.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+85	Piccini Chianti 	3,3	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/58b/353246.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+86	Chateau les Eyquem Hautes Graves Margaux 	3,9	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1dd/515840.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+87	Inkerman Каберне Гранд Резерв 	4,0	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/74f/607370.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+88	Fassini Chianti 	3,6	1 969,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0ac/225862.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+89	Premium 1904 Tempranillo Syrah 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/43d/496068.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+90	Gaetano Montepulciano D'abruzzo 	3,3	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8ac/627444.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+92	Крымвинторг Мерло 	2,5	329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/642/277370.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+93	Don Ramon 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/13e/291170.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+94	Броjаница Изабелла 	-	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3ad/145475.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+95	Frescobaldi Remole Toscana 	3,6	1 289,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/657/318490.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+96	Ignacio Marin Castillo Peracense Reserva 	3,5	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/855/959599.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+98	Escal Roja Crianza 	3,9	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/182/496072.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+99	Castillo de Clavijo Reserva 	4,0	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1c7/236318.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+101	Orion Salento Primitivo 	3,5	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5ab/576363.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+102	Observer Malbek 	3,5	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6a4/387032.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+91	Tbilisi Peak Мукузани 	4,0	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/534/223578.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+103	Aretino Tipici Chianti Riserva 	3,7	769,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e45/164248.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+104	Novacorte Valpolicella Ripasso classico superiore 	3,9	1 124,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7dc/320128.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+105	Brunello di Montalcino Territori Vocati 	-	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cad/496222.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+106	Astrale Special Edition 	4,2	1 279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3b1/1181127.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+107	Canada Tempranillo 	3,6	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0f1/156976.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+108	Garnachas de Espana La Garnacha Olvidada de Aragon 	3,7	1 669,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/055/176666.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+109	Solarita Chianti Riserva 	3,6	1 059,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/480/176674.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+110	Tussock Jumper Malbec 	3,8	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/de7/310812.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+111	Eventorosso 	3,8	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/72c/435158.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+112	Fetzer Valley Oaks Zinfandel 	4,0	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/274/1145310.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+113	Garnachas de Espana La Garnacha Salvaje Del Moncayo 	3,7	1 459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e1a/176667.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+114	S!gnature Lesquerde 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c0/518870.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+115	Espiritu de Chile Cabernet Sauvignon 	3,8	652,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d1f/119384.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+116	Vicente Gandia Finca del mar Tempranillo Crianza 	3,5	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e55/259428.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+118	Каберне 	3,5	199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f10/535238.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+119	Ballaro Primitivo Salento 	4,2	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/603/545206.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+120	San Valentin Garnacha Torres 	3,9	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/276/176681.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+121	Peccatore Douro 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/02d/325231.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+122	La Piuma Монтепульч 	3,4	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff4/1925588.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+123	Quinta das Amoras 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5f1/496084.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+124	Agora Саперави 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/41c/2018362.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+126	Solarita Nero D'Avola Sicilia 	3,9	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea8/1092848.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+128	Marques de Villanueva Tempranillo Carinena 	3,4	639,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d18/139572.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+129	Flor De La Mar Reserva 	3,8	854,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/838/496151.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+130	Az Abrau Madrasa 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b7e/3399462.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+131	Matsu El Recio 	4,1	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f7b/206633.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+132	Askaneli Brothers Saperavi Premium 	4,0	1 339,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/549/246831.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+133	Zarafa Pinotage 	3,5	619,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/85a/562894.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+134	Majano Крианца 	-	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b04/1900192.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+135	Castillo Santa Barbara Gran Reserva 	3,7	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/383/260350.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+136	Prototype Zinfandel 	3,8	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e21/3422433.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+238	Muenzenrieder Neusiedlersee 	3,5	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/74e/1925385.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+127	креплёное Hooper's Constitutional Port 10 years old Tawny 	4,0	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/77e/192004.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+137	Pirineos Roble Somontano 14 % алк., Испания, 0,75 л	3,8	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/024/461551.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+139	Don Batisto Rioja Cosecha 	3,6	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/581/164316.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+141	Tavridia Бастардо Каберне 	3,5	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8bf/729946.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+142	ликёрное Barros Porto Ruby 19,5 % алк., Португалия, 0,75 л	3,8	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fb2/627442.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+143	Авторское Саперави 	3,5	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c7e/1766372.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+144	Ханджлури Сувенирная серия Саперави 	-	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e90/289894.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+145	Domini Veneti Valpolicella Ripasso la Casetta 	4,2	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f7c/366452.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+146	Fanagoria Cru Lermont Cabernet Sauvignon 	3,8	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/854/1092833.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+147	Villa Del Sol 	4,0	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4e8/176645.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+148	Palazzo Nobile Chianti Riserva 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6a5/293172.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+149	Ciconia The Reserva Blend 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/970/252128.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+150	Сихарули Алазанская долина 	3,8	569,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/60e/206143.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+152	Clos Gebrat Priorat 	4,0	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/20d/244640.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+153	Los Condes Gran Reserva 	3,5	1 139,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/020/863865.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+154	Valserrano Crianza Rioja 	3,8	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2bf/1024504.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+155	Cape Zebra Pinotage 	3,5	619,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c2/1092843.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+156	Портвейн Valdouro Porto Tawny Port красный 19 % алк., Португалия, 0,75 л	4,1	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/db5/322380.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+157	Традиции Абхазии Изабелла Абхазская 	4,1	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/94c/3411441.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+158	J.P. Chenet Cabernet-Syrah 	3,4	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/19a/383884.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+159	Golubitskoe Estate Мерло 	3,6	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc1/607372.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+160	Arena de Oro Tempranillo 	3,1	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d46/173976.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+161	ликёрное Pedro Ximenez Reserva de Familia сладкое 15 % алк., Испания,...	4,0	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f4d/571891.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+162	Juste Du Bon Vin Изабелла 	-	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bea/2270304.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+100	Tbilisi Peak Саперави 	3,6	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fbf/144256.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+163	Stobi Vranec Vilarov 	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d3f/173999.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+164	Кубань-Вина Тамани Мерло 	2,8	284,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f5/766879.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+165	Талавари Киндзамараули 	-	729,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d02/1836554.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+38	Tbilisi Peak Алазанская долина 	-	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/520/135184.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+166	Ведерниковъ Губернаторское 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c22/229174.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+167	Georgian Royal Wine Kindzmarauli GRW 	4,3	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/10f/139629.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+140	Броjаница Вранац 	3,7	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/645/312975.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+169	Protos Roble Ribera Duero 	3,7	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eee/520975.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+170	Chateau Tamagne Saperavi 	4,0	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f50/436162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+171	Zinfandel 	4,1	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/981/1559914.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+172	Le Grand Noir Cabernet Sauvignon 	4,1	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eaf/641638.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+173	Majano Темпранильо 	4,0	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/346/1900177.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+174	Sazyk Dere Мерло марочное 	3,1	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fa5/262092.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+175	Finca Del Sol Vino de Mesa 	3,9	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/41e/176643.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+176	Kindzmarauli Marani Saperavi 	3,8	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4ea/650532.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+177	Beronia Reserva 	4,0	2 229,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/083/1241617.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+178	Agora Бастардо 	3,5	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/63d/2018356.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+180	Chacabuco Malbec 	3,5	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c8f/461556.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+181	Stellenbosch Hills 1707 Reserve 	4,1	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff1/576017.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+182	Observer Syrah 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c1/338714.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+183	Villa Krim Merlot 	3,2	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/661/3431701.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+184	Villa Grande 	2,9	269,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a13/139509.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+185	Millaman Estate Reserve 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dec/539578.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+186	The Collection The Bean Coffee Pinotage 	3,8	969,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/623/433290.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+187	Ignacio Marin Castillo de Embid Crianza 	4,0	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d4e/959598.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+188	Escal Roja 	3,2	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cde/3176693.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+189	Solarita Montepulciano d'Abruzzo 	3,5	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/587/206083.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+190	Balaklava Loco Cimbal I Reserve Repin 	3,8	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b3c/946986.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+191	Chateau Haut Rocher 	4,1	1 849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e3/515842.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+192	Domaine bel Avenir Beaujolais-Villages 	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/542/837766.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+193	Inkerman Каберне 	3,6	359,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/191/3427829.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+194	Crystal Bay Shiraz 	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d49/prd_668329000.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+195	Cuvee de la Guinchule Saint-Amour 	3,9	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/403/837767.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+196	Inkerman Saperavi 	3,6	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/84d/564163.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+197	Trivento Malbec Reserve 	3,6	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/edd/360591.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+198	Sikory Премиум Каберне Совиньон Семигорье 	3,9	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dbc/225892.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+199	Chianti Riserva 	3,8	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/972/236314.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+200	Venta Real Гран Резерва 	3,4	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3fd/1925670.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+201	Ramon Bilbao Rioja Reserva 	3,9	2 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/29f/410984.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+202	G7 Carmenere 	3,4	789,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d24/759033.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+204	Prototype Pinot Noir 	3,7	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/35d/3355228.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+205	Morgado da Vila Vinhao 	3,2	844,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a4c/198433.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+206	Andre Millot Moelleux 	3,9	569,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/394/191757.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+207	Villa Antinori Toscana Rosso 	3,8	2 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5df/435141.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+208	Mildiani Киндзмараули 	4,2	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/054/515812.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+209	Портвейн Массандра Южнобережный красный сладкий 18 % алк., Россия, 0,75 л	4,1	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8d1/927687.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+211	Medoc Chateau Bois du Fil 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/afa/378908.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+212	Vylyan Macska 	3,5	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/df0/496019.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+213	Ca'Delle Rose Valpolicella 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2cf/225932.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+214	Крымвинторг Пино-Фран крымский 	3,2	329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c4e/277372.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+215	Redwood Cabernet Sauvignon 	3,3	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6fb/696701.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+216	Domus Vini Raboso 	3,6	429,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/aec/229658.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+217	Ханджлури Пиросмани 	-	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a77/174025.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+218	Gaetano Sangiovese Puglia 	3,6	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/61b/627621.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+219	Mas Momentos Malbec 	3,6	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3d4/970713.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+220	La Piuma Санджовезе 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af6/1900303.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+221	Fanagoria Каберне 	3,5	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b8a/733275.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+222	Reserva da Familia 	4,1	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/123/2337386.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+223	Tavernello 	3,2	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8b7/577967.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+225	Tavridia Каберне 	2,9	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea9/201382.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+226	Trapiche Malbec 	3,4	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f57/496127.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+227	Чегем 	-	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5c3/236181.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+228	Грузвинпром Хванчкара 	4,0	1 749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a90/2270318.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+229	Fado Reserva 	3,9	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f17/2270319.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+230	Palavani Саперави Кверви 	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9a9/363296.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+231	Barone Ricasoli Chianti 	3,7	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/90b/576365.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+232	Castillo Santa Barbara Reserva 	3,6	729,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9e5/204488.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+233	Броjаница Кадарка 	-	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5a1/145476.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+234	Sonovino Россо 	3,3	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/161/1900315.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+235	Tour de Mandelotte Medoc 	3,6	1 339,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/765/235850.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+236	Observer Carmenere 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/10f/338713.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+237	Stobi Makedonsko Crveno 	4,1	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c3/174002.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+210	Clemente VII Chianti Classico 	3,8	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c4f/461552.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+248	ликёрное Солнечная Долина Черный Доктор 	4,3	1 649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a94/321658.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+250	Коктебель Кагор высшего качества	4,0	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5a9/733641.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+239	Kagor Meteora освящённое 	4,4	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/db1/1523014.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+256	Асканели Алазанская Долина	3,8	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0d4/841538.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+240	Grona Барбера Д'асти 	3,5	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cfb/1900162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+241	Sol De Chile Cabernet Sauvignon Reserva 	3,3	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/354/3431586.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+242	Les Jamelles Syrah 	3,8	1 139,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ae4/538734.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+243	Сихарули Ахашени 	4,0	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/88c/206198.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+244	Bravo Trade Киндзмараули 	-	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/841/1560068.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+245	Inkerman Шато Руж 	3,2	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d21/3427830.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+246	Ballaro Nero di Troia 	4,2	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc3/512706.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+247	Salida Tannat 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/336/317550.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+249	Observer Grand Reserve Carmenere-Cabernet Sauvignon 	4,1	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1d1/323262.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+251	Hoya De Cadenas Reserva Tempranillo 	3,4	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cdd/135065.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+252	Chateau Tamagne Fleurs du Sud Rouge de Tamagne 	3,4	331,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/00e/436153.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+254	Саперави 	3,4	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/55b/201371.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+151	Монастырская трапеза 	3,3	249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff2/378906.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+255	Monfort Village 	3,4	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d70/589987.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+12	Chateau Le Rimensac 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fce/232009.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+258	Matsu El Viego 	4,3	5 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/829/260353.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+260	Beiral Vineyards 	3,9	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/911/766690.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+261	J.P. Chenet Delicious Medium Sweet Moelleux 	3,7	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6ab/780391.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+262	Bleu Merlot 	3,9	1 779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4cd/484631.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+263	ликёрное Malaga Virgen Pedro Ximenez 	3,7	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6f9/571889.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+264	Louis Eschenauer Medoc 	3,8	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4f8/198372.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+265	Flor De La Mar 	4,0	654,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/373/496149.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+266	Крымский погребок Саперави 	3,0	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/519/736776.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+267	Valserrano Reserva Rioja 	4,0	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/620/1024508.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+268	Chateau D'Arvigny Haut-Médoc 	3,9	2 149,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5d3/291195.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+269	Clemente VII Chianti Classico Riserva 	3,8	2 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af0/267681.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+270	Rioja Aldea Real Tempranillo 	2,9	839,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/86f/1559932.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+259	Cuatro Ojos Cabernet Sauvignon 	3,8	389,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/03f/338709.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+272	San Valentin Tempranillo 14,5 % алк., Испания, 0,75 л	3,9	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/692/3402884.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+273	Lirico Bobal-Monastrell 	3,6	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bd3/873983.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+274	Ca'Delle Rose Pinot Nero Trevenezie IGP 	3,8	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c51/438686.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+275	Талавари Алазанская долина 	4,0	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5a2/1836555.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+276	Портвейн Calem Fine Ruby Porto красный 19,5 % алк., Португалия, 0,75 л	4,1	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c4d/293152.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+277	Tikves Македонско Чрвено 	-	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/111/1900161.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+278	Inkerman 	3,8	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/84d/607369.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+279	Портвейн Массандра Ливадия красный 18,5 % алк., Россия, 0,75 л	-	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/15a/939096.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+280	Портвейн Hooper's Lord Mayor Tawny Porto сладкое 19 % алк., Португалия, 0,7...	3,4	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c02/3436006.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+281	Alma River Шираз 	3,9	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/09b/1900218.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+282	Albert Bichot Chateau de Dracy Pinot Noir Bourgogne 	3,6	2 639,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e0a/267348.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+283	Loving Vincent Des Gracieuses Vignes Rouge 13,5 % алк., Франция, 0,75 л	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ed1/1900251.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+284	Excelsis 	3,7	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e38/3176706.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+285	Colle dei Cipressi Montepulciano D'Abruzzo 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/64f/317539.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+286	Marani Kindzmarauli 	4,3	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/17d/1900216.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+287	Michel Дорнфельдер 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/553/3400287.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+288	Вина Тамани Мерло 	-	284,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c4c/806098.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+289	Радеда 	-	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cff/236182.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+290	Cellier des Dauphins Prestige 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/98c/226971.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+292	Chateau Pessan Saint-Hilaire Graves 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5ec/733723.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+293	S!gnature Caramany 	-	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6fe/520882.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+294	Silverboom Shiraz-Merlot 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8fc/1559916.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+295	Inkerman Пинно Крымское 	3,5	359,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a97/3427831.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+296	Gran Cita Del Sol Crianza 	3,7	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/14d/144223.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+297	Podere Montepulciano D'Abruzzo 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0aa/289734.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+298	Ханджлури Хванчкара 	-	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/084/156982.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+299	Villa Krim Cabernet 	3,2	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c49/3431412.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+300	Tarapaca Carmenere 	3,7	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6c4/539656.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+301	Altissimo Chianti Classico 	4,0	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b31/696697.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+302	Batasiolo Barolo 	4,0	4 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1b2/289756.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+303	АСТ Киндзмараули 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9d2/325270.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+304	Castillo de Clavijo Crianza 	3,6	969,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff3/236317.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+305	Chateau des Grands Moines 	3,6	1 274,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ca9/232007.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+306	Viu Manent Reserva Malbec 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dce/539654.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+307	Campo Viejo Tempranillo Rioja 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c1c/217819.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+309	Flor De La Mar Castelao 	4,0	654,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e39/3400289.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+310	Sol De Chile Syrah Reserva 	3,5	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/49d/3431585.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+311	Murviedro Reserva 	3,7	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/86b/495939.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+312	Сихарули Мукузани 	3,8	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7ef/206197.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+313	Askaneli Brothers Киндзмараули CA 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3d7/201370.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+314	KG Gries Pinot Nero Riserva 	3,6	2 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d7b/455365.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+317	Beefsteak Club Malbec 	3,7	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e63/3431024.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+318	Грузвинпром Алазанская долина 	3,9	639,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/984/1900236.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+319	Muenzenrieder Pinot Noir 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/929/1925387.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+320	Высокий берег Мерло 	3,5	574,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/05d/775601.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+321	Castelvecchio Barbaresco 	3,4	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bc7/228790.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+322	Tbilisi Peak Хванчкара 	4,0	1 749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/436/144257.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+323	Faustino Crianza Rioja 	3,6	1 229,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/948/353261.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+324	Fanagoria 100 оттенков красного Каберне 	4,0	1 449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce2/1092837.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+325	Nobilomo Raboso Veneto 	3,6	519,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/914/636575.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+326	Blandy's Madeira Duke of Clarence Rich 	3,9	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/617/2810846.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+327	Sazyk Dere Каберне марочное 	3,5	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1b7/262090.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+328	Cambridge Crossing Shiraz 2018 	3,7	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a02/584717.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+329	Armenia 	3,9	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6c4/769807.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+330	Ramon Bilbao Crianza Rioha 	3,9	969,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b5f/287190.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+331	Ciconia Touriga Nacional 	3,6	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0c7/252127.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+332	Baluarte Roble 	3,6	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/71a/641636.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+333	Torres Altos Ibericos 	3,7	1 419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b92/176642.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+334	Balance Pinotage Shiraz 	3,5	589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5b5/1109845.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+335	Сихарули Хванчкара 	3,9	2 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d72/206144.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+336	Vylyan Ordog 	3,6	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/83a/496020.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+337	Pierre Dumont Bourgogne Pinot Noir 	4,0	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e4b/2270279.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+338	Valserrano Graciano 	4,0	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cf6/3431438.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+316	Vol I Dol Negre	3,3	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/62b/717959.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+339	Bierzo Finca Luna Beberide 	3,5	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/946/2270317.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+340	Quinta da Mimosa Palmela DOC 	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/83d/3400288.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+342	Chateau Tamagne Krasnostop 	3,5	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b8f/436164.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+343	Fanagoria Style Merlot 	3,6	509,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/577/1092821.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+344	Sella & Mosca I Piani Rosso 	3,3	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/895/401664.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+345	Brolio Chianti Classico 	3,7	2 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/399/576360.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+346	Традиции Абхазии Саперави 	3,4	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7ab/3411446.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+347	Ozzy Shiraz 	4,1	1 159,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/796/636580.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+348	Acharuli Саперави 	3,5	134,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f97/1900275.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+349	Doudet-Naudin Pinot Noir 	3,7	1 349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/013/2270315.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+350	Art.Terra Amphora 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/787/1785091.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+352	Mas Momentos Tempranillo 	3,7	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a49/1562161.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+353	Gato Negro Cabernet Sauvignon 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d51/1647361.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+354	Cuatro Ojos Merlot 	3,7	359,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce5/323259.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+355	Castelvecchio Barbera D'alba 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/897/228791.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+356	Inkerman Каберне Резерв 	4,0	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d15/700796.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+357	Antano Tempranillo 	3,3	249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a8a/3431023.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+358	Belisario Колламато 	4,0	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c06/1900164.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+359	ликёрное Villa de Corgos Reserva Bairrada 	4,1	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eac/338783.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+360	Premium 1904 Graciano 	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/044/496067.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+361	PMC Neubruch Pinot Noir 14 % алк., Австрия, 0,75 л	4,1	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a3e/2337394.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+362	Амра 	-	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/56c/236255.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+363	Castello Banfi Brunello di Montalcino 	4,2	5 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e26/665044.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+365	Conti Zecca Zinfandel 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e95/607397.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+366	Venta Real Резерва 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/290/1900173.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+367	Marques de Caceres Reserva Rioja 	3,9	2 879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e42/225795.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+368	Ballaro Nerello Mascalese 	4,0	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/885/512704.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+369	Rocca Alata Valpolicella Superiore 	3,3	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/209/763103.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+370	Monasterio de las Viñas Reserva Carinena 	3,7	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/814/246749.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+371	Крымский погребок Бастардо 	3,1	329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/08f/736777.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+372	Campero Карменер 	3,7	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6db/2561491.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+373	Antico Portico Montepulciano d'Abruzzo 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/637/225941.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+351		3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc2/3176653.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+375	Цард Саперави 	3,9	439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b5b/775550.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+376	Chateau Vieux Duc Montagne Saint-Emilion 	-	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/34d/317684.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+377	Famille Sadel Côtes Du Rhône 	4,0	1 369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1bc/317685.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+224	Vivo Greto 	3,2	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/954/1900274.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+378	Good Steak Мерло 	3,2	124,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fd4/1766369.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+379	Observer Cabernet Sauvignon - Merlot 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7ca/323260.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+380	Territorio 	4,1	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5b5/598026.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+381	Don Simon Cabernet Sauvignon 	3,4	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/79a/1171433.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+382	Freschello Rosso 	3,6	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3f4/1647368.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+383	Bravo Trade Хванчкара 	-	1 749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/06a/1509296.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+384	Vipra Rossa Bigi 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/440/895985.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+385	Codici Россо 	4,1	524,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/516/1900309.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+386	Marani Alazani Valley 	4,0	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/aa3/1900214.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+387	J.P. Chenet Original Shiraz 	3,7	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c39/789862.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+388	Грузвинпром Саперави 	3,6	734,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/79d/1900232.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+389	Cavino Ionos 	3,8	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a93/246722.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+390	Tres Amigos 	3,5	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/757/780384.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+391	Inkerman Рубин Античный 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cb7/700735.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+392	Carson's Cabernet-Sauvignon Shiraz 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a82/780358.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+393	el Gordo Garnacha 	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea3/1562165.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+395	Mora Vista Malbec 	3,1	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a35/2434271.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+396	Joy Тинто 	3,8	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/914/3431459.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+398	Авторское Каберне Совиньон 	3,8	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5fe/1766373.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+399	Fattolia del Cerro Nobile di Montepulciano 	3,7	2 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/16c/289713.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+400	Броjаница Каберне Совиньон 	3,6	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/491/973688.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+401	Крымская Трапеза Саперави 	-	319,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8e8/236197.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+402	Big Mouth 	3,0	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/99f/1814089.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+403	Ciconia 	3,6	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f6f/191999.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+404	Santa Hortensia Merlot 	3,6	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a08/241918.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+405	Di Caspico Special Edition 	3,9	429,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/091/1171133.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+406	Nero D`Avola Merlot 	3,4	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/146/1509346.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+407	La Maridelle Pays D'OC Cabernet Sauvignon 	3,0	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a68/435201.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+374	Villa Fassini Sangiovese-Cabernet S. Toscana 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a73/322412.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+409	JP. Chenet Cabernet-Syrah 	3,4	339,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a7a/1509355.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+411	Fassini Montepulciano D'abruzzo 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/770/164350.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+412	выдержанное Escal Roja Special Selection Grenache Tempranillo 	3,9	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1cc/496070.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+413	ликёрное Elegante Cream 17 % алк., Испания, 0,75 л	4,4	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/95a/476082.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+414	Традиции Абхазии Апхын 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/435/3411444.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+415	Vino Kalem Вранец 	3,6	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4b0/1900184.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+416	Криница Rivage 	4,1	3 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9d8/3430258.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+417	Col di Sasso Toscana 	3,6	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/362/369809.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+418	Alma River Пино Нуар 	3,8	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/35c/1925673.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+419	Traversa Tannat Uruguay 	3,6	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ac1/1900156.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+420	Каспийская коллекция 	3,4	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ba3/1900195.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+421	Dance Del Mar 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/928/2270323.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+422	Портвейн Calem Fine Tawny Porto красный 19,5 % алк., Португалия, 0,75 л	4,1	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f72/293153.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+423	KG Gries Lagrein Riserva 	4,1	2 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6e8/455359.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+424	Bastardo 	3,8	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2f6/1925608.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+425	Canada Syrah 	-	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/034/3436314.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+426	Machiavellico Toscana 	3,9	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d65/2270322.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+427	Calderona Joven 	3,3	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/66d/970712.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+428	The Ned Pinot Noir 	3,7	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/543/3430259.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+429	Trenel Beaujolais Villages 	3,5	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6aa/593636.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+430	Chateau Tamagne Cabernet 	3,3	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b24/436163.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+431	Bosca Stories of Italy Negroamaro 	3,6	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/833/650531.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+432	Vinha Do Fava 	4,0	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/58f/198443.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+433	Faina 	3,1	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/664/317648.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+434	Tussock Jumper Tempranillo 	3,5	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fb3/310813.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+435	Chevalier Alexis Lichine Chateau Charrier 	3,6	1 489,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e42/356702.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+436	Gabriel Meffre Châteauneuf-du-Pape Laurus 	3,7	5 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea9/289689.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+437	Inkerman Древний город 	4,0	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7ab/607371.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+438	Taboadella Villae 	4,0	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/80c/3399460.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+439	Tbilisi Peak Оджалеши 	4,2	589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3b1/289818.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+440	Palazzo Nobile Chianti Classico 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9a7/244636.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+441	Finca el Rejoneo Crianza 	3,3	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4e6/387021.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+442	Chateau Tour Verite 	3,3	1 449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/85f/806163.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+443	Tarapaca Cabernet Sauvignon 	3,9	789,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e0c/539658.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+444	Garnachas de Espana La Garnatxa Fosca del Priorat 	3,8	2 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5a7/324816.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+445	Gandin Filare Nero 	-	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/433/2577660.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+446	Capellana Tempranilo 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/07e/562420.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+447	Sol De Chile Carmenere 	3,2	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b1c/3431583.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+448	Prototype Cabernet Sauvignon 	3,7	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c75/3422434.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+449	Quinta Nova Reserva 	4,1	2 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/680/3399464.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+450	Valserrano Finca Monteviejo 	4,3	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/776/1024503.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+451	Belagaio Primario 	-	1 349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8ce/3431380.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+452	Galo Valente Semi-Doce 	4,0	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c01/575762.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+453	Mas Momentos Syrah 	-	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/94e/1026178.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+454	Bricco Rosso Suagna Langhe Rosso 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6ca/438692.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+456	Marques de Aldeanueva Crianza Rioja 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c85/1509347.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+457	Chateau Labarrade Malbec 	3,5	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d3d/575761.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+458	Proximo Риоха 	3,7	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7f5/1145301.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+460	Флейта-Позвоночник Каберне Мерло 	-	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7de/3393366.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+461	Beaujolais-Villages 	3,7	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/116/3269680.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+462	The Wedge Shiraz Mourvedre Viognier 	3,8	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d62/3269638.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+463	Art.Terra Alentejo 	-	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0cd/1785087.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+464	Antico Portico Nero d'Avola Terre Siciliane 	4,0	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f46/225943.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+465	Fairview Пинотаж 	3,4	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/79d/2777330.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+466	Donna Marzia Salento 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/651/614586.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+467	ликёрное Oloroso Aurora Jerez-Xeres-Sherry сухое 17,5 % алк., Испания,...	4,2	2 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e6e/299067.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+468	Fetzer Cabernet Sauvignon 	3,5	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/199/1145309.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+469	1000 Stories Zinfandel 	4,1	3 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0c1/593763.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+470	Портвейн Hooper's 2003 Colheita Port сладкий 20 % алк., Португалия, 0,75 л	4,1	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/083/3436010.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+471	Santa Hortensia Cabernet Sauvignon 	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a90/173974.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+472	Апацха 	3,8	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ee9/461564.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+473	Momentum Solare Grenache Syrah Mourvedre 	3,7	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f11/3436952.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+474	Askaneli Brothers Saperavi Muscat 	4,2	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ebd/246829.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+475	Cellier des Dauphins Cotes du Rhone Prestige 	3,4	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af3/403725.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+476	Escal Roja Tempranillo 	3,2	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/472/496069.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+477	Crudo Nero d'Avola Cabernet Sauvignon 	3,9	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/56b/613612.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+478	Silverboom Black Label Cabernet Sauvignon 	3,8	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ffb/1559912.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+479	ликёрное Gonzales Byass Elegante Medium Sherry 17 % алк., Испания, 0,7...	3,9	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/423/636584.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+480	Domaine d'Andezon Signargues Cotes-du-Rhone Villages 	3,7	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4cc/246614.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+481	Виноград Don Simon Tempranillo 	3,0	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e24/1171662.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+482	Bierzo Luna Beberide 	3,4	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a35/2270316.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+483	Castelvecchio Barbera D'asti 	3,5	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/98f/228793.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+484	Mildiani Пиросмани 	4,0	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0f6/512811.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+485	Redwood Vineyards California Pinot Noir 	3,9	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/422/520961.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+486	Arnaldo-Caprai Montefalco Rosso 	3,7	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/db6/606036.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+487	Rouge 	3,5	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a27/1925602.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+488	Sancho Garces Rioja 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2c9/363054.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+489	Sankt Anna Spatburgunder Pfalz 	3,5	584,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/260/381536.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+490	Passo Sardo Cannonau di Sardegna 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d66/401226.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+491	Palabra de Caballero Tempranillo La Mancha 	3,1	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e1/206658.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+492	Vinum Nobile Каберне 	3,3	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4fb/512707.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+493	Gustave Lorentz Pinot Noir 	3,6	2 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b01/3355225.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+494	Moulin de Gassac Classic 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2ed/3269626.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+495	Marani Saperavi 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4ca/1900215.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+497	La Croix du Pin Merlot 	3,3	759,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/518/3405428.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+498	Frog's Return Cite de Carcassonne 	3,9	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/09d/410988.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+499	Chateau Brehat 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/129/518627.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+500	Джейран Чинар 	-	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/457/680474.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+501	Care Tinto Sobre Lias 	3,8	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e79/2810845.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+502	Gurpegui Garnacha 	3,7	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d06/3418756.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+503	Lolita 	3,9	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cfa/789084.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+504	El Sotillo 	2,3	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c5d/3092594.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+505	Maison du Soleil Cabernet Sauvignon 	3,4	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c46/685533.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+507	Vol d'Anima de Raimat 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e99/363295.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+508	La Piuma Монтепульчано 	3,4	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ccf/1900307.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+509	Bravo Trade Саперави 	-	919,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6c4/1509294.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+510	Flor Morena Tempranillo 	3,4	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/375/1783769.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+512	Tresors de Loire Saumur Champigny 	3,6	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/837/496081.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+513	Con un Par Monastrell Petit Verdot 	3,5	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fb0/650534.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+514	Lirico Bobal Cabernet Sauvignon 	3,1	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fc1/139574.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+517	Acharuli Домашнее 	3,3	134,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/70b/1900280.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+518	Ionos Cabernet S.-Merlot 	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1ea/3430253.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+519	Gran Cita Del Sol Tempranillo 	3,4	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce0/282565.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+521	Casa de la Ermita Seleccion Rey Limitada 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/873/3420299.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+522	Les Halles Cotes de Gascogne 	3,9	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a37/3420306.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+523	Castelvecchio Grignolino D'asti 	3,3	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/85e/228794.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+524	Torres Coronas Tempranillo 	3,5	1 279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/85c/260348.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+525	Faustino VII Tempranillo 	3,5	969,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af6/357455.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+526	Vinedos del Villar Tempranillo 	3,8	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/805/3420303.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+527	Barone Montalto Неро 	4,0	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/893/1900300.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+528	Vicente Gandia Finca del mar Tempranillo 	3,5	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3ed/763107.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+529	Il Poggio dei Vigneti Nero d'Avola Sicilia 	2,7	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1ed/650530.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+530	Domus Vini Refosco 	3,5	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/82e/229660.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+531	Villa de Corgos Bairrada 	3,8	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0dd/342162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+532	Jardin Fleury Syrah 	3,7	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/175/780383.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+533	Murviedro Bobal Roble 	3,7	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/49f/325236.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+534	Bravo Trade Алазанская Долина 	3,8	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/897/1509295.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+535	Estaciones Tempranillo 	3,4	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/34f/1900254.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+536	Territori Vocati Sangiovese 	-	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c21/1559781.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+537	Tussock Jumper Pinot Noir 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b46/416166.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+538	E Arte Puglia Rosso 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/609/2270321.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+539	Chateau de Landure Minervois 	3,6	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a68/1900225.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+540	Di Caspico special edition 	3,9	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1b5/3436039.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+541	Buttafuoco 	4,0	1 269,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/27e/435200.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+542	Venta Real Крианца 	3,4	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0b9/1900174.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+543	Chateau Le Faure Bordeaux 	3,4	1 349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c22/1170999.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+544	Golden flowers Isabella 	-	279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1fe/118918.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+511	Antico Portico Aglianico Beneventano 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a8d/225929.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+257	Sobremonte Tempranillo 	3,3	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a2b/201497.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+566	Криница Arena 	4,0	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/099/3430257.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+567	Fassini Chianti Rizerva 	3,9	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/983/164351.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+568	M.Chapoutier Luberon La Ciboise 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f0b/576381.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+569	Джейран Матраса 	3,4	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/182/401217.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+570	Muenzenrieder Heideoden classic 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ccf/1925383.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+571	G7 Cabernet Sauvignon 	3,2	344,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c56/1766375.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+572	Сихарули Саперави 	3,7	274,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/60e/1814090.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+573	Композиция №1 	-	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/84e/1925583.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+574	Golden flowers Cabernet 	3,1	279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/25e/118919.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+575	Castelvecchio Nebbiolo D'alba 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e2/228792.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+545	Domaine de Tara Hautes Pierres Ventoux 	3,8	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4e3/461555.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое,
+565	Calderona Crianza 	3,6	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cf9/1562169.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+546	Грузвинпром Мукузани 	4,0	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/749/1900230.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+547	ликёрное Contrabandista Valdespino Jerez полусухое 18 % алк., Испания,...	3,8	2 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff1/332463.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+548	Marques de Riscal Gran Reserva 	4,2	6 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/411/562461.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+549	Valserrano Mazuelo Rioja 	4,1	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e09/1024510.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+550	Bertinga Сасси Кьюзи 	4,1	4 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fde/2777331.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+551	Maison Givas №3 Bordeaux 	3,6	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/265/317686.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+552	Цард Ломиаури 	-	439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2c0/775611.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+553	Bodegas Emilio Moro Finca Resalso 	3,8	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a0d/291191.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+554	Gerardo Cesari Justo 	3,6	1 319,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e29/905499.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+555	Vigne-Lourac Duras Cabernet 	4,0	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a0a/924799.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+556	Conde Otinano Reserva Rioja 	3,7	1 389,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9c6/322439.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	cухое
+557	Santa Hortensia Carmenere-Cabernet Sauvignon 	3,1	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff0/241917.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+558	Bravo Trade Castillo De Ayud 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/740/1509297.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+559	Sol De Chile Syrah Merlot 	3,4	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f4/1092845.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+364	Tbilisi Peak Ахашени 	4,0	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2c3/201495.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+560	Chateau Barre Gentillot Graves de Vayres 	3,9	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a3d/515846.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+394	Yerevan Areni Karmrahyut 	3,8	589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cdc/379245.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+561	Rioja Bodegas De Abalos Tempranillo 	3,2	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1f2/prd_659346009.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+562	el Gordo Tempranillo 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/556/1562167.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+563	Vylyan Hegy 	3,7	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/72f/939093.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+7	Chateau Barre Gentillot Graves De Vayres 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a35/970560.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+577	Belagaio 5Cento 	-	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/afc/3431379.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+578	Цард Шираз 	-	439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/41b/775610.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+520	Fleur de la Reine 	3,4	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/258/1900259.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+580	Frescobaldi di Castiglioni 	4,0	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce2/3418757.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+581	el Gordo Syrah 	3,6	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c34/1562171.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+582	Gurpegui Tempranillo 	3,0	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f55/3418753.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+583	Талавари Саперави 	3,7	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/58b/1836553.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+584	Marques de Caceres Crianza Rioja 	3,6	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fa5/763401.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+585	Domaine d'Andezon Cotes-Du-Rhone 	3,7	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5e5/379132.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+586	Rioja Mil Hojas Tempranillo 	3,1	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/897/1784318.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+587	Golden flowers Merlot 	3,1	279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a5a/118920.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+588	Stobi Vranec 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e40/308260.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+589	Vylyan Villany Cabernet Franc 	3,6	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/22d/496018.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+590	Tussock Jumper Touriga Nacional 	3,6	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/26a/575760.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+591	Chateau Grand Moulinet 	3,9	2 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/324/3400276.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+592	Hamelin Bourgogne Pinot Noir 	3,6	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f91/3431382.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+593	The Mark Merlot-Cabernet 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/431/3431441.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+594	Arena de Oro Garnacha-Tempranillo 	3,1	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/58a/3431447.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+125	ликёрное Солнечная Долина Черный Полковник 	4,2	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fa1/174011.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+315	M.Chapoutier Rivesaltes	3,9	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/351/379274.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+72	Tbilisi Peak Пиросмани 	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/760/214637.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+168	Barkan Classic Каберне Совиньон 	3,2	1 389,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/094/397553.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+179	Портвейн Агдам белый 19 % алк., Азербайджан, 0,75 л	-	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/702/3399461.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+203	ликёрное Sol de Malaga Original сладкое 15 % алк., Испания, 0,75 л	3,6	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e38/571881.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+253	Novacorte Amarone Della Valpolicella Classico 	4,3	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fac/484539.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+271	Babalu Tropical 	3,9	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c29/1900093.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+291	ликёрное Royal Madeira 17,5 % алк., Португалия, 0,75 л	4,4	1 719,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ad7/435202.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+308	Casa Castellano Garnacha 	4,1	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/634/496066.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+455	Muelle Tempranillo Syrah	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/54b/590005.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+496	Arrivederci	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc5/606027.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+576	Villa de Corgos Reserva Bairrada 	4,1	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/620/338781.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+397	Il Sarone Россо 	3,6	744,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/02e/1900311.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+408	Pradorey Origen Roble 	3,5	1 389,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b35/1509350.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+410	Villa Krim Shevalie Rouge 	3,5	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7c9/3431682.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+459	ликёрное Malaga Virgen Dunkel Pedro Ximenez сладкое 17 % алк., Испания...	3,7	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7c0/571897.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+506	Askaneli Brothers Ахашени Красное полусладкое 12 % алк., Грузия, 0,75 л	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9cb/1766378.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+516	Vina Albali Темпранильо Шираз 	3,3	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a53/1900198.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+579	Sankt Anna Dornfelder Halbtrocken 	3,9	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af0/676593.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+515	Castillo de Fuendejalon Crianza 	3,8	1 129,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ad7/520962.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+564	Bouchard Aine & Fils Les Vendangeurs Bourgogne Pinot Noir 	3,4	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1e0/314401.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухо...
+138	ликёрное Массандра Портвейн красный Алушта 17 % алк., Россия, 0,75 л	3,8	569,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/90c/339027.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+341	Domaine des Chanssaud Chateauneuf du Pape 	4,2	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5e2/763407.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+117	El Circo Acrobata Garnacha 	3,4	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5d5/773984.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 \.
 
 
@@ -652,304 +762,630 @@ COPY public.globus (id, name, rate, price, picture, shop_logo) FROM stdin;
 -- Data for Name: perekrestok; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.perekrestok (id, name, rate, price, picture, shop_logo) FROM stdin;
-9	Jardin de la Taur Grenache-Syrah 	3,9	549,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/16/a3/619714a31413103f6ab657e40875.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-10	La Miranda Secastilla Garnacha Somontano DO 	3,8	579,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c1/bd/1ca39a2b2f04ed9749c67a3e8077.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-11	Molom Tinto 	3,8	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a0/99/a301fe4d9f565ff60e90cacd1f50.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-12	Cuvee Blanc Terrier Rouge 	3,6	429,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/99/f8/ed6ce3a845987c64c4ed8c2788c3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-13	Redwood Vineyards Pinot Noir 	3,9	939,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b7/98/b1482a0674622edf2983fbcfe982.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-14	Takar Арени 	3,9	579,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/97/2e/a8210xd277ec134480da7c01c560.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-15	Matsu El Recio Toro DO 	4,1	1 999,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b2/9f/8697a4f3b7b626da0fa2be2208c0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-16	Matsu El Viejo Toro DO 	4,3	4 499,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e5/7f/d79ab19086a1b07d479082ae4d9b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-17	Primasole Primitivo 	3,9	719,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/88/a8/12a75a8c8f6d669a5f09468a1fbf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-18	Chateau l'Eclair Cabernet ординарное 	2,9	299,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3a/bd/9676ba6134f0ee03ebec4f65e999.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-19	Rouge de Talu 	3,6	579,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/79/02/34910056001a853c662d8cfb15e4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-20	Тифлисский Дворик Саперави 	3,2	349,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2e/d8/0f44047755xd78ccba8f98f02197.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-21	Chateau Tamagne Терруарное Саперави - Красностоп 	3,8	999,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/15/fe/fcc486e058xd62xde009bb451da7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-22	Sobreiro de Pegoes Premium 	3,7	529,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/8d/cb/64f84045e3ec26f3257bdffcc284.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-23	Appassionatamente Rosso 	3,8	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0f/5b/2cbea626738063f1052a73c6901e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-24	Мысхако Quintessence Cabernet Sauvignon 	4,1	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3f/9f/1a3daca2b81412fe63c748f7b777.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-25	Loggia del Sole Chianti DOCG 	3,1	999,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ed/0e/4138c5db1f488c2dfe52774328f2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-26	Negrar Valpolicella Ripasso Classico Superiore DOCG 	3,8	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ff/b3/15220bcf4a1095e7da443f30e310.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-27	Highway to Hell 	3,8	799,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fb/f8/d0f832d1d173b42bf0f4c005666b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-28	Bründy Zweigelt 	3,7	659,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4f/bc/9d165a232d7c8806879a3071e0d6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-29	Musita Rabah Nero d'Avola 	3,7	529,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5d/96/1770xd729e13455e0a3e880f01d7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-30	Inspirado Carmenere 	3,6	429,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4a/9e/78d5948e10c9975418af24fa7436.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-31	B.IO Sangiovese di Romagna DOC 	3,6	999,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9c/9b/ee68811ee996d8f39425bd24150a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-32	MV Malbec Reserve 	3,7	859,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cd/63/42b0963016b8842467fe4c3cc3f4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-34	Maradi Саперави 	3,6	499,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fa/78/98f162aac6ab0233b696e2e4ffa4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-35	Jardin Fleury Syrah 	3,7	499,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fb/1d/5d52b896f8c2e0f44b42d9a9581d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-36	Chateau Tamagne Красностоп-Анчелотта 	3,3	299,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f9/91/7ab2e16b9e1eb3b9b09544802856.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-37	Гранд Резерв Атаман Красностоп 	3,6	729,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2c/5e/af55exdf3e51285be12a0aexd7b5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-38	Солнечная Долина Меганом 	-	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/89/61/e4ebd2af6f58fb618b415f5d7167.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-39	Высокий Берег Каберне Совиньон 	3,4	569,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6b/69/9892a3c1922956a58ff29bb697b7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-40	19 Crimes 	3,9	1 799,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d6/bc/2f3b83ca94256e6d2e67f072e5eb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-41	Don Simon 	3,0	439,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/89/bb/4ac504aa22755d8d689b2bfc530e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-42	Beefsteak Club Beef&Liberty Malbec 	3,7	889,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/49/4c/9e45c0xdbe6748bb13bdcf5d8b59.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-43	Q.S.S. Рар 	3,8	799,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/29/87/dff915c5ede95a9aebc60114e192.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-44	Ed Knows Мерло 	3,8	659,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/14/4f/fa5e0b94058529fd2b10cb6ea213.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-45	Fetzer Zinfandel Valley Oaks 	4,0	1 349,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2a/62/5e641b7162b9802eaf0e0dae566d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-87	Bouchard Aine&Fils Cotes du Rhone AOC 	3,7	749,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9e/f1/2d93d3c8161d488bf18b7d587dcb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-48	Saveurs d’Autrefois 	3,9	879,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a5/f1/42bc74e56dc7bf3b7691b56ede3c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-49	Loggia Del Sole Chianti DOCG 	3,1	599,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fe/ae/5b717d8697f118exd2301d16769f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-50	Le Grand Noir Pinot Noir 	3,7	659,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/14/68/f174fd9d5e10f53c13ff6dcb714c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-51	Solano Monastrell Jumilla DO 	3,5	359,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/11/99/1da0959338fe3da9be1e9d2dfb85.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-53	Cape Art Pinotage 	3,2	399,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/64/12/735ee86abcf3de7a276e1cd499c7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-54	Ликурия Терруар 	3,6	699,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/64/53/c345c412c49655249bc92e2b0c6f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-55	Elegido Tempranillo 	3,8	599,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f6/48/248395b37c74a8ee771ef8bed0e3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-56	Vivanco Reserva Rioja DOC 	-	1 799,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/09/f5/7e4d1aa467615f094c2a06d0c466.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-57	Sangre de Toro Tempranillo La Mancha DO 	3,7	749,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/94/c6/4603bf486ba995acf864f4dfa219.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-58	Lindeman's Bin 50 Shiraz 	3,5	1 299,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ac/2b/45e0b6865a49c6109041c221da64.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-59	Chateau De Talu Море волнуется два 	3,5	499,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/35/e5/a91b4db8d15d571615cf48470837.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-60	Авторское Саперави 	3,5	409,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a0/8b/95e49fa375056a7a1d2dd22b61ca.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-61	Солнечная Долина ПТИ ВЕРДО 	3,4	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/85/01/77b2013ca61566ba1972076572f8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-62	Chateau Pinot Гравитация Пино Нуар/Саперави 	3,7	799,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9a/b0/d5f13ccbf5926de5962ec2fbaafd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-63	Negrar Appassimento 	4,1	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1b/13/5b5bd348683b17e1f95591e3fb73.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-64	Mayrik 	-	449,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a9/18/c216d9b5d33fc5bd0cfa2b5b3d9d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-65	Rutini Wines Trumpeter Malbec 	3,8	1 039,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0d/5f/6a14836de752xd7cc0bd13f1f890.png	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-66	Point Blauer Zweigelt 	3,8	1 099,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/be/a4/3048d2cdebdfb592b52d51cd4f2c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-67	Karas 	4,0	1 499,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e7/a1/4124d224140ea5bdebe389aee8f0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-68	Резерв Винодела Каберне Совиньон 	3,4	269,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e8/b3/5c0546e3b3a2d7910a936a8442ca.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-69	Mapu Cabernet Sauvignon Maule Valley DO 	3,5	1 029,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/98/83/11712c856f214fa192fb6b8xd4b7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-70	Astrale 	4,1	1 549,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f2/61/xda1e076bc949e327992822277b0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-71	Pirovano Collezione Primitivo Puglia 	4,0	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7c/fe/200e68ea84d56866d627f78206ce.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-72	Collezione Costantino Organic Amorcor 	3,9	649,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4e/16/55df87a6bc12c81a038e317ff912.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-73	Имение Сикоры Каберне Совиньон 	3,9	1 149,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f0/d3/cee47e3997e5e6dd9fcf0fdd2b8f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-74	Инкерман Каберне Резерв 	-	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/72/cd/c8eba2496c295b8531fd89883161.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-75	Loggia del Sole Chianti Riserva DOCG 	3,2	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/8b/ee/eb2896e734f3fb917ef413658b32.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-76	Conti Sani Chianti Classico DOCG Primum 	3,7	989,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/17/de/e435c9bcac288990617fcb6d3b33.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-77	Атаман Гранд Резерв Цимлянский черный 	4,1	959,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/63/0c/7213d125900447005f2571f3e9b5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-78	Альтос Иберикос Крианса 	-	999,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bb/0d/9335efd7c687a0f48143cf4b75ba.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-79	Gran Passione Appassimento Rosso 	4,0	1 249,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cf/7c/beba56331cd02db06cbf6933f005.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-80	Cacciata Chianti Classico DOCG Riserva 	3,6	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7a/9e/f5289d41ea8813bc220829716185.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-81	Tavernello Syrah Organico 	3,9	619,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c1/01/e00ab4da0fa9b86bf6ed38960f5f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-82	Destination Rouge Bordeaux AOC 	3,7	999,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/61/06/3cbbbc6bc5288e302a8a11b94546.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-83	Rauli Merlot 	3,4	399,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cc/24/7f4fc2e085d7f542a18150cc79e9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-84	Masi Bonacosta Valpolicella Classico DOC 	3,5	1 249,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f8/00/fa63ea2064467593a13b6ba44609.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-85	Barefoot Zinfandel 	3,6	739,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/48/f7/db81968992d608a6f38f97132b07.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-86	Chateau Tamagne Каберне 	3,4	169,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bb/15/978337c379c9bdb215ddd974908e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-88	Tavernello 	3,2	599,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7b/bd/dd9774436a6257a6a8db56454616.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-89	Riecine Chianti Classico DOCG 	4,0	3 099,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b4/39/70675eb7dd8c40159fb4af5aa08b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-47	Резерв Винодела Мерло 	2,8	269,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ee/d2/d1f309b07a1f1bbcf340119a9145.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-92	Тавквери-Мерло Цард марочное 	-	599,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/29/11/2383fe04c1f43f24022a0c991b30.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-93	Yali Уайлд Свон Каберне Совиньон 	3,8	1 149,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5f/21/7bf42e9ce1b61048a962bbd667fc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-94	Кубань Таманский полуостров Шато Сенной 	-	499,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/44/51/c968350eb5f4ee83f609515421df.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-95	Цард Ломиаури-Саперави 	-	599,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c2/2b/eb85fc4b7c40432d5a4d2efe3be2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-96	Цард Саперави-Аладастури 	-	599,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0c/18/ddf8692302c3ffdcf79cd94acc61.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-97	Medija 	-	539,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/aa/6e38d49167703d318124310a18e9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-98	Quintessence Шторм Шираз 	-	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/22/62/190407f9b3aaff1e61e178a199c0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-99	Castillo de Ayud Calatayud 	3,9	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c4/2c/f8d20babf832ed818fabee7e8845.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-100	Aristov Anima Ancellotta 	3,7	549,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a3/14/e83c83b7b8553dcbdfae7c9a861c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-101	De Wetshof Danie de Wet Pinotage 	3,7	1 029,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e4/5c/bd01b928fd28282f56007bb8b24a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-102	Poggio Passo Malvasia Nera 	3,7	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/53/c2/68af61615274037ab07ebcaa1a0c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-104	Lunatico Primitivo 	3,9	859,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c7/08/f807d2c9f6799103de8e0111efe5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-105	Lunatico Negroamaro 	3,9	859,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/54/6b/d4135f9c704caa0d5a218e59eaa2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-106	Negrar Corvina 	3,6	779,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/87/72/65997ae34ae80cf83ca2bcdbf3f1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-107	Rabo de Gala 	4,1	499,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ee/db/d87ed13d73b56d4b13588dc25b7d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-108	Monte Real Tempranillo Rioja DOC 	3,4	1 799,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/8f/d5/961553da0d04c62369a665a99b3d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-109	Claroscuro Tintas de Uco 	4,0	1 399,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/11/a9/2c897839a72cb05bcd22697648b3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-110	Finca Constanсia Parcela 23 	3,6	1 149,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d3/80/3c32845976e4cbd8dbac50543645.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-111	Finca Constanсia Seleccion 	3,7	959,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2c/00/bcc58b0dc9e8b7d289abdfb4d0f7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-112	Born to be Wild 	4,0	799,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/91/85/9bb1b8db4b4474495aa5ca613eb8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-113	Tentation du Sud 	3,9	899,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/28/1f/b738451b3637dcbf4a7cfe22a369.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-114	Pais El Autoctono Secano Interior DO 	3,7	1 049,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/50/bc/354c6xd84f621bcf44881681dd86.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-115	Gulfstream Cabernet Sauvignon-Shiraz 	3,6	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/af/f0/af3743eddb000e497251b64607a9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-116	35° South Cabernet Sauvignon 	3,3	539,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a4/0c/b6f8262c2f01e97b2c407a534295.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-118	Chocoholic Pinotage 	3,7	999,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f7/ac/b6e4f891709b9168e8a7cc0fd2f7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-119	Masseria Doppio Passo Primitivo-Zinfandel 	4,0	919,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4a/a8/cac0b8ce54ed1e51c8dee21d860d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-120	Masseria Doppio Passo Copertino DOC Riserva 	4,1	1 349,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/74/a0/1xda73c630d8950e1b4027f08513.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-121	Simonsig Cabernet Sauvignon-Shiraz 	3,6	1 149,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/9a/13da0fdca508ed39ae9b542e691f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-122	Doppio Passo Primitivo BIO 	3,9	919,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ff/9a/713fe5e528e10824283faf5d8e3d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-123	Signos Red Blend 	3,6	1 299,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ea/21/2xd91d3b41d206977212ef3209b3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-124	Signos Malbec 	3,7	1 299,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0b/7d/fb763abe3e67268e075f05aae542.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-125	Cranswick Lakefield Shiraz 	3,5	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9b/a5/092606718bfcxd21e8de6c174ff5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-126	Petalos del Bierzo DO 	3,8	2 999,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e6/52/161fcfd790e9c49f3d350d329c0a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-128	Masserie Pizari Primitivo 	3,8	1 459,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/36/d2/c56c65d04637304162e8d0de8b6a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-129	El Vinculo Crianza La Mancha DO 	3,9	1 699,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b0/35/0a15f5bd3ece32ef2acda5458f75.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-130	Gamla Cabernet Sauvignon 	3,9	1 969,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e3/6e/89362540b8dd21cfeaccc012730d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-131	Catena Malbec Mendoza 	4,0	2 299,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6c/01/bf356751b148c7b00b09ae8c7ecf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-132	Escudo Rojo Carmenere Reserva Colchagua Valley DO 	3,8	2 299,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9c/a0/e7335ae5a410947548935d3b1f0d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-133	Little Beauty Pinot Noir Marlborough 	4,0	3 349,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/6f/869fd14d41bfe9d76a34efd6e706.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-90	Steakwine Cabernet Sauvignon 	3,8	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e7/34/b2c46b127e572262ab4e7a4015bc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-135	Alamos Malbec 	3,7	1 349,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/81/2a/91360f6fbfe7fea1055b9bb80f84.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-136	La Braccesca Vino Nobile di Montepulciano DOCG 	3,9	2 699,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0d/c0/cca2d5e512c2a92cface647e10a8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-137	Mataca 	-	1 799,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/eb/fc/cbf33e94c021cabd8bed554fc07a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-138	Barahonda Summum Monastrel Yecla DO 	4,2	2 749,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/77/bd/04cbd399988eb3b685xdf27c79c4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-139	Barahonda El Bicho Raro Yecla DO 	3,9	2 059,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1e/ea/d6734c1c6561ddedd5e71e7de096.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-140	d`Arenberg The Footbolt Shiraz 	3,7	1 699,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c2/8f/f3d4460333dd5ce8dda5d4d9bb22.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-142	Boyante Tempranillo Organico Ribera del Duero DO 	3,8	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6a/95/312299a4f2289a79812143d48fdc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-143	Boyante Roble Ribera del Duero DO 	3,8	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/ca/4ff005c61f8xdba5c4cec44cff2a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-144	Neprica Primitivo 	3,8	1 369,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0c/a2/b109ba19b191fd8c5f6b2521a417.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-145	Pagos del Rey Condado de Oriza Tempranillo Ribera del Duero DO 	3,5	1 049,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a5/5b/40fcac7d54844ff99557565b32ac.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-146	Alma Valley Red 	3,2	639,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/23/90/fc0e7714b6577c6a2aec553d2d36.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-147	Tenuta il Poggione Rosso di Montalcino DOC 	3,9	2 229,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/66/aa/7e846cc47f0b56aa8857c278e9ee.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-148	Lucente Toscana IGT 	4,0	5 599,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ac/e0/5587ec765418a101b50f10d40d97.png	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-149	Pianirossi Sidus Montecucco DOC 	3,8	2 139,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7c/a4/76a4eab5d635c5af4c7d5d9a3764.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-150	Contrada Maestra Barbera d'Asti DOC 	3,8	1 349,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/50/5f/51488f7066dbda01b324bae69724.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-151	Amaranta Pinotage 	3,6	439,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/66/ed/c77f4a3911c4186d97ef837b88a8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-152	Долина Привидений Каберне Совиньон 	2,5	349,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d5/5e/71fddd13abd3d9a093aeb37f556a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-153	Tenuta il Poggione Brunello di Montalcino DOCG 	4,2	4 039,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/61/f4/b50f8e8d409b31bd215da857c209.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-154	Stobi Verdot Private Reserve 	3,8	1 459,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/16/50/01c709f2d5647277c8933f41dd26.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-155	Silverado Cabernet Sauvignon Napa Valley AVA 	4,4	4 999,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/22/9c/c20b4507ca2665109acd65d604d0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-156	La Matiniere Crozes-Hermitage AOP 	3,7	3 049,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/92/73/60234a65391a37c4d62ab10dcf3b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-157	Инкерман Каберне Гранд Резерв 	-	1 049,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/11/e6/fded63788c52d3babf60b5b8a6f3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-158	Cristo di Campobello C’D’C’ Rosso 	3,8	1 629,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7c/3e/192714d5db245eecbafb9a5f9ffd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-159	Ramon Bilbao Edicion Limitada 	4,0	1 889,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2e/ce/e9deaecf7a364fa44ba4a28879c9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-160	Simonsig Redhill Pinotage 	4,2	2 319,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/38/2c/dff9cfba9604567818b84d3a7e4a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-161	Simonsig Merindol Syrah 	4,2	2 829,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c1/ef/4d68b0bf1c0f44edac17f8cc3620.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-162	d`Arenberg The Laughing Magpie 	3,7	2 919,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1a/5b/34a69cbc13c08f1d090e7bb5ea4d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-163	Vajra Langhe Rosso DOC 	3,8	1 889,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/85/77/f9c35b2452407d0875d18a65fbe3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-164	Sela Rioja DOC 	3,9	2 749,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/43/3a/ee9cd42916644c081xd21501324c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-165	Yalumba The Y Series Shiraz 	3,6	1 369,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/64/8c/de325f4b449ab433c427b215a3a2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-166	Tchotiashvili Саперави Рчеули Квеври 	4,0	2 399,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d8/49/7af634d013496c08d6fb3751ec55.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-167	Beck Blaufränkisch 	3,8	2 569,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/20/5d/070e63c1823837071b700ddc6e93.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-168	Gentleman Oltrepo Pavese DOC 	3,5	1 499,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/55/db/72db29c0e7925686b1e4a3032285.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-169	Alta Vista Vive Malbec 	3,7	1 399,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/91/2c/5772a55be9470fc4c2fb1366f18a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-170	Chateau Frederic Monplaisir 	3,5	939,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e9/f1/982d6c0ba3d6918f907080196d6b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-171	Disueri Sicilia DOC 	3,6	1 539,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5c/57/22c0296faf2ec98cab5e744a3341.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-172	Roda I Reserva Rioja DOC 	4,4	4 799,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/93/3e/d472ec1b71ff531f531b824e9051.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-174	The Wine System Tinturio Navarra DO 	3,7	579,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0f/c0/a140536125c660191ae007c947c9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-175	Mapu Carmenere Maule Valley DO 	3,8	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/90/e8/362307b944a987610dd77c7cb8dc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-176	El Pacto Rioja DOC 14%, 750мл	3,9	2 399,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d2/17/bfa30469d1932643xd5156762525.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-177	Абрау-Дюрсо Каберне Совиньон 	3,5	1 649,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3c/f1/ae3967667e21ba7ff50ab88c62a8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-180	Suggestion du Chef Merlot 	3,7	679,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4d/cb/22ed8b27a94f8482bc2c0b4b55af.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-181	Musita Regieterre Nerello Mascalese 	3,8	589,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/23/8e/d7bxd365d75837af7ff6ea9f67fd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-182	Инкерман 	-	519,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/23/8b/dd359f1a8141e25582bc9cd9b40b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-183	Paladin Salbonello 	3,7	919,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0c/b9/4c45d538079cf00bf28b0b72f5bd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-184	Musita Organic Nero d'Avola 	3,6	739,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/xd/93/b4c55fee221feb323d6b90ed33e6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-185	Oyster Bay Pinot Noir Marlborough 	3,5	1 779,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/06/b5/928d6c7d1dd3xdcc93119d92f41e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-186	Инкерман Каберне 	-	399,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b9/ba/cf1df504e87ef25245ddf57b3920.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-187	Cа' Del Poggio Nerello Mascalese 	3,7	699,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/86/49/xd914f400168540176e2e50c519b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-188	Поместье Голубицкое Мерло ЗНМП Голубицкая стрелка 	3,9	799,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/e7/138265f23387e40a6e45345baed0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-189	Paladin Drago Rosso столовое 	4,1	999,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b1/2a/1465c51460c0e66d996308afb03c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-190	Musita Amal Syrah 	3,8	529,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f4/97/8fdab3f01bf0b994ae5db585a475.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-191	Gai-Kodzor Terroir 	3,7	959,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/78/8c/bb9a4b50e592f63f0f36fcb10d83.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-192	Podere Montepulciano d'Abruzzo DOC 	3,6	1 099,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/e4/9bf4d41385c8e74b7ab53fae4217.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-193	Emilio Moro Ribera del Duero DO 	4,1	2 999,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/03/e8/c1b83e8c3f1ba3fcfb6d1a26ef3c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-194	Традиции Абхазии Каберне Сухумское 	3,0	539,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cf/ee/da0501a3b949a256ed013b17142b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-195	Черноморская Истина Каберне 	-	379,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6e/da/7b329f24de99d387901e6f706906.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-196	Georges Duboeuf Beaujolais Nouveau 	3,4	1 749,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fa/ff/bfd95624c20763d59496a587d3ed.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-197	Chateau Tamagne Молодое 	3,6	599,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0f/64/f8aec0ed8d375a7882608da0ebe9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-198	B.IO Nero d'Avola Cabernet 	-	1 029,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c7/4e/42ee07f48b91a57384dec9cfb509.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-200	B.IO Nero d'Avola Il Nero 	3,6	999,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5c/ec/21f4dba3ae72aa261a9acd4438ea.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-202	Badagoni Саперави 	3,6	299,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b4/5f/600e0c5114c72d120302903fb4fe.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-203	Passo Sardo Cannonau di Sardegna DOC 	3,6	1 099,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f0/19/acb3523cb015eccf6684d98cf7c2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-204	Vega Sindoa Tempranillo Navarra DO 	3,5	749,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/29/fa/3d2fe47ba6e78fe574acee1457e8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-205	Claroscuro Malbec Mendoza 	3,9	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f6/4e/a42c6894c8a355d6ed658c83d15e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-206	Yamana Malbec-Merlot 	3,5	679,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e5/e5/56416d9bfdcd60a396b382e1b9e2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-207	Fontanafredda Briccotondo Barbera Piemonte DOC 	3,6	1 449,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/58/ae/efd41b8a28cce975903f0b4cd695.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-208	Turtle Dreaming Cabernet Sauvignon-Shiraz 	3,8	749,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/63/9b/2cc25688f792868af221c4ac3d98.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-209	Ionos Red 	3,3	579,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4d/e5/c390afd28d40743f51c2e282ca71.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-210	Джейран Матраса 	3,4	469,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5b/2d/34173dc4a2a8465bcf053cfb4646.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-211	Pirovano Nero d'Avola 	3,7	659,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/62/62/698fd2ca14398bfd646d3c8e5c5d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-212	Diaz Bayo 8 Meses Barrica Ribera del Duero DO 	3,8	1 499,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/c4/fb1f57e1243cacc142xd236dc5xd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-213	Tavernello Sangiovese Organico 	3,6	619,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/eb/30/8990489ce6f21ddcc4173a88be2e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-214	Cultus Organic Tempranillo 	3,6	799,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/78/5b/bc8f377aef6ddcfdf44418bc0c72.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-215	Chateau Tamagne Reserve Premier Rouge 	3,7	779,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/20/8ed258cc94367e018e1105e089bf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-216	Beefsteak Club The Mini Malbec 	3,4	429,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/12/40/98f21461743f5da3a424ffb94c05.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-217	Rauli Syrah 	3,4	489,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cf/dc/6698f1348144f1a1844c7bcbb450.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-1	Murviedro Пасьон Монастрель Гарнача 	3,8	529,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2d/70/4868bxd729e603f1c34f5ae94418.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-2	San Valentin Garnacha Catalunya DO 	3,9	599,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1f/8f/b9db2d5d7df213a1647758f6e0d4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-3	Don Garcia 	2,9	329,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b3/51/086e1d37b9fb44bd2873d462e92d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-5	Villa Antinori Rosso 	3,8	1 849,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/8a/10/c02988dc2e0cf11f230e19a36457.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-6	Мысхако Марселан 	3,7	549,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/af/e9/8397dc6604d2c557794c0368f7f5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-218	Радеда 	-	619,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c4/b4/2c4c7ae8d1107bbd3347e401b60c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-219	Masi Modello Corvina Verona IGT 	3,6	779,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e6/53/c4246d46c84cexd4d28ea66f448e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-220	Barefoot Cabernet Sauvignon 	3,3	1 099,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/68/93/b9ab0eb647d6445117e246b12acd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-221	Borsao Crianza Seleccion Campo de Borja DO 	3,9	779,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/00/09/a8df8fdceb2c8b304f4e896ea3e8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-179	Chateau Pinot Pinot Noir 	3,6	959,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e0/98/9fccdf8fd73e3de9f65d0046170b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-242	Champs des Rois 	3,6	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c0/7d/deccfc56cb8b6xd0a8ee47967ce7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-224	19 Crimes The Banished 	4,0	1 949,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/41/f4/6bb522bd0f719cb0fe6f6f418b01.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-226	Pirovano Montepulciano D'Abruzzo DOC 	3,5	599,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3d/d8/e66a0af0a2e9a178d994d16b14ee.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-227	Pirovano Collezione Nero d'Avola 	3,7	629,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cc/66/20ab76e0722fa2a54c5020dd480e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-228	Montecillo Reserva Rioja DOC 	3,9	1 749,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5c/12/f5c6fc3dd6dd7a5fbf40b803d86c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-229	Фанагория Авторское вино Каберне-Мерло 	3,4	599,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4e/c6/b661899e25574c0b9f954e10ef41.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-230	Pearly Bay Dry Red 	3,3	649,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/13/7e/7ff7eabb6bbebf8fc12b466b9c9b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-231	Тайна Колхиды Мукузани 	3,7	799,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/27/95/fe065654f82958f93ef3f56937a1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-232	Luna Valley 	3,4	549,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/26/51/73a854fd4cb97067409fa372fdc5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-233	Les Chartrons Lussac Saint-Emilion AOC 	3,6	839,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c5/42/88b6e7e33208f427cb0851ba510f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-234	Ca'Del Poggio Montepulciano d'Abruzzo DOC 	3,3	679,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d9/79/5a5b8b556xd78ed564affd6410c5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-235	Ca'Del Poggio Terre Siciliane 	3,5	699,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2a/82/afeda5d6f45da26d570477a24611.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-236	Racimo de Uva Tempranillo-Garnacha Carinena DO 	3,3	359,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c2/9a/223a19abff0572d5f822f1569df4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-237	Villa Alberti Chianti DOCG 	3,4	1 099,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/59/23/d5d726a202ee6203ce585746ca77.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-238	Telavi Wine Cellar Marani Mukuzani 	4,0	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6c/df/7680c28ab40481af01557a6ccb7b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-239	Ramon Bilbao Crianza Rioja DOC 	3,9	1 299,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7e/fe/fa08e9ee567afe63f6a37b6f837b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-7	Cape Art Shiraz 	3,5	399,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/42/47/279f0758fc7b59369d7650073550.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-91	Fyi Red Blend 	3,8	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/06/ca/436e9d8eb05518263d75c8d62e49.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-117	Yalumba Organic Shiraz 	3,6	2 059,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/62/25/f4348cf0abfc553aa95bb191a34b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-201	Planeta La Segreta Nero d'Avola 	3,5	1 399,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ae/e2/579e28646e4eca1a4e61b26d542d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-240	Don Florencio Reserva Tarragona DO 	3,9	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2b/21/d19505b2926471ec6da86d27403a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-241	Solar de Alarcos Rioja DOC 	3,7	999,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/91/12/1ff15b2c4e3a25236f813383b0b2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-243	Mildiani Пиросмани 	4,0	799,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/79/bb/c4e50140e50334a03283988cee6c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-244	Feudo Maccari Saia Nero d'Avola 	3,6	2 749,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d1/eb/28064c94f09572d69f178909a2c3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-245	Barkan Classic Cabernet Sauvignon 	3,5	1 299,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/22/05/9ef7bf0ba3f32c3593e9bc874851.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-246	Tancia Chianti Riserva DOCG 	3,5	1 299,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2b/bf/35d514d1077b316db0929457e6xd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-247	Castellare Chianti Classico DOCG 	3,8	2 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c2/a0/4280f661e92fa7bbe30e8edb1c1e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-248	Chateau Haut Bon Fils Bordeaux AOC Rouge 	3,8	799,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/85/36/54f7eac755ba33dc9ca330b47a33.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-250	Raices Reserva Valdepenas DO 	3,7	854,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/44/60/23610ee169de68de36facb392276.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-251	Raices Tempranillo Valdepenas DO 	3,3	719,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/49/62/fbbdbe78b99cca89089edb8d74c3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-252	Argiolas Costera Cannonau di Sardegna DOC 	-	1 699,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/81/c6/bd1a18607aeae971c6ed7b6d2ec8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-253	L'Aurore Bourgogne AOC Pinot Noir 	3,6	1 569,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/56/ba/5ca6568a0b6a4eae3376b6429db4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-254	Frontera Cabernet Sauvignon 	3,2	699,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2e/af/4033e1cec1b435e98877faae768d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-255	Чегем 	-	559,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3c/18/5bf87f6dff88c46df4c4b21dbe86.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-256	Zonin Montepulciano d'Abruzzo DOC 	3,5	299,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4c/06/bacbac08f2a987a57ba657b34d60.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-257	Vranec Vilarov 	3,9	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6a/ce/0270b49ffbac094aa8cdfffaf598.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-258	Arrivederci 	3,9	809,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e3/2e/ff476e58976700f280b2cd87ec6d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-259	Roccialta Chianti DOCG 	3,4	1 049,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/95/e4/631b685621e753911f1c4bb576e5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-260	Ведерниковъ Губернаторское Голубок 	3,6	799,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/bb/057748c9ec84742e07374c10f651.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-261	GRW Мукузани 	3,8	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/21/02/fac273a8dddddb9c625b01e3d1fd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-262	Luna Valley Selection Carmenere 	3,7	599,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cd/19/e3f3cefe8b65f8b3302838b65b44.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-263	Vivanco Crianza 	3,8	999,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b0/93/5509477fdc364a78xd5004b7d2a1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-264	La Reserve de Malartic Pessac-Leognan AOC 	3,9	2 799,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0e/4b/d0cd639cda61b5f6690b1f72609d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-265	Leonardo Chianti Riserva DOCG 	3,7	1 499,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/58/c1/fe5934edbe3a796a387f613f949a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-266	Leonardo Chianti DOCG 	3,5	1 149,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f1/6a/61928b0569be621159b05295fc77.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-223	Chateau Tamagne Саперави 	3,8	449,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/87/be/9024af4572c227d6b22e28bfb8c1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-269	Pianirossi Maremma Toscana 	3,9	4 289,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/73/d2/9fa09xdfc00fc0edxd3a1d71f20e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-270	Tamari Malbec 	3,4	959,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/75/77/0c589a25dec71015ffa399c04b4d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-271	Barkan Classic Shiraz 	3,6	1 399,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/af/a0/25cae0785769c15250b1bf92e0e6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-272	Bouchard Aine&Fils Pommard AOC 	3,9	5 799,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/50/e3/xd1a19793a8a3331e8192277435c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-273	Speri Amarone della Valpolicella DOCG 	4,4	5 699,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/58/6d/6b4ab423c61b03d1a38d7cae250e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-274	Domaine des Chanssaud Chateauneuf-du-Pape AOC 	4,2	3 799,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4b/41/1c0969bc1019bc24c027b5d2ec97.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-275	Salvalai Amarone della Valpolicella Classico DOCG 	4,1	4 999,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4d/c4/5bc98e57a21b7bbeb2866b9af5e4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-276	La Casada Cabernet Sauvignon 	3,1	799,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/04/21/93998058f7df4c712dd0205b7db1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-277	Chateau Haut Maginet Bordeaux AOC 	3,5	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a5/88/3ef762089b8db0f93164208f3e65.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-278	La Croix du Pin Cabernet Sauvignon 	3,2	799,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/21/0e/a8986c23f0ea03ea0171ec6dbe0d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-279	J.Bouchon Merlot Reserva Maule Valley DO 	3,4	1 249,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b0/a8/27c6297200519b1568d5ff60d8e8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-280	J.Bouchon Cabernet Sauvignon Reserva Maule Valley DO 	3,5	1 249,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d3/32/86f1dc901f410fb57c550a10b311.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-281	Tenuta Cantagallo Chianti Montalbano DOCG 	3,6	1 299,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cc/85/6c3a4656a5798d63ef9923b4d458.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-282	Tour de Mandelotte Medoc AOC 	3,6	1 349,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/73/aa/12f5406d34aee076203b02be0ece.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-283	Joseph Verdier Anjou Rouge 	3,8	989,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b0/d0/a0e52ac545c1dc0fc70faea228ba.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-284	S'arai Isola Dei Nuraghi 	-	2 999,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/75/d2/7afb2cd8225007ee7669e530174b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-285	Domaine La Suffrene Bandol AOC 	3,8	2 499,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1e/2f/66de9603d92f7baafa10d8b9943f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-286	Chevalier d'Anthelme 	3,6	979,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/09/38/74478d576df5b62a24e68e7c4927.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-287	Nipozzano Chianti Rufina Riserva DOCG 	3,8	3 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6d/5a/250f0c5251fc50fa69393c1f4f48.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-288	Finca El Encinal Roble Ribera del Duero DO 	3,8	1 349,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/77/3d/e990a64f45d6be3d79895194f52a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-289	Baluarte Roble Navarra DO 	3,6	699,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/78/0c/919dd8e45ec87dbe76a64a8c44a1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-290	Conti Serristori Chianti Classico DOCG 	3,5	1 289,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/22/0a/1e803db416a067549d9478b09939.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-291	Melini Chianti Riserva DOCG 	3,7	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/06/b9/17498d780a9a5b7aafac001a94cd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-292	Siglo Crianza Rioja DOC 	3,5	1 099,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/91/93/35c8d052c2c94f88b714e5743bca.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-293	Gato Negro Cabernet Sauvignon 	3,4	669,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cf/79/74c6deaa7e6060a7b66cc08ee9a6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-294	Col di Sasso 	3,6	1 249,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/56/04/aaaf8e609a5b7bea74cdd50a74aa.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-296	Canti Merlot 	3,4	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7f/df/2ee3eddd8e15c3c764073c34c093.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-297	Steakwine Malbec 	3,9	759,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e9/b0/45d29e4c21bb77364b6d5aa6bbbe.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-4	Matsu El Picaro Toro DO 	3,9	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4b/c7/57e8468ba771d3a5512da80bd353.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-8	Le Grand Noir Cabernet Sauvignon 	4,1	659,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c1/ba/c1ee8f549d7cfefd35aedc8eca03.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-33	Tour De Mandelotte Bordeaux AOC Rouge 	3,7	859,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e2/0a/0e4d300317153c619d8cfaa880c1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-46	Camden Park Shiraz 	3,7	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e3/bb/9bd9317e4cb4b5c954893bdba0ee.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-52	Поместье Голубицкое Каберне Совиньон ЗНМП Голубицкая стрелка 	3,9	999,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d6/88/8bf5aa85cf74dbe159edf5573c23.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-103	Poggio Passo Primitivo 	-	899,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4e/0d/4a90d0ba13f0959c57116fdcf470.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-127	Beringer Founder's Estate Cabernet Sauvignon 	3,6	1 699,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9c/fc/186fce63c907dc1031312a8aceec.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-134	Pi π - 3.1415 Tinto 	3,9	1 969,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/52/d9e34e0eae677043a1b20c72c862.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-141	Klein Constantia КК Каберне Совиньон Мерло Стелленбош 	3,7	2 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ab/5b/2690c18b783b58d2a0af9bee3855.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-173	Romain Duvernay Cotes-du-Rhone Villages AOC Seguret 	3,7	1 139,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/26/c0/d810220935330091570648aef0cc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-178	Appassimento Segreto Rosso Salento 	4,1	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9b/4d/c74c4e348ed870b73e821dc7b790.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-199	Фанагория Номерной Резерв Каберне 	-	459,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c3/52/022b1db7f1344c2fbfd6acbee5cb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-222	Высокий Берег Мерло 	3,5	659,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/12/a3/9d7a2cc50e0b50c7e5f77aa6dfc2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-249	Monte Clavijo Tempranillo Rioja DOC 	3,4	914,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0d/93/399e03ef8805bca8ee33105314d9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-267	La Gerla Brunello di Montalcino 	4,2	6 869,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7c/83/e07277fa79a29183d86edd67e84e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-268	Pianirossi Solus Maremma Toscana 	3,9	2 319,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ea/0e/1fab962efc8d21125a35756cd68c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-295	Dos Caprichos Crianza Rioja DOC 	4,1	1 099,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6b/34/dbecxd5011f6001fd4518d487811.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
-225	Faustino VII Tempranillo Rioja DOC 	3,5	1 249,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/13/23/99138eb5f840e892ba7f10598c2c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png
+COPY public.perekrestok (id, name, rate, price, picture, shop_logo, color, sugar) FROM stdin;
+2	San Valentin Garnacha Catalunya DO 	3,9	1 229,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1f/8f/b9db2d5d7df213a1647758f6e0d4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+3	Le Grand Noir Cabernet Sauvignon 	4,1	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c1/ba/c1ee8f549d7cfefd35aedc8eca03.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+4	Espiritu de Chile Cabernet Sauvignon 	3,8	459,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e6/cb/c1fa128ca44cfe8fa6d9c0d1d0ab.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+5	Murviedro Пасьон Монастрель Гарнача 	3,8	959,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2d/70/4868bxd729e603f1c34f5ae94418.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+6	Продукция Mayrik Гранатовое алкогольная красная полусладкая 12%, 750мл	3,9	249,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6f/84/028feefac4742d669897576eb652.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	-
+7	Ikhalto Киндзмараули 	3,8	379,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/49/92/ca7b555e66af45c77a17d43a8506.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+8	Lunatico Primitivo 	3,9	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c7/08/f807d2c9f6799103de8e0111efe5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+9	Лыхны 	3,8	429,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bf/bb/226f2c676xd98816dc86b215db78.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+10	Amaranta Pinotage 	3,6	439,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/66/ed/c77f4a3911c4186d97ef837b88a8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+11	ликерное Солнечная Долина Черный Полковник 	4,2	909,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7c/19/a8f620ab2fdee2b6771b16d3b127.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сладкое
+12	Claroscuro Tintas de Uco Malbec 	3,5	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/de/49/7b257d437d1e4c869f7618440fb6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+13	Киндзмараули 	4,2	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/25/1a/38c88a4807bc00711779fcafef19.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+14	Цард Саперави-Аладастури 	3,9	499,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0c/18/ddf8692302c3ffdcf79cd94acc61.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+15	Inspirado Carmenere 	3,6	429,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4a/9e/78d5948e10c9975418af24fa7436.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+16	Nobiolomo Marzemino Colli de Scandiano e Canosa DOC 	4,3	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/78/80/c31a7679d7acb836860376584bc9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+17	Плодовый алкогольный напиток Дерево Жизни Ежевика красный полусладкий, 12%, 750мл	-	369,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/47/d3/d968fe939d8383b6497ba4de23d7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	-
+18	Fetzer Zinfandel Valley Oaks 	4,0	929,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2a/62/5e641b7162b9802eaf0e0dae566d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+19	Solvino Каберне 	3,5	199,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/88/69/454359ed882bee283748e086227b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+20	Chateau Tamagne Красностоп-Анчелотта 	3,3	299,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f9/91/7ab2e16b9e1eb3b9b09544802856.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+21	Conti Serristori Chianti DOCG 	3,4	1 029,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ac/9b/6f2efccfbfcf03d7190220178b44.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+22	Camden Park Shiraz 	3,7	629,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e3/bb/9bd9317e4cb4b5c954893bdba0ee.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+23	Альтос Иберикос Крианса 	-	1 749,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bb/0d/9335efd7c687a0f48143cf4b75ba.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+24	Броjaница Кадарка 	-	419,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2a/03/a21033e100871977ef456a012b37.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+26	Faustino VII Tempranillo Rioja DOC 	3,5	749,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/13/23/99138eb5f840e892ba7f10598c2c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+27	Апсны 	-	429,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bf/9d/4bb3a9875569e87039b1d8ee9c92.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+28	Negrar Valpolicella Ripasso Classico Superiore DOCG 	3,8	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ff/b3/15220bcf4a1095e7da443f30e310.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+29	Mayrik 	3,6	359,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a9/18/c216d9b5d33fc5bd0cfa2b5b3d9d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+30	Радеда 	-	429,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c4/b4/2c4c7ae8d1107bbd3347e401b60c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+31	Rauli Merlot 	3,4	399,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cc/24/7f4fc2e085d7f542a18150cc79e9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+32	Matsu El Viejo Toro DO 	4,3	5 599,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e5/7f/d79ab19086a1b07d479082ae4d9b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+33	Тайна Колхиды Киндзмараули 	3,9	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b9/f4/b54e4f6e186b45cd03280164b24f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+34	Тавквери-Мерло Цард марочное 	4,0	499,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/29/11/2383fe04c1f43f24022a0c991b30.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+35	Paladin Salbonello 	3,7	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0c/b9/4c45d538079cf00bf28b0b72f5bd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+36	Paladin Drago Rosso столовое 	4,1	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b1/2a/1465c51460c0e66d996308afb03c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+37	Чегем 	-	429,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3c/18/5bf87f6dff88c46df4c4b21dbe86.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+38	ликерное Массандра Портвейн Красный Алушта 17%, 750мл	3,8	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/41/2d/94ffe3172773e2546a597f461d3a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	-
+39	Maradi Киндзмараули 	-	489,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4b/6a/55f7e2f203164816d6a40a2963da.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+40	Negrar Amarone della Valpolicella DOCG 	4,0	1 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/df/73/57bdf4fa3b135e76a87aee3dc3ce.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+41	Мысхако Марселан 	3,7	549,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/af/e9/8397dc6604d2c557794c0368f7f5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+42	Bouchard Aine&Fils Cotes du Rhone AOC 	3,7	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9e/f1/2d93d3c8161d488bf18b7d587dcb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+43	Jardin de la Taur Grenache-Syrah 	3,9	839,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/16/a3/619714a31413103f6ab657e40875.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+44	Steakwine Malbec 	3,9	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e9/b0/45d29e4c21bb77364b6d5aa6bbbe.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+45	Poggio Passo Malvasia Nera 	3,7	649,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/53/c2/68af61615274037ab07ebcaa1a0c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+46	Pagos del Rey Condado de Oriza Tempranillo Ribera del Duero DO 	3,5	789,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a5/5b/40fcac7d54844ff99557565b32ac.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+47	Резерв Винодела Каберне Совиньон 	3,4	269,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e8/b3/5c0546e3b3a2d7910a936a8442ca.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+48	Musita Rabah Nero d'Avola 	3,7	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5d/96/1770xd729e13455e0a3e880f01d7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+50	Le Grand Noir Pinot Noir 	3,7	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/14/68/f174fd9d5e10f53c13ff6dcb714c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+51	Pirovano Nero d'Avola 	3,7	429,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/62/62/698fd2ca14398bfd646d3c8e5c5d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+52	Cape Art Shiraz 	3,5	399,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/42/47/279f0758fc7b59369d7650073550.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+54	19 Crimes The Banished 	4,0	1 599,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/41/f4/6bb522bd0f719cb0fe6f6f418b01.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+55	Joseph Verdier Cuvee Speciale Verdier 	4,1	699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fc/dc/d5e63c698b0a0acd6d7a4f183a72.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+56	Vranec Vilarov 	3,9	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6a/ce/0270b49ffbac094aa8cdfffaf598.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+57	Melini Chianti Riserva DOCG 	3,7	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/06/b9/17498d780a9a5b7aafac001a94cd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+58	Lindeman's Bin 50 Shiraz 	3,5	1 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ac/2b/45e0b6865a49c6109041c221da64.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+59	Chateau De Talu Море волнуется два 	3,5	499,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/35/e5/a91b4db8d15d571615cf48470837.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+60	Цард Ломиаури-Саперави 	-	499,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c2/2b/eb85fc4b7c40432d5a4d2efe3be2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+61	Tres Amigos сортовое ординарное 	3,7	339,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a4/3e/2d456d1a03c7a4f082f3104111f6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+62	Takar Арени 	3,9	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/97/2e/a8210xd277ec134480da7c01c560.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+63	Maradi Саперави 	3,6	379,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fa/78/98f162aac6ab0233b696e2e4ffa4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+64	Lunatico Negroamaro 	3,9	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/54/6b/d4135f9c704caa0d5a218e59eaa2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+67	Плодовый алкогольный напиток Дерево Жизни Гранат красный полусладкий, 12%, 750мл	-	369,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5f/ce/57889e24af79a293cf7ba71fe17f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	-
+68	Karas 	4,0	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e7/a1/4124d224140ea5bdebe389aee8f0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+69	Вина Тавадзе Хванчкара 	3,9	1 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7e/51/a0b9ed413f3268f684ce9d28849a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+70	Винный напиток Вермут Martini Rosso 14,4%, 500мл	4,4	499,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/72/2b/1b57f2b2651510a1fe6464ed5007.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	-
+71	Loggia del Sole Chianti DOCG 	3,1	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ed/0e/4138c5db1f488c2dfe52774328f2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+72	Villa Krim Shevalie Rouge 	3,5	419,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6f/35/f99e166cd8e417128a9c1a84f9cb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+73	Destination Rouge Bordeaux AOC 	3,7	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/61/06/3cbbbc6bc5288e302a8a11b94546.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+74	19 Crimes 	3,9	1 499,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d6/bc/2f3b83ca94256e6d2e67f072e5eb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+75	Monte Clavijo Tempranillo Rioja DOC 	3,4	914,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0d/93/399e03ef8805bca8ee33105314d9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+76	Raices Reserva Valdepenas DO 	3,7	854,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/44/60/23610ee169de68de36facb392276.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+78	Ведерниковъ Губернаторское Голубок 	3,6	799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/bb/057748c9ec84742e07374c10f651.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+79	Finca El Encinal Roble Ribera del Duero DO 	3,8	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/77/3d/e990a64f45d6be3d79895194f52a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+80	Aristov Anima Ancellotta 	3,7	439,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a3/14/e83c83b7b8553dcbdfae7c9a861c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+81	Aristov Анима Анчелотта 	3,3	1 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/14/fd/d332d0f3xdfc402c80b27206d722.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сладкое
+82	Finca Constanсia Seleccion 	3,7	959,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2c/00/bcc58b0dc9e8b7d289abdfb4d0f7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+83	Born to be Wild 	4,0	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/91/85/9bb1b8db4b4474495aa5ca613eb8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+84	Chateau l'Eclair Cabernet ординарное 	2,9	299,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3a/bd/9676ba6134f0ee03ebec4f65e999.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+85	Pi π - 3.1415 Tinto 	3,9	1 969,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/52/d9e34e0eae677043a1b20c72c862.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+86	Boyante Roble Ribera del Duero DO 	3,8	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/ca/4ff005c61f8xdba5c4cec44cff2a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+87	Инкерман Каберне Гранд Резерв 	4,0	1 049,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/11/e6/fded63788c52d3babf60b5b8a6f3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+65	Ikhalto Алазанская Долина 	4,1	299,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/aa/a4/ec4c06388f75580649bc4b3004cc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+88	Disueri Sicilia DOC 	3,6	1 539,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5c/57/22c0296faf2ec98cab5e744a3341.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+89	Romain Duvernay Cotes-du-Rhone Villages AOC Seguret 	3,7	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/26/c0/d810220935330091570648aef0cc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+90	Jardin Fleury Syrah 	3,7	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fb/1d/5d52b896f8c2e0f44b42d9a9581d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+91	Mapu Carmenere Maule Valley DO 	3,8	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/90/e8/362307b944a987610dd77c7cb8dc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+92	Винный напиток Sangria Fresh Wine in Tube 	3,7	1 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4d/43/00f22fbda8a6ec2e2b2c2626b9c5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+93	Pirovano Collezione Primitivo Puglia 	4,0	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7c/fe/200e68ea84d56866d627f78206ce.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+94	Saveurs d’Autrefois 	3,9	879,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a5/f1/42bc74e56dc7bf3b7691b56ede3c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+95	Инкерман Пино Нуар 	-	499,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2e/e9/42f243e7f50b3dfaae63861e49b1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+96	Sol Valley Cabernet Sauvignon 	3,3	639,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/94/84/454a15645e4d7e6b511f38b93e46.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+97	Фанагория Номерной Резерв Каберне 	-	459,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c3/52/022b1db7f1344c2fbfd6acbee5cb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+98	Passo Sardo Cannonau di Sardegna DOC 	3,6	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f0/19/acb3523cb015eccf6684d98cf7c2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+99	Ionos Red 	3,3	679,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4d/e5/c390afd28d40743f51c2e282ca71.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+100	Cacciata Chianti Classico DOCG Riserva 	3,6	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7a/9e/f5289d41ea8813bc220829716185.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+102	Molom Tinto 	3,8	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a0/99/a301fe4d9f565ff60e90cacd1f50.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+103	Barefoot Cabernet Sauvignon 	3,3	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/68/93/b9ab0eb647d6445117e246b12acd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+105	Montecillo Reserva Rioja DOC 	3,9	1 749,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5c/12/f5c6fc3dd6dd7a5fbf40b803d86c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+106	Тайна Колхиды Хванчкара 	4,3	1 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/01/98/26c319c487d2456c213f2fa7e061.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+107	Elegido Tinto 	4,3	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/11/da/c8399707ea398879ea1a79999a62.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+108	Don Florencio Reserva Tarragona DO 	3,9	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2b/21/d19505b2926471ec6da86d27403a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+109	Leonardo Chianti DOCG 	3,5	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f1/6a/61928b0569be621159b05295fc77.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+110	Conti Serristori Chianti Classico DOCG 	3,5	1 499,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/22/0a/1e803db416a067549d9478b09939.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+111	Dos Caprichos Crianza Rioja DOC 	4,1	779,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6b/34/dbecxd5011f6001fd4518d487811.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+112	Fyi Red Blend 	3,8	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/06/ca/436e9d8eb05518263d75c8d62e49.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+113	Авторское Саперави 	3,5	409,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a0/8b/95e49fa375056a7a1d2dd22b61ca.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+114	Yali Уайлд Свон Каберне Совиньон 	3,8	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5f/21/7bf42e9ce1b61048a962bbd667fc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+115	Кубань Таманский полуостров Шато Сенной 	-	499,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/44/51/c968350eb5f4ee83f609515421df.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+116	Солнечная Долина ПТИ ВЕРДО 	3,4	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/85/01/77b2013ca61566ba1972076572f8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+118	Medija 	3,5	399,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/aa/6e38d49167703d318124310a18e9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+119	Quintessence Шторм Мерло 	-	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3e/9f/4cfdfe107b901b01013260b49f40.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сладкое
+120	Quintessence Шторм Шираз 	-	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/22/62/190407f9b3aaff1e61e178a199c0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+121	Castillo de Ayud Calatayud 	3,9	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c4/2c/f8d20babf832ed818fabee7e8845.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+122	Ed Knows Мерло 	3,8	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/14/4f/fa5e0b94058529fd2b10cb6ea213.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+123	De Wetshof Danie de Wet Pinotage 	3,7	1 029,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e4/5c/bd01b928fd28282f56007bb8b24a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+124	Chateau Pinot Гравитация Пино Нуар/Саперави 	3,7	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9a/b0/d5f13ccbf5926de5962ec2fbaafd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+125	Poggio Passo Primitivo 	3,6	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4e/0d/4a90d0ba13f0959c57116fdcf470.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+126	Negrar Corvina 	3,6	779,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/87/72/65997ae34ae80cf83ca2bcdbf3f1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+127	Negrar Appassimento 	4,1	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1b/13/5b5bd348683b17e1f95591e3fb73.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+104	Matsu El Picaro Toro DO 	3,9	1 449,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4b/c7/57e8468ba771d3a5512da80bd353.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+128	19 Crimes Snoop Cali Red 	3,6	2 599,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/10/67/d6cfe2ace33c9c2f1361e193c433.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+129	Monte Real Tempranillo Rioja DOC 	3,4	1 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/8f/d5/961553da0d04c62369a665a99b3d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+130	Claroscuro Tintas de Uco 	4,0	1 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/11/a9/2c897839a72cb05bcd22697648b3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+131	Finca Constanсia Parcela 23 	3,6	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d3/80/3c32845976e4cbd8dbac50543645.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+133	Sobreiro de Pegoes Premium 	3,7	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/8d/cb/64f84045e3ec26f3257bdffcc284.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+134	Highway to Hell 	3,8	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fb/f8/d0f832d1d173b42bf0f4c005666b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+135	Tentation du Sud 	3,9	899,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/28/1f/b738451b3637dcbf4a7cfe22a369.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+136	Pais El Autoctono Secano Interior DO 	3,7	629,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/50/bc/354c6xd84f621bcf44881681dd86.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+137	35° South Cabernet Sauvignon 	3,3	539,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a4/0c/b6f8262c2f01e97b2c407a534295.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+25	Matsu El Recio Toro DO 	4,1	2 499,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b2/9f/8697a4f3b7b626da0fa2be2208c0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+138	Yalumba Organic Shiraz 	3,6	2 059,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/62/25/f4348cf0abfc553aa95bb191a34b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+139	Chocoholic Pinotage 	3,7	999,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f7/ac/b6e4f891709b9168e8a7cc0fd2f7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+140	Rutini Wines Trumpeter Malbec 	3,8	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0d/5f/6a14836de752xd7cc0bd13f1f890.png	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+141	Masseria Doppio Passo Primitivo-Zinfandel 	4,0	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4a/a8/cac0b8ce54ed1e51c8dee21d860d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+142	Masseria Doppio Passo Copertino DOC Riserva 	4,1	1 139,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/74/a0/1xda73c630d8950e1b4027f08513.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+143	Simonsig Cabernet Sauvignon-Shiraz 	3,6	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/9a/13da0fdca508ed39ae9b542e691f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+144	Doppio Passo Primitivo BIO 	3,9	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ff/9a/713fe5e528e10824283faf5d8e3d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+146	Signos Malbec 	3,7	1 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0b/7d/fb763abe3e67268e075f05aae542.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+147	Cranswick Lakefield Shiraz 	3,5	969,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9b/a5/092606718bfcxd21e8de6c174ff5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+149	Petalos del Bierzo DO 	3,8	2 999,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e6/52/161fcfd790e9c49f3d350d329c0a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+150	Beringer Founder's Estate Cabernet Sauvignon 	3,6	1 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9c/fc/186fce63c907dc1031312a8aceec.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+151	Vecchia Cantina Chianti DOCG Riserva 	3,7	1 599,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/23/80/1f9bccb15c42953c48366d2b0ba9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+152	Masserie Pizari Primitivo 	3,8	1 459,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/36/d2/c56c65d04637304162e8d0de8b6a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+153	El Vinculo Crianza La Mancha DO 	3,9	1 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b0/35/0a15f5bd3ece32ef2acda5458f75.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+154	Gamla Cabernet Sauvignon 	3,9	1 969,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e3/6e/89362540b8dd21cfeaccc012730d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+155	Catena Malbec Mendoza 	4,0	2 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6c/01/bf356751b148c7b00b09ae8c7ecf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+156	Little Beauty Pinot Noir Marlborough 	4,0	3 349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/6f/869fd14d41bfe9d76a34efd6e706.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+157	Alamos Malbec 	3,7	1 349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/81/2a/91360f6fbfe7fea1055b9bb80f84.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+158	La Braccesca Vino Nobile di Montepulciano DOCG 	3,9	2 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0d/c0/cca2d5e512c2a92cface647e10a8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+159	Mataca 	3,8	1 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/eb/fc/cbf33e94c021cabd8bed554fc07a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+160	Barahonda Summum Monastrel Yecla DO 	4,2	2 749,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/77/bd/04cbd399988eb3b685xdf27c79c4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+161	Barahonda El Bicho Raro Yecla DO 	3,9	2 059,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1e/ea/d6734c1c6561ddedd5e71e7de096.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+162	d`Arenberg The Footbolt Shiraz 	3,7	1 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c2/8f/f3d4460333dd5ce8dda5d4d9bb22.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+163	Klein Constantia КК Каберне Совиньон Мерло Стелленбош 	3,7	2 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ab/5b/2690c18b783b58d2a0af9bee3855.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+164	Boyante Tempranillo Organico Ribera del Duero DO 	3,8	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6a/95/312299a4f2289a79812143d48fdc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+165	Neprica Primitivo 	3,8	1 369,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0c/a2/b109ba19b191fd8c5f6b2521a417.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+166	Point Blauer Zweigelt 	3,8	1 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/be/a4/3048d2cdebdfb592b52d51cd4f2c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+167	Alma Valley Red 	3,2	639,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/23/90/fc0e7714b6577c6a2aec553d2d36.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+168	Tenuta il Poggione Rosso di Montalcino DOC 	3,9	2 229,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/66/aa/7e846cc47f0b56aa8857c278e9ee.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+169	Lucente Toscana IGT 	4,0	3 489,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ac/e0/5587ec765418a101b50f10d40d97.png	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+170	Appassionatamente Rosso 	3,8	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0f/5b/2cbea626738063f1052a73c6901e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+171	Contrada Maestra Barbera d'Asti DOC 	3,8	1 349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/50/5f/51488f7066dbda01b324bae69724.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+172	Долина Привидений Каберне Совиньон 	2,5	349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d5/5e/71fddd13abd3d9a093aeb37f556a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+173	Tenuta il Poggione Brunello di Montalcino DOCG 	4,2	4 039,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/61/f4/b50f8e8d409b31bd215da857c209.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+174	Stobi Verdot Private Reserve 	3,8	1 459,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/16/50/01c709f2d5647277c8933f41dd26.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+175	Silverado Cabernet Sauvignon Napa Valley AVA 	4,4	6 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/22/9c/c20b4507ca2665109acd65d604d0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+176	La Matiniere Crozes-Hermitage AOP 	3,7	2 919,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/92/73/60234a65391a37c4d62ab10dcf3b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+177	Cristo di Campobello C’D’C’ Rosso 	3,8	1 629,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7c/3e/192714d5db245eecbafb9a5f9ffd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+178	Ramon Bilbao Edicion Limitada 	4,0	1 889,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2e/ce/e9deaecf7a364fa44ba4a28879c9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+179	Simonsig Redhill Pinotage 	4,2	2 319,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/38/2c/dff9cfba9604567818b84d3a7e4a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+180	Simonsig Merindol Syrah 	4,2	2 829,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c1/ef/4d68b0bf1c0f44edac17f8cc3620.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+181	d`Arenberg The Laughing Magpie 	3,7	2 919,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1a/5b/34a69cbc13c08f1d090e7bb5ea4d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+182	Vajra Dolcetto d'Alba DOC 	3,8	2 229,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/15/27/7a99c30c7ebdaea56e126a8a3202.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+183	Vajra Langhe Rosso DOC 	3,8	1 889,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/85/77/f9c35b2452407d0875d18a65fbe3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+184	Yalumba The Y Series Shiraz 	3,6	1 369,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/64/8c/de325f4b449ab433c427b215a3a2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+186	Beck Blaufränkisch 	3,8	2 569,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/20/5d/070e63c1823837071b700ddc6e93.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+187	Gentleman Oltrepo Pavese DOC 	3,5	1 499,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/55/db/72db29c0e7925686b1e4a3032285.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+188	Alta Vista Vive Malbec 	3,7	1 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/91/2c/5772a55be9470fc4c2fb1366f18a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+189	Резерв Винодела Мерло 	2,8	269,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ee/d2/d1f309b07a1f1bbcf340119a9145.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+190	The Wine System Tinturio Navarra DO 	3,7	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0f/c0/a140536125c660191ae007c947c9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+191	Bründy Zweigelt 	3,7	859,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4f/bc/9d165a232d7c8806879a3071e0d6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+77	Astrale 	4,1	859,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bd/7a/0c90e367ae8495f72fac42f3d3df.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+192	El Pacto Rioja DOC 14%, 750мл	3,9	2 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d2/17/bfa30469d1932643xd5156762525.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	-
+193	Абрау-Дюрсо Каберне Совиньон 	3,5	1 649,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3c/f1/ae3967667e21ba7ff50ab88c62a8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+194	Appassimento Segreto Rosso Salento 	4,1	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9b/4d/c74c4e348ed870b73e821dc7b790.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+195	Rouge de Talu 	3,6	679,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/79/02/34910056001a853c662d8cfb15e4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+196	Мысхако Quintessence Cabernet Sauvignon 	4,1	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3f/9f/1a3daca2b81412fe63c748f7b777.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+197	Collezione Costantino Organic Amorcor 	3,9	789,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4e/16/55df87a6bc12c81a038e317ff912.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+199	Terramia 	3,2	519,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cc/48/3fed58f584a22374798b4fd5b07d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+200	Suggestion du Chef Merlot 	3,7	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4d/cb/22ed8b27a94f8482bc2c0b4b55af.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+201	Инкерман 	-	519,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/23/8b/dd359f1a8141e25582bc9cd9b40b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+202	Paladin Syrah 	3,9	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/70/42/08cd35d431fd3be1ee7e4ee15966.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+203	Musita Organic Nero d'Avola 	3,6	739,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/xd/93/b4c55fee221feb323d6b90ed33e6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+205	Имение Сикоры Каберне Совиньон 	3,9	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f0/d3/cee47e3997e5e6dd9fcf0fdd2b8f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+206	Инкерман Каберне Резерв 	4,0	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/72/cd/c8eba2496c295b8531fd89883161.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+207	Инкерман Каберне 	3,6	399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b9/ba/cf1df504e87ef25245ddf57b3920.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+208	Cа' Del Poggio Nerello Mascalese 	3,7	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/86/49/xd914f400168540176e2e50c519b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+210	Гранд Резерв Атаман Красностоп 	3,6	729,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2c/5e/af55exdf3e51285be12a0aexd7b5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+211	B.IO Sangiovese di Romagna DOC 	3,6	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9c/9b/ee68811ee996d8f39425bd24150a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+212	Musita Amal Syrah 	3,8	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f4/97/8fdab3f01bf0b994ae5db585a475.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+213	Conti Sani Chianti Classico DOCG Primum 	3,7	989,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/17/de/e435c9bcac288990617fcb6d3b33.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+214	Chateau Pinot Гравитация Каберне Совиньон 	3,7	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/87/69/730426c46e059048ace75bd51cd1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+215	Gai-Kodzor Terroir 	3,7	959,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/78/8c/bb9a4b50e592f63f0f36fcb10d83.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+216	Солнечная Долина Меганом 	-	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/89/61/e4ebd2af6f58fb618b415f5d7167.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+217	Podere Montepulciano d'Abruzzo DOC 	3,6	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/e4/9bf4d41385c8e74b7ab53fae4217.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+218	Традиции Абхазии Каберне Сухумское 	3,0	439,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cf/ee/da0501a3b949a256ed013b17142b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+219	Атаман Гранд Резерв Цимлянский черный 	3,3	959,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/63/0c/7213d125900447005f2571f3e9b5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+220	Kvareli 	4,1	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/64/b054767ba2b04baf7878993265a2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+221	Черноморская Истина Каберне 	-	379,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6e/da/7b329f24de99d387901e6f706906.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+222	Georges Duboeuf Beaujolais Nouveau 	3,4	1 749,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fa/ff/bfd95624c20763d59496a587d3ed.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+223	Chateau Tamagne Молодое 	3,6	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0f/64/f8aec0ed8d375a7882608da0ebe9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+224	Fanagoria столовое 	3,5	149,90 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a6/ef/3149248d636ccc0cd60834d1d183.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+225	Solano Monastrell Jumilla DO 	3,5	359,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/11/99/1da0959338fe3da9be1e9d2dfb85.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+226	B.IO Nero d'Avola Cabernet 	3,8	1 029,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c7/4e/42ee07f48b91a57384dec9cfb509.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+227	B.IO Nero d'Avola Il Nero 	3,6	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5c/ec/21f4dba3ae72aa261a9acd4438ea.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+228	Planeta La Segreta Nero d'Avola 	3,5	1 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ae/e2/579e28646e4eca1a4e61b26d542d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+229	Badagoni Саперави 	3,6	299,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b4/5f/600e0c5114c72d120302903fb4fe.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+230	Vina Tendida Valencia DO 	4,1	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/44/8b/3feab056e1660eb8xd66131dcba6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+231	Vega Sindoa Tempranillo Navarra DO 	3,5	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/29/fa/3d2fe47ba6e78fe574acee1457e8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+232	Джейран Чинар 	-	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/15/74/56e0f66a3ce0fbc956c874eb919f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+233	Yamana Malbec-Merlot 	3,5	679,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e5/e5/56416d9bfdcd60a396b382e1b9e2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+234	Fontanafredda Briccotondo Barbera Piemonte DOC 	3,6	1 449,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/58/ae/efd41b8a28cce975903f0b4cd695.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+235	Turtle Dreaming Cabernet Sauvignon-Shiraz 	3,8	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/63/9b/2cc25688f792868af221c4ac3d98.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+236	Дугладзе Киндзмараули 	-	539,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d1/b4/41a4b65ea64113ffaa36052d5e50.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+237	Джейран Матраса 	3,4	469,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5b/2d/34173dc4a2a8465bcf053cfb4646.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+238	Diaz Bayo 8 Meses Barrica Ribera del Duero DO 	3,8	1 499,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/c4/fb1f57e1243cacc142xd236dc5xd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+239	Тифлисский Дворик Саперави 	3,2	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2e/d8/0f44047755xd78ccba8f98f02197.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+240	Gran Passione Appassimento Rosso 	4,0	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cf/7c/beba56331cd02db06cbf6933f005.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+241	Tavernello Sangiovese Organico 	3,6	869,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/eb/30/8990489ce6f21ddcc4173a88be2e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+242	MV Malbec Reserve 	3,7	859,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cd/63/42b0963016b8842467fe4c3cc3f4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+243	Cultus Organic Tempranillo 	3,6	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/78/5b/bc8f377aef6ddcfdf44418bc0c72.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+244	Chateau Tamagne Reserve Premier Rouge 	3,7	779,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/20/8ed258cc94367e018e1105e089bf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+246	Tavernello Syrah Organico 	3,9	869,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c1/01/e00ab4da0fa9b86bf6ed38960f5f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+247	Beefsteak Club The Mini Malbec 	3,4	339,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/12/40/98f21461743f5da3a424ffb94c05.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+248	Rauli Syrah 	3,4	489,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cf/dc/6698f1348144f1a1844c7bcbb450.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+249	Cape Art Pinotage 	3,2	399,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/64/12/735ee86abcf3de7a276e1cd499c7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+252	Masi Bonacosta Valpolicella Classico DOC 	3,5	1 899,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f8/00/fa63ea2064467593a13b6ba44609.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+253	Barefoot Zinfandel 	3,6	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/48/f7/db81968992d608a6f38f97132b07.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+254	Borsao Crianza Seleccion Campo de Borja DO 	3,9	779,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/00/09/a8df8fdceb2c8b304f4e896ea3e8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+255	Высокий Берег Каберне Совиньон 	3,4	569,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6b/69/9892a3c1922956a58ff29bb697b7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+256	Высокий Берег Мерло 	3,5	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/12/a3/9d7a2cc50e0b50c7e5f77aa6dfc2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+257	Chateau Tamagne Саперави 	3,8	449,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/87/be/9024af4572c227d6b22e28bfb8c1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+53	Chateau Tamagne Каберне 	3,4	169,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bb/15/978337c379c9bdb215ddd974908e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+258	Фанагория Авторское вино Каберне-Мерло 	3,4	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4e/c6/b661899e25574c0b9f954e10ef41.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+259	Wine Guide Бастардо 	3,1	469,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7e/3c/7f726a824c1a8f6daa074b1d37c8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+260	Pearly Bay Dry Red 	3,3	649,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/13/7e/7ff7eabb6bbebf8fc12b466b9c9b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+251	Ликурия Терруар 	3,6	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/64/53/c345c412c49655249bc92e2b0c6f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+269	Champs des Rois 	3,6	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c0/7d/deccfc56cb8b6xd0a8ee47967ce7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+262	Les Chartrons Lussac Saint-Emilion AOC 	3,6	769,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c5/42/88b6e7e33208f427cb0851ba510f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+263	Ca'Del Poggio Montepulciano d'Abruzzo DOC 	3,3	679,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d9/79/5a5b8b556xd78ed564affd6410c5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+264	Ca'Del Poggio Terre Siciliane 	3,5	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2a/82/afeda5d6f45da26d570477a24611.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+265	Racimo de Uva Tempranillo-Garnacha Carinena DO 	3,3	359,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c2/9a/223a19abff0572d5f822f1569df4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+266	Telavi Wine Cellar Marani Mukuzani 	4,0	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6c/df/7680c28ab40481af01557a6ccb7b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+267	Ramon Bilbao Crianza Rioja DOC 	3,9	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7e/fe/fa08e9ee567afe63f6a37b6f837b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+268	Solar de Alarcos Rioja DOC 	3,7	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/91/12/1ff15b2c4e3a25236f813383b0b2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+270	Cuvee Blanc Terrier Rouge 	3,6	559,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/99/f8/ed6ce3a845987c64c4ed8c2788c3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+271	Batono Алазанская Долина 	3,3	399,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/83/f0/71b4f8f3aa3757ea1b1f63283e5b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+272	Mildiani Пиросмани 	4,0	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/79/bb/c4e50140e50334a03283988cee6c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+273	Redwood Vineyards Pinot Noir 	3,9	939,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b7/98/b1482a0674622edf2983fbcfe982.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+274	АСТ Саперави 	3,5	399,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/78/9e/9e269c5f92fe221edc30d964f184.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+275	Vivanco Reserva Rioja DOC 	3,9	1 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/09/f5/7e4d1aa467615f094c2a06d0c466.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+276	Feudo Maccari Saia Nero d'Avola 	3,6	2 749,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d1/eb/28064c94f09572d69f178909a2c3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+277	Tinto Pesquera Crianza Ribera del Duero DO 	4,0	3 179,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/62/4c4509de94a5f8c4d5b2218e7b94.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+278	Barkan Classic Cabernet Sauvignon 	3,5	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/22/05/9ef7bf0ba3f32c3593e9bc874851.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+279	Castellare Chianti Classico DOCG 	3,8	1 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c2/a0/4280f661e92fa7bbe30e8edb1c1e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+280	Sant'Orsola Chianti DOCG 	3,3	949,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a1/fe/81ab30d2a7a9f2e1e592489ce42a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+281	Tavernello 	3,2	399,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7b/bd/dd9774436a6257a6a8db56454616.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+282	Raices Tempranillo Valdepenas DO 	3,3	719,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/49/62/fbbdbe78b99cca89089edb8d74c3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+283	Argiolas Costera Cannonau di Sardegna DOC 	3,8	1 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/81/c6/bd1a18607aeae971c6ed7b6d2ec8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+284	Frontera Cabernet Sauvignon 	3,2	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2e/af/4033e1cec1b435e98877faae768d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+286	Tour De Mandelotte Bordeaux AOC Rouge 	3,7	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e2/0a/0e4d300317153c619d8cfaa880c1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+287	Beefsteak Club Beef&Liberty Malbec 	3,7	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/49/4c/9e45c0xdbe6748bb13bdcf5d8b59.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+288	Zonin Montepulciano d'Abruzzo DOC 	3,5	299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4c/06/bacbac08f2a987a57ba657b34d60.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+290	Sangre de Toro Tempranillo La Mancha DO 	3,7	1 349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/94/c6/4603bf486ba995acf864f4dfa219.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+289	Arrivederci 	3,9	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e3/2e/ff476e58976700f280b2cd87ec6d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+292	GRW Мукузани 	3,8	549,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/21/02/fac273a8dddddb9c625b01e3d1fd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+293	Luna Valley Selection Carmenere 	3,7	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cd/19/e3f3cefe8b65f8b3302838b65b44.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+294	Vivanco Crianza 	3,8	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b0/93/5509477fdc364a78xd5004b7d2a1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+296	Leonardo Chianti Riserva DOCG 	3,7	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/58/c1/fe5934edbe3a796a387f613f949a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+297	La Gerla Brunello di Montalcino 	4,2	6 869,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7c/83/e07277fa79a29183d86edd67e84e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+298	Pianirossi Solus Maremma Toscana 	3,9	2 319,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ea/0e/1fab962efc8d21125a35756cd68c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+299	Muga Reserva Rioja DOC 	4,2	2 829,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/be/82/db0ac776b219b75db55cd978c4aa.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+300	Tamari Malbec 	3,4	959,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/75/77/0c589a25dec71015ffa399c04b4d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+301	Barkan Classic Shiraz 	3,6	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/af/a0/25cae0785769c15250b1bf92e0e6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+302	Bouchard Aine&Fils Pommard AOC 	3,9	5 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/50/e3/xd1a19793a8a3331e8192277435c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+303	Speri Amarone della Valpolicella DOCG 	4,4	5 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/58/6d/6b4ab423c61b03d1a38d7cae250e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+304	Domaine des Chanssaud Chateauneuf-du-Pape AOC 	4,2	3 599,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4b/41/1c0969bc1019bc24c027b5d2ec97.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+305	Salvalai Amarone della Valpolicella Classico DOCG 	4,1	4 999,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4d/c4/5bc98e57a21b7bbeb2866b9af5e4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+306	La Casada Cabernet Sauvignon 	3,1	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/04/21/93998058f7df4c712dd0205b7db1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+307	Chateau Haut Maginet Bordeaux AOC 	3,5	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a5/88/3ef762089b8db0f93164208f3e65.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+308	La Croix du Pin Cabernet Sauvignon 	3,2	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/21/0e/a8986c23f0ea03ea0171ec6dbe0d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+309	J.Bouchon Merlot Reserva Maule Valley DO 	3,4	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b0/a8/27c6297200519b1568d5ff60d8e8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+310	J.Bouchon Cabernet Sauvignon Reserva Maule Valley DO 	3,5	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d3/32/86f1dc901f410fb57c550a10b311.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+311	Tenuta Cantagallo Chianti Montalbano DOCG 	3,6	1 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cc/85/6c3a4656a5798d63ef9923b4d458.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+312	Tour de Mandelotte Medoc AOC 	3,6	1 349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/73/aa/12f5406d34aee076203b02be0ece.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+313	Joseph Verdier Anjou Rouge 	3,8	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b0/d0/a0e52ac545c1dc0fc70faea228ba.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+314	S'arai Isola Dei Nuraghi 	4,1	2 999,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/75/d2/7afb2cd8225007ee7669e530174b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+315	Domaine La Suffrene Bandol AOC 	3,8	2 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1e/2f/66de9603d92f7baafa10d8b9943f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+316	Primasole Primitivo 	3,9	1 049,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/88/a8/12a75a8c8f6d669a5f09468a1fbf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+317	Riecine Chianti Classico DOCG 	4,0	3 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b4/39/70675eb7dd8c40159fb4af5aa08b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+318	Chevalier d'Anthelme 	3,6	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/09/38/74478d576df5b62a24e68e7c4927.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+319	Nipozzano Chianti Rufina Riserva DOCG 	3,8	3 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6d/5a/250f0c5251fc50fa69393c1f4f48.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+320	Baluarte Roble Navarra DO 	3,6	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/78/0c/919dd8e45ec87dbe76a64a8c44a1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+322	Gato Negro Cabernet Sauvignon 	3,4	669,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cf/79/74c6deaa7e6060a7b66cc08ee9a6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+323	Col di Sasso 	3,6	929,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/56/04/aaaf8e609a5b7bea74cdd50a74aa.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+324	Canti Merlot 	3,4	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7f/df/2ee3eddd8e15c3c764073c34c093.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+325	Steakwine Cabernet Sauvignon 	3,8	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e7/34/b2c46b127e572262ab4e7a4015bc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+326	Peter Mertes Riesling 	4,1	489,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5b/b5/c1cb5d979b353ae338f98a8386cf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+327	Cielo Pinot Grigio 	3,7	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a2/57/7434854f69152a57ec9ee4293fce.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+328	Urban Riesling Mosel 	4,2	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a4/df/99d25d71cc04892ff67ee58c8979.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+329	Le Grand Noir Chardonnay 	4,0	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c1/57/321367dd6f73a76432f48e29c37d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+331	Liebe Meine Frau 	3,1	349,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/84/90/b239a3101f972af2b4326bd85f48.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+332	Murviedro Пасьон Мальвазия 	4,0	779,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/17/b5/f491d51836xd2a3e789f56a19749.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+333	Lago Vinho Verde DOC 	4,2	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ef/ca/3ea8c9ee4b7abc88a8b6d5b6c10c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+334	Ca'Del Poggio Pinot Grigio delle Venezie DOC 	3,7	469,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1c/9d/9f81f241a699bd0b53f7b75a2bd0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+335	Vinogor Мускат 	2,5	179,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e7/fd/d92c2210d4bf156ef0f216d0164f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+336	Olivier Tricon Chablis AOC 	3,9	2 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fd/ef/301ed252767ee24140ff0973ec57.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+337	Freschello Bianco 	3,2	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ee/f1/de80bc83c9e5bc3b704d24d7b6d8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+338	Turtle Dreaming Semillon-Sauvignon Blanc 	3,9	769,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bb/06/5b7131f818f3ecf0f868f790dc13.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+339	Banfi Principessa Gavia Gavi DOCG 	3,9	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7f/36/1c90432f91389a8f84e6e7bxd0d9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+340	Musita Karima Grillo 	3,8	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/19/b5/1e04714e73de035d6a5c6bc1f56b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+341	Inspirado Sauvignon Blanc 	3,4	429,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6e/a8/1ea4812a6f6309cc9430b330e81b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+342	Michel Scheid Riesling 	4,0	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/0a/9ffbabfc23889b2bb45c4502f154.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+343	Chateau De Talu Море волнуется раз 	3,4	499,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9d/fb/85550e9f8a9b744b072c105e4388.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+344	Gaetano Pinot Grigio delle Venezie DOC 	3,3	579,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/77/a6/6a3520079cc3d9a859ef556393ea.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+345	Olivier Tricon Petit Chablis AOC 	3,9	2 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9e/ac/4a28d4xdce845165c43064c7a628.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+346	Псоу 	-	429,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/83/4c/1775379b945b8983b0d2375f0976.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+347	Fetzer Chardonnay Sundial 	3,6	929,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4b/a0/9ef7f7811d7045bb49875babca4f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+348	Ikhalto Цинандали 	-	299,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b6/d4/d7ee0ddfeda8de10c5f6721cf9e0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+349	19 Crimes Sauvignon Block 	3,7	1 539,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a6/d5/0d0887b7876773f819dc565b0e2b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+350	Bex Riesling 	3,9	939,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/47/b9/1246b5b0a5b70ef4b6f92647ce0a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+351	The Wine System Viuranus Navarra DO 	3,7	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/77/8f/1c6ff9e1ca78e2836763b7ee89e9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+360	ликерное Массандра Мадера Крымская 	3,7	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/51/2e/89dc7f2d1b6c1203bd9ce209d9ba.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	-
+353	Pirovano Garda Garganega Pinot Grigio DOC 	3,6	489,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/02/b2/9c73a6a0c49f7e959c228e84302e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+354	ZB Wine Riesling 	4,1	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2a/b7/0d280103f392811a05ae604e4b66.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+355	Mau Maria Vinho Verde DOC 	3,7	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0d/aa/1a02cd8e1d8362fb47ded96256df.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+356	Lirico Viura-Sauvignon Blanc Valencia DO 	4,0	489,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e1/45/6944696e4eee3f9166dba5307001.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+357	19 Crimes Chardonnay 	3,7	1 599,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e6/df/fe9d38a4b84b97fed1f8f6e2ea0c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+358	Faustino VII Viura Rioja DOC 	3,5	749,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/48/66/665600e855b06f3def5674f15c58.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+359	Tour De Mandelotte Bordeaux AOC Blanc 	4,2	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/26/f8/03627cb3f52bf945e4884aeca429.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+361	Redwood Vineyards Chardonnay 	3,4	939,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/79/7f/598a695cc35c7e62d7914506a54e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+362	Le Rime 	3,6	929,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b2/77/888baeb06a05ecdf073a847924d3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+363	Aristov Anima Мюллер Тургау 	3,7	439,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2c/bb/9467d7d7635ee4861fa838bf1157.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+364	ZB Wine Совиньон Блан 	3,8	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/16/e2/247a08135874cdf0ef37aff38159.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+365	Original German Pinot Blanc 	3,8	839,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ce/0a/96d8482dc8b28c293208bfd2aef3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+366	Alma Valley White 	3,3	639,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bf/b6/6369d5afd71e97ea554f75eff5f4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+367	Selbach Trutta Fario Riesling Kabinett 	4,0	1 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/04/ec/f3f224695a3703ab33cffd591b75.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+368	Amaranta Chardonnay-Viognier 	3,7	439,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ae/36/4a0602db1c24d4c243f4xd0d5505.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+369	Solano Verdejo 	3,7	359,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0e/f9/9712012f7def8517f9eeb0e337db.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+371	Donnafugata Anthilia 	3,8	1 499,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0c/30/453a6aa8f841055e5d38ef1e9a22.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+372	Jardin de la Taur Marsanne-Sauvignon Blanc 	3,9	839,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7d/28/af9439d338f7e57e54bdbed5ea77.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+373	Cielo Sante Rive Soave DOC 	3,8	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/26/d8/183b855533fc0b394bef8a7cdae9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+374	Крымское Лето Сапсёрфинг 	-	369,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3f/64/419c8c3864e5ddd5114513ae3775.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+375	Golubitskoe Estate Рислинг 	3,9	999,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9f/c7/de3ebeb67f06da2df8d94793799e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+376	Yali Уайлд Свон Совиньон Блан 	3,7	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/60/1a/8b5e262a9993a39fc2564d40dd40.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+377	Алазанская Долина ординарное 	-	429,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6b/63/1eb4abdf83740b0b3f9de04ee381.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+378	Ed Knows Мускат 	3,8	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/09/15/4a6e10d2dd9b0082b5ef88854bef.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+379	Ed Knows Шардоне 	3,8	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bd/ce/f2c16d5df1bdb88d624b743bf582.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+380	Armenia Wine Такар Кангун 	3,9	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/19/f0/c07b1b51db887a0370734bc31cfc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+381	De Wetshof Danie de Wet Chenin Blanc 	3,9	1 029,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ea/46/d8b7229df7856fd2bb55bd0501c6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+383	Tre Stelle Bianco 	3,7	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3f/7d/aac710a5c8f45368d1342cbed498.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+384	Negrar Garganega 	3,7	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/74/39/0c036a9xd44xdd8a8b68dbbb0866.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+385	Original German Riesling 	3,7	839,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c6/b9/c1a1495561a5124bba76c21c974f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+386	Villa Krim Шардоне 	3,1	419,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/87/b4/3f722521b97a3c3519e481c24aed.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+387	E. Guigal Cotes du Rhone AOC Blanc 	3,6	1 669,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d4/69/0b9dc708af4fb3f1b25a1c46a697.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+388	Monte Real Blanco Fermentado en Barrica Rioja DOC 12.5%, 750мл	3,6	1 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/16/4e/9020axd9ebc76f8a7db2aa9b05bb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	-
+389	La Miranda Secastilla Garnacha Blanca Somontano DO 	3,7	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/df/94/efd5531877e9edcd640758caeddb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+390	Sympathy for the Devil 	3,7	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1c/dc/52d7647708074a24e284a986fb09.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+391	Rabl Riesling Langelois 	4,0	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/69/83/e5d4b2c55d4a5631d7edc63c5d7b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+392	De Wetshof Bon Vallon Chardonnay 13%, 750мл	3,9	2 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/67/71/6f6c26f0e18cxd5fe944fe46d9cf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	-
+393	Rabl Gruner Veltliner Langelois 	3,9	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/33/36/868e429f2e4188e70fa62d8a40cf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+394	Karas Armavir Vineyards 	3,7	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/21/6f/e62512c34b8ef6163b12ce5f196b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+396	Beringer Founder's Estate Chardonnay 	3,6	1 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f9/5b/6e810c1b925f1fb172356c75d577.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+397	Matteo Braidot Ribolla Gialla Friuli Isonzo DOC 	3,6	1 369,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/55/2e/2507170f160xd02aa1956826f86d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+398	Matteo Braidot Pinot Grigio Friuli Isonzo DOC 	3,7	1 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3b/9d/dc41a34b5353b8ee03433d87a055.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+399	Gamla Sauvignon Blanc 	3,7	1 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/17/ce/2bb3481e0297d6aba7f8b04eb9a3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+400	Cinzia Bergaglio Gavi del Comune di Gavi DOCG Rovereto 	3,9	1 349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/41/f0/9c1bbb52a963245e182dcca14078.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+401	Little Beauty Dry Riesling Marlborough 	3,9	2 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b3/81/2dcefef987a33e10108a8d859e8c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+402	Selbach Riesling Incline 	3,8	1 589,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b2/34/a6f9c8c13582b401f2febc27aa7f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+403	Alamos Chardonnay 	3,6	1 349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5c/cc/64b66d20089476b14cb0ca077f86.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+404	Livio Felluga Pinot Grigio Colli Orientali Friuli DOC 	4,0	2 829,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3a/16/5c9e613616bf19153bf3a1b546d6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+405	Ailala Treixadura Ribeiro DO 	4,1	1 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/83/9e/bf17dc5f6cd1c26107ddfaaa65d5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+406	Masi Tupungato Passo Blanco 	3,5	1 599,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a5/33/2c11c889a8d00df019306ebb9b76.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+407	Долина Привидений Шардоне 	3,1	349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bb/c2/41a6a3fac92b6979c9c48831b0da.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+408	Livio Felluga Sharis delle Venezie 	3,8	2 899,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ab/bd/f92623f386956b092f6a29fef938.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+409	Yalumba The Y Series Chardonnay 13%, 750мл	3,5	1 599,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0c/2d/49d0ac356b88fde6e6d56d21f68a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	-
+410	Albet i Noya El Fanio Penedes DO 	3,8	1 889,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/39/7c/0411f3ebda0003b76eb48faa8606.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+411	Cristo di Campobello C’D’C’ Bianco 	3,8	1 629,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c1/ca/410a47c3d7e69131b4c61a5dc09a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+413	Les Sarres Cotes Du Jura AOC 	-	3 599,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/81/cd/f3aef50f216922f9743b170671aa.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+414	Резерв Винодела Шардоне 	3,4	269,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e6/e4/7a7f9c418942798b40f4b04ac981.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+415	Bründy Grüner Veltliner 	3,9	879,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d7/58/6e904659dd43e2399663164fc5c5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+416	Абрау-Дюрсо Шардоне 	3,8	1 549,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f7/46/abce8365c888319090b969a5286d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+417	Абрау-Дюрсо Рислинг 	3,2	1 899,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/85/f5/fd428d4055dab04a0d4db7e911e2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+418	Blanc de Talu 	3,5	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/xd/27/0193e88df9ed4f9c7149ef6bdf8b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+419	Инкерман Кокур Белый 	-	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ee/6a/5dfe316b107cea9c1d5a7597917b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+420	BDX Revolution Sauvignon Blanc Bordeaux AOC 	3,8	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e1/bf/80f9c9772d28dd5ccd3de3482828.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+421	Paladin Pralis 	4,0	859,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a4/91/dda7e58946b54a2c076402eca615.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+422	Musita Organic Cataratto 	-	739,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/08/c9/010c97f0cxdaa2f953e70ffc8dce.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+423	Инкерман Мускатное 	3,6	439,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/db/91/5ccd7e4f7713943d7d0bfb625af4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+424	B.IO Cataratto Chardonnay 	3,8	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a2/97/50cbea3a67xd3055e813e28dddd5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+425	ликерное Солнечная Долина Портвейн Крымский Солнечной Долины 	4,1	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/50/18/3e938b71bd7cfc2a979c3074cc70.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+426	Piccini Memoro Bianco 	3,5	729,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/75/c9/5308b9a42c88b1xd0836c605a4b9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+427	Ahso Цинандали 	3,5	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/55/97/ccf6c7c2c4d7556c94745ee2435a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+428	Il Rocchin Gavi DOCG 	3,9	1 449,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4b/64/69a7982e4e61df3246dfd7fb6206.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+429	Bruni Гарганега Пино Гриджио дель Венеция 	3,5	339,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/db/95/5a3fac71f417f5aa8xd1c8e33c16.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+430	KWV Classic Collection Sauvignon Blanc 	3,5	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/04/f7/df71c7bec3cd313090a9021a1d39.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+431	Ionos White 	3,8	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a9/39/ab4c993cf10d7c6eb018aac1038a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+432	Фанагория Номерной Резерв Шардоне 	-	439,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f2/c6/cc715e2ee5525730cd2ba47c7c7e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+433	Gatto Matto Pinot Grigio Delle Venezie DOC 	3,7	859,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6d/c9/9beec8825462fc1b45b144b69716.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+434	Destination Blanc Bordeaux AOC 	3,9	859,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/15/64/a1338028f8e8eeb110c9d96e25f5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+435	Masi Modello Pinot Grigio delle Venezie DOC 	-	1 479,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1c/0d/bfba48a470f4b2031335b7cf6d20.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+436	Mar de Frades Albarino Rias Baixas DO 	4,1	1 999,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ed/8b/f16c69dbeb48701ff425fa0a3a15.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+437	Sol Valley Sauvignon Blanc 	3,3	639,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/14/9e/596b5bbfc9d83d775c68b47a5a08.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+438	Rauli Chardonnay 	3,5	399,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4d/56/12c21f0336194a90dd8584c8639e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+439	Frontera Sauvignon Blanc 	3,3	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2d/8c/bf7819d891b5dbffc6f20c3dab9f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+440	Chateau Tamagne Терруарное Шардоне 	3,7	979,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bd/28/7d39e14320623595abfbdfe5e605.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+250	Don Garcia 	2,9	329,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b3/51/086e1d37b9fb44bd2873d462e92d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+442	Chateau Tamagne Шардоне 	3,7	169,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/49/31/ebfc532cd6c21d2b02997ae5e803.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+443	Pirovano Pinot Grigio Delle Venezie DOC 	3,8	639,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ce/24/7135f04d52aaf5590b6cc121342c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+444	Castillo de Chiva Blanco Semidulce 	3,9	589,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/58/b2/b25fe72e06538d5c02d5e49e6d17.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+445	Lirico Мерсегера-Sauvignon Blanc Valencia 	3,4	449,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7c/0b/5cd1875222cf9bd5bdbce0551d2e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+446	Luna Valley 	3,4	479,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b4/2e/50826xd296bf4b8ee0ef6845a30a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+447	Elegido Airen-Verdejo 	3,7	559,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/68/b9/c9502b968c93bb962f3be28a89a0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+448	Cuvee Blanc Terrier Blanc 	3,7	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/eb/42/d9c3f47c9d0272805aa35549d1ab.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+449	G7 Chardonnay Loncomilla Valley DO 	3,3	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0c/33/4929efbfe475fc58e50ba82767d3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+450	Lamberti Pinot Grigio Delle Venezie DOC 	3,5	829,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e1/8a/aedbc43a94f0347513e07fa4f0bd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+451	Klaus Langhoff Liebfraumilch 	3,9	579,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bc/a0/9fec04d48e77fcaf04400e13e2e0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+285	Don Simon 	3,0	489,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/89/bb/4ac504aa22755d8d689b2bfc530e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+453	Фанагория Авторское вино Шардоне-Алиготе 	3,5	519,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f9/98/a6caf88e260c22309fbe949daf55.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+454	Villa Antinori Bianco 	3,8	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/64/2e/998817729cd3029bbe0167fbd98c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+455	Marco Felluga Mongris Collio Pinot Grigio DOC 	3,8	2 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/de/21/d64fdb84596947ebe5b0065d8ecb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+456	Pascal Jolivet Sancerre AOC Blanc 	4,0	4 289,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/94/51/2b7a962354bf5fc32b81678a254d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+457	Barkan Classic Emerald Riesling 	3,5	959,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/74/05/38acda33d7ea221637e897323312.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+458	Bouchard Aine&Fils Puligny-Montrachet AOC 	4,2	7 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/86/92/9268a19e87c0d2a7093dc89a5cb5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+459	La Scolca Gavi DOCG Valentino 	3,8	1 749,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/69/d7/a8c20613a0b5bd67b68813b47dfa.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+460	Monfort Village Semillon 	-	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/89/fc/ef7b949dbeba693c2eb89773363e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+461	J.Bouchon Sauvignon Blanc Maule Valley DO 	3,5	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ef/b1/3a366b18e8deb218ba6d2a59813d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+462	Olivier Tricon Chablis Premier Cru Montmains AOC 	4,0	3 599,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/df/b7/e96b331d306b057b54725e89cffd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+463	Te Mata Cape Crest Sauvignon Blanc 	4,1	2 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9a/fd/3be2e715f81463507xd5e651b3d8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+464	Baluarte Muscat Navarra DO 	4,2	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/8c/71/cf50e3f61a2aca26bf34112bba6f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+465	Cielo Trebbiano - Pinot Grigio 	4,1	679,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e9/24/d008551929ee06bed12c8abf1d9a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+466	Bruni Grecanico Pinot Grigio 	3,5	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/13/22/8e87e79a694e88fc384258a68605.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+467	Lago Rose Vinho Verde DOC 	3,5	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/19/18/c373e6e6e37aa7172a10e1517a75.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+468	Cielo Pinot Grigio Blush 	3,9	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bc/49/09d0b8a02b3e8e2725bd373fb942.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+495	игристое Casa Coller Rose Spumante Brut Rose 	3,6	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0f/7e/72fac5b47735f4d25796e63ce111.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+469	Mau Maria Vinho Verde DOC Rose 	4,0	519,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/15/49/17e97e5aefe00e704e6410010024.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+470	Pirovano Collezione Pinot Grigio delle Venezie DOC Rose 	3,8	579,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/44/8b/4340f417d011c12bab8b47282e98.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+471	ликёрное Массандра Мускатель Розовый 	-	579,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/20/12/d6ff5edea116285ce780c2eb04da.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сладкое
+472	Алазанская долина ординарное 	3,8	429,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f3/44/557fe38a4840208d49610b011e9f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	полусладкое
+473	Rabl Цвайгельт Розе сортовое ординарное 	3,6	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d7/03/508c8b6316f0c24d0e2bb86cd073.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+474	Гумиста Ашта Розе 	3,5	899,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a4/26/7590bcac3xd2809419760679f5da.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+475	Chateau le Grand Vostock Пино Гри Резерв 	3,4	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ea/fc/dd30c5d24afe6a12088caec8603f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+476	Aristov Anima Цвайгельт 	3,6	439,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/76/e9/30ba4c2d65709e4b6dc1cd09f39f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+477	Hampton Water 	4,0	1 049,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/71/f4/fc711cce7e103967cec930ec9206.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+478	Whalebone Bay Sauvignon Blanc Blush Marlborough 	4,2	1 329,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ba/d9/8fe348f092614edb4fa3e850edb0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+479	Ликурия Розе 	3,6	719,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6c/cb/1f9a64352dbd3bf9270918b7255f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+480	Мысхако Quintessence Sauvignon Blanc 	3,7	679,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/88/bb/b9db75a33dbxd63ee5a1a6362d7d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+198	Chateau Pinot Pinot Noir 	3,6	959,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e0/98/9fccdf8fd73e3de9f65d0046170b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+481	Bosco del Merlo Pinot Grigio 	3,8	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/94/19/03b238d27753edcc27a1f57efc05.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+482	Chateau Pinot Гравитация Пино Нуар/Пино Гри 	3,5	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d7/48/c8d813643f85fa180e361f6c1781.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+483	B.IO Nero d'Avola Organic Rosato 	3,8	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/82/30/8ac406c48ddc61184afb1bbe4f7e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+484	Gerard Bertrand Cote des Roses 	3,9	1 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d0/e7/5688bc94428c3435d37eb6929cb7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+485	Destination Rose Bordeaux AOC красное сухое 11.5%, 750мл	3,6	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7a/58/6011dea611c2824ac8d224c343b0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+486	Cuvee Blanc Terrier Rose 	3,9	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7e/bf/5e57e6eb77f523f6f399671f354a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Розовое	сухое
+489	игристое Casa Defra Prosecco DOC 	3,9	1 149,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cb/f8/2387a001d9db45a2f1b2a29771b2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+490	игристое Aristov 	3,4	419,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/45/e6/22e4c76132cb3753xdb8eb0b857a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+492	игристое Tête de Cheval Blanc de Blancs 	4,0	1 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e2/41/70xd042573d7f242dd6329f906f9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+493	игристое Gancia Prosecco Brut 	3,6	359,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d2/14/1f7695b7xde32594631819473b58.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+491	игристое Золотая Балка 	-	449,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5b/dc/d7ac26a3f45753767ce2d0fb72b8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+496	Riondo Spumante Organic 	-	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2d/6d/7fcd3c23d5bc3e94198c4c8ff249.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+494	игристое Ahso 	3,3	869,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4c/ef/46d16184ce264d74f93868cd1e90.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+497	игристое Ombre Просекко Док 	4,2	1 349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b8/43/4071c55c093fa37e0376407d2ab4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+487	игристое Chateau Tamagne 	3,3	499,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d2/42/b8381e4ab7989d66a519fc6534a9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+498	игристое Freschello Frizzante Rosato 	3,6	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/08/0a/3a09778aa40d879e31fcbd5770c8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+499	игристо Fanagoria Blanc de Blancs 	3,7	859,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/31/4f/884594159f81f6e34ff9750babd5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+500	игристое Acquesi Просекко 	3,8	749,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e4/81/a78ccfa041496bc5108ef1272443.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+501	игристое Абрау-Дюрсо Victor Dravigny 	3,9	779,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/97/87f4629d21db6eed56d394b08bf3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+502	игристое Prosecco Ombre 	4,2	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d1/81/2ea74c45ec89ef6aba8d51b48db5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+504	игристое Эндемы Рислинг 	3,8	439,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/74/65/fxd5b21513577994cd5e8662c59c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+505	игристое Chateau Tamagne Ркацители брют 	-	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5e/b8/6534683b0a21b64b820103e893fb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+506	игристое Issi Просекко 	-	2 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ee/63/68xd361531ddxde920bbcd80d45d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+507	игристое ZB Wine Спуманте брют 	3,4	449,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5a/c4/58e5572c7a12cc93b7dc591b6298.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+509	игристое Балаклава Шардоне 	-	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/17/76/a8a29e21f1566c16f31eda0f3970.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+511	игристое Freixenet Cordon Negro Cava DO 	3,6	1 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a1/82/379edd2ba27fdd9e609a7ca0cb0f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+512	игристое Louis Vallon Cremant de Bordeaux AOC 	3,9	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e5/54/287529d9xd20399a4e13d6d856a8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+513	игристое Campo del Passo Prosecco Rose 	3,7	639,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d1/7e/83c9cace79336f6ef9996dfb42de.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+514	игристое Cinzano Pinot Chardonnay 	3,0	1 249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/11/76/1a37e358a8d7a88c4cdb82268c1d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+515	игристое Martini Брют 	3,4	1 499,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/66/51/bb72e41710xdd672310607e00acc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+516	игристое Vallformosa Brut Rose Cava DO 	3,7	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c5/c1/966606977a132a0607ba1a52f06f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+517	игристое Nuviana Cava DO 	3,7	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/46/d9/c822c8b8f8af35248675d9157347.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+518	игристое Maschio Dei Cavalieri Valdobbiadene Prosecco Superiore DOCG Rive di Colbertaldo 	4,1	1 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b0/a3/bb08393dbcd1a64f13ed7b598437.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+519	игристое Vallformosa Classic Cava DO 	3,7	779,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/10/04/6f8a0c6f20a2c8a388d19750ef46.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+520	игристое Martini Brut 	3,4	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/50/e0/3ff5374cbbfe900d609ae04e1ca1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+521	игристое Zonin Просекко Розе 	3,7	859,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d5/32/006412b2360371bbeba908771575.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+522	игристое Fanagoria Блан де Нуар Белое из чёрного 	3,7	859,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0f/d3/4a5431b235083a5528ace8becee4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+523	игристое №1 	3,7	1 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/dd/67/f35340991ff277c8643289df46c5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+510	игристое Наследие Мастера Левъ Голицынъ Коронационное 	3,1	619,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a8/c1/67f6bb1aee04fa31c50c7f556063.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+526	игристое Амфитрион Лимитед выдержанное 	-	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ce/3c/b789d46111be1c73908f2fdd281c.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+525	игристое Pommery Brut Royal 	3,9	16 990,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d3/67/41a595646db549d72ac8787f215d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+524	игристое Рояль Розе 	3,3	9 999,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c9/ea/37bd3a7d76bdc5281b2e6ef4a230.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+527	игристое Мысхако Квинтэссенция Белое из чёрного 	3,7	659,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f3/47/da3d60b453ffae2bae5d5b033394.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+528	F. Dubois Blanc de Blancs Champagne AOC игристое 	3,9	5 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e7/7a/5dced979f552ebe8df685aa08260.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+529	игристое Mar de Frades Albarino Atlantico Brut Nature Rías Baixas DO 	3,9	3 179,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/de/44/e3198599a88d6a6aa02d0be2f5c7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+530	игристое Cornonero Franciacorta DOCG 	3,7	1 899,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5b/69/89f302592e1b083c290686bf93db.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+531	игристое Мысхако Flute Gewurztraminer 	3,9	549,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e6/48/b76a6c8773ed497b6aa452b74db2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+532	игристое Vina Esmeralda Catalunya DO 	3,8	1 129,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5c/a4/c644791b18c961bc35bcfb2c02e6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+533	игристое Vogue 	3,2	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7f/e5/2980ee6ae0093dc3ebfaca6a32c3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+534	игристое Crimea Classic 	3,3	499,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/aa/16/0ac72d626fa4610545959ff37b27.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+535	игристое Casa Coller Spumante Brut 	3,4	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6e/1c/240xd1281410f6f4a9ed96ea023b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+536	игристое Riondo Collezione Frizzante Brut Garda DOC 	3,7	959,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3c/27/3dafffc02f3f70eb018f3792185b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+538	игристое Абрау-Дюрсо Victor Dravigny Brut 	3,9	949,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d5/5f/f4d1584f572aac5df94abb14e845.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+539	игристое La Gioiosa Prosecco DOC Treviso 	3,7	1 449,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/02/ae/6144383cb70038f9b12c9e5a6368.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+540	игристое Советское Шампанское 	2,4	249,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fc/81/a3ce2fbc58a413a26157e21ef2c6.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+541	игристое La Gioiosa Rosea 	4,0	1 349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d7/39/59cc0ab913b578472c94e2ff3422.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+542	игристое Mondoro Asti DOCG 	-	1 049,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0e/c6/4bb4b56b2bfb0525682f59668e6a.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сладкое
+543	игристое Martini Asti DOCG 7.5%, 750мл	3,8	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/24/45/d8acb83f95374242bfef680e2c31.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+544	игристое Gancia Asti DOCG 	3,8	819,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5d/7c/2f4ec0154afc9ca3e20d62209386.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сладкое
+545	Напиток Вермут Martini Bianco 13%, 1л	3,8	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7f/d3/53e8cf359c2e7b4641b910651ef9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+546	Плодовый алкогольный напиток Bosca Anna Federica Limited газированный белый сладкий 7.5% 750мл	3,4	529,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/43/12/1fab676791544e5f8fcce3d265a3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+547	игристое Martini Asti DOCG 12%, 187мл	3,4	439,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cf/24/3ed68f7e116dcc1e1a53394d27b0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+548	Винный напиток Martini Semi Dolce газированный сладкий белый 8.5%, 250мл	-	299,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5d/34/af0a9c4ca651841254c77d0c76cc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+549	Напиток Martini Fiero сладкий 10%, 1л	4,3	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/75/3b/e809ea98d6f6e7e449a8f5650218.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+537	игристое Di Caspico 	-	399,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/47/5a/dd86e1dca50212c713f15fab1425.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+570	Плодовый алкогольный напиток Allegro Nero газированный красный полусладкий 7%, 750мл	-	219,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fe/96/946f270677ea5ca7b43cef499xd1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+550	игристое Cinzano Asti DOCG 	3,9	869,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/78/5d/76a262014ea4c9ac9808be4dae30.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сладкое
+551	игристое Casa Coller Moscato Dolce 	3,9	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/67/6b/b7c49931038f5cf21c80f400717d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сладкое
+552	игристое Canti Asti DOCG 	4,0	1 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6e/xd/62eebd4c3a94f81f96ec1eb74223.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сладкое
+553	игристое Martini Асти сладкое 	-	2 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d5/fa/8682835ba75ebe4395a1d1f34fc9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сладкое
+555	Плодовый алкогольный напиток Santo Stefano газированный белый полусладкий 8%, 750мл	3,5	259,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/81/99/251824bcb2fce2bcd030591b61c2.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+556	игристое Абрау-Дюрсо Victor Dravigny Премиум Каберне красное полусладкое 11%, 750мл	3,9	779,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f9/08/aedc69214eac40d6ba02eb6d7012.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
+557	игристое Riunite D'Oro 	4,4	739,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/66/b7/022491f8b59b4ac8b6d9f1740d79.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
+558	Плодовый алкогольный напиток Santo Stefano Римские Каникулы газированный белый полусладкий 8%, 750мл	3,3	279,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/63/98/97b02ee847e4c730a3xd6328e01d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+559	игристое Riunite Lambrusco Rosato 	3,8	739,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/82/14/f8ab25a3f10627d1641f2b2d9b68.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
+561	Плодовый алкогольный напиток Bosca Anna Federica Limited газированный белый полусладкий 7.5% 750мл	3,4	449,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a4/78/2d0aa57d149a4248ceb718df7893.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+562	Плодовый алкогольный напиток Santo Stefano газированный розовый полусладкий 8%, 750мл	3,5	289,90 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4a/1b/6341b7bab6e0af2c2b33d774ac46.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+563	игристое Riunite Lambrusco Rosso красное полусладкое 8%, 750мл	-	739,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e7/00/aeb255de7fde8e1180dcf846ed93.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
+564	Плодовый алкогольный напиток Santo Stefano газированный красный полусладкий 8%, 750мл	3,5	289,90 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7d/8e/1f1c4dd5ae2be62aaca13b8214a5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+569	игристое Di Caspico Фиори ди Маре жемчужное 	-	339,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0c/5f/bf6fd32a4d2c48288f59d39de098.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
+565	игристое ZB Wine Frizzante жемчужное красное полусладкое, 10%, 750мл	4,0	449,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4a/b5/d09e9606f335fd999ab0ee4cf042.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
+566	Плодовый алкогольный напиток Allegro Classico газированный белый полусладкий 7%, 750мл	-	219,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9a/b8/1c08da30b6278561c3818488f0a5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+567	Плодовый алкогольный напиток Bosca Rose Limited газированный розовый полусладкий 7.5% 750мл	-	479,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/64/a3/05e6a7814c1a894d5c6be15b4d02.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+568	игристое Chateau Tamagne Роза Тамани 	3,5	154,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/8c/a6/97b51ebc2fb43338d61cfb5ac133.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+508	игристое Tête de Cheval 	4,0	1 349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/27/6a/8c7499d86e13d61b390513878c01.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+571	игристое Надежда 	-	289,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fe/c2/d440af1d1dba635dd55c3fd63daf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
+488	игристое Наследие Мастера Левъ Голицынъ 	3,1	119,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5c/f5/2ab72f59cdc881a2dc6279abd64d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+576	игристое Crimea Classic Мускатное 	3,6	499,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/b7/a7/ddffcb0caee8771d04812d5969c7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
+574	Плодовый алкогольный напиток Allegro Crema di Vanilla газированный белый полусладкий 7%, 750мл	2,9	219,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/89/e5/c3590e27b6f6605xd960dacbe15f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+575	Плодовый алкогольный напиток Allegro Rose газированный розовый полусладкий 7%, 750мл	3,3	219,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7d/e5/74d8f1b8191daf813befa199113b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+572	игристое Золотая Балка Мускатное 	-	419,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7e/ce/cee4e0d44ffc4b3d18c8f0cff063.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
+560	игристое ZB Wine Moscato 	3,7	449,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/71/2e/5f2ef06a2da35cb3deca25f3c229.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
+577	игристое Балаклава Мускат 	3,8	699,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a4/ab/b50e807759c04b8e9b28768fca26.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
+578	игристое Gancia Просекко Драй 	4,0	819,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/28/9e/ca864c505868f2fc4c07c7e091c4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+579	игристое Martini Prosecco DOC 13%, 750мл	3,6	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ed/94/5e4bd8ef4374924d6739553986d1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+580	игристое Corte delle Calli Prosecco Valdobbiadene Superiore DOCG 	3,8	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/95/89/de0ddf1d9bcbe547dcc9c2dd9cdf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+581	игристое Martini Prosecco DOC 12%, 187мл	3,6	439,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e4/ae/1b76ccd1aceeb059576b56caf623.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+582	игристое Campo Del Passo Prosecco Conegliano Valdobbiadene DOCG 	3,9	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3d/c0/30e20f6391383cec23709fd91177.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+583	игристое Абрау-Дюрсо 	3,3	399,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/3b/72/587936ecxd9a1f5a5fc8813e5934.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+584	игристое ZB Wine Frizzante жемчужное 	-	449,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fb/0d/5c7df54e041838f8885bc99beaac.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+585	игристое Martini Prosecco DOC Rose 	4,0	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/40/91/a1c20b5561e4b5c0efeca1b41b75.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+586	игристое Campo Del Passo Prosecco DOC 	3,6	759,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/75/8d/07a6ac220ccafba61e5c4b212ed4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+587	игристое Cinzano Prosecco DOC 	3,7	1 049,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/07/80/4f68c89c30b5db0e480a498465ce.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+588	игристое Pierre Trichet l'Authentique Brut Rose Champagne AOC 	3,8	4 890,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ea/91/47cdc245674a242e352b0c5c0212.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+589	игристое Gancia Prosecco Rose DOC 	4,0	959,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ee/17/600267735433195d250753734575.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+590	игристое Freixenet Prosecco DOC 	3,7	1 899,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/9a/fb41d6060d34831545176466b85f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+591	игристое Freixenet Rose Cava DO 	3,8	1 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/8c/26/22259ba737e453d3a542a0b3b212.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+592	игристое Nino Ardevi Просекко 	3,6	1 699,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/35/e5/ca94c3e80a0532cea517280826a1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+593	игристое Tonon Villa Doral Просекко 	3,6	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/59/2b/8d6ebc579e7a5559ca7c21fe560b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+594	игристое Font Secco Kekfrankos Rose Frizzante 	3,4	379,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/bf/53/510e5434ba26d45027c0cd96d949.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+595	игристое J. Lassalle Preference Brut 1er Cru Chigny-Les-Roses Champagne AOC 	4,3	8 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5b/fb/1236c6b8cafb0de33626be187b81.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+596	игристое Case Paolin Asolo Prosecco Superiore DOCG 	3,8	1 749,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/98/8c/1eb79192b79781806bef28fdd8cd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+619	игристое Atelier Des Vins 	-	349,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/db/c8/aa408041af62b4371121aabd9233.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+598	игристое de Venoge Cordon Bleu Brut Rose Champagne AOC 	3,9	6 590,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/50/81/7c464dbc10bf0e8af61df229e8cd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+599	игристое de Venoge Cordon Bleu Brut Champagne AOC 	3,9	5 590,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ff/a2/af1e6b891041547e8381da3f7e2d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+600	игристое Corte delle Calli Prosecco DOC Treviso 	3,9	839,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/53/0a/ae90bc26e8a262000b9c84f868dc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+601	игристое Martini Rose 	3,6	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a4/dd/44eb3694a2f8af079263ffbccfb8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+602	Винный напиток Martini Secco газированный полусухой белый ж/б 10%, 250мл	3,6	299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1a/73/77672507445e78bc675431f5e7c7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+603	Винный напиток Martini Rosato газированный полусухой розовый ж/б 10%, 250мл	3,7	299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5d/f1/7f2343581bd9e7dbfa5226d344cb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+604	игристое ZB Wine Frizzante 	3,7	449,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/89/a5/27e8bc2e905a18645e08cd72233d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+605	игристое Мысхако Квинтэссенция Зинфандель 	-	859,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/79/d5/7c9cf8d8618c6c08a7d52b8eeddc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+606	игристое Pierre Trichet l'Authentique Demi-Sec 1er Cru Champagne AOC 	3,8	4 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/da/c3/2feb0dce8610f185b732af8f889d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+607	Плодовый алкогольный напиток Santo Stefano газированный белый полусухой 8%, 750мл	3,4	289,90 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/10/99/35c84730a31df40481602a7c8906.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+608	игристое V8+ Просекко Экстра Драй 2021 	3,6	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/53/c7/b9d97b23a032ded6bb5c4cd30d57.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+610	игристое Casa Coller Prosecco 	3,7	1 089,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/17/fa/b79374xdfff5ecc30ef588d794ac.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+611	игристое Brut Dargent Rose Pinot Noir 	3,4	959,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/e4/86/cbb6980dc0cf6dfef696b2b63de4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+612	игристое Tete de Cheval Брют Резерве 	4,0	2 499,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7e/1e/b7d3f301c7eef39dd4af6e27f2ef.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+613	игристое Эндемы Пино Нуар 	3,7	439,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d0/3a/4e02327a398c245f129b2a609dc1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+614	игристое Sensation Блан де Блан 	3,5	779,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2a/d4/e6cc0fa32398286c53e500fa46eb.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+615	игристое Pierre Trichet La Puissance Blanc de Noirs Brut Champagne AOC Grand Cru 	4,0	5 390,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/30/9c/dabb90f0e0235a8xd483422a4bcc.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+616	игристое Солнечная Долина Меганом Блан де Бланс 	-	1 649,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cd/9c/5fc213eeb63cd10445d9b7b58fa5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+617	игристое Saint-Hilaire Бланкет де Лиму 	3,9	1 649,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2f/0d/3114330fbc088013b94e34a97a33.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+618	игристое Sensation Просекко 	3,3	1 049,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d0/01/d88ef2bcb9b97be751f520ca97a8.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+609	игристое Zonin Просекко 	3,7	1 349,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/21/45/462cf938485e3879f545ac8af255.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+620	игристое Mayrik Kangun 	3,3	449,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/70/de/c5200d45aa4c83342aa620f8570e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+621	игристое Prevoteau-Perrier La Vallee 	3,9	4 599,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/19/49/bc785d4b0c14df4be7abe9eec5a0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+622	игристое St. Urbans-Hof Рислинг Зект 	4,0	1 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/2c/78/509a41b787b2e0851bbc113a0acf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+1	Elegido Tempranillo 	3,8	359,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f6/48/248395b37c74a8ee771ef8bed0e3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+49	ликерное Солнечная Долина Черный Доктор Солнечной Долины 	-	1 549,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/29/67/b055f9724aae713b4be3ab03becf.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сладкое
+66	Chateau l'Eclair Merlot ординарное 	3,6	299,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/44/79/652c95006165e213f8651daf0bf1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусладкое
+101	Chateau Tamagne Терруарное Саперави - Красностоп 	3,8	999,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/15/fe/fcc486e058xd62xde009bb451da7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+117	Q.S.S. Рар 	3,8	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/29/87/dff915c5ede95a9aebc60114e192.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+132	La Miranda Secastilla Garnacha Somontano DO 	3,8	899,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c1/bd/1ca39a2b2f04ed9749c67a3e8077.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+145	Signos Red Blend 	3,6	1 299,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ea/21/2xd91d3b41d206977212ef3209b3.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+148	Heinz Eifel Spatburgunder 	3,6	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/6d/6a/2d95a54e10b58f7142da796b2b25.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+185	Tchotiashvili Саперави Рчеули Квеври 	4,0	2 399,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d8/49/7af634d013496c08d6fb3751ec55.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+204	Loggia Del Sole Chianti DOCG 	3,1	599,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/fe/ae/5b717d8697f118exd2301d16769f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+209	Поместье Голубицкое Мерло ЗНМП Голубицкая стрелка 	3,9	999,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0a/e7/138265f23387e40a6e45345baed0.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+245	Поместье Голубицкое Каберне Совиньон ЗНМП Голубицкая стрелка 	3,9	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d6/88/8bf5aa85cf74dbe159edf5573c23.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+261	Тайна Колхиды Мукузани 	3,7	619,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/27/95/fe065654f82958f93ef3f56937a1.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+291	Roccialta Chianti DOCG 	3,4	1 049,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/95/e4/631b685621e753911f1c4bb576e5.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+295	La Reserve de Malartic Pessac-Leognan AOC 	3,9	2 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/0e/4b/d0cd639cda61b5f6690b1f72609d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+321	Siglo Crianza Rioja DOC 	3,5	939,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/91/93/35c8d052c2c94f88b714e5743bca.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+330	San Valentin Catalunya DO 	3,9	1 099,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/f9/26/2089150cd322bec7357fb6a28105.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+352	Passopasso Passito 	-	1 849,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/d7/92/0de3b4e48971c67e2564706c2298.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сладкое
+370	Peter Mertes Liebfraumilch 	3,8	389,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/9e/2e/49744fb2ca877eb3c03fd1b217ed.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
+382	Chateau Pinot Гравитация Шардоне 	3,9	799,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/1f/99/2a143bea255f108ed30b5107f200.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+395	Cranswick Lakefield Chardonnay 	3,3	989,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/17/4b/ba886cd9dbaa63e901a0c4e9880f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+412	Tchotiashvili Ркацители Рчеули Квеври 	4,1	2 919,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a6/5c/08e4f9f1b610e956c1142f4932b4.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+441	Molom Blanco 	3,9	659,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/39/9a/7465ddee12dedcab0f040ca498b9.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
+452	ликерное Cossart Gordon Full Rich Madeira 	3,9	2 199,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/42/d2/dc9923791785c30883f9cd79d835.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	-
+503	игристое Мысхако Квинтэссенция Совиньон Блан 	-	739,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4b/7a/3133ca90d8f16cf6e7dbda8e8591.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	брют
+554	Плодовый алкогольный напиток Santo Stefano Сицилийская Свадьба газированный белый полусладкий 8%, 750мл	3,5	339,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ee/34/7f9e9b5a0e9090506d7e51b82695.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	-
+597	игристое Pierre Trichet l'Authentique Brut 1er Cru Champagne AOC 	3,9	4 799,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c3/55/24b175419f1121c720393bcc6d22.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+623	игристое Ruggeri Просекко Супериоре Вальдоббьядене Джалл'оро 	4,1	1 999,00 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/58/f3/1a81488fff3f643898932fa7a74f.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	сухое
+573	игристое Абрау-Дюрсо Виктор Дравигни Премиум 	3,3	779,99 ₽	https://cdnv-img.perekrestok.ru/i/400x400-fit/xdelivery/files/a6/19/c4a74fe84a67c8cd59e2cfeb9512.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Игристое	полусладкое
 \.
 
 
@@ -1285,7 +1721,6 @@ COPY public.vivino (id, name, rate) FROM stdin;
 234	S!gnature Lesquerde 	3,6
 270	Броjаница Каберне Совиньон 	3,6
 273	Грузвинпром Саперави 	3,6
-274	Грузвинпром Саперави 	3,6
 332	Авторское Каберне Совиньон 	3,8
 333	Marques de Villanueva Tempranillo Carinena 	3,4
 310	Taboadella Villae 	4,0
@@ -1733,6 +2168,480 @@ COPY public.vivino (id, name, rate) FROM stdin;
 640	Инкерман Каберне Гранд Резерв 	4,0
 575	Тавквери-Мерло Цард марочное 	4,0
 299	Matsu El Viego 	4,3
+776	Espiritu de Chile Cabernet Sauvignon 	3,8
+777	Ikhalto Киндзмараули 	3,8
+778	Продукция Mayrik Гранатовое алкогольная красная полусладкая 12%, 750мл	3,9
+779	Лыхны 	3,8
+780	ликерное Солнечная Долина Черный Полковник 	4,2
+781	Киндзмараули 	4,2
+782	Claroscuro Tintas de Uco Malbec 	3,5
+783	Плодовый алкогольный напиток Дерево Жизни Ежевика красный полусладкий, 12%, 750мл	-
+784	Nobiolomo Marzemino Colli de Scandiano e Canosa DOC 	4,3
+785	Conti Serristori Chianti DOCG 	3,4
+786	Solvino Каберне 	3,5
+787	Винный напиток Вермут Martini Rosso 14,4%, 500мл	4,4
+788	Апсны 	-
+789	ликерное Массандра Портвейн Красный Алушта 17%, 750мл	3,8
+790	Maradi Киндзмараули 	-
+791	Плодовый алкогольный напиток Дерево Жизни Гранат красный полусладкий, 12%, 750мл	-
+792	Броjaница Кадарка 	-
+793	Negrar Amarone della Valpolicella DOCG 	4,0
+794	ликерное Солнечная Долина Черный Доктор Солнечной Долины 	-
+795	Chateau l'Eclair Merlot ординарное 	3,6
+796	Вина Тавадзе Хванчкара 	3,9
+797	Villa Krim Shevalie Rouge 	3,5
+798	Tres Amigos сортовое ординарное 	3,7
+799	Aristov Анима Анчелотта 	3,3
+800	Ikhalto Алазанская Долина 	4,1
+801	Винный напиток Sangria Fresh Wine in Tube 	3,7
+802	Инкерман Пино Нуар 	-
+803	Sol Valley Cabernet Sauvignon 	3,3
+804	Тайна Колхиды Хванчкара 	4,3
+805	Elegido Tinto 	4,3
+806	Quintessence Шторм Мерло 	-
+807	19 Crimes Snoop Cali Red 	3,6
+808	Heinz Eifel Spatburgunder 	3,6
+809	Vecchia Cantina Chianti DOCG Riserva 	3,7
+810	Vajra Dolcetto d'Alba DOC 	3,8
+811	Terramia 	3,2
+812	Paladin Syrah 	3,9
+813	Chateau Pinot Гравитация Каберне Совиньон 	3,7
+814	Kvareli 	4,1
+815	Fanagoria столовое 	3,5
+816	Vina Tendida Valencia DO 	4,1
+817	Джейран Чинар 	-
+818	Дугладзе Киндзмараули 	-
+819	Wine Guide Бастардо 	3,1
+820	Batono Алазанская Долина 	3,3
+821	АСТ Саперави 	3,5
+822	Vespucci Chianti DOCG 	3,4
+823	Tinto Pesquera Crianza Ribera del Duero DO 	4,0
+824	Sant'Orsola Chianti DOCG 	3,3
+825	Muga Reserva Rioja DOC 	4,2
+826	Кахетинские подвалы Киндзмараули 	4,2
+827	Nobilomo Marzemino 	4,3
+828	Сихарули Киндзмараули 	3,5
+829	Tbilisi Peak Киндзмараули 	4,0
+830	Ханджлури Сувенирная серия Киндзмараули 	4,5
+831	Tavridia Саперави Мерло 	3,3
+832	Domaines Arnaud Cuvee Finesse 	3,9
+833	от Валерия Захарьина Бастардо Кефесия 	3,9
+834	Глобус Rouge Moelleux 	3,7
+835	Глобус Corte Vinaia Rosso 	-
+836	Глобус Хванчкара 	3,9
+837	Глобус Киндзмараули 	3,5
+838	Глобус Алазанская долина 	3,8
+839	Kindzmarauli Marani Kindzmarauli 	4,3
+840	Agora Мускат чёрный 	4,0
+841	ликёрное Массандра 	-
+842	домашнее Driada Изабелла Молдавская 	3,9
+843	Грузвинпром Киндзмараули 	3,8
+844	Усадьба Дивноморское Вторая лиия Вечерница 	3,9
+845	Ханджлури Киндзмараули 	4,5
+846	Броjаница Изабелла 	-
+847	Novacorte Valpolicella Ripasso classico superiore 	3,9
+848	Agora Саперави 	3,7
+849	креплёное Hooper's Constitutional Port 10 years old Tawny 	4,0
+850	ликёрное Массандра Портвейн красный Алушта 17 % алк., Россия, 0,75 л	3,8
+851	ликёрное Barros Porto Ruby 19,5 % алк., Португалия, 0,75 л	3,8
+852	Villa Del Sol 	4,0
+853	Сихарули Алазанская долина 	3,8
+854	Портвейн Valdouro Porto Tawny Port красный 19 % алк., Португалия, 0,75 л	4,1
+855	Традиции Абхазии Изабелла Абхазская 	4,1
+856	ликёрное Pedro Ximenez Reserva de Familia сладкое 15 % алк., Испания,...	4,0
+857	Juste Du Bon Vin Изабелла 	-
+858	Талавари Киндзамараули 	-
+859	Tbilisi Peak Алазанская долина 	-
+860	Georgian Royal Wine Kindzmarauli GRW 	4,3
+861	Портвейн Агдам белый 19 % алк., Азербайджан, 0,75 л	-
+862	Villa Grande 	2,9
+863	Escal Roja 	3,2
+864	ликёрное Sol de Malaga Original сладкое 15 % алк., Испания, 0,75 л	3,6
+865	Andre Millot Moelleux 	3,9
+866	Mildiani Киндзмараули 	4,2
+867	Портвейн Массандра Южнобережный красный сладкий 18 % алк., Россия, 0,75 л	4,1
+868	Крымвинторг Пино-Фран крымский 	3,2
+869	Domus Vini Raboso 	3,6
+870	Fanagoria Каберне 	3,5
+871	Грузвинпром Хванчкара 	4,0
+872	Броjаница Кадарка 	-
+873	Kagor Meteora освящённое 	4,4
+874	Сихарули Ахашени 	4,0
+875	Bravo Trade Киндзмараули 	-
+876	Observer Grand Reserve Carmenere-Cabernet Sauvignon 	4,1
+877	J.P. Chenet Delicious Medium Sweet Moelleux 	3,7
+878	Bleu Merlot 	3,9
+879	ликёрное Malaga Virgen Pedro Ximenez 	3,7
+880	Крымский погребок Саперави 	3,0
+881	ликёрное Солнечная Долина Черный Доктор 	4,3
+882	Коктебель Кагор высшего качества	4,0
+883	Асканели Алазанская Долина	3,8
+884	Babalu Tropical 	3,9
+885	Lirico Bobal-Monastrell 	3,6
+886	Талавари Алазанская долина 	4,0
+887	Портвейн Calem Fine Ruby Porto красный 19,5 % алк., Португалия, 0,75 л	4,1
+888	Tikves Македонско Чрвено 	-
+889	Портвейн Массандра Ливадия красный 18,5 % алк., Россия, 0,75 л	-
+890	Портвейн Hooper's Lord Mayor Tawny Porto сладкое 19 % алк., Португалия, 0,7...	3,4
+891	Alma River Шираз 	3,9
+892	Marani Kindzmarauli 	4,3
+893	Вина Тамани Мерло 	-
+894	ликёрное Royal Madeira 17,5 % алк., Португалия, 0,75 л	4,4
+895	Inkerman Пинно Крымское 	3,5
+896	Ханджлури Хванчкара 	-
+897	АСТ Киндзмараули 	3,5
+898	Askaneli Brothers Киндзмараули CA 	3,5
+899	Грузвинпром Алазанская долина 	3,9
+900	Tbilisi Peak Хванчкара 	4,0
+901	Blandy's Madeira Duke of Clarence Rich 	3,9
+902	Armenia 	3,9
+903	Сихарули Хванчкара 	3,9
+904	Valserrano Graciano 	4,0
+905	Vol I Dol Negre	3,3
+906	Традиции Абхазии Саперави 	3,4
+907	Ozzy Shiraz 	4,1
+908	ликёрное Villa de Corgos Reserva Bairrada 	4,1
+909	Bravo Trade Хванчкара 	-
+910	Marani Alazani Valley 	4,0
+911	J.P. Chenet Original Shiraz 	3,7
+274	Грузвинпром Саперави  	3,6
+912	Golden flowers Cabernet 	3,1
+913	Цард Шираз 	-
+914	Golden flowers Merlot 	3,1
+915	Hamelin Bourgogne Pinot Noir 	3,6
+916	The Mark Merlot-Cabernet 	3,9
+917	Arena de Oro Garnacha-Tempranillo 	3,1
+918	ликёрное Солнечная Долина Черный Полковник 	4,2
+919	M.Chapoutier Rivesaltes	3,9
+920	Muelle Tempranillo Syrah	3,7
+921	Arrivederci	3,9
+922	Acharuli Домашнее 	3,3
+923	Bravo Trade Алазанская Долина 	3,8
+924	Di Caspico special edition 	3,9
+925	Golden flowers Isabella 	-
+926	ликёрное Contrabandista Valdespino Jerez полусухое 18 % алк., Испания,...	3,8
+927	Цард Ломиаури 	-
+928	Tbilisi Peak Ахашени 	4,0
+929	Rioja Bodegas De Abalos Tempranillo 	3,2
+930	Крымская Трапеза Саперави 	-
+931	ликёрное Elegante Cream 17 % алк., Испания, 0,75 л	4,4
+932	Традиции Абхазии Апхын 	3,6
+933	Vino Kalem Вранец 	3,6
+934	Портвейн Calem Fine Tawny Porto красный 19,5 % алк., Португалия, 0,75 л	4,1
+935	Canada Syrah 	-
+936	Bosca Stories of Italy Negroamaro 	3,6
+937	Inkerman Древний город 	4,0
+938	Tbilisi Peak Оджалеши 	4,2
+939	Galo Valente Semi-Doce 	4,0
+940	ликёрное Malaga Virgen Dunkel Pedro Ximenez сладкое 17 % алк., Испания...	3,7
+941	Портвейн Hooper's 2003 Colheita Port сладкий 20 % алк., Португалия, 0,75 л	4,1
+942	Апацха 	3,8
+943	Askaneli Brothers Saperavi Muscat 	4,2
+944	ликёрное Gonzales Byass Elegante Medium Sherry 17 % алк., Испания, 0,7...	3,9
+945	Rouge 	3,5
+946	игристое Casa Defra Prosecco DOC 	3,9
+947	игристое Aristov 	3,4
+948	игристое Tête de Cheval Blanc de Blancs 	4,0
+949	игристое Gancia Prosecco Brut 	3,6
+950	игристое Casa Coller Rose Spumante Brut Rose 	3,6
+951	Riondo Spumante Organic 	-
+953	Peter Mertes Riesling 	4,1
+954	Cielo Pinot Grigio 	3,7
+955	Urban Riesling Mosel 	4,2
+956	Le Grand Noir Chardonnay 	4,0
+957	San Valentin Catalunya DO 	3,9
+958	Liebe Meine Frau 	3,1
+959	Hans Baer Riesling 	4,0
+961	Lago Vinho Verde DOC 	4,2
+962	Ca'Del Poggio Pinot Grigio delle Venezie DOC 	3,7
+963	Vinogor Мускат 	2,5
+964	Olivier Tricon Chablis AOC 	3,9
+965	Freschello Bianco 	3,2
+966	Turtle Dreaming Semillon-Sauvignon Blanc 	3,9
+967	Banfi Principessa Gavia Gavi DOCG 	3,9
+968	Musita Karima Grillo 	3,8
+969	Inspirado Sauvignon Blanc 	3,4
+970	Michel Scheid Riesling 	4,0
+971	Chateau De Talu Море волнуется раз 	3,4
+972	Gaetano Pinot Grigio delle Venezie DOC 	3,3
+973	Olivier Tricon Petit Chablis AOC 	3,9
+974	Псоу 	-
+975	Fetzer Chardonnay Sundial 	3,6
+976	Ikhalto Цинандали 	-
+978	Bex Riesling 	3,9
+979	The Wine System Viuranus Navarra DO 	3,7
+980	Passopasso Passito 	-
+981	Pirovano Garda Garganega Pinot Grigio DOC 	3,6
+983	Mau Maria Vinho Verde DOC 	3,7
+984	Lirico Viura-Sauvignon Blanc Valencia DO 	4,0
+985	19 Crimes Chardonnay 	3,7
+986	Faustino VII Viura Rioja DOC 	3,5
+987	Tour De Mandelotte Bordeaux AOC Blanc 	4,2
+988	ликерное Массандра Мадера Крымская 	3,7
+989	Redwood Vineyards Chardonnay 	3,4
+952	игристое Ombre Просекко Док 	4,2
+977	19 Crimes Sauvignon Block 	3,7
+982	ZB Wine Riesling 	4,1
+991	Aristov Anima Мюллер Тургау 	3,7
+993	Original German Pinot Blanc 	3,8
+994	Alma Valley White 	3,3
+995	Selbach Trutta Fario Riesling Kabinett 	4,0
+996	Amaranta Chardonnay-Viognier 	3,7
+997	Solano Verdejo 	3,7
+998	Peter Mertes Liebfraumilch 	3,8
+999	Donnafugata Anthilia 	3,8
+1000	Jardin de la Taur Marsanne-Sauvignon Blanc 	3,9
+1001	Cielo Sante Rive Soave DOC 	3,8
+1002	Крымское Лето Сапсёрфинг 	-
+1003	Golubitskoe Estate Рислинг 	3,9
+1004	Yali Уайлд Свон Совиньон Блан 	3,7
+990	Le Rime 	3,6
+1006	Ed Knows Мускат 	3,8
+1007	Ed Knows Шардоне 	3,8
+1008	Armenia Wine Такар Кангун 	3,9
+1009	De Wetshof Danie de Wet Chenin Blanc 	3,9
+1010	Chateau Pinot Гравитация Шардоне 	3,9
+1011	Tre Stelle Bianco 	3,7
+1012	Negrar Garganega 	3,7
+1013	Original German Riesling 	3,7
+1015	E. Guigal Cotes du Rhone AOC Blanc 	3,6
+1016	Monte Real Blanco Fermentado en Barrica Rioja DOC 12.5%, 750мл	3,6
+1017	La Miranda Secastilla Garnacha Blanca Somontano DO 	3,7
+1018	Sympathy for the Devil 	3,7
+1019	Rabl Riesling Langelois 	4,0
+1020	De Wetshof Bon Vallon Chardonnay 13%, 750мл	3,9
+1021	Rabl Gruner Veltliner Langelois 	3,9
+1022	Karas Armavir Vineyards 	3,7
+1023	Cranswick Lakefield Chardonnay 	3,3
+1024	Beringer Founder's Estate Chardonnay 	3,6
+1025	Matteo Braidot Ribolla Gialla Friuli Isonzo DOC 	3,6
+1026	Matteo Braidot Pinot Grigio Friuli Isonzo DOC 	3,7
+1027	Gamla Sauvignon Blanc 	3,7
+1028	Cinzia Bergaglio Gavi del Comune di Gavi DOCG Rovereto 	3,9
+1029	Little Beauty Dry Riesling Marlborough 	3,9
+1030	Selbach Riesling Incline 	3,8
+1031	Alamos Chardonnay 	3,6
+1032	Livio Felluga Pinot Grigio Colli Orientali Friuli DOC 	4,0
+1033	Ailala Treixadura Ribeiro DO 	4,1
+1034	Masi Tupungato Passo Blanco 	3,5
+1035	Долина Привидений Шардоне 	3,1
+1036	Livio Felluga Sharis delle Venezie 	3,8
+1037	Yalumba The Y Series Chardonnay 13%, 750мл	3,5
+1038	Albet i Noya El Fanio Penedes DO 	3,8
+1039	Cristo di Campobello C’D’C’ Bianco 	3,8
+1041	Les Sarres Cotes Du Jura AOC 	-
+1014	Villa Krim Шардоне 	3,1
+992	ZB Wine Совиньон Блан 	3,8
+1042	Резерв Винодела Шардоне 	3,4
+1043	Bründy Grüner Veltliner 	3,9
+1045	Абрау-Дюрсо Рислинг 	3,2
+1046	Blanc de Talu 	3,5
+1047	Инкерман Кокур Белый 	-
+1048	BDX Revolution Sauvignon Blanc Bordeaux AOC 	3,8
+1049	Paladin Pralis 	4,0
+1050	Musita Organic Cataratto 	-
+1051	Инкерман Мускатное 	3,6
+1052	B.IO Cataratto Chardonnay 	3,8
+1054	Piccini Memoro Bianco 	3,5
+1055	Ahso Цинандали 	3,5
+1056	Il Rocchin Gavi DOCG 	3,9
+1057	Bruni Гарганега Пино Гриджио дель Венеция 	3,5
+1058	KWV Classic Collection Sauvignon Blanc 	3,5
+1059	Ionos White 	3,8
+1060	Фанагория Номерной Резерв Шардоне 	-
+1061	Gatto Matto Pinot Grigio Delle Venezie DOC 	3,7
+1062	Destination Blanc Bordeaux AOC 	3,9
+1063	Masi Modello Pinot Grigio delle Venezie DOC 	-
+1064	Mar de Frades Albarino Rias Baixas DO 	4,1
+1065	Sol Valley Sauvignon Blanc 	3,3
+1066	Rauli Chardonnay 	3,5
+1067	Frontera Sauvignon Blanc 	3,3
+1068	Chateau Tamagne Терруарное Шардоне 	3,7
+1069	Molom Blanco 	3,9
+1070	Chateau Tamagne Шардоне 	3,7
+1071	Pirovano Pinot Grigio Delle Venezie DOC 	3,8
+1072	Castillo de Chiva Blanco Semidulce 	3,9
+1073	Lirico Мерсегера-Sauvignon Blanc Valencia 	3,4
+1074	Elegido Airen-Verdejo 	3,7
+1075	Cuvee Blanc Terrier Blanc 	3,7
+1076	G7 Chardonnay Loncomilla Valley DO 	3,3
+1077	Hampton Water 	4,0
+1078	Lamberti Pinot Grigio Delle Venezie DOC 	3,5
+1079	Klaus Langhoff Liebfraumilch 	3,9
+1080	ликерное Cossart Gordon Full Rich Madeira 	3,9
+1081	Фанагория Авторское вино Шардоне-Алиготе 	3,5
+1082	ликерное Массандра Портвейн Белый Алушта 17%, 750мл	-
+1083	Villa Antinori Bianco 	3,8
+1084	Racimo de Uva Macabeo Carinena DO 	2,9
+1085	Marco Felluga Mongris Collio Pinot Grigio DOC 	3,8
+1086	Pascal Jolivet Sancerre AOC Blanc 	4,0
+1087	Barkan Classic Emerald Riesling 	3,5
+1088	Bouchard Aine&Fils Puligny-Montrachet AOC 	4,2
+1089	La Scolca Gavi DOCG Valentino 	3,8
+1090	Monfort Village Semillon 	-
+1091	J.Bouchon Sauvignon Blanc Maule Valley DO 	3,5
+1092	Olivier Tricon Chablis Premier Cru Montmains AOC 	4,0
+1093	Te Mata Cape Crest Sauvignon Blanc 	4,1
+1094	Baluarte Muscat Navarra DO 	4,2
+1095	Cielo Trebbiano - Pinot Grigio 	4,1
+1096	Bruni Grecanico Pinot Grigio 	3,5
+1097	Lago Rose Vinho Verde DOC 	3,5
+1098	Cielo Pinot Grigio Blush 	3,9
+1099	Mau Maria Vinho Verde DOC Rose 	4,0
+1100	Pirovano Collezione Pinot Grigio delle Venezie DOC Rose 	3,8
+1101	ликёрное Массандра Мускатель Розовый 	-
+1102	Алазанская долина ординарное 	3,8
+1103	Rabl Цвайгельт Розе сортовое ординарное 	3,6
+1104	Гумиста Ашта Розе 	3,5
+1105	Chateau le Grand Vostock Пино Гри Резерв 	3,4
+1106	Aristov Anima Цвайгельт 	3,6
+1107	Whalebone Bay Sauvignon Blanc Blush Marlborough 	4,2
+1108	Ликурия Розе 	3,6
+1005	Алазанская Долина ординарное 	-
+1040	Tchotiashvili Ркацители Рчеули Квеври 	4,1
+1044	Абрау-Дюрсо Шардоне 	3,8
+1109	Мысхако Quintessence Sauvignon Blanc 	3,7
+1110	Bosco del Merlo Pinot Grigio 	3,8
+1111	Chateau Pinot Гравитация Пино Нуар/Пино Гри 	3,5
+1112	B.IO Nero d'Avola Organic Rosato 	3,8
+1113	Gerard Bertrand Cote des Roses 	3,9
+1114	Cuvee Blanc Terrier Rose 	3,9
+1115	Destination Rose Bordeaux AOC	3,6
+1116	игристое Freschello Frizzante Rosato 	3,6
+1117	игристо Fanagoria Blanc de Blancs 	3,7
+1119	игристое Абрау-Дюрсо Victor Dravigny 	3,9
+1120	игристое Prosecco Ombre 	4,2
+1121	игристое Мысхако Квинтэссенция Совиньон Блан 	-
+1122	игристое Эндемы Рислинг 	3,8
+1123	игристое Chateau Tamagne Ркацители брют 	-
+1124	игристое Issi Просекко 	-
+1126	игристое Балаклава Шардоне 	-
+1127	игристое Freixenet Cordon Negro Cava DO 	3,6
+1128	игристое Louis Vallon Cremant de Bordeaux AOC 	3,9
+1129	игристое Campo del Passo Prosecco Rose 	3,7
+1130	игристое Cinzano Pinot Chardonnay 	3,0
+1131	игристое Chateau Tamagne 	3,3
+1132	игристое Наследие Мастера Левъ Голицынъ Коронационное 	3,1
+1133	игристое Золотая Балка 	-
+1135	игристое Vallformosa Brut Rose Cava DO 	3,7
+1136	игристое Nuviana Cava DO 	3,7
+1137	игристое Maschio Dei Cavalieri Valdobbiadene Prosecco Superiore DOCG Rive di Colbertaldo 	4,1
+1138	игристое Vallformosa Classic Cava DO 	3,7
+1139	игристое Martini Brut 	3,4
+1140	игристое Zonin Просекко Розе 	3,7
+1141	игристое Fanagoria Блан де Нуар Белое из чёрного 	3,7
+1143	игристое Pommery Brut Royal 	3,9
+1144	игристое Рояль Розе 	3,3
+1145	игристое Амфитрион Лимитед выдержанное 	-
+1148	игристое Mar de Frades Albarino Atlantico Brut Nature Rías Baixas DO 	3,9
+1149	игристое Cornonero Franciacorta DOCG 	3,7
+1150	игристое Мысхако Flute Gewurztraminer 	3,9
+1153	игристое Crimea Classic 	3,3
+1154	игристое Casa Coller Spumante Brut 	3,4
+1155	игристое Riondo Collezione Frizzante Brut Garda DOC 	3,7
+1156	игристое Абрау-Дюрсо Victor Dravigny Brut 	3,9
+1157	игристое La Gioiosa Prosecco DOC Treviso 	3,7
+1158	игристое Советское Шампанское 	2,4
+1159	игристое La Gioiosa Rosea 	4,0
+1160	игристое Di Caspico 	-
+1161	игристое Mondoro Asti DOCG 	-
+1162	игристое Martini Asti DOCG 7.5%, 750мл	3,8
+1163	игристое Gancia Asti DOCG 	3,8
+1164	Напиток Вермут Martini Bianco 13%, 1л	3,8
+1165	Плодовый алкогольный напиток Bosca Anna Federica Limited газированный белый сладкий 7.5% 750мл	3,4
+1166	игристое Martini Asti DOCG 12%, 187мл	3,4
+1168	Напиток Martini Fiero сладкий 10%, 1л	4,3
+1169	игристое Cinzano Asti DOCG 	3,9
+1170	игристое Casa Coller Moscato Dolce 	3,9
+1171	игристое Canti Asti DOCG 	4,0
+1172	игристое Martini Асти сладкое 	-
+1173	игристое Наследие Мастера Левъ Голицынъ 	3,1
+1174	игристое Martini Prosecco DOC 12%, 187мл	3,6
+1175	игристое Campo Del Passo Prosecco Conegliano Valdobbiadene DOCG 	3,9
+1176	игристое ZB Wine Frizzante жемчужное 	-
+1177	игристое Martini Prosecco DOC Rose 	4,0
+1178	игристое Campo Del Passo Prosecco DOC 	3,6
+1179	игристое Cinzano Prosecco DOC 	3,7
+1180	игристое Pierre Trichet l'Authentique Brut Rose Champagne AOC 	3,8
+1181	игристое Gancia Prosecco Rose DOC 	4,0
+1182	игристое Freixenet Prosecco DOC 	3,7
+1183	игристое Freixenet Rose Cava DO 	3,8
+1184	игристое Nino Ardevi Просекко 	3,6
+1185	игристое Tonon Villa Doral Просекко 	3,6
+1186	игристое Font Secco Kekfrankos Rose Frizzante 	3,4
+1187	игристое J. Lassalle Preference Brut 1er Cru Chigny-Les-Roses Champagne AOC 	4,3
+1188	игристое Case Paolin Asolo Prosecco Superiore DOCG 	3,8
+1189	игристое Pierre Trichet l'Authentique Brut 1er Cru Champagne AOC 	3,9
+1190	игристое de Venoge Cordon Bleu Brut Rose Champagne AOC 	3,9
+1191	игристое de Venoge Cordon Bleu Brut Champagne AOC 	3,9
+1192	игристое Corte delle Calli Prosecco DOC Treviso 	3,9
+1193	игристое Martini Rose 	3,6
+1152	игристое Vogue 	3,2
+1146	игристое Мысхако Квинтэссенция Белое из чёрного 	3,7
+1118	игристое Acquesi Просекко 	3,8
+1147	F. Dubois Blanc de Blancs Champagne AOC игристое 	3,9
+1151	игристое Vina Esmeralda Catalunya DO 	3,8
+1194	Винный напиток Martini Secco газированный полусухой белый ж/б 10%, 250мл	3,6
+1195	Винный напиток Martini Rosato газированный полусухой розовый ж/б 10%, 250мл	3,7
+1125	игристое ZB Wine Спуманте брют 	3,4
+1142	игристое №1 	3,7
+1134	игристое Martini Брют 	3,4
+1196	игристое ZB Wine Frizzante 	3,7
+1197	игристое Мысхако Квинтэссенция Зинфандель 	-
+1198	игристое Pierre Trichet l'Authentique Demi-Sec 1er Cru Champagne AOC 	3,8
+1200	игристое V8+ Просекко Экстра Драй 2021 	3,6
+1201	игристое Casa Coller Prosecco 	3,7
+1202	игристое Brut Dargent Rose Pinot Noir 	3,4
+1203	игристое Tete de Cheval Брют Резерве 	4,0
+1204	игристое Эндемы Пино Нуар 	3,7
+1205	игристое Zonin Просекко 	3,7
+1206	игристое Sensation Блан де Блан 	3,5
+1207	игристое Pierre Trichet La Puissance Blanc de Noirs Brut Champagne AOC Grand Cru 	4,0
+1209	игристое Saint-Hilaire Бланкет де Лиму 	3,9
+1210	игристое Sensation Просекко 	3,3
+1211	игристое Atelier Des Vins 	-
+1212	игристое Mayrik Kangun 	3,3
+1213	игристое Prevoteau-Perrier La Vallee 	3,9
+1215	игристое Ruggeri Просекко Супериоре Вальдоббьядене Джалл'оро 	4,1
+1216	игристое Ahso 	3,3
+1217	игристое Chateau Tamagne Роза Тамани 	3,5
+1218	игристое Абрау-Дюрсо 	3,3
+1219	игристое Di Caspico Фиори ди Маре жемчужное 	-
+1221	игристое Надежда 	-
+1222	игристое Абрау-Дюрсо Виктор Дравигни Премиум 	3,3
+1223	Плодовый алкогольный напиток Allegro Crema di Vanilla газированный белый полусладкий 7%, 750мл	2,9
+1224	Плодовый алкогольный напиток Allegro Rose газированный розовый полусладкий 7%, 750мл	3,3
+1225	игристое Золотая Балка Мускатное 	-
+1226	игристое Crimea Classic Мускатное 	3,6
+1228	игристое Gancia Просекко Драй 	4,0
+1229	игристое Martini Prosecco DOC 13%, 750мл	3,6
+1230	игристое Corte delle Calli Prosecco Valdobbiadene Superiore DOCG 	3,8
+1231	игристое Tête de Cheval 	4,0
+1232	игристое ZB Wine Frizzante жемчужное красное полусладкое, 10%, 750мл	4,0
+1235	Плодовый алкогольный напиток Santo Stefano Сицилийская Свадьба газированный белый полусладкий 8%, 750мл	3,5
+1236	Плодовый алкогольный напиток Santo Stefano газированный белый полусладкий 8%, 750мл	3,5
+1237	игристое Абрау-Дюрсо Victor Dravigny Премиум Каберне красное полусладкое 11%, 750мл	3,9
+1238	игристое Riunite D'Oro 	4,4
+1240	игристое Riunite Lambrusco Rosato 	3,8
+1241	Плодовый алкогольный напиток Bosca Anna Federica Limited газированный белый полусладкий 7.5% 750мл	3,4
+1242	Плодовый алкогольный напиток Santo Stefano газированный розовый полусладкий 8%, 750мл	3,5
+1244	Плодовый алкогольный напиток Santo Stefano газированный красный полусладкий 8%, 750мл	3,5
+1227	игристое Балаклава Мускат 	3,8
+1233	Плодовый алкогольный напиток Allegro Classico газированный белый полусладкий 7%, 750мл	-
+1214	игристое St. Urbans-Hof Рислинг Зект 	4,0
+1220	Плодовый алкогольный напиток Allegro Nero газированный красный полусладкий 7%, 750мл	-
+1167	Винный напиток Martini Semi Dolce газированный сладкий белый 8.5%, 250мл	-
+1208	игристое Солнечная Долина Меганом Блан де Бланс 	-
+1245	игристое ZB Wine Moscato 	3,7
+1234	Плодовый алкогольный напиток Bosca Rose Limited газированный розовый полусладкий 7.5% 750мл	-
+1243	игристое Riunite Lambrusco Rosso красное полусладкое 8%, 750мл	-
+1239	Плодовый алкогольный напиток Santo Stefano Римские Каникулы газированный белый полусладкий 8%, 750мл	3,3
+1199	Плодовый алкогольный напиток Santo Stefano газированный белый полусухой 8%, 750мл	3,4
+1053	ликерное Солнечная Долина Портвейн Крымский Солнечной Долины 	4,1
+960	Murviedro Пасьон Мальвазия 	4,0
+1246	Тайна Колхиды Киндзмараули 	3,9
+1247	Joseph Verdier Cuvee Speciale Verdier 	4,1
+1248	Destination Rose Bordeaux AOC красное сухое 11.5%, 750мл	3,6
 \.
 
 

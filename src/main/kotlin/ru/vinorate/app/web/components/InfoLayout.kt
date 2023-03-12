@@ -11,6 +11,8 @@ class InfoLayout(
     wineName: String?,
     wineRate: String?,
     winePrice: String?,
+    wineColor: String?,
+    wineSugar: String?,
     shopLogo: String?
 ): VerticalLayout() {
     init {
@@ -24,6 +26,8 @@ class InfoLayout(
         element.appendChild(ElementFactory.createStrong(wineName))
         add(Div(Text("Рейтинг: $wineRate")))
         add(Div(Text("Стоимость: $winePrice")))
+        add(Div(Text("Цвет: $wineColor")))
+        add(Div(Text("Содержание сахара: $wineSugar")))
         setHorizontalComponentAlignment(FlexComponent.Alignment.CENTER, this)
     }
 }

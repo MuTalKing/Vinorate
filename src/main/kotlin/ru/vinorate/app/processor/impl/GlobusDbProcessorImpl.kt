@@ -14,47 +14,59 @@ class GlobusDbProcessorImpl(
     private val globusDbService: GlobusDbService
 ): GlobusDbProcessor {
     override fun processGlobusWine(deleteAll: Boolean){
-        var globusWineNames = globusDbService.findNames()
-        var globusWinePrices = globusDbService.findPrices()
-        var globusWinePictures = globusDbService.findPictures()
-        if (deleteAll) {
-            globusDbService.deleteAll()
-            globusService.prepare()
-            globusWineNames = mutableListOf()
-            globusWinePrices = mutableListOf()
-            globusWinePictures = mutableListOf()
-            for (page in 1..globusService.pagesCount!!.toInt()) {
-                globusService.scroll()
-                globusService.getWineNames().forEach {
-                    globusWineNames.add(it.replace("столовое ", ""))
-                }
-                globusService.getWinePrices().forEach {
-                    globusWinePrices.add(it)
-                }
-                globusService.getWinePictures().forEach {
-                    globusWinePictures.add(it)
-                }
-                globusService.nextPageButton.scrollIntoView(false).click()
+        TODO("Not yet implemented")
+    }
+
+    override fun getGlobusWineNames(page: String, color: String) {
+        globusService.prepare(page)
+        val globusWineNames = mutableListOf<String>()
+        val globusWinePrices = mutableListOf<String>()
+        val globusWinePictures = mutableListOf<String>()
+        val globusWineSugar = mutableListOf<String>()
+        for (pageNumber in 1..globusService.pagesCount!!.toInt()) {
+            globusService.scroll()
+            globusService.getWineNames(color).forEach {
+                globusWineNames.add(it.replace("столовое ", ""))
             }
-            for (wine in 1 until globusWineNames.size) {
-                vivinoService.insertIntoDB(
-                    wineName = globusWineNames[wine - 1],
-                    rate = "",
-                    winePrice = globusWinePrices[wine - 1],
-                    winePicture = globusWinePictures[wine - 1],
-                    shop = Globus(),
-                    dbService = globusDbService,
-                    shopLogo = "https://toplogos.ru/images/thumbs/preview-logo-globus.jpg"
-                )
+            globusService.getWinePrices().forEach {
+                globusWinePrices.add(it)
             }
+            globusService.getWinePictures().forEach {
+                globusWinePictures.add(it)
+            }
+            globusService.getWineSugar().forEach {
+                globusWineSugar.add(it)
+            }
+            globusService.nextPageButton.scrollIntoView(false).click()
         }
+        for (wine in 1 until globusWineNames.size) {
+            vivinoService.insertIntoDB(
+                wineName = globusWineNames[wine - 1],
+                rate = "",
+                winePrice = globusWinePrices[wine - 1],
+                winePicture = globusWinePictures[wine - 1],
+                shop = Globus(),
+                dbService = globusDbService,
+                shopLogo = "https://toplogos.ru/images/thumbs/preview-logo-globus.jpg",
+                color = color,
+                sugar = globusWineSugar[wine - 1]
+            )
+        }
+    }
+
+    override fun getVivinoRate() {
+        val globusWineNames = globusDbService.findNames()
         vivinoService.getVivinoRateAndInsertIntoDb(
             wineNamesList = globusWineNames,
-            winePricesList = globusWinePrices,
-            winePicturesList = globusWinePictures,
-            shop = Globus(),
-            dbService = globusDbService,
-            shopLogo = "https://toplogos.ru/images/thumbs/preview-logo-globus.jpg"
+            dbService = globusDbService
         )
+    }
+
+    override fun updateGlobusRedWines() {
+        TODO("Not yet implemented")
+    }
+
+    override fun truncateGlobusTable() {
+        globusDbService.deleteAll()
     }
 }

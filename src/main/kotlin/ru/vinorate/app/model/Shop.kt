@@ -7,4 +7,6 @@ interface Shop {
     var price: String?
     var picture: String?
     var shopLogo: String?
+    var color: String?
+    var sugar: String?
 }

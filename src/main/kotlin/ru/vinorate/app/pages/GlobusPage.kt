@@ -31,11 +31,11 @@ class GlobusPage {
         `$`(Selectors.byClassName("cookies-banner_set"))
     }
 
-    fun getWineNames(): List<String> {
+    fun getWineNames(color: String): List<String> {
         val listOfWineNames = mutableListOf<String>()
         `$$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']//div[@class!='catalog-section__item is-notavailable']/div[contains(@class, 'catalog-section__item--main')]//span[@class='catalog-section__item__title']")).shouldBe(CollectionCondition.sizeGreaterThanOrEqual(1), Duration.ofSeconds(10)).forEach{
                 webElement ->
-            listOfWineNames.add(webElement.text.split("красное")[0].replace("Вино ", ""))
+            listOfWineNames.add(webElement.text.split(color.lowercase())[0].replace("Вино ", ""))
         }
         return listOfWineNames
     }
@@ -56,5 +56,28 @@ class GlobusPage {
             listOfWinePictures.add(webElement.getAttribute("src")!!)
         }
         return listOfWinePictures
+    }
+
+    fun getWineSugar(): List<String> {
+        val listOfWineSugar = mutableListOf<String>()
+        `$$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']//div[@class!='catalog-section__item is-notavailable']/div[contains(@class, 'catalog-section__item--main')]//span[@class='catalog-section__item__title']")).shouldBe(CollectionCondition.sizeGreaterThanOrEqual(1), Duration.ofSeconds(10)).forEach{
+                webElement ->
+            if (webElement.text.contains("сухое")) {
+                listOfWineSugar.add("сухое")
+            }
+            else if (webElement.text.contains("полусухое")) {
+                listOfWineSugar.add("полусухое")
+            }
+            else if (webElement.text.contains("полусладкое")) {
+                listOfWineSugar.add("полусладкое")
+            }
+            else if (webElement.text.contains("сладкое")) {
+                listOfWineSugar.add("сладкое")
+            }
+            else {
+                listOfWineSugar.add("-")
+            }
+        }
+        return listOfWineSugar
     }
 }

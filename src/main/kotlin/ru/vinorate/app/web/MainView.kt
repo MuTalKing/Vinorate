@@ -22,6 +22,8 @@ class MainView(
     var minPrice: String = ""
     var maxPrice: String = ""
     var shop: String = ""
+    var color: String = ""
+    var sugarComboBox: MutableSet<String> = mutableSetOf()
     init {
         height = "100%"
         width = "auto"
@@ -30,7 +32,7 @@ class MainView(
         style.set("margin-top", "0px")
         val filters = Filters()
 
-        filters.select.addValueChangeListener {
+        filters.selectShop.addValueChangeListener {
             shop = it.value
             updateVirtualList(shop, minPrice, maxPrice)
         }
@@ -43,6 +45,16 @@ class MainView(
         }
         filters.maxPrice.addValueChangeListener {
             maxPrice = it.value
+            updateVirtualList(shop, minPrice, maxPrice)
+        }
+
+        filters.selectColor.addValueChangeListener {
+            color = it.value
+            updateVirtualList(shop, minPrice, maxPrice)
+        }
+
+        filters.sugarComboBox.addValueChangeListener {
+            sugarComboBox = it.value
             updateVirtualList(shop, minPrice, maxPrice)
         }
 
@@ -96,30 +108,72 @@ class MainView(
     }
 
     fun findWinesByMinAndMaxPrice(wines: Set<Shop?>, minPrice: String, maxPrice: String): Collection<Shop?> {
-        val mutableList = mutableListOf<Shop>()
-        if(minPrice.isEmpty() && maxPrice.isEmpty()){
-            return wines
+        val wineListWithColorAndPrice = mutableListOf<Shop>()
+        val wineListWithColor = mutableListOf<Shop>()
+        val wineListWithColorAndPriceAndSugar = mutableListOf<Shop>()
+        when(color) {
+            "" -> wines.forEach {
+                wineListWithColor.add(it!!)
+            }
+            "Красное" -> wines.forEach {
+                if(it!!.color == "Красное") wineListWithColor.add(it)
+            }
+            "Белое" -> wines.forEach {
+                if(it!!.color == "Белое") wineListWithColor.add(it)
+            }
+            "Розовое" -> wines.forEach {
+                if(it!!.color == "Розовое") wineListWithColor.add(it)
+            }
+            "Игристое" -> wines.forEach {
+                if(it!!.color == "Игристое") wineListWithColor.add(it)
+            }
+        }
+        if (minPrice.isEmpty() && maxPrice.isEmpty()) {
+            wineListWithColor.forEach {
+                wineListWithColorAndPrice.add(it)
+            }
         }
         else if (minPrice.isNotEmpty() && maxPrice.isEmpty()) {
-            wines.forEach {
-                val price = it?.price?.split(" ₽")?.get(0)?.replace(" ", "")?.replace(",", ".")?.toDouble()!!
-                if (price >= minPrice.toDouble()) mutableList.add(it)
+            wineListWithColor.forEach {
+                val price = it.price?.split(" ₽")?.get(0)?.replace(" ", "")?.replace(",", ".")?.toDouble()!!
+                if (price >= minPrice.toDouble()) wineListWithColorAndPrice.add(it)
             }
-            return mutableList
         }
         else if (minPrice.isEmpty() && maxPrice.isNotEmpty()) {
-            wines.forEach {
-                val price = it?.price?.split(" ₽")?.get(0)?.replace(" ", "")?.replace(",", ".")?.toDouble()!!
-                if (price <= maxPrice.toDouble()) mutableList.add(it)
+            wineListWithColor.forEach {
+                val price = it.price?.split(" ₽")?.get(0)?.replace(" ", "")?.replace(",", ".")?.toDouble()!!
+                if (price <= maxPrice.toDouble()) wineListWithColorAndPrice.add(it)
             }
-            return mutableList
         }
         else {
-            wines.forEach {
-                val price = it?.price?.split(" ₽")?.get(0)?.replace(" ", "")?.replace(",", ".")?.toDouble()!!
-                if (price >= minPrice.toDouble() &&  price <= maxPrice.toDouble()) mutableList.add(it)
+            wineListWithColor.forEach {
+                val price = it.price?.split(" ₽")?.get(0)?.replace(" ", "")?.replace(",", ".")?.toDouble()!!
+                if (price >= minPrice.toDouble() &&  price <= maxPrice.toDouble()) wineListWithColorAndPrice.add(it)
             }
-            return mutableList
         }
+        if (sugarComboBox.isEmpty()) {
+            wineListWithColorAndPrice.forEach {
+                if (it.sugar == "сухое" || it.sugar == "полусухое") wineListWithColorAndPriceAndSugar.add(it)
+            }
+        }
+        else {
+            sugarComboBox.forEach {sugar ->
+                when(sugar) {
+                    "Сухое" -> wineListWithColorAndPrice.forEach {
+                        if(it.sugar == "сухое")wineListWithColorAndPriceAndSugar.add(it)
+                    }
+                    "Полусухое" -> wineListWithColorAndPrice.forEach {
+                        if(it.sugar == "полусухое")wineListWithColorAndPriceAndSugar.add(it)
+                    }
+                    "Сладкое" -> wineListWithColorAndPrice.forEach {
+                        if(it.sugar == "сладкое")wineListWithColorAndPriceAndSugar.add(it)
+                    }
+                    "Полусладкое" -> wineListWithColorAndPrice.forEach {
+                        if(it.sugar == "полусладкое")wineListWithColorAndPriceAndSugar.add(it)
+                    }
+                }
+            }
+        }
+        return wineListWithColorAndPriceAndSugar.sortedByDescending{it.rate}
     }
 }
