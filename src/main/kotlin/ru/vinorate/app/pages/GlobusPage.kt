@@ -16,6 +16,10 @@ class GlobusPage {
     val items64CountOnPage =
         `$`(Selectors.byXpath("//li[@class='active-result' and text()=64]"))
 
+    val closeButton by lazy {
+        `$`(Selectors.byXpath("//button[@class='close']"))
+    }
+
     val pagesCount by lazy {
         `$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']")).getAttribute("data-pageCount")
     }

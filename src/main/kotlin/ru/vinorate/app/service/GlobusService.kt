@@ -1,7 +1,7 @@
 package ru.vinorate.app.service
 
-import com.codeborne.selenide.Selenide.actions
-import com.codeborne.selenide.Selenide.open
+import com.codeborne.selenide.Selectors
+import com.codeborne.selenide.Selenide.*
 import org.openqa.selenium.Keys
 import org.springframework.stereotype.Service
 import ru.vinorate.app.pages.GlobusPage
@@ -31,6 +31,9 @@ class GlobusService(val globusPage: GlobusPage) : ShopService {
         globusPage.confirmAgeButton.click()
         globusPage.itemsCountSelector.click()
         globusPage.items64CountOnPage.click()
+        switchTo().frame(`$`(Selectors.byXpath("//iframe[@title='Flocktory widget']")))
+        globusPage.closeButton.click()
+        switchTo().defaultContent()
     }
 
     override fun preparePageWithRedWines() {
