@@ -67,7 +67,7 @@ class PerekrestokPage {
             CollectionCondition.sizeGreaterThanOrEqual(1),
             Duration.ofSeconds(10)
         ).forEach { webElement ->
-            if (webElement.text.contains("сухое")) {
+            if (webElement.text.contains(" сухое")) {
                 listOfWineSugar.add("сухое")
             } else if (webElement.text.contains("полусухое")) {
                 listOfWineSugar.add("полусухое")

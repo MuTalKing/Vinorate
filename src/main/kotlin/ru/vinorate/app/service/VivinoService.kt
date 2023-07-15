@@ -34,7 +34,7 @@ class VivinoService(
             wineNamesList = wineNamesList,
             wineName = dbService.firstNameByRate("")
         )
-        for (wine in lastIndexWineNames until wineNamesList.size) {
+        for (wine in lastIndexWineNames .. wineNamesList.size) {
             val rateFromDb = vivinoDbService.findRateByName(wineNamesList[wine - 1])
             if (rateFromDb != null) {
                 dbService.updateRate(rateFromDb, wineNamesList[wine - 1])

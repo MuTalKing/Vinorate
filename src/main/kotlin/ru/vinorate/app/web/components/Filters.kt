@@ -7,13 +7,22 @@ import com.vaadin.flow.component.select.Select
 import com.vaadin.flow.component.textfield.TextField
 import com.vaadin.flow.data.value.ValueChangeMode
 
-class Filters: FormLayout() {
+class Filters(
+    private var allShopsVirtualWineList: AllShopsVirtualWineList
+) : FormLayout() {
+    var minPriceValue: String = ""
+    var maxPriceValue: String = ""
+    var shop: String = ""
+    var color: String = ""
+    var sugarComboBoxValues: MutableSet<String> = mutableSetOf()
+
     val selectShop: Select<String> = Select()
     val filterName = TextField()
     val minPrice = TextField()
     val maxPrice = TextField()
     val selectColor: Select<String> = Select()
     val sugarComboBox: MultiSelectComboBox<String> = MultiSelectComboBox()
+
     init {
         addClassName("filters")
         filterName.label = "Поиск по названию"
@@ -60,5 +69,38 @@ class Filters: FormLayout() {
             ResponsiveStep("320px", 2),
             ResponsiveStep("700px", 6)
         )
+
+        selectShop.addValueChangeListener {
+            shop = it.value
+            allShopsVirtualWineList.updateVirtualList(shop, minPriceValue, maxPriceValue, color, sugarComboBoxValues)
+        }
+        filterName.addValueChangeListener {
+            allShopsVirtualWineList.updateVirtualListBySearchWineByName(
+                it.value,
+                shop,
+                minPriceValue,
+                maxPriceValue,
+                color,
+                sugarComboBoxValues
+            )
+        }
+        minPrice.addValueChangeListener {
+            minPriceValue = it.value
+            allShopsVirtualWineList.updateVirtualList(shop, minPriceValue, maxPriceValue, color, sugarComboBoxValues)
+        }
+        maxPrice.addValueChangeListener {
+            maxPriceValue = it.value
+            allShopsVirtualWineList.updateVirtualList(shop, minPriceValue, maxPriceValue, color, sugarComboBoxValues)
+        }
+
+        selectColor.addValueChangeListener {
+            color = it.value
+            allShopsVirtualWineList.updateVirtualList(shop, minPriceValue, maxPriceValue, color, sugarComboBoxValues)
+        }
+
+        sugarComboBox.addValueChangeListener {
+            sugarComboBoxValues = it.value.map { sugar -> sugar.lowercase() }.toMutableSet()
+            allShopsVirtualWineList.updateVirtualList(shop, minPriceValue, maxPriceValue, color, sugarComboBoxValues)
+        }
     }
 }

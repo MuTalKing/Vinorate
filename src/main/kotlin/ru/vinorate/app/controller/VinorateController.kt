@@ -82,7 +82,7 @@ class VinorateController(
 
     @GetMapping("/createGlobusRedWinesRate")
     @ResponseStatus(HttpStatus.OK)
-    fun createGlobusRedWinesRate() {
+    fun createGlobusWinesRate() {
         globusDbProcessorImpl.getVivinoRate()
     }
 
