@@ -21,7 +21,9 @@ class GlobusPage {
     }
 
     val pagesCount by lazy {
-        `$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']")).getAttribute("data-pageCount")
+        `$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']")).getAttribute(
+            "data-pageCount"
+        )
     }
     val nextPageButton by lazy {
         `$`(Selectors.byXpath("//li[@class = 'nav_pager__arrow']//i[@class = 'ig ig-right trans']"))
@@ -37,8 +39,10 @@ class GlobusPage {
 
     fun getWineNames(color: String): List<String> {
         val listOfWineNames = mutableListOf<String>()
-        `$$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']//div[@class!='catalog-section__item is-notavailable']/div[contains(@class, 'catalog-section__item--main')]//span[@class='catalog-section__item__title']")).shouldBe(CollectionCondition.sizeGreaterThanOrEqual(1), Duration.ofSeconds(10)).forEach{
-                webElement ->
+        `$$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']//div[@class!='catalog-section__item is-notavailable']/div[contains(@class, 'catalog-section__item--main')]//span[@class='catalog-section__item__title']")).shouldBe(
+            CollectionCondition.sizeGreaterThanOrEqual(1),
+            Duration.ofSeconds(10)
+        ).forEach { webElement ->
             listOfWineNames.add(webElement.text.split(color.lowercase())[0].replace("Вино ", ""))
         }
         return listOfWineNames
@@ -46,8 +50,10 @@ class GlobusPage {
 
     fun getWinePrices(): List<String> {
         val listOfWinePrices = mutableListOf<String>()
-        `$$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']//div[contains(@class, 'catalog-section__item--main')]//span[@class='item-price__rub']")).shouldBe(CollectionCondition.sizeGreaterThanOrEqual(1), Duration.ofSeconds(10)).forEach{
-                webElement ->
+        `$$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']//div[contains(@class, 'catalog-section__item--main')]//span[@class='item-price__rub']")).shouldBe(
+            CollectionCondition.sizeGreaterThanOrEqual(1),
+            Duration.ofSeconds(10)
+        ).forEach { webElement ->
             listOfWinePrices.add("${webElement.text},99 ₽")
         }
         return listOfWinePrices
@@ -55,8 +61,10 @@ class GlobusPage {
 
     fun getWinePictures(): List<String> {
         val listOfWinePictures = mutableListOf<String>()
-        `$$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']//img[@class=' lazyloaded']")).shouldBe(CollectionCondition.sizeGreaterThanOrEqual(1), Duration.ofSeconds(10)).forEach{
-                webElement ->
+        `$$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']//img[@class=' lazyloaded']")).shouldBe(
+            CollectionCondition.sizeGreaterThanOrEqual(1),
+            Duration.ofSeconds(10)
+        ).forEach { webElement ->
             listOfWinePictures.add(webElement.getAttribute("src")!!)
         }
         return listOfWinePictures
@@ -64,21 +72,19 @@ class GlobusPage {
 
     fun getWineSugar(): List<String> {
         val listOfWineSugar = mutableListOf<String>()
-        `$$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']//div[@class!='catalog-section__item is-notavailable']/div[contains(@class, 'catalog-section__item--main')]//span[@class='catalog-section__item__title']")).shouldBe(CollectionCondition.sizeGreaterThanOrEqual(1), Duration.ofSeconds(10)).forEach{
-                webElement ->
+        `$$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']//div[@class!='catalog-section__item is-notavailable']/div[contains(@class, 'catalog-section__item--main')]//span[@class='catalog-section__item__title']")).shouldBe(
+            CollectionCondition.sizeGreaterThanOrEqual(1),
+            Duration.ofSeconds(10)
+        ).forEach { webElement ->
             if (webElement.text.contains("сухое")) {
                 listOfWineSugar.add("сухое")
-            }
-            else if (webElement.text.contains("полусухое")) {
+            } else if (webElement.text.contains("полусухое")) {
                 listOfWineSugar.add("полусухое")
-            }
-            else if (webElement.text.contains("полусладкое")) {
+            } else if (webElement.text.contains("полусладкое")) {
                 listOfWineSugar.add("полусладкое")
-            }
-            else if (webElement.text.contains("сладкое")) {
+            } else if (webElement.text.contains("сладкое")) {
                 listOfWineSugar.add("сладкое")
-            }
-            else {
+            } else {
                 listOfWineSugar.add("-")
             }
         }

@@ -6,16 +6,19 @@ import ru.vinorate.app.pages.PerekrestokPage
 import ru.vinorate.app.utils.browser.BrowserConfiguration
 
 @Service
-class PerekrestokService(val perekrestokPage: PerekrestokPage): ShopService {
+class PerekrestokService(
+    private val perekrestokPage: PerekrestokPage,
+    private val browserConfiguration: BrowserConfiguration
+) : ShopService {
 
-    override fun prepare(page: String){
-        BrowserConfiguration().setUp("94.0")
+    override fun prepare(page: String) {
+        browserConfiguration.setUp()
         open(page)
         perekrestokPage.confirmAgeButton.click()
     }
 
     override fun preparePageWithRedWines() {
-        BrowserConfiguration().setUp("94.0")
+        browserConfiguration.setUp()
         open("https://www.perekrestok.ru/cat/c/2/vino?filter.tsvet-vina=krasnoe")
         perekrestokPage.confirmAgeButton.click()
     }

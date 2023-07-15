@@ -4,12 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdd5065e-1f13-4d17-a43e-f838e96f7026" name="Default Changelist" comment="add white, rose and sparkling perekrestok wines. Add sugar of wine">
+    <list default="true" id="cdd5065e-1f13-4d17-a43e-f838e96f7026" name="Default Changelist" comment="fix globusPage and update wines">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/config/AppConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/config/VinorateProperties.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/controller/VinorateController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/controller/VinorateController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/GlobusPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/GlobusPage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/PerekrestokPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/PerekrestokPage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/repository/GlobusRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/repository/GlobusRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/repository/PerekrestokRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/repository/PerekrestokRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/GlobusService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/GlobusService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/Vinorate-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/Vinorate-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/dump.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/PerekrestokService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/PerekrestokService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/VivinoService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/VivinoService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/utils/browser/BrowserConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/utils/browser/BrowserConfiguration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/MainView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,8 +108,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Data Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -231,6 +242,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dev" type="JetRunConfigurationType">
+      <option name="MAIN_CLASS_NAME" value="ru.vinorate.app.ApplicationKt" />
+      <module name="Vinorate.main" />
+      <shortenClasspath name="ARGS_FILE" />
+      <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="docker: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -244,14 +264,15 @@
       <item itemvalue="Gradle.Vinorate [vaadinBuildFrontend]" />
       <item itemvalue="Gradle.Vinorate [dumpDb]" />
       <item itemvalue="Gradle.Vinorate [bootJar]" />
+      <item itemvalue="Kotlin.dev" />
       <item itemvalue="Kotlin.ApplicationKt" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Vinorate [dumpDb]" />
-        <item itemvalue="Docker.docker: Compose Deployment" />
         <item itemvalue="Gradle.Vinorate [bootJar]" />
         <item itemvalue="Kotlin.ApplicationKt" />
+        <item itemvalue="Docker.docker: Compose Deployment" />
         <item itemvalue="Gradle.Vinorate [vaadinBuildFrontend]" />
       </list>
     </recent_temporary>
@@ -489,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678637703346</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="fix globusPage and update wines">
+      <created>1688043217181</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1688043217181</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -517,7 +545,8 @@
     <MESSAGE value="add shop logo images" />
     <MESSAGE value="fix borders on mobile version" />
     <MESSAGE value="add white, rose and sparkling perekrestok wines. Add sugar of wine" />
-    <option name="LAST_COMMIT_MESSAGE" value="add white, rose and sparkling perekrestok wines. Add sugar of wine" />
+    <MESSAGE value="fix globusPage and update wines" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix globusPage and update wines" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -535,12 +564,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/MainView.kt</url>
-          <line>110</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/MainView.kt</url>
-          <line>158</line>
+          <line>147</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>

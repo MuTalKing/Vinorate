@@ -1,14 +1,20 @@
 package ru.vinorate.app.service
 
 import com.codeborne.selenide.Selectors
-import com.codeborne.selenide.Selenide.*
+import com.codeborne.selenide.Selenide.`$`
+import com.codeborne.selenide.Selenide.actions
+import com.codeborne.selenide.Selenide.open
+import com.codeborne.selenide.Selenide.switchTo
 import org.openqa.selenium.Keys
 import org.springframework.stereotype.Service
 import ru.vinorate.app.pages.GlobusPage
 import ru.vinorate.app.utils.browser.BrowserConfiguration
 
 @Service
-class GlobusService(val globusPage: GlobusPage) : ShopService {
+class GlobusService(
+    private val globusPage: GlobusPage,
+    private val browserConfiguration: BrowserConfiguration
+) : ShopService {
     val pagesCount by lazy {
         globusPage.pagesCount
     }
@@ -25,7 +31,7 @@ class GlobusService(val globusPage: GlobusPage) : ShopService {
     }
 
     override fun prepare(page: String) {
-        BrowserConfiguration().setUp("94.0")
+        browserConfiguration.setUp()
         open(page)
         globusPage.cookiesAccept.click()
         globusPage.confirmAgeButton.click()
@@ -37,7 +43,7 @@ class GlobusService(val globusPage: GlobusPage) : ShopService {
     }
 
     override fun preparePageWithRedWines() {
-        BrowserConfiguration().setUp("94.0")
+        browserConfiguration.setUp()
         open("https://online.globus.ru/catalog/alkogol/vino/krasnoe-vino/")
         globusPage.cookiesAccept.click()
         globusPage.confirmAgeButton.click()

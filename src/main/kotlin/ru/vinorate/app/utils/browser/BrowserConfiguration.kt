@@ -1,11 +1,14 @@
 package ru.vinorate.app.utils.browser
 
 import com.codeborne.selenide.Configuration
+import ru.vinorate.app.config.VinorateProperties
 
-class BrowserConfiguration {
-    fun setUp(browserVersion: String) {
-        Configuration.remote = "http://selenoid:4444/wd/hub"
-        Configuration.browserVersion = browserVersion
+class BrowserConfiguration(
+    private val vinorateProperties: VinorateProperties
+) {
+    fun setUp() {
+        Configuration.remote = vinorateProperties.selenide.url
+        Configuration.browserVersion = "94.0"
         Configuration.browserSize = "1920x1080"
         Configuration.pageLoadTimeout = 60000
         Configuration.browserCapabilities.setCapability("enableVNC", true)

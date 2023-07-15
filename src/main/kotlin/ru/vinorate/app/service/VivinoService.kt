@@ -1,7 +1,11 @@
 package ru.vinorate.app.service
 
 import com.codeborne.selenide.Selectors
-import com.codeborne.selenide.Selenide.*
+import com.codeborne.selenide.Selenide.`$`
+import com.codeborne.selenide.Selenide.`$$`
+import com.codeborne.selenide.Selenide.open
+import com.codeborne.selenide.Selenide.refresh
+import com.codeborne.selenide.Selenide.sleep
 import org.modelmapper.ModelMapper
 import org.openqa.selenium.By.ByXPath
 import org.springframework.stereotype.Service
@@ -14,15 +18,16 @@ import ru.vinorate.app.utils.browser.BrowserConfiguration
 
 @Service
 class VivinoService(
-    val vivinoPage: VivinoPage,
-    private val vivinoDbService: VivinoDbService
+    private val vivinoPage: VivinoPage,
+    private val vivinoDbService: VivinoDbService,
+    private val browserConfiguration: BrowserConfiguration
 ) {
 
     fun getVivinoRateAndInsertIntoDb(
         wineNamesList: List<String>,
         dbService: DbService,
     ) {
-        BrowserConfiguration().setUp("94.0")
+        browserConfiguration.setUp()
         open("https://www.vivino.com")
 
         val lastIndexWineNames = getLastIndexOfWineNamesListByName(

@@ -1,0 +1,9 @@
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/vinorate
+
+vinorate:
+  selenide:
+    url: "http://localhost:4444/wd/hub"

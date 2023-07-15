@@ -24,6 +24,7 @@ class MainView(
     var shop: String = ""
     var color: String = ""
     var sugarComboBox: MutableSet<String> = mutableSetOf()
+
     init {
         height = "100%"
         width = "auto"
@@ -37,7 +38,7 @@ class MainView(
             updateVirtualList(shop, minPrice, maxPrice)
         }
         filters.filterName.addValueChangeListener {
-            updateVirtualListBySearchWineByName(it.value)
+            updateVirtualListBySearchWineByName(it.value, shop)
         }
         filters.minPrice.addValueChangeListener {
             minPrice = it.value
@@ -80,100 +81,91 @@ class MainView(
         when (shop) {
             "" -> {
                 val allWines = globusRepository.selectAllWinesFromAllShopsOrderedByRateDesc()
-                allShopsVirtualWineList.setItems(findWinesByMinAndMaxPrice(allWines, minPrice, maxPrice))
+                allShopsVirtualWineList.setItems(filterWinesByColorAndPriceAndSugar(allWines, minPrice, maxPrice))
             }
             "Все магазины" -> {
                 val allWines = globusRepository.selectAllWinesFromAllShopsOrderedByRateDesc()
-                allShopsVirtualWineList.setItems(findWinesByMinAndMaxPrice(allWines, minPrice, maxPrice))
+                allShopsVirtualWineList.setItems(filterWinesByColorAndPriceAndSugar(allWines, minPrice, maxPrice))
             }
             "Перекрёсток" -> {
                 val perekrestokWines = perekrestokRepository.findByOrderByRateDesc()
-                allShopsVirtualWineList.setItems(findWinesByMinAndMaxPrice(perekrestokWines, minPrice, maxPrice))
+                allShopsVirtualWineList.setItems(
+                    filterWinesByColorAndPriceAndSugar(
+                        perekrestokWines,
+                        minPrice,
+                        maxPrice
+                    )
+                )
             }
             "Глобус" -> {
                 val globusWines = globusRepository.findByOrderByRateDesc()
-                allShopsVirtualWineList.setItems(findWinesByMinAndMaxPrice(globusWines, minPrice, maxPrice))
+                allShopsVirtualWineList.setItems(filterWinesByColorAndPriceAndSugar(globusWines, minPrice, maxPrice))
             }
         }
     }
 
-    fun updateVirtualListBySearchWineByName(name: String) {
-        if(name.isEmpty()) allShopsVirtualWineList.setItems(globusRepository.selectAllWinesFromAllShopsOrderedByRateDesc())
-        allShopsVirtualWineList.setItems(globusRepository.searchAllWinesByName(name))
+    fun updateVirtualListBySearchWineByName(name: String, shop: String) {
+        if (name.isEmpty()) updateVirtualList(shop, minPrice, maxPrice)
+        else {
+            when (shop) {
+                "" -> allShopsVirtualWineList.setItems(globusRepository.searchAllWinesByName(name))
+                "Все магазины" -> allShopsVirtualWineList.setItems(globusRepository.searchAllWinesByName(name))
+                "Перекрёсток" -> allShopsVirtualWineList.setItems(
+                    perekrestokRepository.searchPerekrestokWinesByName(
+                        name
+                    )
+                )
+                "Глобус" -> allShopsVirtualWineList.setItems(globusRepository.searchGlobusWinesByName(name))
+            }
+        }
     }
 
     fun updateVirtualListBySearchWineByPrice(minPrice: String, maxPrice: String) {
         val allWines = globusRepository.selectAllWinesFromAllShopsOrderedByRateDesc()
-        allShopsVirtualWineList.setItems(findWinesByMinAndMaxPrice(allWines, minPrice, maxPrice))
+        allShopsVirtualWineList.setItems(filterWinesByColorAndPriceAndSugar(allWines, minPrice, maxPrice))
     }
 
-    fun findWinesByMinAndMaxPrice(wines: Set<Shop?>, minPrice: String, maxPrice: String): Collection<Shop?> {
-        val wineListWithColorAndPrice = mutableListOf<Shop>()
-        val wineListWithColor = mutableListOf<Shop>()
-        val wineListWithColorAndPriceAndSugar = mutableListOf<Shop>()
-        when(color) {
-            "" -> wines.forEach {
-                wineListWithColor.add(it!!)
-            }
-            "Красное" -> wines.forEach {
-                if(it!!.color == "Красное") wineListWithColor.add(it)
-            }
-            "Белое" -> wines.forEach {
-                if(it!!.color == "Белое") wineListWithColor.add(it)
-            }
-            "Розовое" -> wines.forEach {
-                if(it!!.color == "Розовое") wineListWithColor.add(it)
-            }
-            "Игристое" -> wines.forEach {
-                if(it!!.color == "Игристое") wineListWithColor.add(it)
-            }
+    fun filterWinesByColorAndPriceAndSugar(wines: Set<Shop>, minPrice: String, maxPrice: String): Collection<Shop?> {
+        when (color) {
+            "Красное" -> wines.asSequence().filter { it.color == "Красное" }.toSet()
+            "Белое" -> wines.asSequence().filter { it.color == "Белое" }.toSet()
+            "Розовое" -> wines.asSequence().filter { it.color == "Розовое" }.toSet()
+            "Игристое" -> wines.asSequence().filter { it.color == "Игристое" }.toSet()
         }
-        if (minPrice.isEmpty() && maxPrice.isEmpty()) {
-            wineListWithColor.forEach {
-                wineListWithColorAndPrice.add(it)
-            }
+
+        if (minPrice.isNotEmpty() && maxPrice.isEmpty()) {
+            wines.asSequence().filter { it.calculatePriceFromString() >= minPrice.toDouble() }.toSet()
+        } else if (minPrice.isEmpty() && maxPrice.isNotEmpty()) {
+            wines.asSequence().filter { it.calculatePriceFromString() <= maxPrice.toDouble() }.toSet()
+        } else {
+            wines.asSequence()
+                .filter { it.calculatePriceFromString() >= minPrice.toDouble() && it.calculatePriceFromString() <= maxPrice.toDouble() }
+                .toSet()
         }
-        else if (minPrice.isNotEmpty() && maxPrice.isEmpty()) {
-            wineListWithColor.forEach {
-                val price = it.price?.split(" ₽")?.get(0)?.replace(" ", "")?.replace(",", ".")?.toDouble()!!
-                if (price >= minPrice.toDouble()) wineListWithColorAndPrice.add(it)
-            }
-        }
-        else if (minPrice.isEmpty() && maxPrice.isNotEmpty()) {
-            wineListWithColor.forEach {
-                val price = it.price?.split(" ₽")?.get(0)?.replace(" ", "")?.replace(",", ".")?.toDouble()!!
-                if (price <= maxPrice.toDouble()) wineListWithColorAndPrice.add(it)
-            }
-        }
-        else {
-            wineListWithColor.forEach {
-                val price = it.price?.split(" ₽")?.get(0)?.replace(" ", "")?.replace(",", ".")?.toDouble()!!
-                if (price >= minPrice.toDouble() &&  price <= maxPrice.toDouble()) wineListWithColorAndPrice.add(it)
-            }
-        }
+
         if (sugarComboBox.isEmpty()) {
-            wineListWithColorAndPrice.forEach {
-                if (it.sugar == "сухое" || it.sugar == "полусухое") wineListWithColorAndPriceAndSugar.add(it)
-            }
-        }
-        else {
-            sugarComboBox.forEach {sugar ->
-                when(sugar) {
-                    "Сухое" -> wineListWithColorAndPrice.forEach {
-                        if(it.sugar == "сухое")wineListWithColorAndPriceAndSugar.add(it)
-                    }
-                    "Полусухое" -> wineListWithColorAndPrice.forEach {
-                        if(it.sugar == "полусухое")wineListWithColorAndPriceAndSugar.add(it)
-                    }
-                    "Сладкое" -> wineListWithColorAndPrice.forEach {
-                        if(it.sugar == "сладкое")wineListWithColorAndPriceAndSugar.add(it)
-                    }
-                    "Полусладкое" -> wineListWithColorAndPrice.forEach {
-                        if(it.sugar == "полусладкое")wineListWithColorAndPriceAndSugar.add(it)
-                    }
+            wines.asSequence().filter { it.sugar == "сухое" || it.sugar == "полусухое" }.toSet()
+        } else {
+            sugarComboBox.forEach { sugar ->
+                when (sugar) {
+                    "Сухое" -> wines.asSequence().filter { it.sugar == "сухое" }.toSet()
+                    "Полусухое" -> wines.asSequence().filter { it.sugar == "полусухое" }.toSet()
+                    "Сладкое" -> wines.asSequence().filter { it.sugar == "сладкое" }.toSet()
+                    "Полусладкое" -> wines.asSequence().filter { it.sugar == "полусладкое" }.toSet()
                 }
             }
         }
-        return wineListWithColorAndPriceAndSugar.sortedByDescending{it.rate}
+
+        return wines.sortedByDescending { it.rate }
+    }
+
+    fun Shop.calculatePriceFromString(): Double {
+        if (price != null) {
+            return price!!.split(" ₽")[0]
+                .replace(" ", "")
+                .replace(",", ".")
+                .toDouble()
+        }
+        else return 0.0
     }
 }

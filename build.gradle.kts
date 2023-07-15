@@ -1,6 +1,7 @@
 plugins {
     java
     kotlin("jvm") version "1.6.10"
+    id ("org.jetbrains.kotlin.plugin.spring") version "1.6.10"
     id("org.springframework.boot") version "2.7.3"
     id("com.vaadin") version "23.3.6"
     id("io.spring.dependency-management") version "1.0.6.RELEASE"
@@ -16,15 +17,15 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     runtimeOnly("org.jetbrains.kotlin:kotlin-reflect:1.6.10")
-    implementation("org.postgresql:postgresql:42.2.19")
-    implementation("org.springframework.data:spring-data-relational:2.4.2")
-    implementation("org.springframework.data:spring-data-jpa:2.7.2")
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.7.2")
+    implementation("org.postgresql:postgresql:42.5.4")
+    implementation("org.springframework.data:spring-data-relational")
+    implementation("org.springframework.data:spring-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("com.codeborne:selenide:6.7.2")
 //    implementation("org.springframework.boot:spring-boot-starter-security")
-    implementation("org.modelmapper:modelmapper:3.1.0")
-    implementation("org.springframework:spring-webmvc:5.3.22")
-    implementation("org.springframework.boot:spring-boot-starter-web:2.7.3")
+    implementation("org.modelmapper:modelmapper:3.1.1")
+    implementation("org.springframework:spring-webmvc")
+    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("javax.xml.bind:jaxb-api:2.3.1")
     implementation("com.vaadin:vaadin-spring-boot-starter:23.3.6")
     implementation("com.vaadin:vaadin-bom:23.3.6")
