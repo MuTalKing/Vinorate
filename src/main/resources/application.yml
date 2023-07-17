@@ -14,8 +14,8 @@ spring:
   datasource:
     url: jdbc:postgresql://db:5432/vinorate
     driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: postgres
+    username: mutalking
+    password: PostgresMuTalKing123!@#
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: false

@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: globus; Type: TABLE; Schema: public; Owner: postgres
+-- Name: globus; Type: TABLE; Schema: public; Owner: mutalking
 --
 
 CREATE TABLE public.globus (
@@ -36,10 +36,10 @@ CREATE TABLE public.globus (
 );
 
 
-ALTER TABLE public.globus OWNER TO postgres;
+ALTER TABLE public.globus OWNER TO mutalking;
 
 --
--- Name: globus_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: globus_id_seq; Type: SEQUENCE; Schema: public; Owner: mutalking
 --
 
 CREATE SEQUENCE public.globus_id_seq
@@ -51,17 +51,17 @@ CREATE SEQUENCE public.globus_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.globus_id_seq OWNER TO postgres;
+ALTER TABLE public.globus_id_seq OWNER TO mutalking;
 
 --
--- Name: globus_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: globus_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mutalking
 --
 
 ALTER SEQUENCE public.globus_id_seq OWNED BY public.globus.id;
 
 
 --
--- Name: perekrestok; Type: TABLE; Schema: public; Owner: postgres
+-- Name: perekrestok; Type: TABLE; Schema: public; Owner: mutalking
 --
 
 CREATE TABLE public.perekrestok (
@@ -76,10 +76,10 @@ CREATE TABLE public.perekrestok (
 );
 
 
-ALTER TABLE public.perekrestok OWNER TO postgres;
+ALTER TABLE public.perekrestok OWNER TO mutalking;
 
 --
--- Name: perekrestok_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: perekrestok_id_seq; Type: SEQUENCE; Schema: public; Owner: mutalking
 --
 
 CREATE SEQUENCE public.perekrestok_id_seq
@@ -91,17 +91,17 @@ CREATE SEQUENCE public.perekrestok_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.perekrestok_id_seq OWNER TO postgres;
+ALTER TABLE public.perekrestok_id_seq OWNER TO mutalking;
 
 --
--- Name: perekrestok_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: perekrestok_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mutalking
 --
 
 ALTER SEQUENCE public.perekrestok_id_seq OWNED BY public.perekrestok.id;
 
 
 --
--- Name: vivino; Type: TABLE; Schema: public; Owner: postgres
+-- Name: vivino; Type: TABLE; Schema: public; Owner: mutalking
 --
 
 CREATE TABLE public.vivino (
@@ -111,10 +111,10 @@ CREATE TABLE public.vivino (
 );
 
 
-ALTER TABLE public.vivino OWNER TO postgres;
+ALTER TABLE public.vivino OWNER TO mutalking;
 
 --
--- Name: vivino_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: vivino_id_seq; Type: SEQUENCE; Schema: public; Owner: mutalking
 --
 
 CREATE SEQUENCE public.vivino_id_seq
@@ -126,38 +126,38 @@ CREATE SEQUENCE public.vivino_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.vivino_id_seq OWNER TO postgres;
+ALTER TABLE public.vivino_id_seq OWNER TO mutalking;
 
 --
--- Name: vivino_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: vivino_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: mutalking
 --
 
 ALTER SEQUENCE public.vivino_id_seq OWNED BY public.vivino.id;
 
 
 --
--- Name: globus id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: globus id; Type: DEFAULT; Schema: public; Owner: mutalking
 --
 
 ALTER TABLE ONLY public.globus ALTER COLUMN id SET DEFAULT nextval('public.globus_id_seq'::regclass);
 
 
 --
--- Name: perekrestok id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: perekrestok id; Type: DEFAULT; Schema: public; Owner: mutalking
 --
 
 ALTER TABLE ONLY public.perekrestok ALTER COLUMN id SET DEFAULT nextval('public.perekrestok_id_seq'::regclass);
 
 
 --
--- Name: vivino id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: vivino id; Type: DEFAULT; Schema: public; Owner: mutalking
 --
 
 ALTER TABLE ONLY public.vivino ALTER COLUMN id SET DEFAULT nextval('public.vivino_id_seq'::regclass);
 
 
 --
--- Data for Name: globus; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: globus; Type: TABLE DATA; Schema: public; Owner: mutalking
 --
 
 COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FROM stdin;
@@ -789,7 +789,7 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 
 
 --
--- Data for Name: perekrestok; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: perekrestok; Type: TABLE DATA; Schema: public; Owner: mutalking
 --
 
 COPY public.perekrestok (id, name, rate, price, picture, shop_logo, color, sugar) FROM stdin;
@@ -1458,7 +1458,7 @@ COPY public.perekrestok (id, name, rate, price, picture, shop_logo, color, sugar
 
 
 --
--- Data for Name: vivino; Type: TABLE DATA; Schema: public; Owner: postgres
+-- Data for Name: vivino; Type: TABLE DATA; Schema: public; Owner: mutalking
 --
 
 COPY public.vivino (id, name, rate) FROM stdin;
@@ -3027,28 +3027,28 @@ COPY public.vivino (id, name, rate) FROM stdin;
 
 
 --
--- Name: globus_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: globus_id_seq; Type: SEQUENCE SET; Schema: public; Owner: mutalking
 --
 
 SELECT pg_catalog.setval('public.globus_id_seq', 1, false);
 
 
 --
--- Name: perekrestok_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: perekrestok_id_seq; Type: SEQUENCE SET; Schema: public; Owner: mutalking
 --
 
 SELECT pg_catalog.setval('public.perekrestok_id_seq', 1, false);
 
 
 --
--- Name: vivino_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+-- Name: vivino_id_seq; Type: SEQUENCE SET; Schema: public; Owner: mutalking
 --
 
 SELECT pg_catalog.setval('public.vivino_id_seq', 1, false);
 
 
 --
--- Name: globus globus_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: globus globus_pkey; Type: CONSTRAINT; Schema: public; Owner: mutalking
 --
 
 ALTER TABLE ONLY public.globus
@@ -3056,7 +3056,7 @@ ALTER TABLE ONLY public.globus
 
 
 --
--- Name: perekrestok perekrestok_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: perekrestok perekrestok_pkey; Type: CONSTRAINT; Schema: public; Owner: mutalking
 --
 
 ALTER TABLE ONLY public.perekrestok
@@ -3064,7 +3064,7 @@ ALTER TABLE ONLY public.perekrestok
 
 
 --
--- Name: vivino vivino_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: vivino vivino_pkey; Type: CONSTRAINT; Schema: public; Owner: mutalking
 --
 
 ALTER TABLE ONLY public.vivino

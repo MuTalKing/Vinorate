@@ -39,5 +39,5 @@ vaadin{
 }
 
 task<Exec>("dumpDb") {
-    commandLine("docker", "exec", "-t", "db", "pg_dump", "-U", "postgres", "vinorate", "-f", "/var/lib/postgresql/data/dump.sql")
+    commandLine("docker", "exec", "-t", "db", "pg_dump", "-U", "mutalking", "vinorate", "-f", "/var/lib/postgresql/data/dump.sql")
 }
