@@ -23,8 +23,8 @@ services:
     image: postgres
     container_name: db
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=mutalking
+      - POSTGRES_PASSWORD=PostgresMuTalKing123!@#
       - POSTGRES_DB=vinorate
       - PGDATA=/var/lib/postgresql/data/pgdata
     ports:
@@ -41,8 +41,8 @@ services:
     image: dpage/pgadmin4:6.18
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@admin.com
-      PGADMIN_DEFAULT_PASSWORD: root
+      PGADMIN_DEFAULT_EMAIL: mutalking
+      PGADMIN_DEFAULT_PASSWORD: PgadminMuTalKing!@#
     volumes:
       - ./servers.json:/pgadmin4/servers.json
     ports:

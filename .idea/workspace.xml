@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdd5065e-1f13-4d17-a43e-f838e96f7026" name="Default Changelist" comment="optimize my app">
+    <list default="true" id="cdd5065e-1f13-4d17-a43e-f838e96f7026" name="Default Changelist" comment="decomposite and optimize">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/controller/VinorateController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/controller/VinorateController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/GlobusPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/GlobusPage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/PerekrestokPage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/pages/PerekrestokPage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/VivinoService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/service/VivinoService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/MainView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/AllShopsVirtualWineList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/AllShopsVirtualWineList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/Filters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/Filters.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/Vinorate-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/Vinorate-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/vinorate/docker/dump.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +148,7 @@
       <recent name="ru.vinorate.app.web.components" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Vinorate [dumpDb]">
+  <component name="RunManager" selected="Kotlin.dev">
     <configuration name="Vinorate [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -518,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689431363748</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="decomposite and optimize">
+      <created>1689442487800</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1689442487800</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -548,7 +546,8 @@
     <MESSAGE value="add white, rose and sparkling perekrestok wines. Add sugar of wine" />
     <MESSAGE value="fix globusPage and update wines" />
     <MESSAGE value="optimize my app" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimize my app" />
+    <MESSAGE value="decomposite and optimize" />
+    <option name="LAST_COMMIT_MESSAGE" value="decomposite and optimize" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -566,7 +565,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/ru/vinorate/app/web/components/Filters.kt</url>
-          <line>89</line>
+          <line>88</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
