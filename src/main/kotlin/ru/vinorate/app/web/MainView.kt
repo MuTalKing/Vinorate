@@ -8,7 +8,9 @@ import com.vaadin.flow.router.Route
 import ru.vinorate.app.repository.GlobusRepository
 import ru.vinorate.app.repository.PerekrestokRepository
 import ru.vinorate.app.web.components.AllShopsVirtualWineList
+import ru.vinorate.app.web.components.FilterButton
 import ru.vinorate.app.web.components.Filters
+
 
 @PageTitle("Vinorate")
 @Route(value = "")
@@ -26,6 +28,7 @@ class MainView(
         isPadding = false
         style.set("margin-top", "0px")
         val filters = Filters(allShopsVirtualWineList)
+        val filterButton = FilterButton(filters)
 
         add(
             filters.apply {
@@ -35,6 +38,9 @@ class MainView(
                 justifyContentMode = FlexComponent.JustifyContentMode.AROUND
                 setHorizontalComponentAlignment(FlexComponent.Alignment.CENTER, this)
             }
+        )
+        add(
+            filterButton
         )
         add(
             allShopsVirtualWineList.apply {

@@ -33,30 +33,36 @@ class Filters(
         filterName.valueChangeMode = ValueChangeMode.LAZY
         filterName.className = "filterName"
         filterName.themeName = "filterName"
+        filterName.isVisible = false
 
         minPrice.label = "Минимальная цена"
         minPrice.placeholder = "Введите цену"
         minPrice.isClearButtonVisible = true
         minPrice.prefixComponent = VaadinIcon.COIN_PILES.create()
         minPrice.valueChangeMode = ValueChangeMode.LAZY
+        minPrice.isVisible = false
 
         maxPrice.label = "Максимальная цена"
         maxPrice.placeholder = "Введите цену"
         maxPrice.isClearButtonVisible = true
         maxPrice.prefixComponent = VaadinIcon.COIN_PILES.create()
         maxPrice.valueChangeMode = ValueChangeMode.LAZY
+        maxPrice.isVisible = false
 
         selectShop.label = "Магазин"
         selectShop.setItems("Все магазины", "Перекрёсток", "Глобус")
         selectShop.placeholder = "Выберите магазин"
+        selectShop.isVisible = false
 
         selectColor.label = "Цвет"
         selectColor.setItems("Красное", "Белое", "Розовое", "Игристое")
         selectColor.placeholder = "Выберите цвет"
+        selectColor.isVisible = false
 
         sugarComboBox.label = "Сахар"
         sugarComboBox.setItems("Сухое", "Полусухое", "Сладкое", "Полусладкое")
         sugarComboBox.placeholder = "Содержание сахара"
+        sugarComboBox.isVisible = false
 
         add(filterName)
         add(selectShop)
