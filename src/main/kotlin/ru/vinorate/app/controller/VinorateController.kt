@@ -80,7 +80,45 @@ class VinorateController(
         )
     }
 
-    @GetMapping("/createGlobusRedWinesRate")
+    @GetMapping("/createGlobusWhiteWines")
+    @ResponseStatus(HttpStatus.OK)
+    fun createGlobusWhiteWines() {
+        globusDbProcessorImpl.getGlobusWineNames(
+            page = "https://online.globus.ru/catalog/alkogol/vino/beloe-vino/",
+            color = "Белое"
+        )
+    }
+
+    @GetMapping("/createGlobusRoseWines")
+    @ResponseStatus(HttpStatus.OK)
+    fun createGlobusRoseWines() {
+        globusDbProcessorImpl.getGlobusWineNames(
+            page = "https://online.globus.ru/catalog/alkogol/vino/rozovoe-i-fruktovoe-vino/filter/atr_ru_sugar_contetnt-is-190796-or-190795-or-190797-or-190794/apply/",
+            color = "Розовое"
+        )
+    }
+
+    @GetMapping("/createGlobusSparklingRoseWines")
+    @ResponseStatus(HttpStatus.OK)
+    fun createGlobusSparklingRoseWines() {
+        globusDbProcessorImpl.getGlobusWineNames(
+            page = "https://online.globus.ru/catalog/alkogol/shampanskoe-i-igristoe/filter/atr_ru_wine_type-is-190789/apply/",
+            color = "Розовое",
+            type = "Игристое"
+        )
+    }
+
+    @GetMapping("/createGlobusSparklingWhiteWines")
+    @ResponseStatus(HttpStatus.OK)
+    fun createGlobusSparklingWhiteWines() {
+        globusDbProcessorImpl.getGlobusWineNames(
+            page = "https://online.globus.ru/catalog/alkogol/shampanskoe-i-igristoe/filter/atr_ru_wine_type-is-190787/apply/",
+            color = "Белое",
+            type = "Игристое"
+        )
+    }
+
+    @GetMapping("/createGlobusWinesRate")
     @ResponseStatus(HttpStatus.OK)
     fun createGlobusWinesRate() {
         globusDbProcessorImpl.getVivinoRate()

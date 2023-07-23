@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 15.2 (Debian 15.2-1.pgdg110+1)
--- Dumped by pg_dump version 15.2 (Debian 15.2-1.pgdg110+1)
+-- Dumped from database version 15.3 (Debian 15.3-1.pgdg120+1)
+-- Dumped by pg_dump version 15.3 (Debian 15.3-1.pgdg120+1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -163,8 +163,7 @@ ALTER TABLE ONLY public.vivino ALTER COLUMN id SET DEFAULT nextval('public.vivin
 COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FROM stdin;
 25	Antico Portico Primitivo Salento 	4,1	524,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a15/225945.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 11	Tbilisi Peak Киндзмараули 	4,0	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2d4/144253.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-20	Ciconia 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a8a/3497085.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-1	Глобус Алазанская долина 	3,8	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/807/2404939.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+8	Tbilisi Peak Саперави 	3,6	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fbf/144256.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 2	Marques de Abadia Rioja Crianza 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/286/246751.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 3	Bravo Trade Mucho Mas 	4,2	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f3/363182.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 4	Palazzo Nobile Valpolicella 	3,3	1 049,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e8/176683.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -174,7 +173,6 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 9	Nobilomo Marzemino 	4,3	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/653/139599.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 10	Prototype Zinfandel 	3,8	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e21/3422433.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 12	Chateau Tour Verite 	3,3	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/85f/806163.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-15	Terras do Po Reserva 	3,8	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8fa/201510.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 16	Espiritu de Chile Cabernet Sauvignon 	3,8	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d1f/119384.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 17	Trivento Malbec Reserve 	3,6	939,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/edd/360591.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 18	Сихарули Киндзмараули 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/66b/155393.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
@@ -192,11 +190,11 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 32	Портвейн Агдам белый 19 % алк., Азербайджан, 0,75 л	-	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/702/3399461.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 33	Barista Pinotage 	4,1	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0d3/379126.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 34	El Pescaito Bobal Cabernet Sauvignon 	3,4	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/718/403724.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-8	Tbilisi Peak Саперави 	3,6	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fbf/144256.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 35	Castillo de Almansa Крианса 	3,6	829,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e3c/3511451.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 36	Chateau Le Tertre De Leyle 	3,8	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b27/3269648.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-38	выдержанное Escal Roja Special Selection Grenache Tempranillo 	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1cc/496070.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
-39	ликёрное Массандра Портвейн красный Алушта 17 % алк., Россия, 0,75 л	3,8	509,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/90c/339027.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+20	Ciconia 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a8a/3497085.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+55	Tbilisi Peak Алазанская долина 	-	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/db8/156980.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+112	Ханджлури Киндзмараули 	4,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/076/135187.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 40	Глобус Вита Para Celsus Tempranillo 	3,1	329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/76b/404061.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 41	Глобус Rouge Moelleux 	3,7	419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dc3/279384.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 42	Глобус Corte Vinaia Rosso 	-	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/51d/453030.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
@@ -214,7 +212,6 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 56	Alma River Пино Нуар 	3,8	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/35c/1925673.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 57	Vinha do Rosario Touriga Nacional 	3,7	639,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eb7/206688.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 58	Fanagoria Каберне 	3,5	389,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b8a/733275.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-59	Campo de Vides 	3,8	484,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce4/176780.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 60	Palazzo Nobile Chianti Riserva 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6a5/293172.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 61	Kindzmarauli Marani Kindzmarauli 	4,3	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f22/619139.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 62	Fanagoria Cru Lermont Cabernet Sauvignon 	3,8	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/854/1092833.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -222,17 +219,15 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 64	Inkerman Saperavi 	3,6	569,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/84d/564163.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 65	Viu Manent Reserva Malbec 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dce/539654.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 66	Chateau de Cach Haut-Medoc 	3,6	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/256/344699.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-67	ликёрное Villa de Corgos Reserva Bairrada 	4,1	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eac/338783.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
-55	Tbilisi Peak Алазанская долина 	-	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/db8/156980.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 68	Observer Malbek 	3,5	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6a4/387032.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 69	Majano Темпранильо Робле 	4,0	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/302/1900187.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 70	Усадьба Дивноморское Вторая лиия Вечерница 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6a5/3430255.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 71	Flor De La Mar 	4,0	654,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/373/496149.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-72	Sun Gate Red Zinfandel 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/016/577958.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+15	Terras do Po Reserva 	3,8	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8fa/201510.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 73	Az Abrau Madrasa 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b7e/3399462.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-75	Finca Del Sol Vino de Mesa 	3,9	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/41e/176643.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 76	Villa Antinori Toscana Rosso 	3,8	2 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5df/435141.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-77	Каберне 	3,5	199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f10/535238.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+104	Terras do Po 	3,4	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eca/214655.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+278	Chateau Barre Gentillot Graves De Vayres 	3,9	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a35/970560.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 79	Pierre Dumont Bourgogne Pinot Noir 	4,0	2 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e4b/2270279.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 80	Silverboom Shiraz-Merlot 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8fc/1559916.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 14	Territori Vocati Chianti 	3,5	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b16/225931.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -240,7 +235,6 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 82	Antico Portico Nero d'Avola Terre Siciliane 	4,0	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f46/225943.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 83	La Marquesa 	3,5	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc2/3176653.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 84	Castelvecchio Barolo 	3,9	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8f2/228789.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-85	Mucho Mas 	4,2	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0eb/593619.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 86	Wine Day Bastardo 	2,2	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2f6/1925608.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 87	ликёрное Солнечная Долина Черный Полковник 	4,2	819,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fa1/174011.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 88	Chateau Tour Verite Bordeaux 	3,3	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/45d/232008.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -254,20 +248,21 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 96	Tussock Jumper Malbec 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/de7/310812.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 97	Prototype Cabernet Sauvignon 	3,7	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c75/3422434.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 98	Marques de Abadia Rioja Reserva 	4,0	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f15/244639.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-99	Ciconia The Reserva Blend 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/970/252128.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 100	Majano Темпранильо 	4,0	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/346/1900177.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 101	Inkerman 	3,8	509,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/84d/607369.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 102	Кубань-Вина Тамани Мерло 	2,8	284,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f5/766879.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 103	Haussmann Барон Эжен 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/da6/3553221.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-104	Terras do Po 	3,4	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eca/214655.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 105	Batasiolo Barolo 	4,0	4 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1b2/289756.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 106	Chateau Pericou Bordeaux 	3,6	929,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/39e/176641.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 107	Zinfandel 	4,1	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/981/1559914.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-108	Marani Kindzmarauli 	4,3	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/17d/1900216.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+99	Ciconia The Reserva Blend 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/970/252128.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+77	Каберне 	3,5	199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f10/535238.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 109	Muenzenrieder Pinot Noir 	3,6	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/929/1925387.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+140	Chateau Pessan Saint-Hilaire Graves 	3,7	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5ec/733723.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+125	Beiral Vineyards 	3,9	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/911/766690.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 110	Vinha do Rosario Reserva 	3,6	784,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/271/214654.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+108	Marani Kindzmarauli 	4,3	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/17d/1900216.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 111	J.P. Chenet Original Shiraz 	3,7	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c39/789862.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-112	Ханджлури Киндзмараули 	4,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/076/135187.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 113	Fanagoria Saperavi 	3,6	389,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a2f/1092823.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 114	Stobi Makedonsko Crveno 	4,1	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c3/174002.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 115	Brunello di Montalcino Territori Vocati 	-	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cad/496222.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -276,11 +271,8 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 118	Vicente Gandia Finca del mar Tempranillo Crianza 	3,5	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e55/259428.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 37	Tbilisi Peak Пиросмани 	4,0	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3a7/223569.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 119	Clos Gebrat Priorat 	4,0	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/20d/244640.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-120	Pearly Bay 	3,4	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/97b/428205.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 121	Observer Carmenere 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/10f/338713.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-123	Tour de Mandelotte Bordeaux 	3,7	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/072/139533.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 124	Gagauzia Reserve Cabernet Sauvignon 	3,4	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8f5/228782.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-125	Beiral Vineyards 	3,9	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/911/766690.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 126	Monfort Village 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d70/589987.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 127	Tavridia Саперави Мерло 	3,3	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/032/729945.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 129	Villa Grande 	2,9	319,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a13/139509.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
@@ -293,27 +285,25 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 136	Traversa Tannat Uruguay 	3,6	869,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ac1/1900156.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 137	Сихарули Мукузани 	3,8	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7ef/206197.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 138	Crystal Bay Shiraz 	3,3	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d36/3458353.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-140	Chateau Pessan Saint-Hilaire Graves 	3,7	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5ec/733723.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 141	Массандра 	3,8	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fae/3431391.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 142	Chateau Tamagne Saperavi 	4,0	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f50/436162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 143	Castillo de Almansa Roble 	3,7	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e19/3511455.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 144	Fetzer Valley Oaks Zinfandel 	4,0	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/274/1145310.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-145	Valserrano Finca Monteviejo 	4,3	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/776/1024503.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-146	Don Simon Cabernet Sauvignon 	3,4	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/79a/1171433.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+123	Tour de Mandelotte Bordeaux 	3,7	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/072/139533.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+775	Chateau Janon Bordeaux Blanc 	3,7	524,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/882/232014.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+153	Монастырская трапеза 	3,3	259,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/708/378884.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+289	Cellier des Dauphins Cotes du Rhone Prestige 	3,4	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af3/403725.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 147	Garnachas de Espana La Garnacha Olvidada de Aragon 	3,7	1 839,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/055/176666.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 148	Ca'Delle Rose Bardolino Classico 	3,6	524,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5e4/225933.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-149	Territori Vocati Россо Монтальчино 	3,5	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/12c/3493606.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 150	Tbilisi Peak Хванчкара 	4,0	1 749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/436/144257.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 151	Observer Syrah 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c1/338714.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 152	Цард Саперави 	3,9	439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b5b/775550.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-153	Монастырская трапеза 	3,3	259,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/708/378884.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 154	La Grupa Syrah Malbec 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/420/3475128.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 155	Medoc Chateau Bois du Fil 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/afa/378908.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 156	Солнечная Долина Пти Вердо 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/458/868150.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 157	Espiritu de Chile Gran Reserva Merlot 	3,9	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/710/241921.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 158	Matsu El Recio 	4,1	2 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f7b/206633.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 160	Vinha do Rosario Syrah 	3,8	639,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b53/206687.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-161	Quinta das Amoras 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5f1/496084.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 162	Domaines Arnaud Cuvee Finesse 	3,9	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/13c/287156.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 163	Inkerman Каберне Гранд Резерв 	4,0	969,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/74f/607370.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 164	Majano Крианца 	-	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b04/1900192.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -332,43 +322,43 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 178	Masi CampoFiorin 	3,7	1 589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/df4/357568.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 179	Mildiani Пиросмани 	4,0	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0f6/512811.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 180	Babalu Tropical 	3,9	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c29/1900093.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
-181	Ханджлури Сувенирная серия Киндзмараули 	4,5	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/92c/289893.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+146	Don Simon Cabernet Sauvignon 	3,4	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/79a/1171433.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 182	Sazyk Dere Мерло марочное 	3,1	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fa5/262092.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+195	Chafariz D.Maria 	3,3	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d93/3176667.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+189	Villa de Corgos Bairrada 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0dd/342162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+202	Big Mouth 	3,0	2 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/99f/1814089.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+74	Vinha Do Fava 	4,0	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2db/198440.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 183	Крымский погребок Саперави 	3,0	279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/519/736776.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-184	ликёрное Массандра 	-	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/40b/344293.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+327	Askaneli Brothers Ахашени Красное полусладкое 12 % алк., Грузия, 0,75 л	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9cb/1766378.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 185	Крымская Трапеза Саперави 	-	319,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8e8/236197.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 186	Броjаница Изабелла 	-	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3ad/145475.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 187	Chateau Barre Gentillot Graves de Vayres 	3,9	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a3d/515846.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 188	Domaine bel Avenir Beaujolais-Villages 	3,9	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/542/837766.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-189	Villa de Corgos Bairrada 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0dd/342162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 190	Altissimo Chianti Classico 	4,0	1 029,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b31/696697.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 191	Крымвинторг Мерло 	2,5	329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/642/277370.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 192	Kagor Meteora освящённое 	4,4	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/db1/1523014.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
 193	Georgian Wines Киндзмараули 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/818/3535622.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 194	Juste Du Bon Vin Изабелла 	-	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bea/2270304.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-195	Chafariz D.Maria 	3,3	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d93/3176667.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-74	Vinha Do Fava 	4,0	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2db/198440.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 196	Morgado da Vila Vinhao 	3,2	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a4c/198433.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 197	Cambridge Crossing Shiraz 2018 	3,7	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a02/584717.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 128	Chateau Le Rimensac 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/82f/806164.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 198	Muenzenrieder Heideoden classic 	3,6	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ccf/1925383.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 199	Портвейн Vintage Vintage Port 2004 20 % алк., Португалия, 0,75 л	4,0	5 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c5c/3454576.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 200	креплёное Hooper's Constitutional Port 10 years old Tawny 	4,0	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/79c/3458351.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
-202	Big Mouth 	3,0	2 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/99f/1814089.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 203	Armenia 	3,9	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6c4/769807.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 204	Territori Vocati Sangiovese 	-	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c21/1559781.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 205	Grona Барбера Д'асти 	3,5	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cfb/1900162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 206	Castelvecchio Barbaresco 	3,4	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bc7/228790.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-207	Villa Del Sol 	4,0	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4e8/176645.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-208	Сихарули Алазанская долина 	3,8	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/60e/206143.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-209	Frescobaldi Remole Toscana 	3,6	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/657/318490.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 210	Tresors de Loire Saumur Champigny 	3,6	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/837/496081.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 211	Chateau Haut Rocher 	4,1	2 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e3/515842.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 212	Chateau Vieux Duc Montagne Saint-Emilion 	-	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/34d/317684.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 213	El Jamon Tinto 	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/43d/1873469.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-214	Escal Roja Tempranillo 	3,2	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/472/496069.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+209	Frescobaldi Remole Toscana 	3,6	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/657/318490.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+184	ликёрное Массандра 	-	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/40b/344293.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 215	Emporio Nero D`Avola Merlot 	3,3	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/146/1509346.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-216	Podere Montepulciano D'Abruzzo 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0aa/289734.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+238	Casa de Santar Reserva 	4,0	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f3/3497157.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+241	Faina 	3,1	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/664/317648.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+361	ликёрное Солнечная Долина Черный Доктор 	4,3	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a94/321658.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 217	Lenz Moser Zweigelt 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0f7/365987.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 219	Pradorey Origen Roble 	3,5	1 389,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b35/1509350.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 220	Sankt Anna Spatburgunder Pfalz 	3,5	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/260/381536.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -380,17 +370,12 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 226	Вина Тамани Мерло 	-	284,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c4c/806098.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 227	Butcher's Cut Malbec 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a44/1288883.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 228	Ведерниковъ Губернаторское 	3,4	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c22/229174.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-229	Tavernello 	3,2	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8b7/577967.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 231	Desono Каберне Совиньон 	3,8	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7d0/3530769.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 232	Agora Бастардо 	3,5	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/63d/2018356.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-233	Cavino Ionos 	3,8	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a93/246722.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-234	Astrale 	4,1	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/975/191883.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 235	Stellenbosch Hills 1707 Reserve 	4,1	2 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff1/576017.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 236	Сихарули Хванчкара 	3,9	2 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d72/206144.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-238	Casa de Santar Reserva 	4,0	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f3/3497157.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 239	Domus Vini Raboso 	3,6	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/aec/229658.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 240	Cuatro Ojos Merlot 	3,7	359,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce5/323259.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-241	Faina 	3,1	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/664/317648.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 242	Rocca Alata Valpolicella Superiore 	3,3	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/209/763103.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 243	Коктебель Кагор высшего качества, 	4,0	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5a9/733641.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 244	Inkerman Каберне Резерв 	4,0	689,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d15/700796.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -400,7 +385,9 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 248	Castelvecchio Nebbiolo D'alba 	3,4	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e2/228792.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 250	Vol d'Anima de Raimat 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e99/363295.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 251	Sol De Chile Cabernet Sauvignon Reserva 	3,3	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/354/3431586.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-252	Bravo Trade Киндзмараули 	-	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/841/1560068.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+324	Pagos Hispanos Tempranillo 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dcb/970715.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+234	Astrale 	4,1	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/975/191883.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+216	Podere Montepulciano D'Abruzzo 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0aa/289734.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 253	Villa Krim Cabernet 	3,2	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c49/3431412.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 254	Domini Veneti Valpolicella Ripasso la Casetta 	4,2	2 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f7c/366452.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 255	Lirico Bobal Cabernet Sauvignon 	3,1	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fc1/139574.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -420,11 +407,9 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 269	Care Tinto Roble 	3,6	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7aa/781048.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 270	Askaneli Brothers Saperavi Premium 	4,0	1 339,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/549/246831.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 271	Bouchard Aine & Fils Cotes-du-Rhone 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4de/578459.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-273	M.Chapoutier Luberon La Ciboise 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f0b/576381.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 274	Quinta dos Aciprestes 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fd1/3497128.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 275	Santa Hortensia Cabernet Sauvignon 	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a90/173974.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 276	Castillo Santa Barbara Crianza 	3,5	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/177/201467.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-278	Chateau Barre Gentillot Graves De Vayres 	3,9	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a35/970560.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 279	Tancia Chianti Riserva 	3,6	1 259,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/972/236314.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 280	Observer Grand Reserve Petit Verdot-Cabernet Sauvignon 	3,8	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d10/338715.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 281	Conde Otinano Tinto Rioja 	3,4	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f50/758909.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -434,9 +419,9 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 285	Цард Шираз 	-	439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/41b/775610.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 286	Gabriel Meffre Châteauneuf-du-Pape Laurus 	3,7	4 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea9/289689.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 287	Alma River Шираз 	3,9	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/09b/1900218.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-288	Castelvecchio Barbera D'alba 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/897/228791.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-289	Cellier des Dauphins Cotes du Rhone Prestige 	3,4	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af3/403725.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+375	Портвейн Hooper's 2003 Colheita Port сладкий 20 % алк., Португалия, 0,75 л	4,1	2 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/083/3436010.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 290	ликёрное Barros Porto Ruby 19,5 % алк., Португалия, 0,75 л	3,8	1 379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fb2/627442.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+288	Castelvecchio Barbera D'alba 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/897/228791.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 291	Quinta de Cidro Rufete 	3,8	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/419/3497127.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 292	Ignacio Marin Castillo Peracense Reserva 	3,5	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/855/959599.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 293	Ozzy Shiraz 	4,1	1 219,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/796/636580.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
@@ -444,7 +429,6 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 295	Tbilisi Peak Оджалеши 	4,2	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3b1/289818.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 296	La Piuma Монтепульчано 	3,4	624,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ccf/1900307.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 297	Tarapaca Cabernet Sauvignon 	3,9	789,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e0c/539658.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-298	Vinha do Rosario 	3,6	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f8a/201511.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 299	Криница Rivage 	4,1	3 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9d8/3430258.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 300	Escal Roja 	3,2	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cde/3176693.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 301	Les Halles Cotes de Gascogne 	3,9	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a37/3420306.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
@@ -463,15 +447,13 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 315	Observer Grand Reserve Carmenere-Cabernet Sauvignon 	4,1	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1d1/323262.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 316	Balance Pinotage Shiraz 	3,5	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5b5/1109845.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 317	Barone Montalto Неро 	4,0	684,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/893/1900300.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-318	Conde de Tresaguas 	3,6	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f89/3539443.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 319	Observer Reserve Cabernet Sauvignon 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/308/320748.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 321	Redwood Cabernet Sauvignon 	3,3	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6fb/696701.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 322	The Collection The Bean Coffee Pinotage 	3,8	1 369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/623/433290.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 323	Louis Eschenauer Medoc 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4f8/198372.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-324	Pagos Hispanos Tempranillo 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dcb/970715.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-325	Valserrano Graciano 	4,0	2 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cf6/3431438.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+318	Conde de Tresaguas 	3,6	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f89/3539443.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+793	Chateau Tamagne Chardonnay 	3,3	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/055/436161.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
 326	Сихарули Ахашени 	4,0	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/88c/206198.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-327	Askaneli Brothers Ахашени Красное полусладкое 12 % алк., Грузия, 0,75 л	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9cb/1766378.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 328	Dama de Toro Roble 	3,5	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/de5/3511453.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 329	ликёрное Elegante Cream 17 % алк., Испания, 0,75 л	4,4	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/95a/476082.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 330	Mildiani Киндзмараули 	4,2	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/054/515812.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
@@ -493,7 +475,6 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 346	Joy Тинто 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/914/3431459.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 347	Beefsteak Club Malbec 	3,7	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e63/3431024.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 348	Inkerman Каберне 	3,6	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/191/3427829.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-349	el Gordo Garnacha 	3,3	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea3/1562165.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 350	Tour de Mandelotte Medoc 	3,6	1 419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/765/235850.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 351	Flor De La Mar Reserva 	3,8	854,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/838/496151.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 353	Ignacio Marin Castillo Peracense Crianza 	3,5	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/628/959595.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -503,8 +484,7 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 358	Villa Krim Shevalie Rouge 	3,5	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7c9/3431682.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 359	Arnaldo-Caprai Montefalco Rosso 	3,7	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/db6/606036.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 360	Sonovino Россо 	3,3	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/161/1900315.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-361	ликёрное Солнечная Долина Черный Доктор 	4,3	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a94/321658.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
-362	Protos Roble Ribera Duero 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eee/520975.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+398	Портвейн Calem Fine Ruby Porto красный 19,5 % алк., Португалия, 0,75 л	4,1	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c4d/293152.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 363	Les Jamelles Syrah 	3,8	1 139,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ae4/538734.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 364	Askaneli Brothers Саперави 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/55b/201371.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 365	Don Batisto Rioja Cosecha 	3,6	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/581/164316.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -518,7 +498,6 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 373	Campero Карменер 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6db/2561491.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 356	Yerevan Areni Karmrahyut 	3,8	589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cdc/379245.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 374	Wines & Beverages of Abkhazia Эшера 	3,9	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9e2/236162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-375	Портвейн Hooper's 2003 Colheita Port сладкий 20 % алк., Португалия, 0,75 л	4,1	2 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/083/3436010.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 376	El Circo Acrobata Garnacha 	3,4	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5d5/773984.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 377	Ramon Bilbao Crianza Rioha 	3,9	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b5f/287190.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 378	Bodegas Emilio Moro Finca Resalso 	3,8	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a0d/291191.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -537,15 +516,14 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 392	Palabra de Caballero Crianza La Mancha 	3,7	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/72f/201477.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 394	Beyond Big! Каберне Совиньон 	3,8	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/786/3431440.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 395	Bricco Rosso Suagna Langhe Rosso 	3,7	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6ca/438692.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-396	Desono Мерло 	3,5	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/096/3530768.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-397	Bad Brothers 	3,8	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/083/3269636.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-398	Портвейн Calem Fine Ruby Porto красный 19,5 % алк., Португалия, 0,75 л	4,1	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c4d/293152.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+362	Protos Roble Ribera Duero 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eee/520975.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+404	Condesa Luna 	3,6	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bd1/3539445.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+427	Каспийская коллекция 	3,4	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ba3/1900195.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 399	Fanagoria 100 оттенков красного Саперави 	4,1	1 449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/281/1092838.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+396	Desono Мерло 	3,5	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/096/3530768.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 400	Vylyan Ordog 	3,6	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/83a/496020.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 401	Kindzmarauli Marani Mukuzani 	3,8	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/298/3604942.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 402	Tavridia Каберне 	2,9	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea9/201382.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-403	Territorio 	4,1	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5b5/598026.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-404	Condesa Luna 	3,6	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bd1/3539445.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 405	Don Ramon 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/13e/291170.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 406	Vino Kalem Вранец 	3,6	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4b0/1900184.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 407	Domus Vini Refosco 	3,5	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/82e/229660.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
@@ -567,13 +545,14 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 424	Chateau Tamagne Cabernet 	3,3	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b24/436163.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 425	Il Poggio dei Vigneti Nero d'Avola Sicilia 	2,7	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1ed/650530.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 426	JP. Chenet Cabernet-Syrah 	3,4	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a7a/1509355.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-427	Каспийская коллекция 	3,4	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ba3/1900195.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 428	Джейран Чинар 	-	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/457/680474.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 429	Venta Real Гран Резерва 	3,4	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3fd/1925670.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 430	Las Pizarras Alarba Garnacha 	3,9	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b15/3511462.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-431	Marques de Villanueva Tempranillo Carinena 	3,4	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d18/139572.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+397	Bad Brothers 	3,8	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/083/3269636.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+842	Weinhaus Cannis Riesling 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/894/535032.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
 432	Bertinga Сасси Кьюзи 	4,1	4 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fde/2777331.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 433	Sancho Garces Rioja 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2c9/363054.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+431	Marques de Villanueva Tempranillo Carinena 	3,4	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d18/139572.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 434	San Valentin Tempranillo 14,5 % алк., Испания, 0,75 л	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/692/3402884.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 435	Observer Grand Reserve Syrah-Cabernet Sauvignon 	4,2	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d05/338712.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 436	Tussock Jumper Pinot Noir 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b46/416166.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -584,7 +563,6 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 442	Valserrano Mazuelo Rioja 	4,1	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e09/1024510.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 443	Броjаница Кадарка 	-	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5a1/145476.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 444	Clos Gebrat Priorat DOCa Crianza 	3,9	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b5c/2535474.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-445	Cellier des Dauphins Prestige 	3,4	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/98c/226971.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 446	ликёрное Malaga Virgen Pedro Ximenez 	3,7	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6f9/571889.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
 447	Orion Salento Primitivo 	3,5	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5ab/576363.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 448	Santa Hortensia Carmenere-Cabernet Sauvignon 	3,1	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff0/241917.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -592,11 +570,9 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 450	Wines & Beverages of Abkhazia Радеда 	3,7	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cff/236182.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 451	Observer Reserve Carmenere 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f7/320788.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 452	Ballaro Primitivo Salento 	4,2	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/603/545206.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-453	La Piuma Монтепульч 	3,4	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff4/1925588.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 454	Muenzenrieder Neusiedlersee 	3,5	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/74e/1925385.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 455	Territori Vocati Chianti Classico 	3,8	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/028/225937.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 456	Domaine des Chanssaud Chateauneuf du Pape 	4,2	4 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5e2/763407.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-457	Di Caspico Special Edition 	3,9	429,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/091/1171133.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 458	Chevalier Alexis Lichine Chateau Charrier 	3,6	1 559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e42/356702.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 459	Palazzo Nobile Chianti Classico Riserva 	3,9	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/65a/369808.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 460	The Mark Merlot-Cabernet 	3,9	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/431/3431441.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
@@ -605,16 +581,15 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 463	Esteban Tempranillo Syrah 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a68/3511460.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 465	Fado Reserva 	3,9	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f17/2270319.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 466	Donna Marzia Salento 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/651/614586.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-467	Conte Emo Capodilista La Montecchia Ca'Emo 	3,7	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/001/3530706.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-468	Frog's Return Cite de Carcassonne 	3,9	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/09d/410988.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+457	Di Caspico Special Edition 	3,9	429,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/091/1171133.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+876	E Arte Puglia 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/64e/2270320.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
 469	Matsu El Viego 	4,3	5 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/829/260353.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+453	La Piuma Монтепульч 	3,4	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff4/1925588.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 470	Taboadella Villae 	4,0	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/80c/3399460.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 471	La Cova Priorat 	3,8	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c3/3530709.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 472	Castillo de Clavijo Crianza 	3,6	969,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ff3/236317.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 473	Millaman Estate Reserve 	3,6	1 259,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dec/539578.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 474	Chateau Jeandeman Тур Де Ля Тунелль 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6e6/3400274.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-476	PMC Neubruch Pinot Noir 14 % алк., Австрия, 0,75 л	4,1	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a3e/2337394.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
-477	Marani Alazani Valley 	4,0	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/aa3/1900214.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 478	ликёрное Oloroso Aurora Jerez-Xeres-Sherry сухое 17,5 % алк., Испания,...	4,2	2 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e6e/299067.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 479	KG Gries Pinot Nero Riserva 	3,6	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d7b/455365.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 480	Make It Big Pinot Noir 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/28a/prd_668363004.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
@@ -635,14 +610,11 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 354	Броjаница Вранац 	3,7	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/91e/145474.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 496	Observer Cabernet Sauvignon - Merlot 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7ca/323260.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 497	Bosca Stories of Italy Negroamaro 	3,6	589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/833/650531.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-386	Fleur de la Reine 	3,4	759,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8c2/1900265.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 499	Fanagoria 100 оттенков красного Каберне 	4,0	1 449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce2/1092837.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 249	Sobremonte Tempranillo 	3,3	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a2b/201497.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 500	ликёрное Royal Madeira 17,5 % алк., Португалия, 0,75 л	4,4	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ad7/435202.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
-501	E Arte Puglia Rosso 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/609/2270321.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-502	El Sotillo 	2,3	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c5d/3092594.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-503	Vylyan Macska 	3,5	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/df0/496019.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-504	ликёрное Gonzales Byass Elegante Medium Sherry 17 % алк., Испания, 0,7...	3,9	1 439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/423/636584.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+386	Fleur de la Reine 	3,4	759,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8c2/1900265.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+468	Frog's Return Cite de Carcassonne 	3,9	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/09d/410988.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 505	Calderona Joven 	3,3	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/66d/970712.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 506	Antano Tempranillo 	3,3	249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a8a/3431023.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 507	Trenel Beaujolais Villages 	3,5	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6aa/593636.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -674,13 +646,13 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 535	Rudolf Muller Pinot Noir 	3,2	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e8e/3497124.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 536	Inkerman Рубин Античный 	3,6	519,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cb7/700735.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 537	Апацха 	3,8	489,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ee9/461564.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-538	Грузвинпром Алазанская долина 	3,9	639,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/984/1900236.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-539	Ханджлури Пиросмани 	-	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a77/174025.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+467	Conte Emo Capodilista La Montecchia Ca'Emo 	3,7	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/001/3530706.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+503	Vylyan Macska 	3,5	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/df0/496019.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 540	Castillo Santa Barbara Reserva 	3,6	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9e5/204488.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+476	PMC Neubruch Pinot Noir 14 % алк., Австрия, 0,75 л	4,1	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a3e/2337394.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 541	Chateau Beaumont Chateau D'Arvigny Haut-Médoc 	-	2 149,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5d3/291195.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 542	Venta Real Резерва 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/290/1900173.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 543	Askaneli Brothers Saperavi Muscat 	4,2	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ebd/246829.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
-544	Броjаница Каберне Совиньон 	3,6	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/491/973688.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 545	Gustave Lorentz Pinot Noir 	3,6	2 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b01/3355225.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 546	Chateau Haut Fontenelle Bordeaux 	3,6	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/692/233718.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 547	Fattolia del Cerro Nobile di Montepulciano 	3,7	2 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/16c/289713.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -689,9 +661,7 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 549	Messias Porto Ruby 	3,7	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9c3/3431396.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 550	Castello Banfi Brunello di Montalcino 	4,2	5 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e26/665044.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 551	Garnachas de Espana La Garnacha Salvaje Del Moncayo 	3,7	1 129,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e1a/176667.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-552	Casa Ermelinda Freitas Terras do Po 	3,4	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/28d/853478.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 553	Ionos Cabernet S.-Merlot 	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1ea/3430253.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-554	Moulin de Gassac Classic 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2ed/3269626.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 555	Buttafuoco 	4,0	1 269,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/27e/435200.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 556	Gandin Filare Nero 	-	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/433/2577660.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 558	Closerie des Alisiers Bourgogne Pinot Noir 	3,3	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9e9/520886.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -705,9 +675,11 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 566	Chateau les Eyquem Hautes Graves Margaux 	3,9	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1dd/515840.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 567	Nobilomo Raboso Veneto 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/914/636575.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 568	Bierzo Finca Luna Beberide 	3,5	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/946/2270317.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-569	Sancerre Domaine Franck Millet 	4,0	2 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f17/3461916.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 570	Cuvee de la Guinchule Saint-Amour 	3,9	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/432/837767.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-571	Rioja Bodegas De Abalos Tempranillo 	3,2	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1f2/prd_659346009.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+624	Tempo & Tierra Crianza 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d73/3553687.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+569	Sancerre Domaine Franck Millet 	4,0	2 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f17/3461916.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+501	E Arte Puglia Rosso 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/609/2270321.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+554	Moulin de Gassac Classic 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2ed/3269626.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 572	Bouchard Aine & Fils Les Vendangeurs Bourgogne Pinot Noir 	3,4	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1e0/314401.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
 573	Marques de Riscal Gran Reserva 	4,2	6 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/411/562461.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 575	Michel Дорнфельдер 	3,6	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/553/3400287.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -715,7 +687,6 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 577	Грузвинпром Мукузани 	4,0	944,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/749/1900230.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 578	Canada Tempranillo 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0f1/156976.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 579	Castelvecchio Piemonte Rosso 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c21/3431444.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-581	Талавари Алазанская долина 	4,0	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5a2/1836555.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 582	Tussock Jumper Tempranillo 	3,5	839,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fb3/310813.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 583	Solarita Chianti Riserva 	3,6	1 169,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/480/176674.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 584	Dama de Toro Reserva 	-	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/56d/3511448.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -724,7 +695,6 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 587	Trenel Coteaux Bourguignons 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/efe/3461915.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 588	Murviedro Bobal Roble 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/49f/325236.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 589	Art.Terra Alentejo 	-	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0cd/1785087.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
-590	Beiral Vineyards Escolha Beira Atlantico 	4,0	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/005/338782.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 591	Sankt Anna Dornfelder Halbtrocken 	3,9	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/af0/676593.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 592	Gaetano Sangiovese Puglia 	3,6	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/61b/627621.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
 593	Vylyan Villany Cabernet Franc 	3,6	484,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/22d/496018.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -740,9 +710,8 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 603	Belagaio 5Cento 	-	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/afc/3431379.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 604	Kindzmarauli Marani Kvareli 	3,8	1 149,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/792/3604940.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 605	ликёрное M.Chapoutier Rivesaltes сладкое 	3,9	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/351/379274.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
-606	ликёрное Malaga Virgen Dunkel Pedro Ximenez сладкое 17 % алк., Испания...	3,7	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7c0/571897.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
-607	Venta Real Крианца 	3,4	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0b9/1900174.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-13	Nuviana Tempranillo Cabernet Sauvignon 	3,6	669,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b64/369792.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+352	Ханджлури Сувенирная серия Саперави 	-	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e90/289894.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+67	ликёрное Villa de Corgos Reserva Bairrada 	4,1	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eac/338783.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
 53	Портвейн Hooper's Lord Mayor Tawny Porto сладкое 19 % алк., Португалия, 0,7...	3,4	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c02/3436006.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
 78	Astrale Special Edition 	4,2	1 279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3b1/1181127.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 122	Wines & Beverages of Abkhazia Чегем 	3,7	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5c3/236181.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
@@ -773,9 +742,24 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 621	BW Eclectic Изабелла 	3,1	429,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/93b/3604906.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 622	Codos de Larouco Менсия 	3,8	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1d9/3553683.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 623	Tempo & Tierra Tempranillo 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f8/3553685.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-624	Tempo & Tierra Crianza 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d73/3553687.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-352	Ханджлури Сувенирная серия Саперави 	-	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e90/289894.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
-393	Georgian Wines Алазанская долина 	3,3	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e71/3535621.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+753	Cavaliere 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/012/435160.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+607	Venta Real Крианца 	3,4	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0b9/1900174.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+641	Campelo Vinho Verde 	4,0	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/061/627620.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+85	Mucho Mas 	4,2	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0eb/593619.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+627	Mosel Urban Riesling 	4,2	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b7d/641634.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+630	Aotearoa Sauvignon Blanc Marlborough 	4,1	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/109/322507.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+629	Terre del Noce Pinot Grigio 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dd2/512866.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+631	Weinkellerstolz Gruner Veltliner 	4,1	729,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/870/1138771.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+632	Fassini Pinot Grigio 	3,7	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f3c/206639.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+633	GreenLife Совиньон Блан Мальборо 	3,7	1 149,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f18/2516816.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+634	Castillo de Almansa Вердехо-Совиньон Блан 	3,6	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5e6/3511450.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+635	Castelvecchio Gavi 	3,8	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0fa/228796.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+636	игристое Абрау-Дюрсо Резерв 	3,4	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e22/3394398.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+637	Terras do Minho 	3,9	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9fc/144265.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+638	Pfefferer 	4,3	1 339,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ad6/260361.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+639	Lago 	-	769,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/be9/578353.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+642	Solarita Pinot Grigio 	3,4	869,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/186/1092847.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+120	Pearly Bay 	3,4	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/97b/428205.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 408	Крымвинторг Пино-Фран крымский 	3,2	329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c4e/277372.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 441	Традиции Абхазии Саперави 	3,4	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7ab/3411446.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 464	Талавари Киндзамараули 	-	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d02/1836554.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
@@ -784,7 +768,728 @@ COPY public.globus (id, name, rate, price, picture, shop_logo, color, sugar) FRO
 557	Традиции Абхазии Апхын 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/435/3411444.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
 574	Belagaio Primario 	-	1 349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8ce/3431380.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
 580	Портвейн Calem Fine Tawny Porto красный 19,5 % алк., Португалия, 0,75 л	4,1	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f72/293153.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+1	Глобус Алазанская долина 	3,8	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/807/2404939.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+644	Alma Valley Sauvignon Blanc 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/492/3463223.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+625	La Maiella Пассерина 	-	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fe3/3493602.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+645	Morgado da Vila Loureiro Vinho Verde 	3,9	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2b0/144264.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+628	Глобус Вита Para Celsus Verdejo 	2,9	329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/314/404062.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+626	Глобус Цинандали 	-	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/252/2404937.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
 533	Vivo Greto 	3,2	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/369/1900261.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+640	Astrale Pinot Grigio Delle Venezie 	4,0	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/448/700782.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+679	La Mariniere Muscadet Sevre & Maine 	3,7	1 159,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/939/139607.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+647	El Pescaito Mersequera Sauvion Blanc 	3,9	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d22/411335.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+649	Inkerman Riesling 	3,8	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1c3/564151.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+650	Lesehof Reisling Edition №12 	3,9	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b05/3417357.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+651	Усадьба Дивноморское Вторая линия Солнечный ветер 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/911/3430256.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+652	Reinhartshausen Rheingau Riesling Trocken 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8f2/676592.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+654	Fanagoria Авторское Шардоне-Совиньон 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1a4/1092834.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+655	Allan Scott Sauvignon Blanc 	3,9	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f9a/3440570.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+233	Cavino Ionos 	3,8	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a93/246722.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+657	Haussmann Sauvignon 	3,6	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/84b/683511.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+659	San Valentin Torres 	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e5b/227031.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+660	Bouchard Aine & Fils Beaune Cotes-du-Rhone 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f5a/584714.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+661	Observer Reserve Sauvignon Blanc 	-	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8b1/320785.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+662	Мысхако Кюве Шардоне Алиготе 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4a8/697555.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+653	Majano Айрен 	3,5	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7d3/1900179.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+664	Viu Manent Reserva Sauvignon Blanc 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/434/538136.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+666	от Валерия Захарьина Кокур Сары Пандас 	-	1 289,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4e6/759118.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+667	Espiritu de Chile Sauvignon Blanc 	3,9	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cdf/327379.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+668	Traversa Sauvignon Blanc Uruguay 	3,4	869,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d35/1925598.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+669	Inkerman Korur Blanc (Кокур белый) 	3,7	569,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d0e/789098.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+670	Gaumen Spiel Gewurtztraminer 	4,1	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5b9/274745.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+671	Глобус Blanc Moelleux 	4,2	419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d78/279385.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+672	Глобус Corte Vinaia Chardonnay 	-	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/919/455380.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+673	Глобус Ркацители 	3,5	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/314/2404936.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+674	Sol De Chile Sauvignon Blanc Chardonnay 	3,4	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/056/1092846.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+675	Ca'Delle Rose Pinot Grigio Delle Venezie 	3,8	524,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/08e/229661.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+676	Verdegar Vinho Verde 	4,1	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a43/544315.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+677	Шардоне 	3,7	199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fd4/542679.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+678	Fernweh Рислинг 	3,8	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8f6/3553223.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+663	Villa de Corgos Vin Blanc 	3,8	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/84b/1785018.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+504	ликёрное Gonzales Byass Elegante Medium Sherry 17 % алк., Испания, 0,7...	3,9	1 439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/423/636584.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+658	Don Simon 	3,0	429,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/308/139514.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+75	Finca Del Sol Vino de Mesa 	3,9	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/41e/176643.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+161	Quinta das Amoras 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5f1/496084.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+681	Henry Greuzard Макон Ля Рош Винёз 	3,9	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/258/3553220.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+682	Chardonnay 	3,9	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/79f/1559918.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+690	Fanagoria Sauvignon 	3,8	389,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8ef/1092829.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+683	Mastro Binelli Pinot Grigio Emilia 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/03b/881778.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+643	Tbilisi Peak Tsinandali 	3,1	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e8e/144258.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+684	Sobremonte Airen Sauvignon Blanc 	3,8	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/35b/201498.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+685	Massai Viognier 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/62b/322433.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+686	1000 Mil Hojas Rioja Blanco 	3,8	869,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c32/853511.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+688	ординарное Массандра 	3,8	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a3c/766684.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+691	Ca'Delle Rose Pino Grigio 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cf3/1559858.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+692	Lesehof Gruner Veltliner edition №12 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/500/1925376.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+707	River Delta Совиньон Блан 	4,2	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/da3/3431457.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+689	Leth Gruner Veltliner Terrassen 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bb7/279518.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+695	Cielo e Terra Trebbiano Pinot Grigio Veneto 	4,1	419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a89/422001.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+207	Villa Del Sol 	4,0	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4e8/176645.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+697	Gandin Chardonnay 	4,0	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/928/665225.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+698	Az Abrau Bayanshira 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3f9/3399463.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+699	Nuviana Chardonnay 	3,6	669,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/705/191848.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+700	Astrale Bianco 	3,9	889,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/127/206629.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+701	Santa Hortensia Chardonnay 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/661/241920.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+702	Chateau Tamagne Fleurs du Sud Traminer 	3,4	331,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d7e/789842.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+704	Palatium Gewurztraminer 	3,8	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/22a/3503094.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+693	Lirico Merseguera Sauvignon Blanc 	3,4	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9e6/139575.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+403	Territorio 	4,1	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5b5/598026.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+705	Inkerman Мускатное Крымское 	3,6	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d78/3427832.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+706	Morgado da Vila Trajadura Vinho Verde 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8f4/433265.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+709	Trapiche Sauvignon Blanc 	3,3	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/252/496129.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+703	Domus Vini Bianco 	-	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9d2/866461.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+539	Ханджлури Пиросмани 	-	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a77/174025.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+694	Barone Montalto Грилло 	3,8	684,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/569/1900308.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+696	Zarafa Sauvignon Blanc 	3,6	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1e9/206050.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+712	Ballaro Vermentino 	4,0	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5f6/512708.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+714	Canti Pinot Grigio Veneto 	3,5	1 149,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e62/318496.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+711	Gran Passione Bianco 	3,9	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c9/763398.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+719	Hamelin Bourgogne Chardonnay 	4,1	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/793/3431381.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+715	Gran Cita Del Sol Verdejo 	3,4	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cdb/191854.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+721	Lorch Riesling Gewurztraminer 	-	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fa9/3503076.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+717	Codici Бьянко 	4,1	524,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3c9/1900320.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+723	Cuatro Ojos Chardonnay 	3,8	359,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9e8/342131.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+720	Casal Garcia Vinho Verde 	3,8	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/83b/586836.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+229	Tavernello 	3,2	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8b7/577967.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+725	J.Riehl Gewurztraminer 	4,1	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/679/378850.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+722	Wines & Beverages of Abkhazia Псоу 	3,7	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/223/236256.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+726	J.P. Chenet Delicious Medium Sweet Moelleux 	3,7	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/acf/780390.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+728	Peter Mertes Riesling 	4,1	669,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b7b/383276.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+724	Le Rime Toscana Banfi 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5b8/281717.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+729	Salvalai Pinot Grigio 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e66/236312.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+731	Gagauzia Reserve Chardonnay 	3,6	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/906/256086.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+727	Wine Day Chardonnay 	3,2	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/74a/1925606.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+732	The Ned Pinot Grigio 	4,0	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce3/853516.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+735	La Casada Pinot Grigio 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dbf/3405466.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+730	Анакопия 	-	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ae9/378920.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+733	Castelvecchio Gavi Del Comune di Gavi 	3,9	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e5f/228784.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+736	Rudolf Muller Riesling 	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/974/3503075.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+273	M.Chapoutier Luberon La Ciboise 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f0b/576381.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+738	Muenzenrieder Gruner Veltliner 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f5/1925381.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+739	Doudet-Naudin Chardonnay VDF 	3,7	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ad2/1989294.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+740	ликёрное Массандра Портвейн белый Алушта 17 % алк., Россия, 0,75 л	-	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e78/322372.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+741	Passo Sardo Vermentino di Sardegna 	3,8	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bc6/401227.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+298	Vinha do Rosario 	3,6	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f8a/201511.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+734	Di Caspico Special Edition Рислинг 	3,5	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/358/1171130.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+544	Броjаница Каберне Совиньон 	3,6	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/491/973688.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+737	Ozzy Moscato 	4,6	1 219,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cf9/636577.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+590	Beiral Vineyards Escolha Beira Atlantico 	4,0	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/005/338782.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+59	Campo de Vides 	3,8	484,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce4/176780.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+760	Haussmann Baron Eugene 	3,5	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d0d/970555.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+748	Le Grand Noir Chardonnay 	4,0	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/57e/1181042.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+743	Agora Мускат 	4,0	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/021/2018358.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+745	Biorebe Riesling 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/11a/365990.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+746	Villa Grande White 	2,7	319,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ee6/139508.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+552	Casa Ermelinda Freitas Terras do Po 	3,4	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/28d/853478.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+747	Premium 1904 Chardonnay 	3,4	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/598/497154.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+445	Cellier des Dauphins Prestige 	3,4	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/98c/226971.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+749	Don Simon Sauvignon Blanc 	3,4	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a6c/1171674.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+750	Donauherbst Gewurztraminer Lieblish 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/180/685784.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+758	Vinho Verde V 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/698/3553304.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+751	Inkerman Chardonnay 	3,7	569,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0b5/564164.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+752	Caroline Bay Совиньон Блан 	4,4	1 149,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/567/3604936.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+754	Observer Sauvignon Blanc 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3d6/320787.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+756	Morgado da Vila Alvarinho Trajadura 	3,6	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c2e/198432.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+761	Santa Hortensia Sauvignon Blanc Chardonnay 	3,7	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/59e/274716.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+757	Cadis Pinot Grigio Delle Venezie 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/937/322398.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+763	Lorch Morio-Muskat 	3,9	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/168/3503077.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+759	Villa de Corgos Reserva 	4,1	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d1b/497138.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+765	KG Gries Sauvignon 	-	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc3/455357.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+762	Vina Esmeralda Catalunya 	4,0	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5f3/318491.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+766	Baluarte Muscat 	4,2	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/80d/641637.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+764	Antico Portico Trebbiano d'Abruzzo 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9fd/225942.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+768	La Trucha Albarino 	4,1	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/685/496120.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+769	Крымвинторг Шардоне 	-	329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fd6/277373.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+770	Tokaji Furmint Bognar 	3,2	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4b2/495897.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+772	La Piuma Пекорино 	3,4	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8a3/1925590.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+773	Woow Torrontes 	4,1	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/031/636587.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+774	Sol De Chile Chardonnay Reserva 	3,2	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a47/3431584.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+771	Andre Millot 	3,9	589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b9d/191758.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+809	La Croix De Gaillan Bordeaux Moelleux 	4,1	669,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4a6/516911.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+767	Ca'Delle Rose Soave Classico 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9e9/866459.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+776	KG Gries Müller Thurgau 	3,6	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fa5/455367.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+777	Villa "L" Gewurztraminer 	3,9	674,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a84/497157.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+778	Verdegar Branco Escolha 	4,1	729,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b29/289672.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+779	La Battistina Gavi 	3,7	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b56/576362.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+780	La Piuma Гриджо 	3,4	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/29d/1900312.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+781	Villa Degli Olmi Sauvignon Blanc 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/825/3355226.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+782	Tempo & Tierra Москатель 	-	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/06e/3511441.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+783	Domus Vini Pinot Bianco 	3,7	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/97c/229659.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+784	Les Halles Cotes de GascogneRouge 	3,9	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/027/3482075.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+785	Juste Du Bon Vin Мускат 	-	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1d8/1900219.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+786	Массандра Херес Ореанда 	3,4	679,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f74/3471038.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+787	Balance Chenin Blanc/Colombar 	3,4	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f73/1109964.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+788	Tiempo & Tierra Шардоне 	3,6	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4eb/3604750.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+789	Stobi Makedonsko Belo 	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d0e/174000.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+790	Lorch Silvaner Halbtrocken 	3,5	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c5d/3503079.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+791	Capellana Macabeo 	-	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cb8/548738.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+794	Массандра Кокур 	3,4	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/897/939097.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+795	Inkerman Шато Блан 	3,6	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/059/3427833.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+796	Albert Bichot Chablis 	3,8	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4db/164291.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+797	Castelvecchio Piemonte Cortese 	4,1	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/32e/455351.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+798	La Grupa Chenin Blanc Torrontes 	3,6	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c2/3475127.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+799	Antanio 	-	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d94/3092596.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+800	Fanagoria Style Cabernet 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/28a/317613.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+801	Alsace Bestheim Gewurztraminer Classic 	3,9	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3a9/246610.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+802	Johann Donabaum Offenberg Riesling 	4,1	3 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/448/3503066.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+803	Lorch Riesling Trocken 	3,2	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/76c/3503074.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+804	Moritzburg Riesling Halbtrocken 	4,1	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8f4/201484.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+805	Buon Giorno Bianco Semidolce 	4,1	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b76/700773.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+208	Сихарули Алазанская долина 	3,8	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/60e/206143.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+806	Hamelin Petit Chablis бело сухое 12.5 % алк., Франция, 0,75 л	3,6	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/df0/3431383.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+807	Cambridge Crossing Riesling 	3,8	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/874/3604901.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+808	Chateau Coustaut la Grangeotte 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7ac/3408953.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+792	Ballaro Греко 	-	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ee0/3553217.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+816	Palavani Хихви Квеври 	3,8	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/158/510482.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+810	Butcher's Cut Chardonnay 	3,5	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0d9/prd_668364001.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+811	The Mark Riesling 	3,9	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/877/3431439.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+812	Alen de Sanmartino Трейшадура 	-	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fad/3604756.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+755	Tokaji Harslevelu 	3,4	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bcd/495898.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+813	Antico Portico Grecanico Terre Siciliane 	4,0	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b33/225938.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+814	Harve Azo Chablis 	4,1	3 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ec0/260356.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+817	Le Grand Noir Sauvignon Blanc 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f1e/1181043.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+818	Leth Duett Riesling & Veltliner 	4,0	1 149,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d4c/293224.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+819	ликёрное Массандра Мускатель белый 16 % алк., Россия, 0,75 л	-	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/593/766677.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+820	Prinz von Preussen Шпэтлезе Рислинг 	3,6	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8ff/3400281.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+821	San Vigilio Pinot Grigio 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/041/1647357.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+822	Gato Negro Chardonnay 	3,2	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/71c/1647365.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+823	Silverboom Chardonnay 	3,5	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5db/1559922.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+606	ликёрное Malaga Virgen Dunkel Pedro Ximenez сладкое 17 % алк., Испания...	3,7	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7c0/571897.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сладкое
+825	Chateau Villefranche Sauternes 	4,1	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1eb/403751.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+826	The Collection The Lemongrass Sauvignon blanc 	3,7	1 369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d20/433292.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+827	KG Gries Gewürztraminer 	3,9	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/344/455362.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+828	Arnaldo-Caprai Grecante Colli Martani Grechetto 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3ab/700718.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+829	Lesehof Riesling Reserve Premium Edition 	3,9	974,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/85b/3431358.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+831	Sankt Anna Riesling Pfalz 	3,8	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3b8/381535.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+832	Arena de Oro Sauvignon Blanc 	3,3	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d52/3503090.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+833	Diez Siglos Sauvignon 	3,6	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/765/1560093.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+834	Peter & Peter Рислинг Штайллаге 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/87e/3503087.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+835	Pedras Negras Vinho Branco 	3,3	769,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/06c/3176659.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+836	Портвейн Массандра Белый Сурож 17,5 % алк., Россия, 0,75 л	-	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f69/596384.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+837	Lorch Grauburgunder Rivaner 	3,7	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/599/3503082.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+838	Agora Рислинг 	3,6	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/19e/2018361.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+839	San Pietro Frascati Superiore 	3,6	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6d1/225925.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+840	Глобус Corte Vinaia Bianco 	-	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce7/453029.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+841	Palabra de Caballero Vardejo La Mancha 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e10/206657.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+830	Tussock Jumper Moscato 	4,0	839,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fab/198376.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+843	Tikves Рислинг 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/81b/1900186.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+844	Gandin Sauvignon 	3,8	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/707/665223.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+846	Fedora Rivera 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b2e/576382.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+393	Georgian Wines Алазанская долина 	3,3	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e71/3535621.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+848	Redwood Vineyards Chardonnay 	3,4	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/041/538137.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+849	Tavridia Мускат 	3,4	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/03e/729944.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+850	Bestheim Grand Cru Riesling AOC 	3,9	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/519/3408951.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+851	Ionos Roditis-Moschato 	3,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d97/3430252.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+852	Mar de Frades 	4,1	2 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/101/1647358.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+853	Die Jungen Frank'n Сильванер 	3,4	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3d2/3553218.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+854	PMC Neubruch Chardonnay 	4,1	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3d6/2337393.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+855	Gaetano Pinot Grigio Delle Venezie 	3,4	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/019/789082.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+856	Domaine Laffitte Gros Manseng & Petit Manseng 	4,2	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b50/496117.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+857	ликёрное Carlo Pellegrino Marsala Superiore Garibaldi 	3,6	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/035/704657.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+858	Il Rocchin Gavi 	3,9	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/772/435285.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+859	Крымвинторг Мускат нежный 	-	329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f8d/277371.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+860	Крымский погребок Ркацители Мускат 	-	279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d18/717994.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+861	Lesehof Fleur 	4,1	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ed9/1925378.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+862	Cape Zebra Chenin Blanc 	3,7	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/37a/1092844.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+863	Askaneli Brothers Алазанская Долина 	4,0	639,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8b9/1766377.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+718	Cuatro Ojos Sauvignon Blanc 	3,8	359,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/270/338710.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+864	KG Gries Goldmuskateller Moscato Giallo 	4,2	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ccf/455361.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+865	ликёрное Массандра Мадера 	-	889,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/13d/353277.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+866	Campero Совиньон Блан 	3,7	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/898/2561492.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+867	Lorch Riesling Lieblich 	3,9	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cb7/3503078.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+868	La Piuma Рислинг 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d2c/1900313.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+869	Canada Verdejo 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d75/144220.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+870	Inkerman Алиготе сухое 	3,5	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/48a/614672.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+871	Арвы Дуар Совиньон 	-	439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2e4/780399.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+872	игристое Villa Degli Olmi Prosecco Extra Dry брют 	3,5	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/297/584575.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+873	Rioja Bodegas De Abalos 	3,2	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/afa/prd_659347006.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+874	PMC Beerenauslese 	4,0	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/822/2337395.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+875	Desono Шардоне 	3,4	579,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6eb/3530770.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+38	выдержанное Escal Roja Special Selection Grenache Tempranillo 	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1cc/496070.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+877	Liegenfeld Грюнер Вельтлинер 	3,7	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/487/3553671.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+879	El Sotillo Blanco Cosecha 	2,8	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/653/875700.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+880	Care Шардоне 	3,4	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/617/3150865.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+881	Fanagoria Style Chardonnay 	3,6	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f5b/1092820.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+882	Allan Scott Pinot Gris 	3,7	1 569,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a1e/3432639.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+477	Marani Alazani Valley 	4,0	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/aa3/1900214.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+884	Массандра Алиготе 	3,1	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/164/562892.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+885	Mastro Binelli Malvasia 	3,7	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/91a/762285.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+887	Prinz von Preussen Олд Вайнс Рислинг 	3,6	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5b6/3400278.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+888	Briccotondo Langhe Arneis 	3,9	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c72/401662.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+889	Maria de Molina Verdejo 	3,5	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/405/970716.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+890	ликёрное Солнечная Долина Портвейн Крымкский 	-	829,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bdc/1559813.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+891	Авторское Виорика 	3,6	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b61/1766370.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+892	Ciconia Verdelho 	3,5	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/404/483458.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+893	Closerie des Alisiers Chablis Vieilles vignes 	3,6	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/976/520883.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+894	Muenzenrieder Welschriesling 	-	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/189/1925374.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+895	Marchesi di Barolo Gavi di Gavi 	3,7	3 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d8c/236437.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+896	Montecelli Soave 	3,5	729,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e75/236346.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+897	Stobi Grasevina 	3,7	639,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b4e/174003.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+898	Lugana Novacorte 	4,2	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6bd/649227.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+899	Palavani Ркацители Квеври 	3,8	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/61b/1183992.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+900	Цард Мцване 	-	439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/75e/775612.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+901	Finca La Olma Verdejo 2020 	3,6	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/58a/prd_668191003.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+902	Грузвинпром Цинандали 	4,0	734,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fcb/1900228.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+903	Codos de Larouco Godello 	3,7	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c25/3553689.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+904	Valserrano Blanco Rioja 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9d2/1024507.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+656	G7 Chardonnay 	3,4	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6e4/759036.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+905	Legenfeld Muscato Leicht & Lieblich 9.5 % алк., Австрия, 0,75 л	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4d7/3459316.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+824	J.P. Chenet Colombard-Chardonnay 	3,6	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/521/357566.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+906	Toubes 	4,1	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/462/3511452.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+907	Флейта-Позвоночник Мускат Рислинг 	-	569,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/632/3393365.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+883	Mastri Vernacoli Pinot Grigio 	3,6	1 149,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fea/3604939.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+909	Castelvecchio Roero Arneis 	3,4	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4a2/455349.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+934	Belisario Кабраччо 	3,4	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/88d/1900166.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+911	Hoya De Cadenas Chardonnay Sauvignon Blanc 	3,5	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6a9/135066.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+913	PMC Trockenbeeren Muskat 	-	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/149/2337397.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+914	Чайка Мускат 	4,3	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c1/3602952.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+915	Vigne-Lourac Colombard-Sauvignon 	-	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bf9/3420304.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+916	Majano Airen 	2,6	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ba6/3553293.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+917	Domaine Preignes le Vieux Sauvignon 	3,6	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce2/3150869.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+918	Dama de Toro Malvasia 	3,8	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3b0/3511454.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+919	Wine Day Blanc 	3,9	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/375/1925600.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+920	Orran Kangun & Viognier 	3,9	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7f7/3269664.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+921	The Wedge Chenin Blanc Roussanne 	3,8	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d0b/3420302.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+922	Cantina Lavis Riesling 	3,7	1 619,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b12/780363.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+923	Lorch Kerner Lieblich 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3bd/3503081.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+924	Liegenfeld Sauvignon Blanc 	3,7	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/22b/3253307.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+925	Joy Бланко 	3,9	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1ba/3431458.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+926	Quinta dos Aciprestes Douro 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/935/3503092.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+927	Batasiolo Gavi 	3,9	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/12a/287177.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+928	Good Steak Шардоне 	3,2	129,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/15b/1766374.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+929	Gotz Tokaji Aszu 6 Puttonyos 	4,3	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5e0/497255.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+931	Johann Donabaum Kirchweg Gruner Veltliner Smaragd 	4,1	2 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/973/2270196.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+932	Tbilisi Peak Твиши 	4,0	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc4/223577.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+933	Solarita Soave 	3,5	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7eb/206172.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+912	Sankt Annaberg Буррвайлер Шевер 	4,0	2 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/efc/3400279.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+935	Reserve de Perly Muscadet 	3,8	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c9b/3420298.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+936	San Valero Carinena Macabeo 	3,2	619,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/be5/369775.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+937	Gardi Boccadigabbia 	3,4	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/608/3461919.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+646	Villa Antinori Bianco Toscana 	3,8	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4a4/435140.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+939	игристое Villa Degli Olmi Pinot Grigio Extra Dry брют 	4,1	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/919/584548.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+940	Nobilomo Malvasia 	4,5	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/aff/636579.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+941	Vino Kalem Рислинг 	2,9	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/42f/1900182.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+942	Quinta de Cidro Sauvignon Blanc 	4,0	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/be5/3503093.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+910	Belisario Пекорино Терре Ди Кьети 	3,3	964,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7e5/1900170.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+944	Inkerman Жемчужина Гранд Резерв сухое 	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/59b/614671.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+945	Cave de Bennwihr Sylvaner Tradition 	3,3	1 189,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/03b/680647.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+946	Carlo Lenotti Soave Classico 	3,7	1 329,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c25/780362.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+947	Le Grand Fief Muscadet 	3,8	1 349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0f5/1170995.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+948	Bosca Stories of Italy Malvasia Emilia 	3,6	589,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ca8/2083285.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+949	Vinha do Rosario Moscatel de Setubal 	3,6	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ed7/214656.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+950	Terre del Noce Pinot Grigio Dolomiti 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7f7/357338.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+951	Cimmeria Шардоне-Алиготе 	3,8	369,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6e0/3431406.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+952	Массандра Мадера Крымская 	3,7	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c65/2507133.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+953	ликёрное Alexandro Sherry Oloroso 	3,9	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/290/496105.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+581	Талавари Алазанская долина 	4,0	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5a2/1836555.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+954	Sankt Anna Riesling Pur Mineral Pfalz 	3,8	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f78/381534.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+955	ликёрное Misterio Dulce 	3,7	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1f6/970553.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+956	Винный напиток Gran Torino Бьянко 	3,8	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e50/1900306.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+957	Peter & Peter Граубургундер 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/28b/3503089.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+958	Carson's Chardonnay 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7bd/780361.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+959	Trenel Bourgogne Chardonnay 	3,8	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3a8/3408954.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+960	River Route Gewurztraminer Pfalz 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/20a/3461917.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+961	Hello World! Viognier 	3,4	869,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/44f/225894.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+962	Acharuli Ркацители 	3,3	149,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bd9/1900281.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+963	Tornai Премиум Сюркебарат 	3,9	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9ac/1900106.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+964	Estaciones Verdejo 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5ff/1900256.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+965	Bienbebido Pulpo 	3,5	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/175/3603179.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+966	Famille Sadel Côtes Du Rhône Blanc 	3,6	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7d3/317696.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+967	ликёрное Candela Cream 	4,2	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4f1/363101.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+968	ликёрное La Ina Fino 	3,5	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4c4/363100.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+969	Vina Albali Verdejo-Sauvignon Blanc 	3,4	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6fc/1900203.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+970	Bisci Verdicchio Di Matelica 	3,8	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6e0/576385.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+971	Messias Porto White Dry 	3,5	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c5d/3431395.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+972	Citran Le Bordeaux 	3,6	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ca5/291189.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+973	Conde Otinano Blanco Verdejo 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/550/758910.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+975	Vols Ayler Riesling 	4,1	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5ad/3408956.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+977	Gustave Lorentz Gewurztraminer Reserve 	3,6	2 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c11/3355227.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+978	Clivier Fricon Chablis 	3,9	2 449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e0d/236309.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+979	Murviedro Verdejo 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2e8/289708.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+980	Askaneli Brothers Manavi 	3,8	779,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1e7/704656.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+981	Michel Шардоне 	3,9	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/38b/3400285.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+982	Casa de Santar Vinha Dos Amores 	4,4	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b50/3516826.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+983	Albert Bichot Petit Chablis 	3,8	2 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/715/426917.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+984	Territori Vocati Orvieto Classico 	3,6	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/628/320126.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+985	el Gordo Macabeo 	3,3	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/995/1562173.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+987	Belagaio Vernaccia di San Gimignano 	-	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5dd/3478951.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+988	Wines & Beverages of Abkhazia Диоскурия 	3,7	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ac1/339019.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+989	Chateau de Fesles La Chapelle 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d17/3356169.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+991	Chateau de Carolle Graves 	3,6	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f8b/576378.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+992	Inkerman Легенда Инкермана 	3,8	484,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/415/564161.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+938	Броjаница Рислинг 	-	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/739/775592.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+993	Tenuta Maccan Pinot Grigio 	4,0	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/409/3440666.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+994	La Pavillon du Roy Muscadet Sevre et Maine sur Lie 	4,0	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3f8/1900286.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+995	Closerie des Alisiers Chablis 1er Cru Beauroy 	-	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/657/532189.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+996	Liegenfeld Gruner Veltliner 	3,5	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/74f/3253310.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+997	Les Jamelles Muscat Sec 	3,9	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5ed/1523008.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+998	Vinedos del Villar Chardonnay 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/97e/3420305.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+999	Premium 1904 Sauvignon Blanc 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/83f/497155.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+990	Belisario Вальбона Вердиккио Ди Мателика 	3,5	964,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c53/1925668.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1001	Pirineos Somontano 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/315/461550.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1002	Loving Vincent Des Gracieuses Vignes Blanc 	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2c5/1900248.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1003	Vol I Dol Blanc сухое 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/585/717961.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1004	Cybelle Cotes de Gascogne 	3,9	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fdf/789080.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1005	Nobilomo Pinot Grigio Delle Venezie 	4,0	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/74b/636574.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1006	ликёрное Carlo Pellegrino Marsala Superiore Old Marsala 	4,1	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2e0/708802.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1007	Salida Sauvignon Blanc 	3,5	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bc0/312974.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1008	Tokaji Furmint 	3,9	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e08/257877.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+1009	Грузвинпром Ркацители Оранжевое 	3,6	719,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/567/1900233.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1000	Ballaro Грилло 	-	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1cf/3493608.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1011	Marques de Villanueva Macabeo Carinena 	3,4	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6dc/139571.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1012	ликёрное Moscatel Naranja 15 % алк., Испания, 0,5 л	3,8	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/517/571886.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+1013	Арвы Дуар Шардоне 	4,2	439,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/52c/780400.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+1014	Мадера Blandy's Duka of Sussex 19 % алк., Португалия, 0,75 л	3,7	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ed5/3493916.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+1037	Ballaro Фиано 	-	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/389/3493607.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+847	Tres Amigos Blanco Seco 	3,7	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/698/3431407.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1016	Gandin Filare Bianco 	4,1	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f96/2577659.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1017	Ribona Colli Maceratesi Boccadigabbia 	3,7	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/edd/3461918.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1018	Glusserath Eifel Лоренциусберг 	3,8	2 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3af/3400280.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1019	Sankt Annaberg Гляйсвайлер Хелле 	3,9	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e4d/3400284.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1020	Chateau Paradis Essenciel 	3,8	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8e5/499218.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1021	Gandin Friulano 	3,9	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eb1/665227.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1022	Vidal Seleccion 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a75/970545.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+1023	Closerie des Alisiers Bourgogne Chardonnay 	3,5	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d79/518873.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1024	Braunewell Unser Täglich Riesling 	3,8	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/589/3420301.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1025	Terre di Chieti Pecorino Vellodoro 	3,7	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1b0/593649.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1026	Bestheim Pinot Gris des Chasseurs AOC 	3,8	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/13b/3408952.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1027	игристое Vina Esmeralda 	4,0	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/120/3402885.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+1028	Isla Oro Айрен 	3,1	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/abe/3605575.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1029	Antico Portico Falanghina Beneventano 	3,7	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c74/225940.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1030	Pouilly-Fume Domaine Tabordet 	4,0	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b5c/497383.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1031	ликёрное Misterio Naranja 	4,3	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6aa/970543.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+1032	Tempo & Tierra Вердехо 	-	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/25a/3511447.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1033	Bouchard Aine & Fils Chardonnay Bourgogne 	3,8	1 959,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dca/246613.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1035	PMC Neubruch Sauvignon Blanc 	4,1	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/25c/2337392.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1036	Alsace Lucien Albrecht Gewurztraminer 	3,9	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5d6/135132.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1038	Сихарули Цинандали 	-	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/170/1814091.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1039	KG Gries Weissburgunder Pinot Bianco 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d99/455353.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1040	Tornai Фурминт 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c4b/1900112.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1041	Peter & Peter Вайсбургундер 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bd2/3503088.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1042	Michele Chiarlo Nivole Moscato D'Asti 	4,2	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ed8/253050.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+1015	Arca Nova	3,8	619,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/18f/3605578.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1053	Belisario Пассерина 	3,2	964,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fad/1925669.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1066	Arena de Oro Tempranillo Rosado 	3,1	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/192/3497126.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1067	Chateau Tamagne Cabernet Sauvignon 	3,6	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bff/496055.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1068	Bardolino Chiaretto 	3,4	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d9d/3269679.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1069	Lago Rose 	4,1	789,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8f7/578354.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1070	Flor De La Mar Rose 	-	654,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eb7/3400283.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1071	ликёрное Солнечная Долина Мускатное Фестивальное 	4,2	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea3/400486.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	-
+708	Массандра Мускат 	3,6	349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/39e/939095.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1043	La Maiella Пекорино 	-	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9d6/3493601.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1044	La Piuma Орвието Классико 	3,4	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5fc/1900304.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1045	Closerie des Alisiers Petit Chablis 	3,7	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0a4/518899.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+886	Броjаница Шардоне 	-	559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b21/542673.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1046	Liegenfeld Pinot Blanc 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/597/3253304.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1047	Morgado da Vila Alvarinho 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d71/198431.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1048	Trenel Pouilly Fuisse AOC Шардоне 	4,0	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/285/2535472.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1049	Cantina Lavis Gewurztraminer 	4,0	1 949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e12/780359.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1050	Glusserath Eifel Каульсбор Уральте Ребен 	3,8	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dc6/3400277.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1051	PMC Trockenbeeren Sauvignon 	-	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/450/2337399.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+1052	Casa de Santar Curtimenta 	4,3	2 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/529/3511436.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+538	Грузвинпром Алазанская долина 	3,9	639,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/984/1900236.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+1054	Bestheim Muscat Classic Alsace 	4,1	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/efe/291224.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1055	PMC Trockenbeeren Auslese Traminer 	-	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/78b/3511439.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+1056	PMC Trockenbeeren Welschriesling 	3,9	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c67/2337396.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+1057	Liegenfeld Chardonnay 	-	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9d2/3253314.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1058	Hannes Sabathi Weissburgunder 	3,6	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/57a/3553705.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1059	Hannes Sabathi Leutschach 	3,8	1 349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/73f/3553707.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1060	ординарное Karas White Bland 	3,9	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5bc/3622330.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+648	Anjos de Portugal 	3,7	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c7a/144263.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1061	by Haussmann Syrah 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/76b/3118622.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1062	GreenLife Sauvignon Blanc Blush Marlborough 	4,2	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bd6/789083.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+349	el Gordo Garnacha 	3,3	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ea3/1562165.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+1063	El Pescaito Bobal Grenache 	3,6	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/907/421245.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1064	Golubitskoe Estate Rose 	4,0	789,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dcb/410994.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1093	Pfefferer Пинк 	4,1	1 899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/896/1925672.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1075	Domus Vini Rose Rosato Veneto 	3,8	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/379/229663.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1076	Lorch Portugieser Weissherbst 	3,1	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/712/3497110.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1078	Momentum Solare Grenache Rose 	4,0	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b01/496218.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1079	Плодовая алкогольная продукция Shahnazaryan Гранат красное полусладкое 12,5...	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/165/1842512.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1080	San Vigilio Pinot Grigio Rose 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/053/1647356.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1081	Chateau Tamagne Fleurs du Sud Rose de Tamagne 	3,4	331,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f3e/436152.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1082	Lia 	3,6	1 129,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/643/1559934.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1083	Whalebone Bay Sauvignon 	4,2	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f54/744006.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1084	Stobi Rose 	4,0	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e00/327357.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1085	Peter & Peter Шпетбургундер 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b47/3497122.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1086	Marius Peyol Кото Декс Ан Прованс 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c2b/1900994.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1087	Frescobaldi 	3,6	1 289,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d9f/3603177.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1088	Levitation 	4,1	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2b5/3539448.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1090	Плодовая алкогольная продукция Shahnazaryan Ежевика красное полусладкое 12,...	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ed5/1842513.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1091	Figuiere Signature Magali 	3,9	1 449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/340/3497119.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1092	Capellana Bobal 	3,2	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d99/576022.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1089	Codici Розато 	3,3	524,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e97/1900316.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1094	Gagauzia Reserve Merlot Rose 	4,0	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/90c/260380.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1095	Reserve de Perly Cabernet D`Anjou 	3,8	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/74a/1562159.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1096	Tornai Пинк Пино Гриджио 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/71b/1900110.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1097	Freschello Rose 	2,9	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b84/1647363.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1098	Paddle Creek Riesling Rose 	4,0	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5b8/3463219.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1099	Rose a la Rose Cotes de Provence 	3,8	2 049,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c81/496082.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1100	Алазанская Долина 	3,8	299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/30a/2270302.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1101	Плодовая алкогольная продукция Sangria Fruit полусладкое 11 % алк., Россия,...	3,9	219,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/640/3492697.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1102	J.P. Chenet Grenache-Cinsault 	3,4	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/38e/357565.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1103	Vino Kalem Розэ 	3,8	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/956/1900183.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+665	Satyr Sauvignon Blanc Marlborough 	4,1	1 559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6f4/1460386.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1073	Villa Krim Muscat 	3,7	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fcb/3431683.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1074	Crystal Bay Shiraz Rose 	3,1	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e7c/3458357.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1112	Murviedro Cabernet 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/532/495940.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+502	El Sotillo 	2,3	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c5d/3092594.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+1118	Ionos Roditis-Syrah 	-	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ffd/3430254.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1119	Sun Gate White Zinfandel 	4,1	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/78c/577959.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1120	Bodegas de Abalos 	3,2	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2d6/1562157.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1121	Messias Porto Rose 	3,5	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cb9/3431398.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сладкое
+1122	Chateau Tamagne Каберне Совиньон 	-	141,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1e3/496061.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1127	Ca' delle Rose Prosecco 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/15b/3400273.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1128	игристое Perle Rose Brut 11,5 % алк., Россия, 0,25 л	4,6	139,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/778/1900227.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1107	Плодовая алкогольная продукция Shahnazaryan Вишня красное полусладкое 12,5...	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d68/1842514.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1108	Silverboom Pinotage Rose 	3,6	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e27/1559920.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1109	Canada Rosado 	3,1	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a5e/144221.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1110	Cape Zebra Rose 	3,2	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7eb/576018.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1113	Marcel Martin Les Versaines Rose de Loire 	3,7	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/053/1873474.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1114	Плодовая алкогольная продукция Shahnazaryan Малина красное полусладкое 12,5...	3,9	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6ed/1842515.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1115	Liegenfeld Cabernet Sauvignon 	4,1	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/830/3253312.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1116	Belagaio Kitri Rosato 	-	1 349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2d9/3431688.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1117	Rudolf Muller Дорнфельдер 	3,3	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5f0/3497123.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1123	Плодовая алкогольная продукция Shahnazaryan Абрикос белое полусладкое 12,5...	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2a4/1842511.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1125	игристое Золотая Балка Балаклава Reserve 	3,6	729,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/86d/338630.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1134	игристое Martini Rose 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b16/113321.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1129	игристое Абрау-Дюрсо Русское 	3,3	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8bc/641765.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1126	игристое Inkerman 	-	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1d0/564145.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1130	игристое Riunite Lambrusco Emilia Rose Amabile 	3,7	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/068/220463.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1104	Paradis Essenciel 	3,8	1 549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a7a/515709.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+680	Alma River Пино-Гриджио 	3,8	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b7e/1925674.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1132	игристое Ca'Delle Rose Cuvee Rose Spago 	3,8	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8c4/379085.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1124	Крымский погребок Мускат 	-	279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/50e/3605734.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1105	Rivera Rose Castel del Monte 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/133/576379.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1133	игристое жемчужное Anjos de Portugal Vinho Verde 	3,7	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bc5/459994.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1137	игристое Aristov 	3,4	419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/757/619168.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1153	игристое Tbilisi Peak 	4,0	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/976/3493605.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1196	игристое Ahso брют 	-	749,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d0a/585105.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1197	игристое Duc de Paris Brut 	3,2	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ca6/781062.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1142	игристое Corte Dei Rovi Raboso Rose 	4,2	989,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/300/759011.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1138	Шампанское Абрау-Дюрсо Victor Dravigny 	3,9	869,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bf4/139552.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1131	Шампанское Дербентское Российское 	-	239,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9ad/759908.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1151	игристое Лыхны 	3,8	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/679/782401.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1140	игристое Левъ Голицынъ 	3,6	419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8cc/3185061.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1139	игристое Martini Prosecco Rose Extra Dry 11,5 % алк., Италия, 0,75 л	3,7	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/57b/prd_659855006.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1143	игристое Beiral Vineyards Frisante 	3,9	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a3d/455340.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+710	Sonovino Бьянко 	3,3	469,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/92d/1900319.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1146	игристое La Gioiosa Rosea Brut 	4,0	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6ae/230189.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1147	игристое Bosseq Frizzante Rose брют 12,5 % алк., Венгрия, 0,25 л	4,6	239,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/641/3604935.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1148	игристое Fanagoria Rose semisweet 	-	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/082/1092835.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1149	игристое Canti Cuvee Rose 	3,9	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/86a/113323.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1150	игристое Louis Vallon Cremant De Bordeaux 	3,9	1 129,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f1b/789079.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1152	игристое La Gioiosa Prosecco Rose Millesimato 	4,0	1 339,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c01/704659.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1154	игристое Freixenet Premium-Cava Rose 	3,6	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e2b/752253.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1155	игристое La Petite Perle Rose 	3,8	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/862/3431411.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1156	игристое Глобус Corte Vinaia Spumante Rose 	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a02/438679.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1157	игристое Bernard Remy Champagne Rose 	3,8	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8ed/3530708.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1158	игристое Patrizi Suagna Rose 	4,1	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8d7/229665.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1159	игристое Lou Lou Rose 	3,3	569,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9e9/538474.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+713	Villa Fassini Trebbiano-Chardonnay Toscana 	4,0	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/902/322413.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1162	игристое Lambrusco Rosato 	3,9	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/03a/225946.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1163	игристое Duc de Paris Rose Prestige 	3,4	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cda/624169.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1164	игристое Fresita Natural Origin с мякотью клубники 	3,8	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f39/281711.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1144	игристое жемчужное ZB wine Frizzante 	-	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/973/1093024.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1136	игристое Perle 	3,8	139,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2a8/853507.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1184	игристое Freixenet Cordon Negro Cava 	3,6	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/029/752254.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1176	игристое Fonte Conegliano Valdobbiadene Prosecco Superiore брют 	3,9	1 479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1e0/300741.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1177	игристое Ca'Delle Rose Asolo Prosecco Superiore 	4,2	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ba4/684381.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1173	игристое Mondoro Gran Cuvee 	3,7	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/946/434611.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1180	игристое Canti Prosecco 	3,7	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d12/176648.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1170	игристое Глобус Rubinat Cava брют 	3,7	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f1c/486287.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1182	игристое Ca'Delle Rose Prosecco Extra Dry 	4,0	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/426/225924.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1179	игристое Cinzano Prosecco 	3,7	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/eb6/308936.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1185	игристое Perle Brut 	3,8	139,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a47/868149.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1167	игристое Casa Bell'Albero Lambrusco Dell'Emilia 	3,7	759,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c4e/119396.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1187	игристое Fanagoria White Brut 	3,6	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2ea/1092830.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1188	игристое Riunite D'Oro Amabile 	4,4	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/81d/214593.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1160	игристое Советское Шампанское 	2,4	239,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d8f/1170879.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1190	игристое Золотая Балка Балаклава Reserve Brut 	3,6	729,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e85/201399.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1191	игристое La Gioiosa Prosecco Treviso 	3,7	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b6f/230184.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1192	игристое Mastro Binelli 	4,3	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/401/214470.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1193	игристое Canti Cuvee Dolce 	3,8	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/89d/113339.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1194	Victor Contarini просекко 	3,7	1 349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/10d/1509343.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1195	игристое Castelvecchio Asti 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/541/225947.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1186	игристое Martini Prosecco 	3,6	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/753/201361.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1189	игристое Chateau Tamagne 	3,3	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f6f/619170.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1178	игристое Абрау-Дюрсо Виктор Дравиньи 	3,9	889,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/42c/986667.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1168	игристое Cinzano Rose 	3,7	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cd5/230424.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1169	игристое Riunite Lambursco Rose полусладкое 8 % алк., Италия, 0,187 л	2,9	249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e09/578356.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1171	игристое Villa de Corgos Rose 	3,8	674,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/593/455335.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1172	игристое Глобус Lambrusco Emilia Rosato 	3,9	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/804/226999.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1181	игристое Mastro Binelli Moscato Semidolce 	4,3	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4d8/201367.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1183	игристое Nuviana Cava 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/646/984134.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1198	Шампанское Moёt & Chandon Imperial 	4,1	6 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a2c/3602853.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1218	Шампанское Крымский Винный завод Российское 	2,8	409,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c44/201377.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1200	игристое Дербентское Российское 	-	239,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/318/759909.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1141	игристое Di Caspico Special Edition 	3,9	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/764/1171132.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1202	игристое Valdo Prosecco extra dry 	3,7	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f32/758974.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1203	игристое Fanagoria White semisweet 	3,4	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1db/1092832.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1204	игристое Veuve Clicquot 	4,3	7 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ebc/1024248.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1205	игристое Cantine Castelvecchio Brut Millesimato 	4,2	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5a4/438909.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1206	игристое Villa Sandi Valdobbiadene Prosecco Superiore 	3,9	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/446/230182.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1207	игристое Villa Rustica Riesling 	-	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/02d/3503101.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1208	игристое Valery Zaharin Кокур Classic 	3,7	789,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ab4/1342011.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1209	игристое Inkerman Muscat 	4,0	529,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a79/564162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1210	игристое Lambrusco Dell'Emilia Cascina S.Maria 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4a9/761686.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1175	игристое Martini Asti 	3,8	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/98c/117195.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1213	Шампанское Jacquart Mosaique брют 	2,5	4 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/18c/1183991.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1215	игристое Ca'Delle Rose Prosecco Spago 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/32d/225926.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+39	ликёрное Массандра Портвейн красный Алушта 17 % алк., Россия, 0,75 л	3,8	509,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/90c/339027.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	-
+1216	игристое Gaetano Prosecco Extra Dry 	4,1	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/4ea/627445.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1225	игристое Mondoro Asti 	4,4	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6be/434618.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1217	Шампанское Новый Светъ Российское коллекционное 	-	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/216/3431367.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1219	игристое Эндемы Рислинг Брют 12,5 % алк., Россия, 0,75 л	2,5	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/27e/1900190.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1220	игристое Абрау-Дюрсо Императорское 	3,4	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7d0/2315771.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1221	игристое Lanson Black Label Brut 	3,9	5 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bb9/979764.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1222	игристое выдержанное Joseph Verdier Трезор де Луар Креман де Луар бело...	3,9	1 559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/198/841569.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1223	игристое Ca' delle Rose Spumante Millesimato 	3,6	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/277/616736.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1224	игристое Canti Asti 	4,0	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7a4/176655.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1201	игристое Falconello Cuvee Blanche 	4,2	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/aba/650547.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1226	игристое Patrizi Cuvee Suagna 	3,4	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/357/229666.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1212	игристое Mionetto Prosecco 	3,6	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/893/3518582.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1227	игристое Duc de Paris Doux 	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/00b/781063.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+72	Sun Gate Red Zinfandel 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/016/577958.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусухое
+1228	игристое Louis Vallon Cremant de Bordeaux 	3,9	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9f9/627619.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1229	игристое жемчужное Ca'del Doge Fioroso Cuvee Frizzante 	4,0	669,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/dd0/650545.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1230	игристое жемчужное Глобус Ламбруско Эмилия Бьянко 	-	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/aad/226997.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1231	игристое Эндемы Совиньон 	3,6	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/67e/3431387.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1232	игристое Mondoro Extra Dry Prosecco 	4,1	1 699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3b3/434612.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1233	игристое Freixenet Cava Carta Nevada 	3,8	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/24f/397535.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1235	игристое Villa Degli Olmi Pinot Grigio 	4,1	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/494/401231.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1236	игристое Ca'Delle Rose Moscato 	3,9	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/65e/320127.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1237	игристое Martini 	3,8	1 099,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/67c/325180.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1238	игристое Acquesi Асти 	4,1	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9eb/1900318.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1239	игристое Bernard Remy Carte Blanche 	3,8	3 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d3a/3408962.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1240	Шампанское Левъ Голицынъ Российское 	3,1	419,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/978/113318.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1241	игристое Villa Sandi Il Fresco Sauvignon Blanc 	3,6	1 559,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3da/246832.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1242	игристое Cremant d’Alsace Bennwihr AOC 	3,5	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fc8/3530707.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1243	игристое Terredirai Просекко 	-	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3fa/3553305.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1244	игристое Dejean & Fils Blanc de Blancs 	3,6	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e53/356705.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1245	игристое Cave de Bissey Cremant de Bourgogne Brut 	3,7	1 279,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f5a/837765.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1247	игристое Barone Montalto Пино Гриджо 	4,0	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/64f/1900302.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1248	игристое Lergen Muller Riesling Brut 	3,7	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/578/510454.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1249	игристое Mucho Mas Extra Dry 	4,2	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9c0/3269637.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1250	игристое Bellavista Franciacorta Alma Gran Cuvee брют 	3,9	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ed8/576361.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1251	Напиток слабоалкогольный Santo Stefano Bianco белый полусухой газированный...	3,5	289,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/300/1222878.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1252	игристое Абрау-Дюрсо 	3,3	169,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/00b/611356.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1253	игристое Cava La Dama 	4,0	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fb8/3553722.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1254	игристое Con-Tre Bianco 	3,5	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/742/1509345.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1255	игристое Cantine Castelvecchio Moscato 	3,8	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2db/459990.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1256	игристое Anno Domini Prosecco Bio 	3,7	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ca5/538747.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1145	Шампанское выдержанное Новый Светъ Российское 	-	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d69/113333.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1258	Напиток слабоалкогольный Santo Stefano Vacanze Romane Amabile белый полусла...	3,3	289,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/24b/1222880.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1259	игристое Veuve Ambal Grande Cuvee 12 % алк., Франция, 0,75 л	3,7	1 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/6d2/3418755.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1261	игристое Эндемы Шардоне Брют 12,5 % алк., Россия, 0,75 л	-	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c0c/1900191.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1262	игристое Pierre Cellier Prestige игристое 	4,1	4 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/aa2/3420300.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1263	игристое Secolo Ventunesimo Millesimato Spag 	3,8	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/45e/225928.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1264	Напиток слабоалкогольный Santo Stefano Matrimonio Siciliano Amabile белый п...	3,7	289,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e62/1222879.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1265	игристое Mastro Binelli Premium Malvasia 	3,7	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9a5/318460.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1266	игристое Fiestino 	3,4	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ac1/176690.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1267	игристое Valdo Origine брют 	3,9	869,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fe8/538736.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1268	игристое Villa de Corgos Blanc de Blancs 	3,6	674,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/617/455337.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1269	игристое Dom Caudron 	4,0	3 799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/467/3356170.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1270	игристое Vinart Cava 	3,7	849,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/845/627446.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1271	игристое Cinzano Asti 	3,9	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c98/308939.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+742	Crystal Bay Chardonnay 	3,4	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ce5/3458355.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+1273	игристое Lambrusco Bianco 	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a69/225944.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1274	игристое Ferrari 	3,8	3 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/965/1171435.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1275	игристое Gaetano Ламбруско 	3,3	464,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5e8/3602953.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1276	игристое Torre Oria Cava 	3,5	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/115/953110.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1277	игристое Maschio dei Cavalieri Prosecco Extra Dry 	3,7	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/182/1623251.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1278	игристое Nobilomo Spumante Dolce Malvasia 	4,4	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0bf/782402.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1234	игристое Золотая Балка 	-	449,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/811/1093027.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1279	игристое Cava Codorniu Clasico Brut 	3,5	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e49/512884.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1280	игристое Patrizi Cuvee Extra Dry сухое 	3,6	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/11f/873956.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1282	Алкогольный напиток Abrau Light белый полусладкий 8 % алк., Россия, 0,25 л	3,5	119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cc8/2811968.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1283	игристое Castelvecchio Moscato D'asti 	4,1	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/37d/228795.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1284	игристое Beiral Vineyards Frisant 	3,9	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a8d/455332.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1285	игристое La Gioiosa Prosecco 	3,7	499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d48/356015.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1287	игристое Veuve Amiot Cremant de Loire 	3,6	1 319,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/36c/781045.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1286	игристое Ferrero Leonardo 	2,9	384,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/267/3539450.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1260	игристое Henkel Blanc De Blancs 	3,5	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/bd2/3518580.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1289	игристое Acquesi Просекко 	3,8	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/557/1900323.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1290	игристое Глобус Rubinat Cava полусухое 	3,7	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0db/486286.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1291	игристое Lambrusco Bianco Emilia Righi 	4,0	719,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/305/379155.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1292	игристое La Petite Перле 	4,1	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fb0/3431409.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1293	игристое Villa de Corgos Bical & Arinto 	3,8	674,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/395/497137.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1294	игристое Casa de Santar 	3,8	2 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3b5/3511435.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1295	игристое Tete de Cheval Brut 	4,0	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8df/789859.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1296	игристое Villa de Corgos 	3,8	674,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7ac/497136.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+744	Closerie des Alisiers Макон-Виляж 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d89/3553219.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1298	игристое Lunetta Prosecco 	3,6	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0a7/614157.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1299	игристое коллекционное Новый Светъ Полусухое 	3,7	979,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d91/3431368.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1300	GreenLife Sauvignon Blanc Bubbles 	4,3	1 599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/8f0/627441.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1301	игристое Mastro Binelli Premium Brut 	3,7	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c2c/318462.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1302	игристое Castillo Santa Barbara Muscato 	3,6	789,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cab/782404.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1303	игристое Quanto Basta Prosecco Extra Dry брют 	3,4	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ef8/1241616.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1304	игристое Aristov Cuvee Alexander Blanc de Noirs 	3,7	919,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fbc/824980.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1305	игристое Valsa Nuovo Perlino Asti Secco 	4,2	1 139,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/ebd/841568.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+1306	игристое Veuve Ambal Blanc de Blancs Cremant de Bourgogne 	3,8	2 349,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/871/3463217.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1307	игристое Эндемы Ркацители 	3,7	399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/552/3431386.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1308	игристое Antech Esprit de Bulles Doux 	3,9	1 399,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/04d/3408955.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1309	игристое Con-Tre Moscato 	4,2	789,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/fe2/1509348.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1310	игристое Wines & Beverages of Abkhazia Лыхны 	3,8	459,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/87d/317549.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1312	игристое Andre Renard брют 9,1-15 % алк., Франция, 0,75 л	4,6	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/802/1900270.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1272	игристое Mastio della Loggia 	3,8	969,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7b2/3482076.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1314	игристое Ca'del Bosco Cuvee Prestige 	4,1	4 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9be/562456.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1315	игристое La Petite Perle White 	-	379,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9e0/3431410.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1316	игристое Freixenet Cava Cordon Negro 	3,6	519,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/82a/986617.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1317	игристое Quanto Basta Lambrusco Bianco Dell'Emilia 	4,1	249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/0fc/763393.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1318	игристое Santo Isidro de Pegoes 	3,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a2d/1171002.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1311	игристое Galoppo Favorito 	-	969,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/50b/3553302.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+145	Valserrano Finca Monteviejo 	4,3	3 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/776/1024503.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+149	Territori Vocati Россо Монтальчино 	3,5	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/12c/3493606.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+181	Ханджлури Сувенирная серия Киндзмараули 	4,5	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/92c/289893.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+214	Escal Roja Tempranillo 	3,2	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/472/496069.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+252	Bravo Trade Киндзмараули 	-	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/841/1560068.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	полусладкое
+325	Valserrano Graciano 	4,0	2 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/cf6/3431438.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+571	Rioja Bodegas De Abalos Tempranillo 	3,2	859,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1f2/prd_659346009.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+716	Портвейн Hooper's Lord Mayor White Porto сладкое 19 % алк., Португалия, 0,7...	3,4	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/58d/3436008.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+815	Schmitt Sohne Wines Молоко любимой женщины 	3,8	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/18f/401223.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусладкое
+845	Jardin Fleury Sauvignon Blanc Pays d'Oc 12 % алк., Франция, 0,75 л	3,7	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c2e/780378.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+1321	игристое Vinha do Rosario 	3,6	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3e1/483462.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1322	игристое Nobilomo Spumante Dolce Bianco 	-	829,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2de/636590.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+1297	Шампанское Крымское Наследие Российское 	2,8	409,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b95/201378.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1323	игристое Fiestino Dolce 	4,0	739,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1d1/176689.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1324	игристое Patrizi Suagna 	4,1	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/618/643144.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1325	игристое Mastro Binelli Premium Moscato 	4,3	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e97/415079.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1326	игристое Inkerman Кокур Zero Dosage 	3,7	799,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/9bc/782406.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1327	игристое Andre Renard 	3,5	899,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3f4/1900267.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1328	игристое Freixenet Carta Nevada Cava 	3,8	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/7eb/986616.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1329	игристое Gaetano Asti Dolce 	4,3	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/5a8/627439.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сладкое
+13	Nuviana Tempranillo Cabernet Sauvignon 	3,6	669,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b64/369792.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Красное	сухое
+1111	Elysis Rose D'Anjou 	3,9	1 119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/da0/139606.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусладкое
+1135	Напиток слабоалкогольный Santo Stefano Rose Amabile розовый полусладкий газ...	3,5	289,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/376/1222882.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1161	игристое Mondoro Prosecco Rose в подарочной упаковке 11 % алк., Италия...	4,0	1 300,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/763/3185765.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1165	игристое Lambrusco Emilia Porta Soprana Rosato Amabile 	3,8	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/77e/761684.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1320	игристое Gaetano Spumante 	4,0	649,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3ba/2516815.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1065	Cielo e Terra Pinot Grigio Blush 	3,9	629,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f76/270537.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1072	Don Simon Tempranillo 	3,0	539,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/54b/1171432.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	полусухое
+1106	Casa de Santar	4,0	1 424,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f4d/3511434.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	сухое
+1166	Винный напиток Santo Stefano Rose розовый полусладкий газированный 8 % алк....	3,5	119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a6e/3617863.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1199	игристое Золотая Балка Балаклава Muscat 	3,8	659,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/636/201400.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусладкое
+1211	игристое Ca'Delle Rose Prosecco 	3,8	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/16f/497214.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1246	игристое Глобус Corte Vinaia Spumante 	3,3	599,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/230/438681.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1257	игристое Lambrusco Emilia Porta Soprana Bianco Amabile 	3,4	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/a88/761685.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+878	креплёное Gonzales Byass Херес Fino Sherry Palomino 15 % алк., Испания...	3,8	1 249,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e02/497236.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+908	Villa "L" Weisser Burgunder 	3,7	634,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3ed/497156.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+930	Tres Leones Moscatel de Alejandria сладкое 	-	999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/d03/571887.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+943	ликёрное Valdouro White Port 	3,7	1 299,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/380/317330.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+974	J.P. Chenet Original Colombard-Sauvignon 	3,4	879,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/360/780392.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	полусухое
+976	Lugana Cento Filari Cesari 	3,7	1 999,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/158/497162.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+986	PMC Trockenbeeren Scheurebe 	4,2	1 499,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/024/2337398.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сладкое
+1010	Majano Sauvignon Blanc-Airen 	2,6	1 199,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/3dd/3553292.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1034	Флейта-Позвоночник Алиготе Шардоне 	-	569,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/b26/3393364.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	сухое
+1077	ликёрное Массандра Портвейн розовый Алушта 17 % алк., Россия, 0,75 л	-	479,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/f39/322373.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Розовое	-
+1174	игристое Con-Tre Rose 	3,8	699,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/e96/1509351.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	сухое
+687	ликёрное Массандра Мускат белый Красного Камня 13 % алк., Россия, 0,75 л	-	1 029,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/c52/325271.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Белое	-
+1214	Напиток слабоалкогольный Santo Stefano Bianco Amabile белый полусладкий газ...	3,5	289,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/943/1222881.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1281	игристое Bosseq Frizzante White брют 11,5 % алк., Венгрия, 0,25 л	3,7	239,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/2a1/3604938.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1288	игристое Mastro Binelli Premium Ortrugo 	4,4	549,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/1c0/318456.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	полусухое
+1313	игристое Cava La Dama розовое брют 11,5 % алк., Испания, 0,75 л	3,9	949,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/779/3553724.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
+1319	Винный напиток Santo Stefano Bianco белый полусладкий газированный 8 % алк....	3,5	119,99 ₽	https://online.globus.ru/s180x160/upload/pim_images/300/3617864.jpg	https://toplogos.ru/images/thumbs/preview-logo-globus.jpg	Игристое	-
 \.
 
 
@@ -995,6 +1700,7 @@ COPY public.perekrestok (id, name, rate, price, picture, shop_logo, color, sugar
 218	Fontanafredda Briccotondo Barbera Piemonte DOC 	3,6	1 299,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/58/ae/efd41b8a28cce975903f0b4cd695.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
 219	Ionos Red 	3,3	579,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/4d/e5/c390afd28d40743f51c2e282ca71.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
 220	Diaz Bayo 8 Meses Barrica Ribera del Duero DO 	3,8	1 599,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/32/c4/fb1f57e1243cacc142xd236dc5xd.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
+87	Don Simon 	3,0	519,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/89/bb/4ac504aa22755d8d689b2bfc530e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
 221	Wine in Tube Tempranillo 	-	1 199,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/db/43/e044984490a6eab3973c6a55cc8d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
 222	Gran Passione Appassimento Rosso 	4,0	1 099,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/cf/7c/beba56331cd02db06cbf6933f005.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	полусухое
 223	Cacciata Chianti Classico DOCG Riserva 	3,6	999,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/7a/9e/f5289d41ea8813bc220829716185.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
@@ -1200,7 +1906,6 @@ COPY public.perekrestok (id, name, rate, price, picture, shop_logo, color, sugar
 419	Les Chartrons Bordeaux AOC 	3,6	939,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/5c/42/144xd7530bce1980cf75aea0a573.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
 420	Henri Bourgeois Пуйи-Фюме Ан Травертен 	3,8	2 999,00 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/c5/1a/9e7bf8fa5b3d09c055d183b055e7.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
 421	Псоу 	-	559,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/83/4c/1775379b945b8983b0d2375f0976.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусладкое
-87	Don Simon 	3,0	519,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/89/bb/4ac504aa22755d8d689b2bfc530e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Красное	сухое
 395	Blanc de Talu 	3,5	519,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/xd/27/0193e88df9ed4f9c7149ef6bdf8b.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
 426	Monfort Village Semillon 	-	659,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/89/fc/ef7b949dbeba693c2eb89773363e.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	полусухое
 427	J.Bouchon Sauvignon Blanc Maule Valley DO 	3,5	999,99 ₽	https://cdn-img.perekrestok.ru/i/400x400-fit/xdelivery/files/ef/b1/3a366b18e8deb218ba6d2a59813d.jpg	https://toplogos.ru/images/thumbs/preview-logo-perekrestok.png	Белое	сухое
@@ -2879,6 +3584,7 @@ COPY public.vivino (id, name, rate) FROM stdin;
 1416	игристое Saint-Hilaire Бланкет де Лиму белое брют 12.5%, 750мл	3,6
 1417	игристое Tete de Cheval Брют Резерве белое брют 12% в подарочной упаковке, 750мл	3,6
 1418	игристое Zonin Просекко белое брют 11%, 750мл	-
+1525	ESSE Розе 	3,6
 1419	игристое Zonin Просекко белое брют 11%, 200мл	-
 1420	игристое Мучо Мас белое экстра драй, 750мл	3,6
 1421	игристое Casa Coller Prosecco белое брют п/у, 750мл	3,7
@@ -2986,7 +3692,6 @@ COPY public.vivino (id, name, rate) FROM stdin;
 1522	Sangre de Toro Verdejo Rueda DO 	3,7
 1523	Canti Chardonnay 	3,5
 1524	Напиток виноградосодержащий Фрезита 8%, 750мл	-
-1525	ESSE Розе 	3,6
 1526	Цвайгельт Красностоп Каберне Шато Тамань 	3,6
 1527	Паддл Крик Рислинг Розе Мальборо молодое 	3,6
 1528	Пфефферер Пинк молодое 	-
@@ -3023,6 +3728,699 @@ COPY public.vivino (id, name, rate) FROM stdin;
 1559	Tempo & Tierra Tempranillo 	3,4
 1560	Tempo & Tierra Crianza 	3,4
 1561	Las Pizarras Volcan Garnacha 	3,7
+1562	Глобус Вита Para Celsus Verdejo 	2,9
+1563	Aotearoa Sauvignon Blanc Marlborough 	4,1
+1564	Weinkellerstolz Gruner Veltliner 	4,1
+1565	Fassini Pinot Grigio 	3,7
+1566	GreenLife Совиньон Блан Мальборо 	3,7
+1567	Castillo de Almansa Вердехо-Совиньон Блан 	3,6
+1568	Castelvecchio Gavi 	3,8
+1569	игристое Абрау-Дюрсо Резерв 	3,4
+1570	Terras do Minho 	3,9
+1571	Pfefferer 	4,3
+1572	Lago 	-
+1573	Astrale Pinot Grigio Delle Venezie 	4,0
+1574	Solarita Pinot Grigio 	3,4
+1575	La Maiella Пассерина 	-
+1576	Alma Valley Sauvignon Blanc 	3,7
+1577	Morgado da Vila Loureiro Vinho Verde 	3,9
+1578	Глобус Цинандали 	-
+1579	Campelo Vinho Verde 	4,0
+1580	Mosel Urban Riesling 	4,2
+1581	Terre del Noce Pinot Grigio 	3,7
+1582	Villa Antinori Bianco Toscana 	3,8
+1583	El Pescaito Mersequera Sauvion Blanc 	3,9
+1584	Inkerman Riesling 	3,8
+1585	Lesehof Reisling Edition №12 	3,9
+1586	Усадьба Дивноморское Вторая линия Солнечный ветер 	3,9
+1587	Reinhartshausen Rheingau Riesling Trocken 	3,7
+1589	Fanagoria Авторское Шардоне-Совиньон 	3,6
+1590	Allan Scott Sauvignon Blanc 	3,9
+1591	Haussmann Sauvignon 	3,6
+1592	San Valentin Torres 	3,9
+1593	Bouchard Aine & Fils Beaune Cotes-du-Rhone 	3,7
+1594	Observer Reserve Sauvignon Blanc 	-
+1595	Мысхако Кюве Шардоне Алиготе 	3,6
+1597	Viu Manent Reserva Sauvignon Blanc 	3,6
+1598	Satyr Sauvignon Blanc Marlborough 	4,1
+1599	от Валерия Захарьина Кокур Сары Пандас 	-
+1600	Espiritu de Chile Sauvignon Blanc 	3,9
+1601	Traversa Sauvignon Blanc Uruguay 	3,4
+1602	Inkerman Korur Blanc (Кокур белый) 	3,7
+1603	Gaumen Spiel Gewurtztraminer 	4,1
+1604	Глобус Blanc Moelleux 	4,2
+1605	Глобус Corte Vinaia Chardonnay 	-
+1606	Глобус Ркацители 	3,5
+1607	Sol De Chile Sauvignon Blanc Chardonnay 	3,4
+1608	Ca'Delle Rose Pinot Grigio Delle Venezie 	3,8
+1609	Verdegar Vinho Verde 	4,1
+1610	Шардоне 	3,7
+1611	Fernweh Рислинг 	3,8
+1612	La Mariniere Muscadet Sevre & Maine 	3,7
+1613	Alma River Пино-Гриджио 	3,8
+1614	Henry Greuzard Макон Ля Рош Винёз 	3,9
+1615	Chardonnay 	3,9
+1616	Mastro Binelli Pinot Grigio Emilia 	3,9
+1617	Tbilisi Peak Tsinandali 	3,1
+1618	Sobremonte Airen Sauvignon Blanc 	3,8
+1619	Massai Viognier 	3,7
+1620	1000 Mil Hojas Rioja Blanco 	3,8
+1621	ликёрное Массандра Мускат белый Красного Камня 13 % алк., Россия, 0,75 л	-
+1622	ординарное Массандра 	3,8
+1623	Leth Gruner Veltliner Terrassen 	3,9
+1624	Fanagoria Sauvignon 	3,8
+1625	Ca'Delle Rose Pino Grigio 	3,8
+1626	Lesehof Gruner Veltliner edition №12 	3,7
+1627	Lirico Merseguera Sauvignon Blanc 	3,4
+1629	Cielo e Terra Trebbiano Pinot Grigio Veneto 	4,1
+1630	Gandin Chardonnay 	4,0
+1631	Az Abrau Bayanshira 	3,6
+1632	Nuviana Chardonnay 	3,6
+1633	Astrale Bianco 	3,9
+1588	Majano Айрен 	3,5
+1628	Barone Montalto Грилло 	3,8
+1634	Santa Hortensia Chardonnay 	3,5
+1635	Chateau Tamagne Fleurs du Sud Traminer 	3,4
+1636	Domus Vini Bianco 	-
+1637	Palatium Gewurztraminer 	3,8
+1638	Inkerman Мускатное Крымское 	3,6
+1639	Morgado da Vila Trajadura Vinho Verde 	3,6
+1641	Trapiche Sauvignon Blanc 	3,3
+1642	Zarafa Sauvignon Blanc 	3,6
+1643	Sonovino Бьянко 	3,3
+1644	Gran Passione Bianco 	3,9
+1645	Ballaro Vermentino 	4,0
+1646	Villa Fassini Trebbiano-Chardonnay Toscana 	4,0
+1647	Canti Pinot Grigio Veneto 	3,5
+1648	Gran Cita Del Sol Verdejo 	3,4
+1649	Портвейн Hooper's Lord Mayor White Porto сладкое 19 % алк., Португалия, 0,7...	3,4
+1650	Codici Бьянко 	4,1
+1651	Hamelin Bourgogne Chardonnay 	4,1
+1652	Casal Garcia Vinho Verde 	3,8
+1653	Lorch Riesling Gewurztraminer 	-
+1654	Wines & Beverages of Abkhazia Псоу 	3,7
+1655	Cuatro Ojos Chardonnay 	3,8
+1656	Le Rime Toscana Banfi 	3,6
+1657	J.Riehl Gewurztraminer 	4,1
+1658	Wine Day Chardonnay 	3,2
+1659	Salvalai Pinot Grigio 	3,7
+1660	Анакопия 	-
+1661	Gagauzia Reserve Chardonnay 	3,6
+1662	The Ned Pinot Grigio 	4,0
+1663	Castelvecchio Gavi Del Comune di Gavi 	3,9
+1684	Morgado da Vila Alvarinho Trajadura 	3,6
+1685	Cadis Pinot Grigio Delle Venezie 	3,4
+1686	Vinho Verde V 	3,5
+1687	Villa de Corgos Reserva 	4,1
+1688	Santa Hortensia Sauvignon Blanc Chardonnay 	3,7
+1689	Vina Esmeralda Catalunya 	4,0
+1690	Lorch Morio-Muskat 	3,9
+1691	Antico Portico Trebbiano d'Abruzzo 	3,6
+1692	KG Gries Sauvignon 	-
+1640	River Delta Совиньон Блан 	4,2
+1665	La Casada Pinot Grigio 	3,7
+1666	Rudolf Muller Riesling 	3,3
+1667	Ozzy Moscato 	4,6
+1668	Muenzenrieder Gruner Veltliner 	3,5
+1669	Doudet-Naudin Chardonnay VDF 	3,7
+1670	ликёрное Массандра Портвейн белый Алушта 17 % алк., Россия, 0,75 л	-
+1671	Passo Sardo Vermentino di Sardegna 	3,8
+1672	Crystal Bay Chardonnay 	3,4
+1673	Agora Мускат 	4,0
+1674	Closerie des Alisiers Макон-Виляж 	3,6
+1675	Biorebe Riesling 	3,8
+1676	Villa Grande White 	2,7
+1677	Premium 1904 Chardonnay 	3,4
+1678	Don Simon Sauvignon Blanc 	3,4
+1679	Donauherbst Gewurztraminer Lieblish 	3,7
+1680	Inkerman Chardonnay 	3,7
+1681	Caroline Bay Совиньон Блан 	4,4
+1683	Observer Sauvignon Blanc 	3,7
+1693	Baluarte Muscat 	4,2
+1694	La Trucha Albarino 	4,1
+1695	Крымвинторг Шардоне 	-
+1696	Tokaji Furmint Bognar 	3,2
+1697	La Piuma Пекорино 	3,4
+1698	Woow Torrontes 	4,1
+1699	Sol De Chile Chardonnay Reserva 	3,2
+1700	Andre Millot 	3,9
+1701	Golubitskoe Estate Rose 	4,0
+1703	Cielo e Terra Pinot Grigio Blush 	3,9
+1704	Arena de Oro Tempranillo Rosado 	3,1
+1705	Chateau Tamagne Cabernet Sauvignon 	3,6
+1706	Bardolino Chiaretto 	3,4
+1707	Lago Rose 	4,1
+1708	Flor De La Mar Rose 	-
+1709	ликёрное Солнечная Долина Мускатное Фестивальное 	4,2
+1710	Don Simon Tempranillo 	3,0
+1711	Villa Krim Muscat 	3,7
+1712	Crystal Bay Shiraz Rose 	3,1
+1713	Domus Vini Rose Rosato Veneto 	3,8
+1714	Ca'Delle Rose Soave Classico 	3,5
+1715	Lorch Portugieser Weissherbst 	3,1
+1716	Haussmann Baron Eugene 	3,5
+1717	Chateau Janon Bordeaux Blanc 	3,7
+1718	ликёрное Массандра Портвейн розовый Алушта 17 % алк., Россия, 0,75 л	-
+1719	KG Gries Müller Thurgau 	3,6
+1720	Momentum Solare Grenache Rose 	4,0
+1721	Villa "L" Gewurztraminer 	3,9
+1722	Плодовая алкогольная продукция Shahnazaryan Гранат красное полусладкое 12,5...	3,9
+1723	Verdegar Branco Escolha 	4,1
+1724	San Vigilio Pinot Grigio Rose 	3,6
+1725	La Battistina Gavi 	3,7
+1726	Chateau Tamagne Fleurs du Sud Rose de Tamagne 	3,4
+1727	La Piuma Гриджо 	3,4
+1728	Lia 	3,6
+1729	Villa Degli Olmi Sauvignon Blanc 	3,4
+1730	Whalebone Bay Sauvignon 	4,2
+1731	Tempo & Tierra Москатель 	-
+1732	Stobi Rose 	4,0
+1733	Domus Vini Pinot Bianco 	3,7
+1734	Peter & Peter Шпетбургундер 	3,7
+1735	Les Halles Cotes de GascogneRouge 	3,9
+1736	Marius Peyol Кото Декс Ан Прованс 	3,6
+1737	Juste Du Bon Vin Мускат 	-
+1738	Frescobaldi 	3,6
+1739	Массандра Херес Ореанда 	3,4
+1740	Levitation 	4,1
+1741	Balance Chenin Blanc/Colombar 	3,4
+1743	Tiempo & Tierra Шардоне 	3,6
+1744	Плодовая алкогольная продукция Shahnazaryan Ежевика красное полусладкое 12,...	3,9
+1745	Stobi Makedonsko Belo 	3,9
+1746	Figuiere Signature Magali 	3,9
+1747	Lorch Silvaner Halbtrocken 	3,5
+1748	Capellana Bobal 	3,2
+1749	Capellana Macabeo 	-
+1752	Gagauzia Reserve Merlot Rose 	4,0
+1753	Chateau Tamagne Chardonnay 	3,3
+1754	Reserve de Perly Cabernet D`Anjou 	3,8
+1755	Массандра Кокур 	3,4
+1756	Tornai Пинк Пино Гриджио 	3,5
+1757	Inkerman Шато Блан 	3,6
+1758	Freschello Rose 	2,9
+1759	Albert Bichot Chablis 	3,8
+1760	Paddle Creek Riesling Rose 	4,0
+1761	Castelvecchio Piemonte Cortese 	4,1
+1762	Rose a la Rose Cotes de Provence 	3,8
+1763	La Grupa Chenin Blanc Torrontes 	3,6
+1764	Алазанская Долина 	3,8
+1765	Antanio 	-
+1766	Плодовая алкогольная продукция Sangria Fruit полусладкое 11 % алк., Россия,...	3,9
+1767	Fanagoria Style Cabernet 	3,7
+1768	J.P. Chenet Grenache-Cinsault 	3,4
+1769	Alsace Bestheim Gewurztraminer Classic 	3,9
+1770	Vino Kalem Розэ 	3,8
+1771	Johann Donabaum Offenberg Riesling 	4,1
+1772	Elysis Rose D'Anjou 	3,9
+1773	Lorch Riesling Trocken 	3,2
+1774	Paradis Essenciel 	3,8
+1775	Moritzburg Riesling Halbtrocken 	4,1
+1776	Murviedro Cabernet 	3,5
+1777	Buon Giorno Bianco Semidolce 	4,1
+1778	Hamelin Petit Chablis бело сухое 12.5 % алк., Франция, 0,75 л	3,6
+1779	Cambridge Crossing Riesling 	3,8
+1780	Ionos Roditis-Syrah 	-
+1781	Chateau Coustaut la Grangeotte 	3,5
+1782	Sun Gate White Zinfandel 	4,1
+1783	Bodegas de Abalos 	3,2
+1784	La Croix De Gaillan Bordeaux Moelleux 	4,1
+1785	Messias Porto Rose 	3,5
+1682	Cavaliere 	3,7
+1702	Массандра Мускат 	3,6
+1751	Ballaro Греко 	-
+1664	Di Caspico Special Edition Рислинг 	3,5
+1742	Codici Розато 	3,3
+1786	Butcher's Cut Chardonnay 	3,5
+1788	The Mark Riesling 	3,9
+1790	Alen de Sanmartino Трейшадура 	-
+1792	Tokaji Harslevelu 	3,4
+1794	Antico Portico Grecanico Terre Siciliane 	4,0
+1796	Harve Azo Chablis 	4,1
+1798	Schmitt Sohne Wines Молоко любимой женщины 	3,8
+1802	Le Grand Noir Sauvignon Blanc 	3,7
+1803	Leth Duett Riesling & Veltliner 	4,0
+1823	ликёрное Массандра Мускатель белый 16 % алк., Россия, 0,75 л	-
+1826	Prinz von Preussen Шпэтлезе Рислинг 	3,6
+1828	San Vigilio Pinot Grigio 	3,6
+1830	Gato Negro Chardonnay 	3,2
+1832	Silverboom Chardonnay 	3,5
+1834	Chateau Villefranche Sauternes 	4,1
+1836	The Collection The Lemongrass Sauvignon blanc 	3,7
+1838	KG Gries Gewürztraminer 	3,9
+1840	Arnaldo-Caprai Grecante Colli Martani Grechetto 	3,7
+1842	Lesehof Riesling Reserve Premium Edition 	3,9
+1844	Sankt Anna Riesling Pfalz 	3,8
+1846	Arena de Oro Sauvignon Blanc 	3,3
+1848	Diez Siglos Sauvignon 	3,6
+1850	Peter & Peter Рислинг Штайллаге 	3,7
+1852	Pedras Negras Vinho Branco 	3,3
+1855	Портвейн Массандра Белый Сурож 17,5 % алк., Россия, 0,75 л	-
+1857	Lorch Grauburgunder Rivaner 	3,7
+1858	Agora Рислинг 	3,6
+1860	San Pietro Frascati Superiore 	3,6
+1862	Глобус Corte Vinaia Bianco 	-
+1864	Palabra de Caballero Vardejo La Mancha 	3,7
+1865	Tussock Jumper Moscato 	4,0
+1867	Weinhaus Cannis Riesling 	3,8
+1869	Tikves Рислинг 	3,8
+1871	Gandin Sauvignon 	3,8
+1873	Jardin Fleury Sauvignon Blanc Pays d'Oc 12 % алк., Франция, 0,75 л	3,7
+1875	Fedora Rivera 	3,6
+1877	Tavridia Мускат 	3,4
+1879	Bestheim Grand Cru Riesling AOC 	3,9
+1881	Ionos Roditis-Moschato 	3,0
+1883	Mar de Frades 	4,1
+1885	Die Jungen Frank'n Сильванер 	3,4
+1887	PMC Neubruch Chardonnay 	4,1
+1889	Gaetano Pinot Grigio Delle Venezie 	3,4
+1891	Domaine Laffitte Gros Manseng & Petit Manseng 	4,2
+1893	ликёрное Carlo Pellegrino Marsala Superiore Garibaldi 	3,6
+1895	Il Rocchin Gavi 	3,9
+1897	Крымвинторг Мускат нежный 	-
+1899	Крымский погребок Ркацители Мускат 	-
+1901	Lesehof Fleur 	4,1
+1903	Cape Zebra Chenin Blanc 	3,7
+1905	Askaneli Brothers Алазанская Долина 	4,0
+1907	Cuatro Ojos Sauvignon Blanc 	3,8
+1800	Palavani Хихви Квеври 	3,8
+1787	Chateau Tamagne Каберне Совиньон 	-
+1789	Ca' delle Rose Prosecco 	3,8
+1791	игристое Perle Rose Brut 11,5 % алк., Россия, 0,25 л	4,6
+1793	игристое Riunite Lambrusco Emilia Rose Amabile 	3,7
+1795	игристое Ca'Delle Rose Cuvee Rose Spago 	3,8
+1797	Крымский погребок Мускат 	-
+1799	Rivera Rose Castel del Monte 	3,5
+1804	Плодовая алкогольная продукция Shahnazaryan Вишня красное полусладкое 12,5...	3,9
+1805	Silverboom Pinotage Rose 	3,6
+1806	Canada Rosado 	3,1
+1807	Cape Zebra Rose 	3,2
+1808	Marcel Martin Les Versaines Rose de Loire 	3,7
+1809	Плодовая алкогольная продукция Shahnazaryan Малина красное полусладкое 12,5...	3,9
+1810	Liegenfeld Cabernet Sauvignon 	4,1
+1811	Belagaio Kitri Rosato 	-
+1812	Rudolf Muller Дорнфельдер 	3,3
+1813	Плодовая алкогольная продукция Shahnazaryan Абрикос белое полусладкое 12,5...	3,3
+1814	игристое Золотая Балка Балаклава Reserve 	3,6
+1815	игристое Абрау-Дюрсо Русское 	3,3
+1816	игристое жемчужное Anjos de Portugal Vinho Verde 	3,7
+1817	игристое Inkerman 	-
+1818	Напиток слабоалкогольный Santo Stefano Rose Amabile розовый полусладкий газ...	3,5
+1819	игристое Martini Prosecco Rose Extra Dry 11,5 % алк., Италия, 0,75 л	3,7
+1820	игристое Corte Dei Rovi Raboso Rose 	4,2
+1821	игристое Beiral Vineyards Frisante 	3,9
+1822	игристое La Gioiosa Rosea Brut 	4,0
+1824	игристое Bosseq Frizzante Rose брют 12,5 % алк., Венгрия, 0,25 л	4,6
+1825	игристое Fanagoria Rose semisweet 	-
+1827	игристое Canti Cuvee Rose 	3,9
+1829	игристое Louis Vallon Cremant De Bordeaux 	3,9
+1831	игристое La Gioiosa Prosecco Rose Millesimato 	4,0
+1833	игристое Freixenet Premium-Cava Rose 	3,6
+1835	игристое La Petite Perle Rose 	3,8
+1837	игристое Глобус Corte Vinaia Spumante Rose 	3,3
+1839	игристое Bernard Remy Champagne Rose 	3,8
+1841	игристое Patrizi Suagna Rose 	4,1
+1843	игристое Lou Lou Rose 	3,3
+1845	игристое Mondoro Prosecco Rose в подарочной упаковке 11 % алк., Италия...	4,0
+1847	игристое Lambrusco Rosato 	3,9
+1849	игристое Duc de Paris Rose Prestige 	3,4
+1851	игристое Fresita Natural Origin с мякотью клубники 	3,8
+1853	игристое жемчужное ZB wine Frizzante 	-
+1854	игристое Perle 	3,8
+1856	игристое Tbilisi Peak 	4,0
+1859	игристое Ahso брют 	-
+1861	игристое Duc de Paris Brut 	3,2
+1863	Шампанское Абрау-Дюрсо Victor Dravigny 	3,9
+1866	Шампанское Дербентское Российское 	-
+1868	игристое Лыхны 	3,8
+1870	игристое Левъ Голицынъ 	3,6
+1872	игристое Lambrusco Emilia Porta Soprana Rosato Amabile 	3,8
+1874	Винный напиток Santo Stefano Rose розовый полусладкий газированный 8 % алк....	3,5
+1876	игристое Cinzano Rose 	3,7
+1878	игристое Riunite Lambursco Rose полусладкое 8 % алк., Италия, 0,187 л	2,9
+1880	игристое Villa de Corgos Rose 	3,8
+1882	игристое Глобус Lambrusco Emilia Rosato 	3,9
+1884	игристое Con-Tre Rose 	3,8
+1886	игристое Mastro Binelli Moscato Semidolce 	4,3
+1888	игристое Nuviana Cava 	3,7
+1890	игристое Freixenet Cordon Negro Cava 	3,6
+1892	игристое Fonte Conegliano Valdobbiadene Prosecco Superiore брют 	3,9
+1894	игристое Ca'Delle Rose Asolo Prosecco Superiore 	4,2
+1898	игристое Mondoro Gran Cuvee 	3,7
+1900	игристое Canti Prosecco 	3,7
+1902	игристое Глобус Rubinat Cava брют 	3,7
+1904	игристое Ca'Delle Rose Prosecco Extra Dry 	4,0
+1906	игристое Cinzano Prosecco 	3,7
+1908	игристое Perle Brut 	3,8
+1909	KG Gries Goldmuskateller Moscato Giallo 	4,2
+1910	игристое Casa Bell'Albero Lambrusco Dell'Emilia 	3,7
+1911	игристое Fanagoria White Brut 	3,6
+1912	ликёрное Массандра Мадера 	-
+1913	игристое Riunite D'Oro Amabile 	4,4
+1914	Campero Совиньон Блан 	3,7
+1915	игристое Золотая Балка Балаклава Reserve Brut 	3,6
+1916	Lorch Riesling Lieblich 	3,9
+1917	игристое La Gioiosa Prosecco Treviso 	3,7
+1918	La Piuma Рислинг 	3,4
+1919	игристое Mastro Binelli 	4,3
+1920	Canada Verdejo 	3,7
+1921	игристое Canti Cuvee Dolce 	3,8
+1922	Inkerman Алиготе сухое 	3,5
+1923	Victor Contarini просекко 	3,7
+1924	игристое Castelvecchio Asti 	3,5
+1925	Арвы Дуар Совиньон 	-
+1926	игристое Martini Prosecco 	3,6
+1927	игристое Villa Degli Olmi Prosecco Extra Dry брют 	3,5
+1928	игристое Золотая Балка Балаклава Muscat 	3,8
+1896	игристое Абрау-Дюрсо Виктор Дравиньи 	3,9
+1929	Rioja Bodegas De Abalos 	3,2
+1931	PMC Beerenauslese 	4,0
+1933	Desono Шардоне 	3,4
+1935	E Arte Puglia 	3,7
+1936	Liegenfeld Грюнер Вельтлинер 	3,7
+1938	креплёное Gonzales Byass Херес Fino Sherry Palomino 15 % алк., Испания...	3,8
+1940	El Sotillo Blanco Cosecha 	2,8
+1942	Care Шардоне 	3,4
+1944	Fanagoria Style Chardonnay 	3,6
+1949	Allan Scott Pinot Gris 	3,7
+1965	Массандра Алиготе 	3,1
+1968	Mastro Binelli Malvasia 	3,7
+1971	Prinz von Preussen Олд Вайнс Рислинг 	3,6
+1974	Briccotondo Langhe Arneis 	3,9
+1976	Maria de Molina Verdejo 	3,5
+1979	ликёрное Солнечная Долина Портвейн Крымкский 	-
+1981	Авторское Виорика 	3,6
+1983	Ciconia Verdelho 	3,5
+1985	Closerie des Alisiers Chablis Vieilles vignes 	3,6
+1987	Muenzenrieder Welschriesling 	-
+1989	Marchesi di Barolo Gavi di Gavi 	3,7
+1991	Montecelli Soave 	3,5
+1993	Stobi Grasevina 	3,7
+1995	Lugana Novacorte 	4,2
+1997	Palavani Ркацители Квеври 	3,8
+1999	Цард Мцване 	-
+2001	Finca La Olma Verdejo 2020 	3,6
+2003	Грузвинпром Цинандали 	4,0
+2005	Codos de Larouco Godello 	3,7
+2007	Valserrano Blanco Rioja 	3,7
+2009	G7 Chardonnay 	3,4
+2011	Legenfeld Muscato Leicht & Lieblich 9.5 % алк., Австрия, 0,75 л	3,5
+2013	J.P. Chenet Colombard-Chardonnay 	3,6
+2015	Toubes 	4,1
+2018	Флейта-Позвоночник Мускат Рислинг 	-
+2020	Mastri Vernacoli Pinot Grigio 	3,6
+2022	Villa "L" Weisser Burgunder 	3,7
+2024	Castelvecchio Roero Arneis 	3,4
+2028	Hoya De Cadenas Chardonnay Sauvignon Blanc 	3,5
+2032	PMC Trockenbeeren Muskat 	-
+2034	Чайка Мускат 	4,3
+2036	Vigne-Lourac Colombard-Sauvignon 	-
+2038	Majano Airen 	2,6
+2040	Domaine Preignes le Vieux Sauvignon 	3,6
+2042	Dama de Toro Malvasia 	3,8
+2044	Wine Day Blanc 	3,9
+2046	Orran Kangun & Viognier 	3,9
+2048	The Wedge Chenin Blanc Roussanne 	3,8
+2050	Cantina Lavis Riesling 	3,7
+2052	Lorch Kerner Lieblich 	3,5
+2054	Liegenfeld Sauvignon Blanc 	3,7
+2056	Joy Бланко 	3,9
+2058	Quinta dos Aciprestes Douro 	3,8
+2060	Batasiolo Gavi 	3,9
+2062	Good Steak Шардоне 	3,2
+2064	Gotz Tokaji Aszu 6 Puttonyos 	4,3
+2066	Tres Leones Moscatel de Alejandria сладкое 	-
+2068	Johann Donabaum Kirchweg Gruner Veltliner Smaragd 	4,1
+2070	Tbilisi Peak Твиши 	4,0
+2072	Solarita Soave 	3,5
+2076	Reserve de Perly Muscadet 	3,8
+2078	San Valero Carinena Macabeo 	3,2
+2080	Gardi Boccadigabbia 	3,4
+2082	игристое Villa Degli Olmi Pinot Grigio Extra Dry брют 	4,1
+2084	Nobilomo Malvasia 	4,5
+2086	Vino Kalem Рислинг 	2,9
+2088	Quinta de Cidro Sauvignon Blanc 	4,0
+2090	ликёрное Valdouro White Port 	3,7
+2092	Inkerman Жемчужина Гранд Резерв сухое 	3,8
+2094	Cave de Bennwihr Sylvaner Tradition 	3,3
+2096	Carlo Lenotti Soave Classico 	3,7
+2098	Le Grand Fief Muscadet 	3,8
+2100	Bosca Stories of Italy Malvasia Emilia 	3,6
+2102	Vinha do Rosario Moscatel de Setubal 	3,6
+2104	Terre del Noce Pinot Grigio Dolomiti 	3,7
+2106	Cimmeria Шардоне-Алиготе 	3,8
+2108	Массандра Мадера Крымская 	3,7
+2110	ликёрное Alexandro Sherry Oloroso 	3,9
+2112	Sankt Anna Riesling Pur Mineral Pfalz 	3,8
+2114	ликёрное Misterio Dulce 	3,7
+2116	Винный напиток Gran Torino Бьянко 	3,8
+2118	Peter & Peter Граубургундер 	3,7
+2120	Carson's Chardonnay 	3,7
+2122	Trenel Bourgogne Chardonnay 	3,8
+2124	River Route Gewurztraminer Pfalz 	3,5
+2126	Hello World! Viognier 	3,4
+2128	Acharuli Ркацители 	3,3
+2130	Tornai Премиум Сюркебарат 	3,9
+2132	Estaciones Verdejo 	3,6
+2133	Bienbebido Pulpo 	3,5
+2135	Famille Sadel Côtes Du Rhône Blanc 	3,6
+2137	ликёрное Candela Cream 	4,2
+2139	ликёрное La Ina Fino 	3,5
+2141	Vina Albali Verdejo-Sauvignon Blanc 	3,4
+2143	Bisci Verdicchio Di Matelica 	3,8
+2145	Messias Porto White Dry 	3,5
+2147	Citran Le Bordeaux 	3,6
+2149	Conde Otinano Blanco Verdejo 	3,7
+2026	Belisario Пекорино Терре Ди Кьети 	3,3
+2074	Belisario Кабраччо 	3,4
+2030	Sankt Annaberg Буррвайлер Шевер 	4,0
+1930	игристое Falconello Cuvee Blanche 	4,2
+1932	Шампанское Moёt & Chandon Imperial 	4,1
+1934	Шампанское Крымский Винный завод Российское 	2,8
+1937	игристое Дербентское Российское 	-
+1939	игристое Di Caspico Special Edition 	3,9
+1941	игристое Valdo Prosecco extra dry 	3,7
+1943	игристое Fanagoria White semisweet 	3,4
+1945	игристое Veuve Clicquot 	4,3
+1946	игристое Cantine Castelvecchio Brut Millesimato 	4,2
+1947	игристое Villa Sandi Valdobbiadene Prosecco Superiore 	3,9
+1948	игристое Villa Rustica Riesling 	-
+1950	игристое Valery Zaharin Кокур Classic 	3,7
+1951	игристое Inkerman Muscat 	4,0
+1952	игристое Lambrusco Dell'Emilia Cascina S.Maria 	3,7
+1953	игристое Martini Asti 	3,8
+1954	Шампанское Jacquart Mosaique брют 	2,5
+1955	Напиток слабоалкогольный Santo Stefano Bianco Amabile белый полусладкий газ...	3,5
+1956	игристое Ca'Delle Rose Prosecco Spago 	3,8
+1957	игристое Gaetano Prosecco Extra Dry 	4,1
+1958	игристое Mondoro Asti 	4,4
+1959	Шампанское Новый Светъ Российское коллекционное 	-
+1960	игристое Эндемы Рислинг Брют 12,5 % алк., Россия, 0,75 л	2,5
+1961	игристое Абрау-Дюрсо Императорское 	3,4
+1962	игристое Lanson Black Label Brut 	3,9
+1963	игристое выдержанное Joseph Verdier Трезор де Луар Креман де Луар бело...	3,9
+1964	игристое Ca' delle Rose Spumante Millesimato 	3,6
+1966	игристое Canti Asti 	4,0
+1967	игристое Patrizi Cuvee Suagna 	3,4
+1969	игристое Mionetto Prosecco 	3,6
+1970	игристое Ca'Delle Rose Prosecco 	3,8
+1972	игристое Duc de Paris Doux 	3,3
+1973	игристое Louis Vallon Cremant de Bordeaux 	3,9
+1975	игристое жемчужное Ca'del Doge Fioroso Cuvee Frizzante 	4,0
+1977	игристое жемчужное Глобус Ламбруско Эмилия Бьянко 	-
+1978	игристое Эндемы Совиньон 	3,6
+1980	игристое Mondoro Extra Dry Prosecco 	4,1
+1982	игристое Freixenet Cava Carta Nevada 	3,8
+1984	игристое Villa Degli Olmi Pinot Grigio 	4,1
+1986	игристое Ca'Delle Rose Moscato 	3,9
+1988	игристое Martini 	3,8
+1990	игристое Acquesi Асти 	4,1
+1992	игристое Bernard Remy Carte Blanche 	3,8
+1994	Шампанское Левъ Голицынъ Российское 	3,1
+1996	игристое Villa Sandi Il Fresco Sauvignon Blanc 	3,6
+1998	игристое Cremant d’Alsace Bennwihr AOC 	3,5
+2000	игристое Terredirai Просекко 	-
+2002	игристое Dejean & Fils Blanc de Blancs 	3,6
+2004	игристое Cave de Bissey Cremant de Bourgogne Brut 	3,7
+2006	игристое Глобус Corte Vinaia Spumante 	3,3
+2008	игристое Barone Montalto Пино Гриджо 	4,0
+2010	игристое Lergen Muller Riesling Brut 	3,7
+2012	игристое Mucho Mas Extra Dry 	4,2
+2014	игристое Bellavista Franciacorta Alma Gran Cuvee брют 	3,9
+2016	Напиток слабоалкогольный Santo Stefano Bianco белый полусухой газированный...	3,5
+2017	игристое Cava La Dama 	4,0
+2019	игристое Con-Tre Bianco 	3,5
+2021	игристое Cantine Castelvecchio Moscato 	3,8
+2023	игристое Anno Domini Prosecco Bio 	3,7
+2025	Шампанское выдержанное Новый Светъ Российское 	-
+2027	игристое Lambrusco Emilia Porta Soprana Bianco Amabile 	3,4
+2029	Напиток слабоалкогольный Santo Stefano Vacanze Romane Amabile белый полусла...	3,3
+2031	игристое Veuve Ambal Grande Cuvee 12 % алк., Франция, 0,75 л	3,7
+2035	игристое Эндемы Шардоне Брют 12,5 % алк., Россия, 0,75 л	-
+2037	игристое Pierre Cellier Prestige игристое 	4,1
+2039	игристое Secolo Ventunesimo Millesimato Spag 	3,8
+2041	Напиток слабоалкогольный Santo Stefano Matrimonio Siciliano Amabile белый п...	3,7
+2043	игристое Mastro Binelli Premium Malvasia 	3,7
+2045	игристое Fiestino 	3,4
+2047	игристое Valdo Origine брют 	3,9
+2049	игристое Villa de Corgos Blanc de Blancs 	3,6
+2051	игристое Dom Caudron 	4,0
+2053	игристое Vinart Cava 	3,7
+2055	игристое Cinzano Asti 	3,9
+2057	игристое Lambrusco Bianco 	3,7
+2059	игристое Ferrari 	3,8
+2061	игристое Gaetano Ламбруско 	3,3
+2063	игристое Torre Oria Cava 	3,5
+2065	игристое Maschio dei Cavalieri Prosecco Extra Dry 	3,7
+2067	игристое Nobilomo Spumante Dolce Malvasia 	4,4
+2069	игристое Cava Codorniu Clasico Brut 	3,5
+2071	игристое Patrizi Cuvee Extra Dry сухое 	3,6
+2073	игристое Bosseq Frizzante White брют 11,5 % алк., Венгрия, 0,25 л	3,7
+2075	Алкогольный напиток Abrau Light белый полусладкий 8 % алк., Россия, 0,25 л	3,5
+2077	игристое Castelvecchio Moscato D'asti 	4,1
+2079	игристое Beiral Vineyards Frisant 	3,9
+2081	игристое La Gioiosa Prosecco 	3,7
+2083	игристое Veuve Amiot Cremant de Loire 	3,6
+2085	игристое Ferrero Leonardo 	2,9
+2087	игристое Mastro Binelli Premium Ortrugo 	4,4
+2089	игристое Глобус Rubinat Cava полусухое 	3,7
+2091	игристое Lambrusco Bianco Emilia Righi 	4,0
+2093	игристое La Petite Перле 	4,1
+2095	игристое Villa de Corgos Bical & Arinto 	3,8
+2097	игристое Casa de Santar 	3,8
+2099	игристое Tete de Cheval Brut 	4,0
+2101	игристое Villa de Corgos 	3,8
+2103	игристое Lunetta Prosecco 	3,6
+2105	игристое коллекционное Новый Светъ Полусухое 	3,7
+2107	GreenLife Sauvignon Blanc Bubbles 	4,3
+2109	игристое Mastro Binelli Premium Brut 	3,7
+2111	игристое Castillo Santa Barbara Muscato 	3,6
+2113	игристое Quanto Basta Prosecco Extra Dry брют 	3,4
+2115	игристое Aristov Cuvee Alexander Blanc de Noirs 	3,7
+2117	игристое Valsa Nuovo Perlino Asti Secco 	4,2
+2119	игристое Veuve Ambal Blanc de Blancs Cremant de Bourgogne 	3,8
+2121	игристое Эндемы Ркацители 	3,7
+2123	игристое Antech Esprit de Bulles Doux 	3,9
+2125	игристое Con-Tre Moscato 	4,2
+2127	игристое Wines & Beverages of Abkhazia Лыхны 	3,8
+2129	игристое Andre Renard брют 9,1-15 % алк., Франция, 0,75 л	4,6
+2131	игристое Mastio della Loggia 	3,8
+2134	игристое Cava La Dama розовое брют 11,5 % алк., Испания, 0,75 л	3,9
+2136	игристое Ca'del Bosco Cuvee Prestige 	4,1
+2138	игристое La Petite Perle White 	-
+2140	игристое Freixenet Cava Cordon Negro 	3,6
+2142	игристое Quanto Basta Lambrusco Bianco Dell'Emilia 	4,1
+2144	игристое Santo Isidro de Pegoes 	3,6
+2146	игристое Galoppo Favorito 	-
+2148	Винный напиток Santo Stefano Bianco белый полусладкий газированный 8 % алк....	3,5
+2150	игристое Gaetano Spumante 	4,0
+2151	J.P. Chenet Original Colombard-Sauvignon 	3,4
+2152	игристое Vinha do Rosario 	3,6
+2153	Vols Ayler Riesling 	4,1
+2154	игристое Nobilomo Spumante Dolce Bianco 	-
+2155	Lugana Cento Filari Cesari 	3,7
+2156	Шампанское Крымское Наследие Российское 	2,8
+2157	Gustave Lorentz Gewurztraminer Reserve 	3,6
+2158	игристое Fiestino Dolce 	4,0
+2159	Clivier Fricon Chablis 	3,9
+2160	игристое Patrizi Suagna 	4,1
+2161	Murviedro Verdejo 	3,7
+2162	игристое Mastro Binelli Premium Moscato 	4,3
+2163	Askaneli Brothers Manavi 	3,8
+2164	игристое Inkerman Кокур Zero Dosage 	3,7
+2165	Michel Шардоне 	3,9
+2166	игристое Andre Renard 	3,5
+2167	Casa de Santar Vinha Dos Amores 	4,4
+2168	игристое Freixenet Carta Nevada Cava 	3,8
+2169	игристое Gaetano Asti Dolce 	4,3
+2170	Albert Bichot Petit Chablis 	3,8
+2171	Territori Vocati Orvieto Classico 	3,6
+2172	el Gordo Macabeo 	3,3
+2173	PMC Trockenbeeren Scheurebe 	4,2
+2174	Belagaio Vernaccia di San Gimignano 	-
+2175	Wines & Beverages of Abkhazia Диоскурия 	3,7
+2176	Chateau de Fesles La Chapelle 	3,7
+2178	Chateau de Carolle Graves 	3,6
+2179	Inkerman Легенда Инкермана 	3,8
+2180	Броjаница Рислинг 	-
+2181	Tenuta Maccan Pinot Grigio 	4,0
+2182	La Pavillon du Roy Muscadet Sevre et Maine sur Lie 	4,0
+2183	Closerie des Alisiers Chablis 1er Cru Beauroy 	-
+2184	Liegenfeld Gruner Veltliner 	3,5
+2185	Les Jamelles Muscat Sec 	3,9
+2186	Vinedos del Villar Chardonnay 	3,8
+2187	Premium 1904 Sauvignon Blanc 	3,6
+2189	Pirineos Somontano 	3,5
+2190	Loving Vincent Des Gracieuses Vignes Blanc 	4,0
+2191	Vol I Dol Blanc сухое 	3,5
+2192	Cybelle Cotes de Gascogne 	3,9
+2193	Nobilomo Pinot Grigio Delle Venezie 	4,0
+2194	ликёрное Carlo Pellegrino Marsala Superiore Old Marsala 	4,1
+2195	Salida Sauvignon Blanc 	3,5
+2196	Tokaji Furmint 	3,9
+2197	Грузвинпром Ркацители Оранжевое 	3,6
+2198	Majano Sauvignon Blanc-Airen 	2,6
+2199	Marques de Villanueva Macabeo Carinena 	3,4
+2200	ликёрное Moscatel Naranja 15 % алк., Испания, 0,5 л	3,8
+2201	Арвы Дуар Шардоне 	4,2
+2202	Мадера Blandy's Duka of Sussex 19 % алк., Португалия, 0,75 л	3,7
+2203	Arcana Nova бело полусухое 10,5 % алк., Португалия, 0,75 л	4,2
+2204	Tres Amigos Blanco Seco 	3,7
+2205	Gandin Filare Bianco 	4,1
+2206	Ribona Colli Maceratesi Boccadigabbia 	3,7
+2207	Glusserath Eifel Лоренциусберг 	3,8
+2208	Sankt Annaberg Гляйсвайлер Хелле 	3,9
+2209	Chateau Paradis Essenciel 	3,8
+2210	Gandin Friulano 	3,9
+2211	Vidal Seleccion 	3,7
+2212	Closerie des Alisiers Bourgogne Chardonnay 	3,5
+2213	Braunewell Unser Täglich Riesling 	3,8
+2214	Terre di Chieti Pecorino Vellodoro 	3,7
+2188	Ballaro Грилло 	-
+2215	Bestheim Pinot Gris des Chasseurs AOC 	3,8
+2216	игристое Vina Esmeralda 	4,0
+2217	Isla Oro Айрен 	3,1
+2218	Antico Portico Falanghina Beneventano 	3,7
+2219	Pouilly-Fume Domaine Tabordet 	4,0
+2220	ликёрное Misterio Naranja 	4,3
+2221	Tempo & Tierra Вердехо 	-
+2222	Bouchard Aine & Fils Chardonnay Bourgogne 	3,8
+2223	Флейта-Позвоночник Алиготе Шардоне 	-
+2224	PMC Neubruch Sauvignon Blanc 	4,1
+2225	Alsace Lucien Albrecht Gewurztraminer 	3,9
+2227	Сихарули Цинандали 	-
+2228	KG Gries Weissburgunder Pinot Bianco 	3,7
+2229	Tornai Фурминт 	3,5
+2230	Peter & Peter Вайсбургундер 	3,7
+2231	Michele Chiarlo Nivole Moscato D'Asti 	4,2
+2232	La Maiella Пекорино 	-
+2233	La Piuma Орвието Классико 	3,4
+2234	Closerie des Alisiers Petit Chablis 	3,7
+2235	Броjаница Шардоне 	-
+2236	Liegenfeld Pinot Blanc 	3,5
+2237	Morgado da Vila Alvarinho 	3,8
+2238	Trenel Pouilly Fuisse AOC Шардоне 	4,0
+2239	Cantina Lavis Gewurztraminer 	4,0
+2240	Glusserath Eifel Каульсбор Уральте Ребен 	3,8
+2241	PMC Trockenbeeren Sauvignon 	-
+2242	Casa de Santar Curtimenta 	4,3
+2244	Bestheim Muscat Classic Alsace 	4,1
+2245	PMC Trockenbeeren Auslese Traminer 	-
+2246	PMC Trockenbeeren Welschriesling 	3,9
+2247	Liegenfeld Chardonnay 	-
+2248	Hannes Sabathi Weissburgunder 	3,6
+2249	Hannes Sabathi Leutschach 	3,8
+2250	ординарное Karas White Bland 	3,9
+2251	Anjos de Portugal 	3,7
+2252	by Haussmann Syrah 	3,5
+2253	GreenLife Sauvignon Blanc Blush Marlborough 	4,2
+2254	El Pescaito Bobal Grenache 	3,6
+2033	игристое Henkel Blanc De Blancs 	3,5
+1750	Pfefferer Пинк 	4,1
+1596	Villa de Corgos Vin Blanc 	3,8
+2226	Ballaro Фиано 	-
+2177	Belisario Вальбона Вердиккио Ди Мателика 	3,5
+2243	Belisario Пассерина 	3,2
+1801	Casa de Santar	4,0
 \.
 
 

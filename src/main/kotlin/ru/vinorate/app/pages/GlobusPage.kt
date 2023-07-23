@@ -22,7 +22,7 @@ class GlobusPage {
 
     val pagesCount by lazy {
         `$`(Selectors.byXpath("//div[@class='catalog-section__items d-row d-row_ib js-catalog-section-items']")).getAttribute(
-            "data-pageCount"
+            "data-pagecount"
         )
     }
     val nextPageButton by lazy {
@@ -84,6 +84,10 @@ class GlobusPage {
                 listOfWineSugar.add("полусладкое")
             } else if (webElement.text.contains("сладкое")) {
                 listOfWineSugar.add("сладкое")
+            } else if (webElement.text.contains("брют")) {
+                listOfWineSugar.add("брют")
+            } else if (webElement.text.contains("extra dry")) {
+                listOfWineSugar.add("extra dry")
             } else {
                 listOfWineSugar.add("-")
             }

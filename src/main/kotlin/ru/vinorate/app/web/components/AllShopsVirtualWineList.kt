@@ -129,7 +129,7 @@ class AllShopsVirtualWineList(
             }
             .filter {
                 if (sugarComboBox.isEmpty()) {
-                    it.sugar == "сухое" || it.sugar == "полусухое"
+                    it.sugar == "сухое" || it.sugar == "полусухое" || it.sugar == "брют" || it.sugar == "extra dry"
                 } else {
                     it.sugar in sugarComboBox
                 }

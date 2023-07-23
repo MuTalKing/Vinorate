@@ -60,7 +60,7 @@ class Filters(
         selectColor.isVisible = false
 
         sugarComboBox.label = "Сахар"
-        sugarComboBox.setItems("Сухое", "Полусухое", "Сладкое", "Полусладкое")
+        sugarComboBox.setItems("Сухое", "Полусухое", "Сладкое", "Полусладкое", "Брют", "Extra dry")
         sugarComboBox.placeholder = "Содержание сахара"
         sugarComboBox.isVisible = false
 

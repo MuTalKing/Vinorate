@@ -17,7 +17,7 @@ class GlobusDbProcessorImpl(
         TODO("Not yet implemented")
     }
 
-    override fun getGlobusWineNames(page: String, color: String) {
+    override fun getGlobusWineNames(page: String, color: String, type: String) {
         globusService.prepare(page)
         val globusWineNames = mutableListOf<String>()
         val globusWinePrices = mutableListOf<String>()
@@ -37,7 +37,9 @@ class GlobusDbProcessorImpl(
             globusService.getWineSugar().forEach {
                 globusWineSugar.add(it)
             }
-            globusService.nextPageButton.scrollIntoView(false).click()
+            if (pageNumber < globusService.pagesCount!!.toInt()) {
+                globusService.nextPageButton.scrollIntoView(false).click()
+            }
         }
         for (wine in 1 until globusWineNames.size) {
             vivinoService.insertIntoDB(
@@ -48,7 +50,7 @@ class GlobusDbProcessorImpl(
                 shop = Globus(),
                 dbService = globusDbService,
                 shopLogo = "https://toplogos.ru/images/thumbs/preview-logo-globus.jpg",
-                color = color,
+                color = type,
                 sugar = globusWineSugar[wine - 1]
             )
         }
