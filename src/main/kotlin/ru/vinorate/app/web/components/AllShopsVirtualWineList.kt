@@ -108,10 +108,10 @@ class AllShopsVirtualWineList(
         if (name.isEmpty()) updateVirtualList(shop, minPrice, maxPrice, color, sugarComboBox)
         else {
             when (shop) {
-                "" -> setItems(globusWines.plus(perekrestokWines).filter { it.name.contains(name.lowercase()) }
+                "" -> setItems(globusWines.plus(perekrestokWines).filter { it.name.lowercase().contains(name.lowercase()) }
                     .sortedByDescending { it.rate }.toSet())
                 "Все магазины" -> setItems(
-                    globusWines.plus(perekrestokWines).filter { it.name.contains(name.lowercase()) }
+                    globusWines.plus(perekrestokWines).filter { it.name.lowercase().contains(name.lowercase()) }
                         .sortedByDescending { it.rate }.toSet()
                 )
                 "Перекрёсток" -> setItems(
