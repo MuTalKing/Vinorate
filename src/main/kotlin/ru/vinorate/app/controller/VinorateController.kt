@@ -4,18 +4,18 @@ import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.ResponseStatus
 import org.springframework.web.bind.annotation.RestController
-import ru.vinorate.app.processor.impl.GlobusDbProcessorImpl
-import ru.vinorate.app.processor.impl.PerekrestokDbProcessorImpl
+import ru.vinorate.app.processor.impl.GlobusProcessorImpl
+import ru.vinorate.app.processor.impl.PerekrestokProcessorImpl
 
 @RestController
 class VinorateController(
-    val perekrestokDbProcessorImpl: PerekrestokDbProcessorImpl,
-    val globusDbProcessorImpl: GlobusDbProcessorImpl
+    val perekrestokProcessorImpl: PerekrestokProcessorImpl,
+    val globusProcessorImpl: GlobusProcessorImpl
 ) {
     @GetMapping("/createPerekrestokRedWines")
     @ResponseStatus(HttpStatus.OK)
     fun createPerekrestokRedWines() {
-        perekrestokDbProcessorImpl.getPerekrestokWineNames(
+        perekrestokProcessorImpl.process(
             page = "https://www.perekrestok.ru/cat/c/2/vino?filter.tsvet-vina=krasnoe",
             color = "Красное"
         )
@@ -24,7 +24,7 @@ class VinorateController(
     @GetMapping("/createPerekrestokWhiteWines")
     @ResponseStatus(HttpStatus.OK)
     fun createPerekrestokWhiteWines() {
-        perekrestokDbProcessorImpl.getPerekrestokWineNames(
+        perekrestokProcessorImpl.process(
             page = "https://www.perekrestok.ru/cat/c/2/vino?filter.tsvet-vina=beloe",
             color = "Белое"
         )
@@ -33,7 +33,7 @@ class VinorateController(
     @GetMapping("/createPerekrestokRoseWines")
     @ResponseStatus(HttpStatus.OK)
     fun createPerekrestokRoseWines() {
-        perekrestokDbProcessorImpl.getPerekrestokWineNames(
+        perekrestokProcessorImpl.process(
             page = "https://www.perekrestok.ru/cat/c/2/vino?filter.tsvet-vina=rozovoe",
             color = "Розовое"
         )
@@ -42,7 +42,7 @@ class VinorateController(
     @GetMapping("/createPerekrestokSparklingWhiteWines")
     @ResponseStatus(HttpStatus.OK)
     fun createPerekrestokSparklingWhiteWines() {
-        perekrestokDbProcessorImpl.getPerekrestokWineNames(
+        perekrestokProcessorImpl.process(
             page = "https://www.perekrestok.ru/cat/c/3/igristye-vina",
             type = "Игристое",
             color = "Белое"
@@ -52,7 +52,7 @@ class VinorateController(
     @GetMapping("/createPerekrestokSparklingRoseWines")
     @ResponseStatus(HttpStatus.OK)
     fun createPerekrestokSparklingRoseWines() {
-        perekrestokDbProcessorImpl.getPerekrestokWineNames(
+        perekrestokProcessorImpl.process(
             page = "https://www.perekrestok.ru/cat/c/3/igristye-vina",
             type = "Игристое",
             color = "Розовое"
@@ -62,19 +62,19 @@ class VinorateController(
     @GetMapping("/createPerekrestokWinesRate")
     @ResponseStatus(HttpStatus.OK)
     fun createPerekrestokWinesRate() {
-        perekrestokDbProcessorImpl.getVivinoRate()
+        perekrestokProcessorImpl.getVivinoRate()
     }
 
     @GetMapping("/truncatePerekrestokWines")
     @ResponseStatus(HttpStatus.OK)
     fun truncatePerekrestokWines() {
-        perekrestokDbProcessorImpl.truncatePerekrestokTable()
+        perekrestokProcessorImpl.truncateTable()
     }
 
     @GetMapping("/createGlobusRedWines")
     @ResponseStatus(HttpStatus.OK)
     fun createGlobusRedWines() {
-        globusDbProcessorImpl.getGlobusWineNames(
+        globusProcessorImpl.process(
             page = "https://online.globus.ru/catalog/alkogol/vino/krasnoe-vino/",
             color = "Красное"
         )
@@ -83,7 +83,7 @@ class VinorateController(
     @GetMapping("/createGlobusWhiteWines")
     @ResponseStatus(HttpStatus.OK)
     fun createGlobusWhiteWines() {
-        globusDbProcessorImpl.getGlobusWineNames(
+        globusProcessorImpl.process(
             page = "https://online.globus.ru/catalog/alkogol/vino/beloe-vino/",
             color = "Белое"
         )
@@ -92,7 +92,7 @@ class VinorateController(
     @GetMapping("/createGlobusRoseWines")
     @ResponseStatus(HttpStatus.OK)
     fun createGlobusRoseWines() {
-        globusDbProcessorImpl.getGlobusWineNames(
+        globusProcessorImpl.process(
             page = "https://online.globus.ru/catalog/alkogol/vino/rozovoe-i-fruktovoe-vino/filter/atr_ru_sugar_contetnt-is-190796-or-190795-or-190797-or-190794/apply/",
             color = "Розовое"
         )
@@ -101,7 +101,7 @@ class VinorateController(
     @GetMapping("/createGlobusSparklingRoseWines")
     @ResponseStatus(HttpStatus.OK)
     fun createGlobusSparklingRoseWines() {
-        globusDbProcessorImpl.getGlobusWineNames(
+        globusProcessorImpl.process(
             page = "https://online.globus.ru/catalog/alkogol/shampanskoe-i-igristoe/filter/atr_ru_wine_type-is-190789/apply/",
             color = "Розовое",
             type = "Игристое"
@@ -111,7 +111,7 @@ class VinorateController(
     @GetMapping("/createGlobusSparklingWhiteWines")
     @ResponseStatus(HttpStatus.OK)
     fun createGlobusSparklingWhiteWines() {
-        globusDbProcessorImpl.getGlobusWineNames(
+        globusProcessorImpl.process(
             page = "https://online.globus.ru/catalog/alkogol/shampanskoe-i-igristoe/filter/atr_ru_wine_type-is-190787/apply/",
             color = "Белое",
             type = "Игристое"
@@ -121,19 +121,19 @@ class VinorateController(
     @GetMapping("/createGlobusWinesRate")
     @ResponseStatus(HttpStatus.OK)
     fun createGlobusWinesRate() {
-        globusDbProcessorImpl.getVivinoRate()
+        globusProcessorImpl.getVivinoRate()
     }
 
-    @GetMapping("/truncateAndCreateGlobusWines")
-    @ResponseStatus(HttpStatus.OK)
-    fun truncateAndCreateGlobusWines() {
-        globusDbProcessorImpl.processGlobusWine(true)
-    }
+//    @GetMapping("/truncateAndCreateGlobusWines")
+//    @ResponseStatus(HttpStatus.OK)
+//    fun truncateAndCreateGlobusWines() {
+//        globusProcessorImpl.processGlobusWine(true)
+//    }
 
     @GetMapping("/truncateGlobusWines")
     @ResponseStatus(HttpStatus.OK)
     fun truncateGlobusWines() {
-        globusDbProcessorImpl.truncateGlobusTable()
+        globusProcessorImpl.truncateTable()
     }
 
 }

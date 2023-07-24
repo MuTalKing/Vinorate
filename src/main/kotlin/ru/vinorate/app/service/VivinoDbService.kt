@@ -15,4 +15,19 @@ class VivinoDbService(
     }
 
     fun lastId() = vivinoRepository.findTopByOrderByIdDesc()?.id ?: 0
+
+    fun insertIntoDb(
+        wineName: String,
+        rate: String
+    ) {
+        if (findRateByName(wineName) == null) {
+            saveWine(
+                Vivino(
+                    id = lastId() + 1,
+                    name = wineName,
+                    rate = rate
+                )
+            )
+        }
+    }
 }

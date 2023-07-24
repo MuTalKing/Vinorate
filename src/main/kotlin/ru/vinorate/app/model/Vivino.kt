@@ -6,9 +6,9 @@ import javax.persistence.Table
 
 @Entity
 @Table(name = "vivino")
-class Vivino {
+data class Vivino(
     @Id
-    var id: Long? = null
-    var name: String? = null
-    var rate: String? = null
-}
+    var id: Long,
+    var name: String,
+    var rate: String,
+)

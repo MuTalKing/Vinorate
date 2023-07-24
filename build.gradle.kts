@@ -5,6 +5,7 @@ plugins {
     id("org.springframework.boot") version "2.7.3"
     id("com.vaadin") version "23.3.6"
     id("io.spring.dependency-management") version "1.0.6.RELEASE"
+    id("org.jetbrains.kotlin.plugin.jpa") version "1.6.10"
 }
 
 group = "ru.vinorate"

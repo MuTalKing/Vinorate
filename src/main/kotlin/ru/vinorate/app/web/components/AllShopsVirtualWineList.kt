@@ -4,25 +4,37 @@ import com.vaadin.flow.component.Component
 import com.vaadin.flow.component.orderedlayout.FlexComponent
 import com.vaadin.flow.component.virtuallist.VirtualList
 import com.vaadin.flow.data.renderer.ComponentRenderer
-import ru.vinorate.app.model.Shop
+import ru.vinorate.app.dto.Wine
 import ru.vinorate.app.repository.GlobusRepository
 import ru.vinorate.app.repository.PerekrestokRepository
 
 class AllShopsVirtualWineList(
     private val globusRepository: GlobusRepository,
     private val perekrestokRepository: PerekrestokRepository,
-) : VirtualList<Shop>() {
+) : VirtualList<Wine>() {
 
-    private val shopCardRenderer: ComponentRenderer<Component, Shop> = ComponentRenderer { shop ->
+    val globusWines by lazy {
+        globusRepository.findByOrderByRateDesc().map {
+            it.toWineDTO()
+        }.toSet()
+    }
+
+    val perekrestokWines by lazy {
+        perekrestokRepository.findByOrderByRateDesc().map {
+            it.toWineDTO()
+        }.toSet()
+    }
+
+    private val shopCardRenderer: ComponentRenderer<Component, Wine> = ComponentRenderer { wine ->
         val wineCardLayout = WineCardLayout()
-        val imageWrapper = ImageWrapper(shop.picture, shop.name)
+        val imageWrapper = ImageWrapper(wine.picture, wine.name)
         val infoLayout = InfoLayout(
-            wineName = shop.name,
-            wineRate = shop.rate,
-            winePrice = shop.price,
-            wineColor = shop.color,
-            wineSugar = shop.sugar,
-            shopLogo = shop.shopLogo
+            wineName = wine.name,
+            wineRate = wine.rate,
+            winePrice = wine.price,
+            wineColor = wine.color,
+            wineSugar = wine.sugar,
+            shopLogo = wine.shopLogo
         )
         val imageAndInfoLayout = ImageAndInfoLayout()
         imageAndInfoLayout.add(imageWrapper, infoLayout)
@@ -35,10 +47,13 @@ class AllShopsVirtualWineList(
     init {
         height = "100%"
         width = "100%"
-        val wineList = mutableListOf<Shop>()
-        globusRepository.selectAllWinesFromAllShopsOrderedByRateDesc().forEach {
-            if (it?.sugar == "сухое" || it?.sugar == "полусухое" || it?.sugar == "брют") wineList.add(it)
-        }
+        val wineList = globusWines
+            .plus(perekrestokWines)
+            .filter {
+                it.sugar == "сухое" || it.sugar == "полусухое" || it.sugar == "брют" || it.sugar == "extra dry"
+            }
+            .sortedByDescending { it.rate }
+            .toSet()
         setItems(wineList)
         setRenderer(shopCardRenderer)
     }
@@ -52,15 +67,20 @@ class AllShopsVirtualWineList(
     ) {
         when (shop) {
             "" -> {
-                val allWines = globusRepository.selectAllWinesFromAllShopsOrderedByRateDesc()
+                val allWines = globusWines
+                    .plus(perekrestokWines)
+                    .sortedByDescending { it.rate }
+                    .toSet()
                 setItems(filterWinesByColorAndPriceAndSugar(allWines, minPrice, maxPrice, color, sugarComboBox))
             }
             "Все магазины" -> {
-                val allWines = globusRepository.selectAllWinesFromAllShopsOrderedByRateDesc()
+                val allWines = globusWines
+                    .plus(perekrestokWines)
+                    .sortedByDescending { it.rate }
+                    .toSet()
                 setItems(filterWinesByColorAndPriceAndSugar(allWines, minPrice, maxPrice, color, sugarComboBox))
             }
             "Перекрёсток" -> {
-                val perekrestokWines = perekrestokRepository.findByOrderByRateDesc()
                 setItems(
                     filterWinesByColorAndPriceAndSugar(
                         perekrestokWines,
@@ -72,7 +92,6 @@ class AllShopsVirtualWineList(
                 )
             }
             "Глобус" -> {
-                val globusWines = globusRepository.findByOrderByRateDesc()
                 setItems(filterWinesByColorAndPriceAndSugar(globusWines, minPrice, maxPrice, color, sugarComboBox))
             }
         }
@@ -89,25 +108,30 @@ class AllShopsVirtualWineList(
         if (name.isEmpty()) updateVirtualList(shop, minPrice, maxPrice, color, sugarComboBox)
         else {
             when (shop) {
-                "" -> setItems(globusRepository.searchAllWinesByName(name))
-                "Все магазины" -> setItems(globusRepository.searchAllWinesByName(name))
+                "" -> setItems(globusWines.plus(perekrestokWines).filter { it.name.contains(name.lowercase()) }
+                    .sortedByDescending { it.rate }.toSet())
+                "Все магазины" -> setItems(
+                    globusWines.plus(perekrestokWines).filter { it.name.contains(name.lowercase()) }
+                        .sortedByDescending { it.rate }.toSet()
+                )
                 "Перекрёсток" -> setItems(
                     perekrestokRepository.searchPerekrestokWinesByName(
                         name
-                    )
+                    ).map { it.toWineDTO() }.sortedByDescending { it.rate }.toSet()
                 )
-                "Глобус" -> setItems(globusRepository.searchGlobusWinesByName(name))
+                "Глобус" -> setItems(globusRepository.searchGlobusWinesByName(name).map { it.toWineDTO() }
+                    .sortedByDescending { it.rate }.toSet())
             }
         }
     }
 
     fun filterWinesByColorAndPriceAndSugar(
-        wines: Set<Shop>,
+        wines: Set<Wine>,
         minPrice: String,
         maxPrice: String,
         color: String,
         sugarComboBox: MutableSet<String>
-    ): Collection<Shop?> =
+    ): Collection<Wine?> =
         wines.asSequence()
             .filter {
                 when (color) {
@@ -136,12 +160,10 @@ class AllShopsVirtualWineList(
             }
             .toSet().sortedByDescending { it.rate }
 
-    fun Shop.calculatePriceFromString(): Double {
-        if (price != null) {
-            return price!!.split(" ₽")[0]
-                .replace(" ", "")
-                .replace(",", ".")
-                .toDouble()
-        } else return 0.0
+    fun Wine.calculatePriceFromString(): Double {
+        return price.split(" ₽")[0]
+            .replace(" ", "")
+            .replace(",", ".")
+            .toDouble()
     }
 }

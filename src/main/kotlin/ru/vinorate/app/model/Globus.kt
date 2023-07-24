@@ -1,19 +1,33 @@
 package ru.vinorate.app.model
 
+import ru.vinorate.app.dto.Wine
 import javax.persistence.Entity
+import javax.persistence.GeneratedValue
+import javax.persistence.GenerationType
 import javax.persistence.Id
 import javax.persistence.Table
 
 @Entity
 @Table(name = "globus")
-class Globus: Shop {
+data class Globus(
     @Id
-    override var id: Long? = null
-    override var name: String? = null
-    override var rate: String? = null
-    override var price: String? = null
-    override var picture: String? = null
-    override var shopLogo: String? = null
-    override var color: String? = null
-    override var sugar: String? = null
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    var id: Long = 0,
+    var name: String,
+    var rate: String?,
+    var price: String,
+    var picture: String,
+    var shopLogo: String,
+    var color: String,
+    var sugar: String
+) {
+    fun toWineDTO() = Wine(
+        name = name,
+        rate = rate.orEmpty(),
+        price = price,
+        picture = picture,
+        shopLogo = shopLogo,
+        color = color,
+        sugar = sugar
+    )
 }

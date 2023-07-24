@@ -6,13 +6,8 @@ import com.codeborne.selenide.Selenide.`$$`
 import com.codeborne.selenide.Selenide.open
 import com.codeborne.selenide.Selenide.refresh
 import com.codeborne.selenide.Selenide.sleep
-import org.modelmapper.ModelMapper
 import org.openqa.selenium.By.ByXPath
 import org.springframework.stereotype.Service
-import ru.vinorate.app.dto.VivinoDbDto
-import ru.vinorate.app.dto.Wine
-import ru.vinorate.app.model.Shop
-import ru.vinorate.app.model.Vivino
 import ru.vinorate.app.pages.VivinoPage
 import ru.vinorate.app.utils.browser.BrowserConfiguration
 
@@ -34,7 +29,7 @@ class VivinoService(
             wineNamesList = wineNamesList,
             wineName = dbService.firstNameByRate("")
         )
-        for (wine in lastIndexWineNames .. wineNamesList.size) {
+        for (wine in lastIndexWineNames..wineNamesList.size) {
             val rateFromDb = vivinoDbService.findRateByName(wineNamesList[wine - 1])
             if (rateFromDb != null) {
                 dbService.updateRate(rateFromDb, wineNamesList[wine - 1])
@@ -47,20 +42,18 @@ class VivinoService(
                     val wineIsVisible = waitForVisiblePartOfWineName(wineNamesList[wine - 1])
                     if (wineIsVisible) {
                         if (rateIsVisible()) {
-                            insertIntoVivinoDB(
+                            vivinoDbService.insertIntoDb(
                                 wineName = wineNamesList[wine - 1],
-                                rate = `$`(Selectors.byXpath("//div[@class = 'search-results-list']/div[1]//div[@class= 'text-inline-block light average__number']")).text,
-                                vivinoDbService = vivinoDbService
+                                rate = `$`(Selectors.byXpath("//div[@class = 'search-results-list']/div[1]//div[@class= 'text-inline-block light average__number']")).text
                             )
                             dbService.updateRate(
                                 `$`(Selectors.byXpath("//div[@class = 'search-results-list']/div[1]//div[@class= 'text-inline-block light average__number']")).text,
                                 wineNamesList[wine - 1]
                             )
                         } else {
-                            insertIntoVivinoDB(
+                            vivinoDbService.insertIntoDb(
                                 wineName = wineNamesList[wine - 1],
-                                rate = "-",
-                                vivinoDbService = vivinoDbService
+                                rate = "-"
                             )
                             dbService.updateRate(
                                 "-",
@@ -68,10 +61,9 @@ class VivinoService(
                             )
                         }
                     } else {
-                        insertIntoVivinoDB(
+                        vivinoDbService.insertIntoDb(
                             wineName = wineNamesList[wine - 1],
-                            rate = "-",
-                            vivinoDbService = vivinoDbService
+                            rate = "-"
                         )
                         dbService.updateRate(
                             "-",
@@ -116,54 +108,4 @@ class VivinoService(
 
     private fun rateIsVisible() =
         `$$`(Selectors.byXpath("//div[@class = 'search-results-list']/div[1]//div[@class= 'text-inline-block light average__number']")).size > 0
-
-    fun insertIntoDB(
-        wineName: String,
-        rate: String,
-        winePrice: String,
-        winePicture: String,
-        shop: Shop,
-        dbService: DbService,
-        shopLogo: String,
-        color: String,
-        sugar: String
-    ) {
-        if (dbService.findByName(wineName) == null) {
-            dbService.saveWine(
-                ModelMapper().map(
-                    Wine(
-                        id = dbService.lastId() + 1,
-                        name = wineName,
-                        rate = rate,
-                        price = winePrice,
-                        picture = winePicture,
-                        shopLogo = shopLogo,
-                        color = color,
-                        sugar = sugar
-                    ), shop::class.java
-                )
-            )
-        }
-        else {
-            dbService.updateRate(rate, wineName)
-        }
-    }
-
-    fun insertIntoVivinoDB(
-        wineName: String,
-        rate: String,
-        vivinoDbService: VivinoDbService
-    ) {
-        if(vivinoDbService.findRateByName(wineName) == null) {
-            vivinoDbService.saveWine(
-                ModelMapper().map(
-                    VivinoDbDto(
-                        id = vivinoDbService.lastId() + 1,
-                        name = wineName,
-                        rate = rate
-                    ), Vivino::class.java
-                )
-            )
-        }
-    }
 }
